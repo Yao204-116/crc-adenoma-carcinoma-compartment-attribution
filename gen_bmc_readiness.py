@@ -195,7 +195,9 @@ Conclusions / List of abbreviations / Declarations / Additional files、清掉�
 完整的<b>可复现链</b>（10 个 GEO 永久标识 + 直链 + 访问日期 + 按 BMC 软件字段格式列出的代码块）；
 ② Additional files 命名由"正文一套、上传一套"统一为 <span class="mono">Additional file 1&ndash;8</span>，
 并按<b>正文首见序</b>自动编号、补齐四要素。自检脚本同步扩到 <b>19 项</b>，全绿。<br>
-<b>剩余待办只有一类：作者信息类字段（姓名、单位、基金、CRediT、ORCID）与代码仓库 / Zenodo DOI 需本人填写。</b>
+<b>代码仓库已上线</b>：<span class="mono">github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution</span>
+（公开 · MIT · 91 文件），Code availability 中的仓库地址已回填为真实值。<br>
+<b>剩余待办只有一类：作者信息类字段（姓名、单位、基金、CRediT、ORCID）与 Zenodo 归档 DOI 需本人填写。</b>
 </div>
 
 <h2>一、BMC 官方硬指标逐条对照</h2>
@@ -388,9 +390,9 @@ and <b>bibliometric analyses</b> will not be considered."</blockquote>
 <table>
 <tr><th style="width:4%">#</th><th style="width:30%">事项</th><th>说明</th></tr>
 <tr><td class="c">1</td><td><span class="chk n">必办</span> 填齐第七节全部占位字段</td><td>姓名、单位、通讯作者、基金、CRediT</td></tr>
-<tr><td class="c">2</td><td><span class="chk y">已办</span> 图文件命名 + 上传包</td><td><span class="mono">figs/</span> 两个文件名已改到位（见第四节）；<span class="mono">upload/</span> 已生成 <span class="mono">Figure_1&ndash;8.png</span>（按正文图号排序）+ <span class="mono">Additional_file_1&ndash;8.*</span>。PNG 已被 BMC 接受，若想更稳可另存 EPS/PDF 矢量版</td></tr>
-<tr><td class="c">3</td><td><span class="chk w">建议</span> 入库并取得代码 DOI</td><td>可复现链已写进稿件（第五节）；剩下的是把 <span class="mono">REPRODUCIBILITY.md</span> + 脚本传 GitHub，用 Zenodo 归档拿 DOI，再把 URL 与 DOI 回填稿件</td></tr>
-<tr><td class="c">4</td><td><span class="chk w">建议</span> 投稿前再查两处</td><td>① GSE303070 关联论文是否已见刊（现为 0 命中，我们在文中作"不可仲裁参照"处理，若已见刊应改引正式版）；② Guha et al. bioRxiv 预印本是否已转正刊（现为 <span class="mono">[8]</span>，用的是 bioRxiv 引用格式）</td></tr>
+<tr><td class="c">2</td><td><span class="chk y">已办</span> 图文件英文化 + 图号 + 上传包</td><td><b>10 张图的图内文字与文件名已全部英文化</b>（原为中文，投英文刊属阻塞项），图内图号与正文一致；<span class="mono">upload/</span> 已生成 <span class="mono">Figure_1&ndash;8.png</span>（按正文图号排序）+ <span class="mono">Additional_file_1&ndash;8.*</span>。PNG 已被 BMC 接受，若想更稳可另存 EPS/PDF 矢量版</td></tr>
+<tr><td class="c">3</td><td><span class="chk y">已办</span> 代码入库（含 DOI 待取）</td><td>仓库已上线：<span class="mono">github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution</span>（公开 · MIT · 91 文件），稿件 Code availability 的仓库地址已回填。★ <b>剩一步</b>：在 Zenodo 打开该仓库开关后发 release 取归档 DOI（必须先开开关再发 release），再把 DOI 回填</td></tr>
+<tr><td class="c">4</td><td><span class="chk y">已查</span> 投稿前两处文献状态（2026-10-16 实测）</td><td>① <b>GSE303070 关联论文仍是预印本</b>：Pattison AD, …, Abud HE. <i>A spatial atlas of colorectal cancer reveals the influence of stromal niches on tumour differentiation.</i> bioRxiv 2025；DOI <span class="mono">10.64898/2025.12.09.693138</span>（Europe PMC <span class="mono">PPR1231869</span>）——<b>未进入 PubMed，GEO 记录亦无 PMID</b>。文中"nine spatial niches"一说出自该数据集的 GEO summary（原文 "identified 9 spatial niches"），<b>以 GEO accession 归属站得住</b>；若要更规范，可在该句后补一条参考文献（Vancouver 顺序下会成为 <span class="mono">[22]</span>）。<br>② <b>Guha et al. 仍是预印本</b>：PubMed <span class="mono">PMID 39605357</span>，bioRxiv，article type 含 <i>Preprint</i>，Europe PMC 无期刊版 → 现用的 bioRxiv 引用格式（<span class="mono">[8]</span>）<b>正确，无需改动</b>。<br>③ 附带一条：Guha TK 另有 <b>Nature 2026</b> 论文 <i>Polyclonal origins of human premalignant colorectal lesions</i>（<span class="mono">PMID 41291291</span>）——同组不同题，<b>不替代</b>上述预印本，勿误改引用</td></tr>
 <tr><td class="c">5</td><td><span class="chk y">已办</span> Additional files 命名统一</td><td>正文已全改为 <span class="mono">Additional file 1&ndash;8</span> 并按首见序编号（映射见第六节）；上传时用 <span class="mono">Additional_file_n.*</span> 命名即可</td></tr>
 <tr><td class="c">6</td><td><span class="chk y">已办</span> 摘要 &le;350 词</td><td>{ABS_WORDS} 词；若编辑另有要求，优先压缩 Background 第二句</td></tr>
 <tr><td class="c">7</td><td><span class="chk y">已办</span> 引用编号闭环</td><td>21 条全部被正文引用，正文角标全部有对应条目（脚本 <span class="mono">verify_bmc.py</span> 自动核对）</td></tr>

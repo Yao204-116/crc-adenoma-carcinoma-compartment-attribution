@@ -144,7 +144,7 @@ statement of the manuscript. Metadata for the DOI record is declared in `.zenodo
 ### Reproducing the archived release
 
 ```bash
-git clone https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution
+git clone <REPO_URL>
 cd <repo>
 pip install -r REQUIREMENTS.txt
 python build_suppl_tables.py      # smoke test: rebuilds Supplementary Tables S1-S5
