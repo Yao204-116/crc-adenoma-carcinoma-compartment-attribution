@@ -39,8 +39,8 @@ Download helpers: `geo_dl.py`, `geo_dl2.py`, `dl_ebi.py` / `dl_loop.py` / `dl_pe
 
 | Item | Value |
 |---|---|
-| Python | 3.9+ (developed on 3.13) |
-| Python packages | see `REQUIREMENTS.txt` (`numpy`, `pandas`, `scipy`, `matplotlib`, `openpyxl`, `requests`) |
+| Python | 3.9+ (developed on 3.13.9) |
+| Python packages | see `REQUIREMENTS.txt` (`numpy`, `pandas`, `scipy`, `matplotlib`, `openpyxl`, `requests` — pinned to the versions used) |
 | R | `limma` and `WGCNA` — used **upstream** for the modules shipped in `upstream_r/` (see §5) |
 | External services | NCBI E-utilities, Enrichr, MSigDB (`MSigDB_Hallmark_2020`) |
 
@@ -50,6 +50,9 @@ pip install -r REQUIREMENTS.txt
 
 `geo_cache/` and platform annotation files (`GPL*.annot.gz`, `Homo_sapiens.gene_info.gz`)
 are **not** shipped: the download scripts fetch them on first run and cache them locally.
+
+Byte-for-byte reproducibility of the rendered PNGs requires the pinned `matplotlib`
+version; the CSV tables are deterministic regardless. See `REPRODUCIBILITY.md` §8.
 
 ---
 

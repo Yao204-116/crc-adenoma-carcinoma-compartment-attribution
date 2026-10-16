@@ -196,9 +196,17 @@ for GitHub projects).
 - [x] License chosen and stated (`LICENSE`, MIT).
 - [x] Package verified self-contained: rebuilt from `upstream_r/` with identical CSV hashes.
 - [ ] Push the repository and archive a tagged release on **Zenodo** to obtain a DOI.
-- [ ] Insert the repository URL and the Zenodo DOI into the *Code availability* block of the
-      manuscript (Declarations → Availability of data and materials).
-- [ ] Confirm the R version used for `limma` / `WGCNA`.
+      Automated by `push_github.py` (push → tag `v1.0.0` → GitHub release → retrieve the
+      Zenodo DOI → write `code_availability.json` → rebuild the manuscript). The
+      Zenodo–GitHub switch for this repository must be turned **ON before** the release is
+      published, otherwise that release is not archived.
+- [ ] Repository URL and Zenodo DOI into the *Code availability* block of the manuscript.
+      Not done by hand: `build_bmc_manuscript.py` reads them from `code_availability.json`,
+      which `push_github.py` writes.
+- [ ] The author metadata in `.zenodo.json` (creators / affiliation) must match the
+      manuscript title page — `push_github.py` refuses to publish the release while the
+      `__FILL_ME__` placeholder is still present.
+- [ ] Confirm the R version used for `limma` / `WGCNA` (`push_github.py --r-version "R x.y.z"`).
 
 ---
 
@@ -210,3 +218,21 @@ for GitHub projects).
   field-of-view selection, not a numeric threshold.
 - All p-values are reported as **agreement between two exchangeable calibers** rather than as
   single significance tests; the criterion is stated in the Methods.
+
+---
+
+## 8. Byte-level determinism — what to hash and what not to
+
+Checked empirically on the developer's machine:
+
+| Output | Byte-identical across runs? | Reason |
+|---|---|---|
+| `suppl/*.csv` | **yes** | plain text, deterministic ordering |
+| `figs/*.png` | **yes, if the Matplotlib version matches** | the only text chunk is `Software: Matplotlib version X.Y.Z`; no timestamp is embedded |
+| `suppl/Supplementary_Tables_S1-S5.xlsx` | **no** | `openpyxl` writes `docProps/core.xml` with `dcterms:created` / `dcterms:modified`, and the ZIP entry headers carry the run time. Every cell is identical; only the container bytes differ. Two consecutive runs gave different MD5s. |
+
+**Consequence for anyone verifying this deposit:** compare the **`.csv` tables**, not the
+`.xlsx` workbook or a single archive checksum. A differing `.xlsx` hash does **not** indicate
+a different result — the `.csv` files are authoritative and the `.xlsx` is a
+reader-friendly repackaging of exactly those tables.
+
