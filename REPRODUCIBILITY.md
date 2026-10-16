@@ -221,8 +221,8 @@ for GitHub projects).
       Not done by hand: `build_bmc_manuscript.py` reads them from `code_availability.json`,
       which `push_github.py` writes.
 - [ ] The author metadata in `.zenodo.json` (creators / affiliation) must match the
-      manuscript title page — `push_github.py` refuses to publish the release while the
-      `__FILL_ME__` placeholder is still present.
+      manuscript title page — `preflight_release.py` and `push_github.py` both refuse to
+      publish the release while the creator placeholder is still present.
 - [ ] Confirm the R version used for `limma` / `WGCNA` (`push_github.py --r-version "R x.y.z"`).
 
 ---

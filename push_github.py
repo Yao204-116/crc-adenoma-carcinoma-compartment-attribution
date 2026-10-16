@@ -16,7 +16,7 @@
     --r-version "R 4.4.1"   填进 Code availability 的 R 版本
     --license MIT
     --no-create             仓库已手动建好，不要尝试自动创建
-    --allow-placeholder     允许 .zenodo.json 仍含 __FILL_ME__ 时发 release（默认拒绝）
+    --allow-placeholder     跳过发布前闸门 preflight_release.py（默认拒绝，强烈不建议）
     --skip-release          只 push，不发 release、不取 DOI
     --poll 20               等待 Zenodo 归档的轮数（每轮 30 秒）；0 = 不等待
 """
@@ -87,6 +87,41 @@ def git(*args, check=True):
             f"git {' '.join(a for a in args if _TOKEN not in a)} 失败",
             redact(p.stdout), redact(p.stderr)]))
     return p
+
+
+# 会**公开发布**的文本资产。占位符必须同时填进这两个文件：
+# ★ 只填 README 会漏掉 RELEASE_NOTES_v1.0.0.md —— 而 release notes 的正文正是
+#   贴进 GitHub release 页面、随即被 Zenodo 归档的那段文字。实测漏网过一次，
+#   是 preflight_release.py 扫全仓库占位符时才发现的。
+PUBLISHED_TEXT = ["README.md", "RELEASE_NOTES_v1.0.0.md"]
+
+
+def fill_placeholders(sub, commit_msg, step):
+    """把 {KEY: value} 填进 PUBLISHED_TEXT 里所有 `<KEY>` / `\\<KEY\\>` 两种写法。
+
+    markdown 里占位符写作反斜杠转义形式，故两种都要替换（只替换一种会静默漏掉
+    表格行 —— 实测 README 的 "Source repository" 一格就这样漏过）。
+    """
+    touched = []
+    for rel in PUBLISHED_TEXT:
+        fp = os.path.join(REPO_DIR, rel)
+        if not os.path.exists(fp):
+            continue
+        txt = open(fp, encoding="utf-8").read()
+        new = txt
+        for k, v in sub.items():
+            new = new.replace("\\<%s\\>" % k, v).replace("<%s>" % k, v)
+        if new != txt:
+            # ★ newline="" 必须加：Windows 文本模式写回会把 LF 全变 CRLF，
+            #   于是一行 URL 修复在 git diff 里显示成整文件重写（实测 116 行）。
+            open(fp, "w", encoding="utf-8", newline="").write(new)
+            touched.append(rel)
+    if not touched:
+        return
+    git("add", *touched)
+    if git("diff", "--cached", "--quiet", check=False).returncode != 0:
+        git("commit", "-q", "-m", commit_msg)
+        log(step, "、".join(touched) + " 已填充占位符并追加一次提交")
 
 
 def zenodo_find_doi(repo_url, rounds):
@@ -184,7 +219,7 @@ def main():
     html_url = f"https://github.com/{owner}/{args.repo_name}"
     clone_url = f"{html_url}.git"
 
-    # ------------------------------------------------ 3 remote + README 填仓库地址
+    # ------------------------------------------------ 3 remote + 填仓库地址
     remotes = git("remote").stdout.split()
     if "origin" in remotes:
         git("remote", "set-url", "origin", clone_url)
@@ -192,16 +227,8 @@ def main():
         git("remote", "add", "origin", clone_url)
     log("3/8", f"remote origin -> {clone_url}")
 
-    readme = os.path.join(REPO_DIR, "README.md")
-    if os.path.exists(readme):
-        txt = open(readme, encoding="utf-8").read()
-        new = txt.replace("\\<REPO_URL\\>", html_url).replace("<REPO_URL>", html_url)
-        if new != txt:
-            open(readme, "w", encoding="utf-8").write(new)
-            git("add", "README.md")
-            if git("diff", "--cached", "--quiet", check=False).returncode != 0:
-                git("commit", "-q", "-m", "README: fill in repository URL")
-                log("3/8", "README 已填入仓库地址并追加一次提交")
+    fill_placeholders({"REPO_URL": html_url},
+                      "README: fill in repository URL", "3/8")
 
     # ------------------------------------------------ 4 push（token 只在命令行，不落盘）
     tok_url = f"https://x-access-token:{_TOKEN}@github.com/{owner}/{args.repo_name}.git"
@@ -226,15 +253,25 @@ def main():
         log("6/8", "已跳过 release（--skip-release）")
     else:
         # -------------------------------------------- 6 release
-        zpath = os.path.join(REPO_DIR, ".zenodo.json")
-        if not args.allow_placeholder and os.path.exists(zpath):
-            if "__FILL_ME__" in open(zpath, encoding="utf-8").read():
+        # ★ 发 release 是这条链上**唯一不可逆**的动作：Zenodo 会立刻把当时的元数据
+        #   冻成一个永久、可被引用的 DOI 记录。所以闸门统一交给 preflight_release.py
+        #   跑全套（占位符 / 作者元数据 / 稿件合规 / tag 指向），不再只 grep 一个占位符。
+        pf = os.path.join(HERE, "preflight_release.py")
+        if os.path.exists(pf) and not args.allow_placeholder:
+            r = subprocess.run([sys.executable, pf, "--quiet"], cwd=HERE,
+                               capture_output=True, text=True,
+                               encoding="utf-8", errors="replace")
+            if r.returncode != 0:
                 raise SystemExit("\n".join([
-                    "已中止：repo/.zenodo.json 里仍有 __FILL_ME__ 占位（作者名/单位）。",
-                    "　Zenodo 会用这个文件生成 DOI 记录的元数据，占位符一旦归档就很难看。",
-                    "　请先填好真实作者（与稿件 title page 完全一致），或加 "
-                    "--allow-placeholder 强行继续。",
+                    "已中止：发布前闸门未通过（preflight_release.py）。",
+                    "",
+                    (r.stdout or r.stderr or "").rstrip(),
+                    "",
+                    "　清掉上面所有 ⛔ 项再重跑；确实要强行继续，加 --allow-placeholder。",
                     "　（push 与 tag 已完成，重新运行会从 release 这步继续。）"]))
+            log("6/8", "发布前闸门已通过")
+        elif args.allow_placeholder:
+            log("6/8", "警告：--allow-placeholder 已跳过发布前闸门")
         notes = os.path.join(REPO_DIR, "RELEASE_NOTES_v1.0.0.md")
         body = open(notes, encoding="utf-8").read() if os.path.exists(notes) else ""
         st, rel = gh("POST", f"/repos/{owner}/{args.repo_name}/releases", {
@@ -282,19 +319,11 @@ def main():
         json.dump(old, fh, ensure_ascii=False, indent=2)
     log("8/8", f"已写入 code_availability.json：{json.dumps(ca, ensure_ascii=False)}")
 
-    # README 里的 DOI 占位符一并回填（make_repo.py 打包时也做一次，这一步是拿 DOI 之后的补充）
-    readme = os.path.join(REPO_DIR, "README.md")
-    if os.path.exists(readme):
-        txt = open(readme, encoding="utf-8").read()
-        val = ("https://doi.org/" + doi) if doi else \
-              "not yet minted (Zenodo assigns one to each tagged release)"
-        new = txt.replace("\\<ARCHIVED_DOI\\>", val).replace("<ARCHIVED_DOI>", val)
-        if new != txt:
-            open(readme, "w", encoding="utf-8").write(new)
-            git("add", "README.md")
-            if git("diff", "--cached", "--quiet", check=False).returncode != 0:
-                git("commit", "-q", "-m", "README: fill in the archived-version DOI")
-                log("8/8", "README 已填入归档 DOI")
+    # DOI 占位符一并回填（make_repo.py 打包时也做一次，这一步是拿到 DOI 之后的补充）
+    val = ("https://doi.org/" + doi) if doi else \
+          "not yet minted (Zenodo assigns one to each tagged release)"
+    fill_placeholders({"ARCHIVED_DOI": val},
+                      "README: fill in the archived-version DOI", "8/8")
 
     rc = subprocess.run([sys.executable, os.path.join(HERE, "build_bmc_manuscript.py")],
                         cwd=HERE, capture_output=True, text=True)

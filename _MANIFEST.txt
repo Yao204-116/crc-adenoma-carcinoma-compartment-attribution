@@ -53,7 +53,9 @@ make_repo.py
 make_upload_package.py
 manuscript_facts.json
 panels_def.json
+preflight_release.py
 push_github.py
+push_via_api.py
 r3_facts.json
 r3_facts.py
 r3_sens_paneth.json

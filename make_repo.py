@@ -17,10 +17,13 @@ sc161277_scan sc161277_pairs sc303070_compo sc303070_compo2 sc303070_compo3 sc30
 enrichr_dual gse117606_paired build_suppl_tables make_figs make_figs_sc make_figS1 make_figS3
 geo_dl geo_dl2 dl_ebi dl_loop dl_persist sc161277_dl_final gse303070_probe gse303070_tissue
 build_bmc_manuscript _fetch_bmc_refs verify_bmc gen_bmc_readiness make_upload_package
-make_repo push_github
+make_repo push_github push_via_api preflight_release
 fig_en check_fig_english""".split()
 # ★ fig_en 是**必须**进仓库的：它是显示名的唯一英文映射，
 #   make_figs* / build_suppl_tables 都 import 它；缺了它复现链直接断。
+# ★ push_via_api 是 push_github 的兜底：github.com:443 被阻断而 api.github.com 可达时用。
+# ★ preflight_release 是**发 release 之前**的总闸门：发布是唯一不可逆的动作，
+#   它把「能不能发」写成可执行检查（占位符 / 元数据 / 自检 / tag 指向）。
 
 # 落盘的中间产物（数字来源，供复算核对）
 MIDDLE = """panels_def.json suppl_table1_313genes.csv manuscript_facts.json r3_facts.json
@@ -103,15 +106,20 @@ for a in ASSETS:
     put(os.path.join(ASSETS_DIR, a), a)
 
 
-# ---------------------------------------------------------------- README 占位符填充
+# ---------------------------------------------------------------- 占位符填充
 # ★ 必须在**打包阶段**做，不能只交给 push_github：否则本脚本每次重跑都会拿
 #   _repo_assets/ 里的原版把 push_github 已填好的 URL 打回占位符（实测发生过，
 #   结果公开 README 的 "Source repository" 一格长期显示占位符）。
 #   占位符在 markdown 里写作反斜杠转义形式（\<REPO_URL\>），故两种写法都替换。
-def _fill_readme():
-    path = os.path.join(DST, "README.md")
-    if not os.path.exists(path):
-        return
+#
+# ★ 必须覆盖**所有**带占位符的文本资产，不能只管 README：
+#   RELEASE_NOTES_v1.0.0.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
+#   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
+#   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.0.md"]
+
+
+def _substitutions():
     vals = {}
     ca = os.path.join(SRC, "code_availability.json")
     if os.path.exists(ca):
@@ -120,18 +128,35 @@ def _fill_readme():
         except Exception:
             vals = {}
     doi = vals.get("doi")
-    sub = {
+    return {
         "REPO_URL": vals.get("repo_url") or "not pushed yet",
         "ARCHIVED_DOI": ("https://doi.org/" + doi) if doi
                         else "not yet minted (Zenodo assigns one to each tagged release)",
     }
-    s = open(path, encoding="utf-8").read()
-    for key, val in sub.items():
-        s = s.replace("\\<%s\\>" % key, val).replace("<%s>" % key, val)
-    open(path, "w", encoding="utf-8").write(s)
 
 
-_fill_readme()
+def _fill_placeholders():
+    sub = _substitutions()
+    filled = []
+    for rel in FILL_FILES:
+        path = os.path.join(DST, rel)
+        if not os.path.exists(path):
+            continue
+        s = open(path, encoding="utf-8").read()
+        orig = s
+        for key, val in sub.items():
+            s = s.replace("\\<%s\\>" % key, val).replace("<%s>" % key, val)
+        if s != orig:
+            # ★ newline="" 是必须的：Windows 文本模式写回会把 LF 全变成 CRLF。
+            #   真源 _repo_assets/ 里全是 LF，一旦被转成 CRLF，改一行就会在 git diff
+            #   里显示成整文件重写（实测 RELEASE_NOTES 一行 URL 修复 = 116 行 diff），
+            #   把真正的改动淹掉。
+            open(path, "w", encoding="utf-8", newline="").write(s)
+            filled.append(rel)
+    return filled
+
+
+_filled = _fill_placeholders()
 
 n_tree = {}
 for t in TREES:
@@ -182,3 +207,7 @@ if missing:
 with open(os.path.join(DST, "_MANIFEST.txt"), "w", encoding="utf-8") as fh:
     fh.write("\n".join(sorted(copied)) + "\n")
 print("\n已写出 _MANIFEST.txt")
+if _filled:
+    print("已填充占位符：" + "、".join(_filled))
+else:
+    print("注意：没有文件被填充占位符（检查 _repo_assets/ 里是否还有 <REPO_URL>）")

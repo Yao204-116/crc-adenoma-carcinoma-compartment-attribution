@@ -40,7 +40,7 @@ upstream; its outputs are shipped under `upstream_r/`.
 ## Reproduce
 
 ```bash
-git clone <REPO_URL>
+git clone https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution
 cd <repo>
 pip install -r REQUIREMENTS.txt
 python build_suppl_tables.py     # smoke test: rebuilds Supplementary Tables S1-S5

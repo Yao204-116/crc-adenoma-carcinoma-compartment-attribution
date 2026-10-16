@@ -21,7 +21,7 @@
     "WGCNA",
     "reproducible research"
   ],
-  "notes": "AUTHOR METADATA MUST BE COMPLETED BEFORE THE FIRST RELEASE IS PUBLISHED. Replace every \"__FILL_ME__\" above (and the placeholder in README.md section 7) with the real author list, affiliations and ORCIDs exactly as they appear on the manuscript title page. Zenodo reads this file from the repository root of the tagged release.",
+  "notes": "Software release accompanying the manuscript. The package contains no new primary data: every script operates on public NCBI GEO datasets (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE128435, GSE303070) or on derived tables written by an earlier stage. REPRODUCIBILITY.md gives the complete script-to-artefact mapping; upstream_r/ ships the five tables produced by the upstream R pipeline (limma / WGCNA) so that the Python stage is self-contained.",
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
