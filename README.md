@@ -87,7 +87,7 @@ working directory. Two optional environment variables override this:
 ```bash
 # Additional file 5 (Figure S1) — global drift diagnostics
 python drift_diag.py            # -> drift_diag.json
-python make_figS1.py            # -> figs/figS1_漂移诊断.png
+python make_figS1.py            # -> figs/figS1_drift_diagnostics.png
 
 # Main Figures 7–8 — single-cell decomposition (T = P x U)
 python sc161277_scan.py         # -> sc161277_scan.json
@@ -144,7 +144,7 @@ statement of the manuscript. Metadata for the DOI record is declared in `.zenodo
 ### Reproducing the archived release
 
 ```bash
-git clone https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution
+git clone <REPO_URL>
 cd <repo>
 pip install -r REQUIREMENTS.txt
 python build_suppl_tables.py      # smoke test: rebuilds Supplementary Tables S1-S5

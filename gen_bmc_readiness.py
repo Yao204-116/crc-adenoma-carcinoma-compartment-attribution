@@ -104,9 +104,10 @@ def af_upload(a):
 # 原内部编号（人工对照，用于说明"AF 号 ≠ S 号"的原因）
 AF_SRC = {1: "suppl/S1_313gene_attribution.csv", 2: "suppl/S2_panel_gene_membership.csv",
           3: "suppl/S4a/S4b_sc161277_*.csv", 4: "suppl/S5_four_cohort_performance.csv",
-          5: "figs/figS1_漂移诊断.png", 6: "figs/figS2_双口径筛选矩阵.png",
+          5: "figs/figS1_drift_diagnostics.png",
+          6: "figs/figS2_double_caliber_screening_matrix.png",
           7: "suppl/S3_panel_pattern_matrix.csv + S3b_paneth_sensitivity.csv",
-          8: "figs/figS3_GSE303070取样偏差.png"}
+          8: "figs/figS3_GSE303070_sampling_bias.png"}
 
 AF_ROWS = "".join(
     f'<tr><td class="c"><b>Additional file {a["num"]}</b></td>'
@@ -274,8 +275,9 @@ BMC 官网明文："Figures should be numbered in the order they are first menti
 {FIG_ROWS}
 </table>
 <div class="box ok"><span class="tag">已同步</span>
-<code>figs/</code> 下两个文件名已改到位（<span class="mono">fig2_56组配对同向比例.png</span>、
-<span class="mono">fig6_三层模式_腺瘤峰.png</span>），与正文图号一致。<br>
+<code>figs/</code> 下文件名已按正文图号改到位，并已<b>全部英文化</b>（图内文字与文件名均无中文）：
+<span class="mono">fig2_56_pair_concordance.png</span>、
+<span class="mono">fig6_three_layer_pattern_adenoma_peak.png</span> 等，与正文图号一致。<br>
 另已生成可直接上传的 <span class="mono">upload/</span> 包：主图按 <span class="mono">Figure_1&ndash;8.png</span>
 顺序命名（内含 <span class="mono">UPLOAD_MANIFEST.md</span> 上传清单），全部为复制，原文件未动。
 </div>

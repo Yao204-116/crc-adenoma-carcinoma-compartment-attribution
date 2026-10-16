@@ -120,12 +120,28 @@ build_suppl_tables.py
 
 ### Stage H — figures
 ```
-make_figs.py        ->  fig1..fig6 (study design, three-layer pattern, 2x2 decomposition,
-                        per-gene scatter, panel x cohort AUC heatmap, matched-pair bars)
-make_figs_sc.py     ->  fig7_单细胞P×U分解.png, fig8_DEFA腺瘤峰dot.png
-make_figS1.py       ->  figS1_漂移诊断.png
-make_figS3.py       ->  figS3_GSE303070取样偏差.png
+fig_en.py           shared English label map + render-time translation, and the
+                    save-time guards (CJK residue, horizontal overflow, label
+                    overlap).  Imported by all four scripts below.
+check_fig_english.py static check: no on-screen Chinese left in the plotting scripts
+make_figs.py        ->  fig2_56_pair_concordance.png,
+                        fig3_2x2_decomposition_whole_tissue_vs_LCM.png,
+                        fig4_per_gene_attribution_scatter.png,
+                        fig5_panel_cohort_AUC_heatmap.png,
+                        fig6_three_layer_pattern_adenoma_peak.png,
+                        figS2_double_caliber_screening_matrix.png
+make_figs_sc.py     ->  fig7_single_cell_PxU_decomposition.png,
+                        fig8_DEFA6_adenoma_peak_dot.png
+make_figS1.py       ->  figS1_drift_diagnostics.png
+make_figS3.py       ->  figS3_GSE303070_sampling_bias.png
 ```
+`figs/fig1_study_design.png` is rendered from the hand-authored
+`figs/fig1_study_design.html` (a study-design schematic, not data-driven), so it has
+no generator script.
+
+Figure numbers follow first-mention order in the manuscript.  The file names under
+`figs/` already carry that final number, so `figs/figN_*.png` maps one-to-one onto
+`Figure_N.png` in the upload package (`make_upload_package.py`).
 
 ### Stage I — manuscript build and QA
 ```
@@ -142,7 +158,7 @@ gen_bmc_readiness.py      ->  BMC投稿准备报告_BMC_Genomics.html
 ```bash
 # Additional file 5 (Figure S1) — global drift diagnostics
 python drift_diag.py           # -> drift_diag.json
-python make_figS1.py           # -> figs/figS1_漂移诊断.png
+python make_figS1.py           # -> figs/figS1_drift_diagnostics.png
 
 # Additional file 7 (Table S3) — three-layer pattern matrix
 python three_layer_check.py    # -> three_layer_pattern.json, three_layer_results.json
@@ -152,7 +168,8 @@ python build_suppl_tables.py   # -> suppl/S3_panel_pattern_matrix.csv, S3b_panet
 # Main Figures 7-8 — single-cell decomposition
 python sc161277_scan.py        # -> sc161277_scan.json
 python sc161277_pairs.py       # -> sc161277_pairs.json
-python make_figs_sc.py         # -> figs/fig7_单细胞P×U分解.png, figs/fig8_DEFA腺瘤峰dot.png
+python make_figs_sc.py         # -> figs/fig7_single_cell_PxU_decomposition.png,
+                               #    figs/fig8_DEFA6_adenoma_peak_dot.png
 ```
 
 ---

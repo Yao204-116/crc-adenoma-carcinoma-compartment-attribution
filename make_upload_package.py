@@ -20,14 +20,14 @@ ms = open(MS, encoding="utf-8").read()
 
 # 主图：源文件名 → 正文图号（figs/ 里文件名已按最终图号改好，故这里是恒等映射）
 MAIN_FIGS = [
-    ("figs/fig1_study_design.png",        "Figure_1.png"),
-    ("figs/fig2_56组配对同向比例.png",      "Figure_2.png"),
-    ("figs/fig3_2x2分解_全组织vsLCM.png",  "Figure_3.png"),
-    ("figs/fig4_逐基因归属散点.png",       "Figure_4.png"),
-    ("figs/fig5_面板队列AUC热图.png",      "Figure_5.png"),
-    ("figs/fig6_三层模式_腺瘤峰.png",       "Figure_6.png"),
-    ("figs/fig7_单细胞P×U分解.png",        "Figure_7.png"),
-    ("figs/fig8_DEFA腺瘤峰dot.png",        "Figure_8.png"),
+    ("figs/fig1_study_design.png",                          "Figure_1.png"),
+    ("figs/fig2_56_pair_concordance.png",                   "Figure_2.png"),
+    ("figs/fig3_2x2_decomposition_whole_tissue_vs_LCM.png", "Figure_3.png"),
+    ("figs/fig4_per_gene_attribution_scatter.png",          "Figure_4.png"),
+    ("figs/fig5_panel_cohort_AUC_heatmap.png",              "Figure_5.png"),
+    ("figs/fig6_three_layer_pattern_adenoma_peak.png",      "Figure_6.png"),
+    ("figs/fig7_single_cell_PxU_decomposition.png",         "Figure_7.png"),
+    ("figs/fig8_DEFA6_adenoma_peak_dot.png",                "Figure_8.png"),
 ]
 
 # 附加文件编号 → 上传文件名 + 源（表：[(csv, 工作表名)]；图：png 路径）
@@ -38,11 +38,11 @@ AF = {
     3: ("Additional_file_3.xlsx", [("suppl/S4a_sc161277_sample_QC.csv", "Table S4a"),
                                    ("suppl/S4b_sc161277_decomposition.csv", "Table S4b")]),
     4: ("Additional_file_4.xlsx", [("suppl/S5_four_cohort_performance.csv", "Table S5")]),
-    5: ("Additional_file_5.png",  "figs/figS1_漂移诊断.png"),
-    6: ("Additional_file_6.png",  "figs/figS2_双口径筛选矩阵.png"),
+    5: ("Additional_file_5.png",  "figs/figS1_drift_diagnostics.png"),
+    6: ("Additional_file_6.png",  "figs/figS2_double_caliber_screening_matrix.png"),
     7: ("Additional_file_7.xlsx", [("suppl/S3_panel_pattern_matrix.csv", "Table S3a"),
                                    ("suppl/S3b_paneth_sensitivity.csv", "Table S3b")]),
-    8: ("Additional_file_8.png",  "figs/figS3_GSE303070取样偏差.png"),
+    8: ("Additional_file_8.png",  "figs/figS3_GSE303070_sampling_bias.png"),
 }
 
 # 从稿件读回附加文件标题，写进清单（保证与正文一致）
@@ -99,8 +99,9 @@ for d, s, n in done[8:]:
     label, fmt, title = titles[num]
     lines.append(f"| `{d}` | {label} — {title} | {fmt} | {s} | `{n[3:]}` |")
 lines += ["", "## Notes", "",
-          "- Main figure numbers follow **first-mention order** in the manuscript, so the",
-          "  source files `fig2_*` and `fig6_*` are swapped here (Fig. 2 ↔ Fig. 6).",
+          "- Main figure numbers follow **first-mention order** in the manuscript. The source",
+          "  file names under `figs/` already carry the final figure number, so the mapping",
+          "  above is one-to-one (`figs/figN_*.png` → `Figure_N.png`).",
           "- Additional file numbers also follow first-mention order, so they do **not** match",
           "  the internal `Sn` labels (e.g. Additional file 3 = Table S4, Additional file 7 = Table S3).",
           "- Figures are 300 dpi PNG; BMC accepts PNG at ≤10 MB per file — no conversion needed.",
