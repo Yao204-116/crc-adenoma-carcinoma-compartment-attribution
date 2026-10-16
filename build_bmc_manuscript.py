@@ -221,6 +221,107 @@ def _availability():
 AVAILABILITY = _availability()
 
 
+# ---------------------------------------------------------------- 作者元数据（单一数据源）
+# ★ 一个文件驱动三处，避免"稿件署名 ≠ DOI 记录署名"：
+#     稿件标题页 / Funding / Authors' contributions  ← 本脚本读
+#     `.zenodo.json` 的 creators                      ← fill_author_metadata.py 读
+#   文件不存在时退回方括号占位（早期通读用，但**绝不能带着它发 release**）。
+AUTHOR_META_PATH = os.path.join(BASE, "author_metadata.json")
+
+
+def _author_meta():
+    if not os.path.exists(AUTHOR_META_PATH):
+        return None
+    try:
+        m = json.load(open(AUTHOR_META_PATH, encoding="utf-8"))
+    except Exception:
+        return None
+    if not m.get("authors"):
+        return None
+    # ★ 模板（姓名还空着）也当"没有"处理 —— 否则标题页会渲染出空名字。
+    if not any((a.get("name") or "").strip() for a in m["authors"]):
+        return None
+    return m
+
+
+META = _author_meta()
+
+# CRediT 固定排序（BMC 无强制顺序，但列出时按此更易读）
+_CREDIT_ORDER = [
+    "Conceptualization", "Methodology", "Software", "Validation", "Formal analysis",
+    "Investigation", "Resources", "Data curation", "Writing - original draft",
+    "Writing - review and editing", "Visualization", "Supervision",
+    "Project administration", "Funding acquisition",
+]
+
+
+def _corr_index(m):
+    for i, a in enumerate(m["authors"]):
+        if a.get("corresponding"):
+            return i
+    return 0
+
+
+def title_page_html():
+    if not META:
+        return (
+            '<p class="authline">[Author 1]<sup>1</sup>, [Author 2]<sup>1</sup>, '
+            '[Author 3]<sup>2</sup>, [Corresponding author]<sup>1*</sup></p>\n'
+            '<p class="authline"><sup>1</sup>[Department, Institution, City, Country] &nbsp; '
+            '<sup>2</sup>[Department, Institution, City, Country]</p>\n'
+            '<p class="authline">*Corresponding author: [name], [e-mail], '
+            '[ORCID iD]</p>\n')
+    m = META
+    ci = _corr_index(m)
+    names = []
+    for i, a in enumerate(m["authors"]):
+        inner = ",".join(str(n) for n in (a.get("aff") or [1]))
+        if i == ci:
+            inner += "*"          # ★ 通讯符加在 <sup> 的**内容**里，不能切字符串拼标签
+        names.append("%s<sup>%s</sup>" % (a["name"], inner))
+    affs = ["<sup>%s</sup>%s" % (k, m["affiliations"][k])
+            for k in sorted(m["affiliations"], key=lambda x: int(x))]
+    ca = m["authors"][ci]
+    corr = "*Corresponding author: %s, %s" % (ca["name"], m["corresponding"]["email"])
+    if ca.get("orcid"):
+        corr += ", ORCID iD: %s" % ca["orcid"]
+    return "\n".join([
+        '<p class="authline">%s</p>' % ", ".join(names),
+        '<p class="authline">%s</p>' % " &nbsp; ".join(affs),
+        '<p class="authline">%s</p>' % corr]) + "\n"
+
+
+TITLE_META_HTML = (
+    '<p class="meta">Research article submitted to <b>BMC Genomics</b> &middot; '
+    'Vancouver reference style &middot; 21 references &middot; 8 main figures &middot; '
+    '8 additional files (3 supplementary figures, 5 supplementary tables)</p>')
+
+
+def funding_text():
+    if META and META.get("funding"):
+        return META["funding"]
+    return ("This research did not receive any specific grant from funding agencies in the "
+            "public, commercial, or not-for-profit sectors. [Author to confirm: insert grant "
+            "numbers or state that no funding was received.]")
+
+
+def contributions_text():
+    """按 CRediT 汇总：{initials: [roles]} → 'Role: A, B; Role2: C'。"""
+    if META and META.get("credit"):
+        buckets = {}
+        for ini, roles in META["credit"].items():
+            for r in roles:
+                buckets.setdefault(r, []).append(ini)
+        seq = [r for r in _CREDIT_ORDER if r in buckets]
+        seq += sorted(set(buckets) - set(seq))
+        body = "; ".join("%s: %s" % (r, ", ".join(sorted(buckets[r]))) for r in seq)
+        return body + ". All authors read and approved the final manuscript."
+    return ("[Initials] Conceptualization; [initials] Methodology; [initials] Formal analysis; "
+            "[initials] Data curation; [initials] Writing - original draft; [initials] Writing - "
+            "review and editing; [initials] Supervision. All authors read and approved the final "
+            "manuscript. [Author to complete per CRediT.]")
+
+
 # BMC Declarations 必备 8 小节；方括号内容由作者填写
 DECLARATIONS = [
     ("Ethics approval and consent to participate",
@@ -234,15 +335,8 @@ DECLARATIONS = [
     ("Availability of data and materials", AVAILABILITY),
     ("Competing interests",
      "The authors declare that they have no competing interests."),
-    ("Funding",
-     "This research did not receive any specific grant from funding agencies in the public, "
-     "commercial, or not-for-profit sectors. [Author to confirm: insert grant numbers or "
-     "state that no funding was received.]"),
-    ("Authors' contributions",
-     "[Initials] Conceptualization; [initials] Methodology; [initials] Formal analysis; "
-     "[initials] Data curation; [initials] Writing - original draft; [initials] Writing - "
-     "review and editing; [initials] Supervision. All authors read and approved the final "
-     "manuscript. [Author to complete per CRediT.]"),
+    ("Funding", funding_text()),
+    ("Authors' contributions", contributions_text()),
     ("Acknowledgements",
      "The authors gratefully acknowledge the investigators of the public datasets analysed "
      "here (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, "
@@ -600,16 +694,8 @@ def main():
     # (a) Title page
     title = re.search(r"<h1>(.*?)</h1>", front, re.S).group(1).strip()
     out.append(f"<h1>{title}</h1>")
-    out.append(
-        '<p class="authline">[Author 1]<sup>1</sup>, [Author 2]<sup>1</sup>, '
-        '[Author 3]<sup>2</sup>, [Corresponding author]<sup>1*</sup></p>\n'
-        '<p class="authline"><sup>1</sup>[Department, Institution, City, Country] &nbsp; '
-        '<sup>2</sup>[Department, Institution, City, Country]</p>\n'
-        '<p class="authline">*Corresponding author: [name], [e-mail], '
-        '[ORCID iD]</p>\n'
-        '<p class="meta">Research article submitted to <b>BMC Genomics</b> &middot; '
-        'Vancouver reference style &middot; 21 references &middot; 8 main figures &middot; '
-        '8 additional files (3 supplementary figures, 5 supplementary tables)</p>')
+    out.append(title_page_html())
+    out.append(TITLE_META_HTML)
 
     # (b) Abstract（BMC 三段式）
     total = sum(wc(v) for v in ABSTRACT.values())

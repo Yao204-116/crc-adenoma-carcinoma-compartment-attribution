@@ -130,6 +130,25 @@ SLUG = None
 BRANCH = None
 
 
+def sync_tag(tag, sha):
+    """把远端 tag 指到 sha（仅支持轻量 tag）。
+
+    Zenodo 归档的是 **tag 指向的那个 commit**，所以打完 tag 又改动文件时
+    必须重打 —— 否则 DOI 记录对应的是旧内容。
+    """
+    st, tg = api("GET", "/repos/%s/git/ref/tags/%s" % (SLUG, tag))
+    if st == 200 and tg["object"]["type"] == "commit":
+        st2, _r2 = api("PATCH", "/repos/%s/git/refs/tags/%s" % (SLUG, tag),
+                       {"sha": sha, "force": True})
+        print("      tag %s %s → %s" % (tag,
+              "已更新" if st2 in (200, 201) else "更新失败(%s)" % st2, sha[:8]))
+    elif st == 200:
+        print("      tag %s 是 annotated tag（非轻量），本脚本不重建 —— "
+              "请在网络恢复后 `git tag -f` 重推。" % tag)
+    else:
+        print("      tag %s 不存在于远端，跳过。" % tag)
+
+
 def main():
     global _TOK, SLUG, BRANCH
     ap = argparse.ArgumentParser()
@@ -162,7 +181,14 @@ def main():
     remote_head = ref["object"]["sha"]
     print("[2/5] 远端 %s = %s ；本地 HEAD = %s" % (br, remote_head[:8], head[:8]))
     if remote_head == head:
-        print("      已一致，无需推送。")
+        # ★ 内容一致时**不能直接 return**：本地可能重打了 tag（`git tag -f`），
+        #   此时远端 tag 还指着旧提交。只推内容、不管 tag 会让 release 归档到错的
+        #   那个 commit 上（Zenodo 归档的是 tag 指向的 commit）。
+        print("      内容已一致，跳过内容推送（仍同步 tag）。")
+        if not args.no_tag and not args.dry_run:
+            sync_tag(args.tag, head)
+        if args.dry_run:
+            print("\n--dry-run：未做任何写操作。")
         return
 
     rt = remote_tree(remote_head)
@@ -218,18 +244,7 @@ def main():
     print("[5/5] %s 已更新 → %s" % (br, commit["sha"][:8]))
 
     if not args.no_tag:
-        st, tg = api("GET", "/repos/%s/git/ref/tags/%s" % (SLUG, args.tag))
-        if st == 200 and tg["object"]["type"] == "commit":
-            st2, r2 = api("PATCH", "/repos/%s/git/refs/tags/%s" % (SLUG, args.tag),
-                          {"sha": commit["sha"], "force": True})
-            print("      tag %s %s → %s" % (args.tag,
-                  "已更新" if st2 in (200, 201) else "更新失败(%s)" % st2,
-                  commit["sha"][:8]))
-        elif st == 200:
-            print("      tag %s 是 annotated tag（非轻量），本脚本不重建 —— "
-                  "请在网络恢复后 `git tag -f` 重推。" % args.tag)
-        else:
-            print("      tag %s 不存在于远端，跳过。" % args.tag)
+        sync_tag(args.tag, commit["sha"])
 
     print("\n完成。注意：这一步绕开了 git 协议，**远端提交的 sha 与本地不同** —— "
           "下次网络恢复后建议先 `git fetch` 再对齐。")

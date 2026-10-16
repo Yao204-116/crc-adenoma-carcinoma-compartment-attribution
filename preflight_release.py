@@ -66,7 +66,7 @@ TEXT_EXT = {".md", ".json", ".txt", ".py", ".r", ".csv", ".html", ".tsv",
 # 这四个脚本的**职责本身就是替换/校验占位符**，源码里出现占位符字面量是设计使然
 # （`s.replace("<REPO_URL>", …)`），扫它们只会制造误报。其余文件一律必须干净。
 SCAN_EXCLUDE = {"make_repo.py", "push_github.py", "push_via_api.py",
-                "preflight_release.py"}
+                "preflight_release.py", "fill_author_metadata.py"}
 
 results = []          # (severity, name, ok, detail)
 

@@ -18,6 +18,7 @@ enrichr_dual gse117606_paired build_suppl_tables make_figs make_figs_sc make_fig
 geo_dl geo_dl2 dl_ebi dl_loop dl_persist sc161277_dl_final gse303070_probe gse303070_tissue
 build_bmc_manuscript _fetch_bmc_refs verify_bmc gen_bmc_readiness make_upload_package
 make_repo push_github push_via_api preflight_release
+fill_author_metadata
 fig_en check_fig_english""".split()
 # ★ fig_en 是**必须**进仓库的：它是显示名的唯一英文映射，
 #   make_figs* / build_suppl_tables 都 import 它；缺了它复现链直接断。

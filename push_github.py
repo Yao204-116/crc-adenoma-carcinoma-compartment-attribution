@@ -11,10 +11,14 @@
 用法（要在能出网的环境下运行）：
     python push_github.py --token-file _push/.ghtoken
 
+    # github.com:443 不通、但 api.github.com 正常时（国内网络常见）：
+    python push_github.py --token-file _push/.ghtoken --via-api
+
 常用选项：
     --repo-name NAME        仓库名（默认 crc-adenoma-carcinoma-compartment-attribution）
-    --r-version "R 4.4.1"   填进 Code availability 的 R 版本
+    --r-version "R 4.5.1"   填进 Code availability 的 R 版本
     --license MIT
+    --via-api               用 REST API 推内容与 tag（绕开被阻断的 github.com）
     --no-create             仓库已手动建好，不要尝试自动创建
     --allow-placeholder     跳过发布前闸门 preflight_release.py（默认拒绝，强烈不建议）
     --skip-release          只 push，不发 release、不取 DOI
@@ -160,6 +164,9 @@ def main():
     ap.add_argument("--no-create", action="store_true")
     ap.add_argument("--allow-placeholder", action="store_true")
     ap.add_argument("--skip-release", action="store_true")
+    ap.add_argument("--via-api", action="store_true",
+                    help="github.com:443 不可达时，改用 REST API 推送内容与 tag"
+                         "（等同调用 push_via_api.py；只依赖 api.github.com）")
     ap.add_argument("--poll", type=int, default=20)
     args = ap.parse_args()
 
@@ -231,22 +238,42 @@ def main():
                       "README: fill in repository URL", "3/8")
 
     # ------------------------------------------------ 4 push（token 只在命令行，不落盘）
-    tok_url = f"https://x-access-token:{_TOKEN}@github.com/{owner}/{args.repo_name}.git"
-    p = git("-c", "credential.helper=", "push", tok_url, "HEAD:refs/heads/main", check=False)
-    if p.returncode != 0:
-        err = redact(p.stderr)
-        print("      首次推送被拒，尝试强制推送：")
-        print("      " + err.strip().replace("\n", "\n      ")[:600])
-        git("-c", "credential.helper=", "push", "--force", tok_url,
-            "HEAD:refs/heads/main")
-    n = git("rev-list", "--count", "HEAD").stdout.strip()
-    log("4/8", f"main 已推送（{n} 个提交）")
-    gh("PATCH", f"/repos/{owner}/{args.repo_name}", {"default_branch": "main"})
-
-    # ------------------------------------------------ 5 tag
+    # ★ 本地 tag 先重打：preflight_release.py 会校验「最新 tag 指向 HEAD」，
+    #   且 API 推送要把远端 tag 一起移到新提交上。
     git("tag", "-f", args.tag)
-    git("-c", "credential.helper=", "push", "-f", tok_url, f"refs/tags/{args.tag}")
-    log("5/8", f"tag {args.tag} 已推送")
+
+    if args.via_api:
+        # ★ api.github.com 与 github.com:443 会**各自独立失效**（国内网络常见）。
+        #   这条路只用 REST API，完全绕开 git 协议。
+        r = subprocess.run(
+            [sys.executable, os.path.join(HERE, "push_via_api.py"),
+             "--token-file", args.token_file,
+             "--slug", f"{owner}/{args.repo_name}",
+             "--branch", "main", "--tag", args.tag],
+            cwd=HERE, capture_output=True, text=True,
+            encoding="utf-8", errors="replace")
+        print((r.stdout or "").rstrip())
+        if r.returncode != 0:
+            raise SystemExit("API 推送失败：\n" + redact(r.stderr or ""))
+        log("4/8", "main 已通过 REST API 推送（绕开 github.com）")
+        log("5/8", f"tag {args.tag} 已通过 REST API 更新")
+    else:
+        tok_url = f"https://x-access-token:{_TOKEN}@github.com/{owner}/{args.repo_name}.git"
+        p = git("-c", "credential.helper=", "push", tok_url, "HEAD:refs/heads/main",
+                check=False)
+        if p.returncode != 0:
+            err = redact(p.stderr)
+            print("      首次推送被拒，尝试强制推送：")
+            print("      " + err.strip().replace("\n", "\n      ")[:600])
+            git("-c", "credential.helper=", "push", "--force", tok_url,
+                "HEAD:refs/heads/main")
+        n = git("rev-list", "--count", "HEAD").stdout.strip()
+        log("4/8", f"main 已推送（{n} 个提交）")
+        gh("PATCH", f"/repos/{owner}/{args.repo_name}", {"default_branch": "main"})
+
+        # -------------------------------------------- 5 tag
+        git("-c", "credential.helper=", "push", "-f", tok_url, f"refs/tags/{args.tag}")
+        log("5/8", f"tag {args.tag} 已推送")
 
     doi = None
     if args.skip_release:

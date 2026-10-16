@@ -37,6 +37,7 @@ figs/fig8_DEFA6_adenoma_peak_dot.png
 figs/figS1_drift_diagnostics.png
 figs/figS2_double_caliber_screening_matrix.png
 figs/figS3_GSE303070_sampling_bias.png
+fill_author_metadata.py
 gen_bmc_readiness.py
 geo_dl.py
 geo_dl2.py
