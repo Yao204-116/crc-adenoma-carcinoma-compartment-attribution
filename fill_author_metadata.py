@@ -69,62 +69,69 @@ def load():
 
 
 def validate(m):
-    """返回 (errors, warnings)。"""
-    err, warn = [], []
+    """返回 (hard, soft)。
+
+    ★ 区分「填错了」与「还没填」，因为两者的正确处置完全不同：
+      * hard（格式错误）→ **任何模式都拒绝写盘**。空姓名/坏 ORCID/引用不存在的单位编号
+        属于这一类：写进去只会产出比占位符更糟的东西（空名字、坏元数据）。
+      * soft（只是还没填）→ 默认也拒绝（宁缺勿滥），但 `--partial` 允许先写已完成的部分。
+        邮箱缺失会渲染成可见的 `[e-mail]` 占位，而闸门会把它抓出来 —— 所以不会误发。
+    """
+    hard, soft = [], []
     authors = m.get("authors")
     if not isinstance(authors, list) or not authors:
-        err.append("authors 必须是非空列表")
-        return err, warn
+        hard.append("authors 必须是非空列表")
+        return hard, soft
     affs = m.get("affiliations") or {}
     if not affs:
-        err.append("affiliations 不能为空")
+        hard.append("affiliations 不能为空")
 
     n_corr = 0
     for i, a in enumerate(authors):
         tag = "authors[%d]" % i
         nm = (a.get("name") or "").strip()
         if not nm:
-            err.append("%s.name 为空" % tag)
+            hard.append("%s.name 为空" % tag)
         if "_FILL_ME_" in nm or "__FILL_ME__" in nm:
-            err.append("%s.name 仍是占位符" % tag)
+            hard.append("%s.name 仍是占位符" % tag)
         a_aff = a.get("aff") or []
         if not a_aff:
-            err.append("%s.aff 为空" % tag)
+            hard.append("%s.aff 为空" % tag)
         for k in a_aff:
             if str(k) not in {str(x) for x in affs}:
-                err.append("%s.aff 引用了不存在的单位编号 %s" % (tag, k))
+                hard.append("%s.aff 引用了不存在的单位编号 %s" % (tag, k))
         o = (a.get("orcid") or "").strip()
         if o:
             if o.startswith("http"):
-                err.append("%s.orcid 请用裸编号，不要带 URL 前缀" % tag)
+                hard.append("%s.orcid 请用裸编号，不要带 URL 前缀" % tag)
             elif not ORCID_RE.match(o):
-                err.append("%s.orcid 格式不对（应为 0000-0002-1825-0097 形式）：%s" % (tag, o))
+                hard.append("%s.orcid 格式不对（应为 0000-0002-1825-0097 形式）：%s" % (tag, o))
         if a.get("corresponding"):
             n_corr += 1
         if not (a.get("initials") or "").strip():
-            warn.append("%s.initials 为空（credit 非空时会用到）" % tag)
+            soft.append("%s.initials 为空（credit 非空时会用到）" % tag)
 
     if n_corr != 1:
-        err.append("corresponding=true 的作者必须恰好 1 个，当前 %d 个" % n_corr)
+        hard.append("corresponding=true 的作者必须恰好 1 个，当前 %d 个" % n_corr)
 
     corr = m.get("corresponding") or {}
     if "@" not in (corr.get("email") or ""):
-        err.append("corresponding.email 缺失或不含 @")
+        soft.append("corresponding.email 缺失或不含 @ → 稿件会渲染成 [e-mail] 占位")
 
     for k, v in affs.items():
         if not (v or "").strip():
-            err.append("affiliations[%s] 为空" % k)
+            hard.append("affiliations[%s] 为空" % k)
 
     if not (m.get("funding") or "").strip():
-        warn.append("funding 为空 → 稿件 Funding 会退回占位提示")
+        soft.append("funding 为空 → 稿件 Funding 会退回占位提示")
 
     credit = m.get("credit") or {}
     inis = {(a.get("initials") or "").strip() for a in authors}
     for ini in credit:
         if ini not in inis:
-            err.append("credit 里的 %s 与任何作者的 initials 都不匹配" % ini)
+            hard.append("credit 里的 %s 与任何作者的 initials 都不匹配" % ini)
 
-    return err, warn
+    return hard, soft
 
 
 def creators_of(m):
@@ -147,6 +154,8 @@ def main():
     ap.add_argument("--no-rebuild", action="store_true", help="只写 .zenodo.json，不重建稿件")
     ap.add_argument("--no-commit", action="store_true",
                     help="不自动 git commit / 重打 tag（默认会做，否则闸门必拦）")
+    ap.add_argument("--partial", action="store_true",
+                    help="允许在仍有字段未填时写入已完成的部分（release 仍会被闸门拦住）")
     args = ap.parse_args()
 
     if args.init:
@@ -162,24 +171,37 @@ def main():
         return
 
     m = load()
-    err, warn = validate(m)
-    for w in warn:
-        print("⚠ " + w)
-    if err:
-        print()
-        for e in err:
-            print("✗ " + e)
-        die("%d 处错误，未写任何文件。" % len(err))
+    hard, soft = validate(m)
+
+    print("─" * 66)
+    for e in hard:
+        print("✗ %s" % e)
+    for s in soft:
+        print("⚠ 未填：%s" % s)
+    if not hard and not soft:
+        print("✓ 全部字段齐备")
+    print("─" * 66)
+
+    if args.check:
+        print("格式错误 %d ｜ 未填 %d" % (len(hard), len(soft)))
+        print("--check：未写任何文件。")
+        return
+    if hard:
+        die("%d 处**格式错误**（不是「还没填」，是「填错了」）—— 未写任何文件。"
+            % len(hard))
+    if soft and not args.partial:
+        die("%d 项尚未填写。补齐再跑；或用 --partial 只写入已完成的部分"
+            "（草稿会带可见占位符，闸门仍会拦住 release，不会误发）。" % len(soft))
 
     names = ", ".join(a["name"].strip() for a in m["authors"])
     print("✓ 校验通过：%d 位作者 —— %s" % (len(m["authors"]), names))
     for a in m["authors"]:
         flag = "（通讯）" if a.get("corresponding") else ""
-        print("    %-28s 单位 %s %s" % (a["name"].strip(),
-                                       a.get("aff"), flag))
-    if args.check:
-        print("\n--check：未写任何文件。")
-        return
+        print("    %-28s 单位 %s %s" % (a["name"].strip(), a.get("aff"), flag))
+    if soft:
+        print("  ⚠ --partial：本次只写入已完成部分，下列仍是占位 → **发不了 release**：")
+        for s in soft:
+            print("     · %s" % s)
 
     # ---------------------------------------------------------- 1 写 .zenodo.json（真源）
     if not os.path.exists(ZENODO_SRC):

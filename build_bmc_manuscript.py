@@ -282,7 +282,10 @@ def title_page_html():
     affs = ["<sup>%s</sup>%s" % (k, m["affiliations"][k])
             for k in sorted(m["affiliations"], key=lambda x: int(x))]
     ca = m["authors"][ci]
-    corr = "*Corresponding author: %s, %s" % (ca["name"], m["corresponding"]["email"])
+    # ★ 邮箱缺失时降级为可见占位 `[e-mail]`（而不是渲染成空、也不是 KeyError）——
+    #   闸门的"任意非数字方括号"扫描会把它抓出来，所以不会带着它发出去。
+    email = ((m.get("corresponding") or {}).get("email") or "").strip() or "[e-mail]"
+    corr = "*Corresponding author: %s, %s" % (ca["name"], email)
     if ca.get("orcid"):
         corr += ", ORCID iD: %s" % ca["orcid"]
     return "\n".join([

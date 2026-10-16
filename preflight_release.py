@@ -54,11 +54,15 @@ KNOWN_LICENSES = {"MIT", "GPL-2.0", "GPL-3.0", "Apache-2.0", "BSD-2-Clause",
 RELATION_SCHEMES = {"doi", "handle", "url", "urn", "pmid", "pmcid", "arxiv",
                     "isbn", "issn", "ads", "bibcode", "other"}
 
-# 稿件里的作者类占位符：发布前**必须**清零（它们与 .zenodo.json 是同一批信息）
-MS_BLOCK = [r"\[Author(?! to insert:)", r"\[Department", r"\[Corresponding",
-            r"\[ORCID"]
-# DOI 占位符只能等拿到 DOI 之后再填 —— 发布前存在是**预期**的，只提示
-MS_POST = [r"\[Author to insert"]
+# 稿件里的占位符：**不再手写清单**，改成通用规则 —— 任意"内容不以数字开头"的方括号。
+# ☆ 为什么改：手写清单抓不到 `[e-mail]` / `[name]` / `[initials]` / `[Initials]`
+#   —— 实测旧规则漏了 **8 处**。而正文引用是 `[1]` / `[11, 12]` / `[11-13]`，一律以数字开头，
+#   天然被排除；已核 References 区非数字方括号为 **0**，所以通用规则不产生误报。
+# ★ 内容上限**不能太小**：DOI 占位符有 118 字符，限 80 会让它整个匹配不到 →
+#   报告成"已回填"这种**假通过**（实测踩过）。
+BRACKET = re.compile(r"\[([^\]\d][^\]]{0,300})\]")
+# DOI 占位符只能等拿到 DOI 之后再填 —— 发布前存在是**预期**的，只提示不阻塞
+DOI_SIG = "DOI of the frozen release"
 
 TEXT_EXT = {".md", ".json", ".txt", ".py", ".r", ".csv", ".html", ".tsv",
             ".yml", ".yaml", ".toml", ".cfg", ".ini", ""}
@@ -172,18 +176,15 @@ if ms_html:
     ms_text = re.sub(r"<[^>]+>", " ", re.sub(r"<style>.*?</style>", "", ms_html,
                                              flags=re.S))
 
-    def _tokens(text, pats):
-        """取出 `[…]` 形式的**完整**占位符。
-        不能按固定字数切片：原文里占位符后面紧跟换行与上标数字，切 70 字会把
-        下一段文字一起吞进来，报告变得没法读（实测如此）。"""
-        out = []
-        for pat in pats:
-            for m in re.finditer(pat, text):
-                end = text.find("]", m.start(), m.start() + 160)
-                tok = (text[m.start():end + 1] if end > 0
-                       else text[m.start():m.start() + 60])
-                out.append(re.sub(r"\s+", " ", tok).strip())
-        return out
+    def _tokens(text):
+        """取出非数字方括号占位符的**完整**内容 `[…]`。
+
+        两条经验：
+        * 不能按固定字数切片 —— 原文里占位符后面紧跟换行与上标数字，切 70 字会把
+          下一段文字一起吞进来，报告没法读（实测如此）；
+        * 不能手写关键词清单 —— 清单永远漏（见 BRACKET 处的说明）。"""
+        return [re.sub(r"\s+", " ", m.group(0)).strip()
+                for m in BRACKET.finditer(text)]
 
     def _fmt(lst):
         seen = {}
@@ -191,9 +192,10 @@ if ms_html:
             seen[t] = seen.get(t, 0) + 1
         return "；".join(f"{k} ×{v}" if v > 1 else k for k, v in seen.items())
 
-    left_b = _tokens(ms_text, MS_BLOCK)
-    left_p = _tokens(ms_text, MS_POST)
-    block("稿件无作者/单位/通讯/ORCID 占位符", not left_b,
+    _toks = _tokens(ms_text)
+    left_b = [t for t in _toks if DOI_SIG not in t]
+    left_p = [t for t in _toks if DOI_SIG in t]
+    block("稿件无任何未填占位符（任意非数字方括号）", not left_b,
           (f"{len(left_b)} 处：" + _fmt(left_b)) if left_b else "")
     warn("稿件 DOI 占位符（拿到 DOI 后回填，发布前允许存在）",
          not left_p, f"{len(left_p)} 处待回填" if left_p else "已回填")
@@ -317,7 +319,7 @@ print("-" * 74)
 print(f"阻塞项 {nb} 个 ｜ 提示项 {nw} 个")
 if nb:
     print("\n→ 不要发 release。先清掉上面所有 ⛔ 项。")
-    print("   （作者元数据只能由本人提供；DOI 只能等 release 之后回填。）")
+    print("   （作者/邮箱/基金/CRediT 只能由本人提供；DOI 只能等 release 之后回填。）")
 else:
     print("\n→ 可以发 release。发完记得：")
     print("   1) 回填 code_availability.json 的 doi 与稿件 DOI 占位符；")
