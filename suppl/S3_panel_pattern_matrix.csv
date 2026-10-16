@@ -1,0 +1,14 @@
+﻿panel,n_genes_from_S2,GSE4183_raw,GSE4183_drift-corrected,GSE117606_raw,GSE117606_drift-corrected,GSE15960_LCM_raw,GSE15960_LCM_drift-corrected,pattern_raw,pattern_corrected,robust_adenoma_peak_3of3_both_calibers,failure_mode
+上皮·分化/功能,41,A,A,D,D,P,D,ADP,ADD,no,adenoma peak lost after drift correction
+上皮·基线/结构,24,D,D,P,P,A,A,DPA,DPA,no,peak in at most one cohort
+上皮分化·核心8,8,A,A,P,P,P,D,APP,APD,no,peak in at most one cohort
+上调分量(210),210,A,A,A,A,P,A,AAP,AAA,no,adenoma peak lost after drift correction
+下调分量(103),103,D,D,P,P,P,P,DPP,DPP,no,peak in at most one cohort
+泛间质·6,6,A,A,A,A,P,A,AAP,AAA,no,adenoma peak lost after drift correction
+潘氏细胞·4,4,P,P,P,P,P,P,PPP,PPP,YES,
+相代谢·5,5,D,D,P,D,P,D,DPP,DDD,no,adenoma peak lost after drift correction
+纯上皮基线·7,7,D,D,D,D,A,A,DDA,DDA,no,peak in at most one cohort
+间质·基线,31,A,A,A,A,P,P,AAP,AAP,no,peak in at most one cohort
+间质·激活/CAF,43,A,A,A,A,P,A,AAP,AAA,no,adenoma peak lost after drift correction
+髓系·激活,27,A,A,A,A,P,P,AAP,AAP,no,peak in at most one cohort
+黏液杯状·5,5,A,P,P,P,P,D,APP,PPD,no,peak in at most one cohort

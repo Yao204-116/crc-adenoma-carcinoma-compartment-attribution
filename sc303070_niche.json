@@ -1,0 +1,154 @@
+{
+ "sample_donor": {
+  "118T": {
+   "Donor118": 38148
+  },
+  "150T": {
+   "Donor150": 28236
+  },
+  "73T": {
+   "Donor73": 62703
+  },
+  "64T": {
+   "Donor64": 59019
+  },
+  "170N": {
+   "Donor170": 22011
+  },
+  "7N": {
+   "Donor7": 23819
+  },
+  "73N": {
+   "Donor73": 40046
+  },
+  "64N": {
+   "Donor64": 39952
+  },
+  "142N": {
+   "Donor142": 45437
+  },
+  "67T": {
+   "Donor67": 43082
+  },
+  "74T": {
+   "Donor74": 27445
+  },
+  "130T": {
+   "Donor130": 32803
+  },
+  "92T": {
+   "Donor92": 39144
+  },
+  "NC": {
+   "DonorC": 11625
+  },
+  "280N": {
+   "Donor280": 17132
+  },
+  "280T": {
+   "Donor280": 26488
+  },
+  "170T": {
+   "Donor170": 39545
+  },
+  "118N": {
+   "Donor118": 25280
+  },
+  "278T": {
+   "Donor278": 37862
+  },
+  "46T": {
+   "Donor46": 31848
+  },
+  "278N": {
+   "Donor278": 18901
+  },
+  "7T": {
+   "Donor7": 32299
+  },
+  "137T": {
+   "Donor137": 53726
+  },
+  "142T": {
+   "Donor142": 49918
+  }
+ },
+ "stype": {
+  "118T": "T",
+  "150T": "T",
+  "73T": "T",
+  "64T": "T",
+  "170N": "N",
+  "7N": "N",
+  "73N": "N",
+  "64N": "N",
+  "142N": "N",
+  "67T": "T",
+  "74T": "T",
+  "130T": "T",
+  "92T": "T",
+  "NC": "N",
+  "280N": "N",
+  "280T": "T",
+  "170T": "T",
+  "118N": "N",
+  "278T": "T",
+  "46T": "T",
+  "278N": "N",
+  "7T": "T",
+  "137T": "T",
+  "142T": "T"
+ },
+ "cells_by_niche": {
+  "T": {
+   "Epithelial mass": 157882,
+   "Vasculature": 91962,
+   "Normal like 2": 42132,
+   "QC_fail": 29440,
+   "SMC epithelial rich": 99339,
+   "Granulocyte rich": 30371,
+   "Stroma": 49086,
+   "Macrophage rich": 54163,
+   "TLS": 34850,
+   "Normal like": 13041
+  },
+  "N": {
+   "QC_fail": 13920,
+   "SMC epithelial rich": 12876,
+   "Vasculature": 16289,
+   "Stroma": 12692,
+   "Epithelial mass": 31415,
+   "Macrophage rich": 23864,
+   "TLS": 19491,
+   "Normal like": 64134,
+   "Normal like 2": 44932,
+   "Granulocyte rich": 4590
+  }
+ },
+ "fov_by_niche": {
+  "T": {
+   "Epithelial mass": 69,
+   "Granulocyte rich": 12,
+   "QC_fail": 31,
+   "Normal like 2": 16,
+   "SMC epithelial rich": 35,
+   "Vasculature": 32,
+   "Macrophage rich": 21,
+   "Stroma": 14,
+   "TLS": 10,
+   "Normal like": 7
+  },
+  "N": {
+   "QC_fail": 23,
+   "Normal like": 9,
+   "Normal like 2": 8,
+   "Macrophage rich": 10,
+   "Vasculature": 5,
+   "TLS": 13,
+   "Epithelial mass": 9,
+   "Granulocyte rich": 2,
+   "SMC epithelial rich": 1,
+   "Stroma": 1
+  }
+ }
+}

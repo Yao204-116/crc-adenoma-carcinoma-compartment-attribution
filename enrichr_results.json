@@ -1,0 +1,7259 @@
+{
+ "上皮内在层": {
+  "n": 56,
+  "uid": 139957356,
+  "libs": {
+   "GO_Biological_Process_2023": [
+    {
+     "term": "Ethanol Metabolic Process (GO:0006067)",
+     "p": 0.0006857442847474783,
+     "combined": 448.1627619072844,
+     "adj_p": 0.1323486469562633,
+     "n_overlap": 2,
+     "overlap": [
+      "ADH1C",
+      "SULT1B1"
+     ]
+    },
+    {
+     "term": "Mucosal Immune Response (GO:0002385)",
+     "p": 6.481333805613128e-05,
+     "combined": 434.9407220406345,
+     "adj_p": 0.025017948489666677,
+     "n_overlap": 3,
+     "overlap": [
+      "DEFA5",
+      "DEFA6",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Tripartite Regional Subdivision (GO:0007351)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TBX3"
+     ]
+    },
+    {
+     "term": "Uridine Transport (GO:0015862)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Hydrogen Peroxide Biosynthetic Process (GO:0050665)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "DUOX2"
+     ]
+    },
+    {
+     "term": "Aminophospholipid Transport (GO:0015917)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP8A1"
+     ]
+    },
+    {
+     "term": "Anterior/Posterior Axis Specification, Embryo (GO:0008595)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TBX3"
+     ]
+    },
+    {
+     "term": "Ketone Body Biosynthetic Process (GO:0046951)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Regulation Of Neutrophil Extravasation (GO:2000389)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Purine Nucleobase Transmembrane Transport (GO:1904823)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Pyrimidine Nucleoside Transport (GO:0015864)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Multinuclear Osteoclast Differentiation (GO:0072674)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TNFRSF11A"
+     ]
+    },
+    {
+     "term": "Reproductive System Development (GO:0061458)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TBX3"
+     ]
+    },
+    {
+     "term": "Positive Regulation Of Fever Generation (GO:0031622)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TNFRSF11A"
+     ]
+    },
+    {
+     "term": "Ethanol Catabolic Process (GO:0006068)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "SULT1B1"
+     ]
+    },
+    {
+     "term": "Host-Mediated Regulation Of Intestinal Microbiota Composition (GO:0048874)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "LRRC19"
+     ]
+    },
+    {
+     "term": "Ketone Body Metabolic Process (GO:1902224)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Lipid Hydroxylation (GO:0002933)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "CYP3A5"
+     ]
+    },
+    {
+     "term": "Nucleoside Diphosphate Catabolic Process (GO:0009134)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "ENTPD5"
+     ]
+    },
+    {
+     "term": "Long-Chain Fatty Acid Catabolic Process (GO:0042758)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "ADTRP"
+     ]
+    },
+    {
+     "term": "Cardiac Pacemaker Cell Development (GO:0060926)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "TBX3"
+     ]
+    },
+    {
+     "term": "Innate Immune Response In Mucosa (GO:0002227)",
+     "p": 0.001562716918209429,
+     "combined": 250.95903989245977,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "DEFA6"
+     ]
+    },
+    {
+     "term": "Regulation Of Steroid Metabolic Process (GO:0019218)",
+     "p": 0.001562716918209429,
+     "combined": 250.95903989245977,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 2,
+     "overlap": [
+      "EPHX2",
+      "FMO5"
+     ]
+    },
+    {
+     "term": "Regulation Of Chemokine-Mediated Signaling Pathway (GO:0070099)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "PADI2"
+     ]
+    },
+    {
+     "term": "Ethanol Oxidation (GO:0006069)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.1394319033117504,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    }
+   ],
+   "GO_Cellular_Component_2023": [
+    {
+     "term": "Apicolateral Plasma Membrane (GO:0016327)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16406692367110604,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Chloride Channel Complex (GO:0034707)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.16406692367110604,
+     "n_overlap": 1,
+     "overlap": [
+      "BEST2"
+     ]
+    },
+    {
+     "term": "Primary Lysosome (GO:0005766)",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.20977396095449882,
+     "n_overlap": 1,
+     "overlap": [
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Cation-Transporting ATPase Complex (GO:0090533)",
+     "p": 0.04120062760444105,
+     "combined": 82.54907099640234,
+     "adj_p": 0.24299218431051245,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP12A"
+     ]
+    },
+    {
+     "term": "Microbody Lumen (GO:0031907)",
+     "p": 0.008323329616071126,
+     "combined": 75.08323312024795,
+     "adj_p": 0.16369214911606547,
+     "n_overlap": 2,
+     "overlap": [
+      "CRYM",
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Peroxisomal Matrix (GO:0005782)",
+     "p": 0.008323329616071126,
+     "combined": 75.08323312024795,
+     "adj_p": 0.16369214911606547,
+     "n_overlap": 2,
+     "overlap": [
+      "CRYM",
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Azurophil Granule (GO:0042582)",
+     "p": 0.0009317827887677302,
+     "combined": 70.36356879893914,
+     "adj_p": 0.05497518453729608,
+     "n_overlap": 4,
+     "overlap": [
+      "ATP8A1",
+      "OLFM4",
+      "PADI2",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "NADPH Oxidase Complex (GO:0043020)",
+     "p": 0.046566525769346376,
+     "combined": 69.45074052559761,
+     "adj_p": 0.24299218431051245,
+     "n_overlap": 1,
+     "overlap": [
+      "DUOX2"
+     ]
+    },
+    {
+     "term": "Azurophil Granule Membrane (GO:0035577)",
+     "p": 0.011513019309769714,
+     "combined": 58.72059285932742,
+     "adj_p": 0.16406692367110604,
+     "n_overlap": 2,
+     "overlap": [
+      "ATP8A1",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Golgi Lumen (GO:0005796)",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.20977396095449882,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "DEFA6"
+     ]
+    },
+    {
+     "term": "Monoatomic Ion Channel Complex (GO:0034702)",
+     "p": 0.09609371046911784,
+     "combined": 24.226216623281367,
+     "adj_p": 0.3149738287598862,
+     "n_overlap": 1,
+     "overlap": [
+      "BEST2"
+     ]
+    },
+    {
+     "term": "Brush Border Membrane (GO:0031526)",
+     "p": 0.10619386186177694,
+     "combined": 20.809670369697198,
+     "adj_p": 0.3297598868339389,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Euchromatin (GO:0000791)",
+     "p": 0.11618314905745279,
+     "combined": 18.113591153164,
+     "adj_p": 0.3427402897194858,
+     "n_overlap": 1,
+     "overlap": [
+      "PADI2"
+     ]
+    },
+    {
+     "term": "Peroxisome (GO:0005777)",
+     "p": 0.05071180501173662,
+     "combined": 17.231349936083543,
+     "adj_p": 0.24299218431051245,
+     "n_overlap": 2,
+     "overlap": [
+      "CRYM",
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Asymmetric Synapse (GO:0032279)",
+     "p": 0.0535406507802824,
+     "combined": 16.397759113546858,
+     "adj_p": 0.24299218431051245,
+     "n_overlap": 2,
+     "overlap": [
+      "ARHGAP44",
+      "PPP1R9A"
+     ]
+    },
+    {
+     "term": "Voltage-Gated Calcium Channel Complex (GO:0005891)",
+     "p": 0.1285156743868668,
+     "combined": 15.462390450976153,
+     "adj_p": 0.3610678470869115,
+     "n_overlap": 1,
+     "overlap": [
+      "CACNA2D2"
+     ]
+    },
+    {
+     "term": "Tertiary Granule Lumen (GO:1904724)",
+     "p": 0.13825986668647797,
+     "combined": 13.761788274240036,
+     "adj_p": 0.365305738252395,
+     "n_overlap": 1,
+     "overlap": [
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Postsynaptic Density (GO:0014069)",
+     "p": 0.0669309358558136,
+     "combined": 13.305379248660088,
+     "adj_p": 0.2632616810328668,
+     "n_overlap": 2,
+     "overlap": [
+      "ARHGAP44",
+      "PPP1R9A"
+     ]
+    },
+    {
+     "term": "Specific Granule (GO:0042581)",
+     "p": 0.07320503422282369,
+     "combined": 12.204042258876775,
+     "adj_p": 0.2682115188041053,
+     "n_overlap": 2,
+     "overlap": [
+      "ATP8A1",
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Calcium Channel Complex (GO:0034704)",
+     "p": 0.1526758411244444,
+     "combined": 11.716147287670386,
+     "adj_p": 0.365305738252395,
+     "n_overlap": 1,
+     "overlap": [
+      "CACNA2D2"
+     ]
+    },
+    {
+     "term": "Specific Granule Lumen (GO:0035580)",
+     "p": 0.15742832524596892,
+     "combined": 11.139769994466517,
+     "adj_p": 0.365305738252395,
+     "n_overlap": 1,
+     "overlap": [
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Caveola (GO:0005901)",
+     "p": 0.15979474006921715,
+     "combined": 10.868179139830657,
+     "adj_p": 0.365305738252395,
+     "n_overlap": 1,
+     "overlap": [
+      "ADTRP"
+     ]
+    },
+    {
+     "term": "Secretory Granule Lumen (GO:0034774)",
+     "p": 0.05868144723692348,
+     "combined": 10.066842818591127,
+     "adj_p": 0.2473003847841775,
+     "n_overlap": 3,
+     "overlap": [
+      "DEFA5",
+      "OLFM4",
+      "PADI2"
+     ]
+    },
+    {
+     "term": "Clathrin-Coated Endocytic Vesicle Membrane (GO:0030669)",
+     "p": 0.17385676102800038,
+     "combined": 9.436982152284866,
+     "adj_p": 0.365305738252395,
+     "n_overlap": 1,
+     "overlap": [
+      "KIAA0319"
+     ]
+    },
+    {
+     "term": "Intracellular Organelle Lumen (GO:0070013)",
+     "p": 0.03189359980672609,
+     "combined": 9.287366317713534,
+     "adj_p": 0.20977396095449882,
+     "n_overlap": 6,
+     "overlap": [
+      "ACSM3",
+      "AMT",
+      "DEFA5",
+      "DEFA6",
+      "HMGCS2",
+      "OLFM4"
+     ]
+    }
+   ],
+   "GO_Molecular_Function_2023": [
+    {
+     "term": "Oxidoreductase Activity, Acting On The CH-NH Group Of Donors, NAD Or NADP As Acceptor (GO:0016646)",
+     "p": 0.0005888380181985052,
+     "combined": 499.1544962702687,
+     "adj_p": 0.07183823822021763,
+     "n_overlap": 2,
+     "overlap": [
+      "ALDH1L1",
+      "CRYM"
+     ]
+    },
+    {
+     "term": "Uridine Transmembrane Transporter Activity (GO:0015213)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Lysophosphatidic Acid Phosphatase Activity (GO:0052642)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "N,N-dimethylaniline Monooxygenase Activity (GO:0004499)",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "FMO5"
+     ]
+    },
+    {
+     "term": "Oxidoreductase Activity, Acting On A Sulfur Group Of Donors, Oxygen As Acceptor (GO:0016670)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    },
+    {
+     "term": "Alpha-Glucosidase Activity (GO:0090599)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SI"
+     ]
+    },
+    {
+     "term": "Aminophospholipid Flippase Activity (GO:0015247)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP8A1"
+     ]
+    },
+    {
+     "term": "Aryl Sulfotransferase Activity (GO:0004062)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SULT1B1"
+     ]
+    },
+    {
+     "term": "NAD(P)H Oxidase H2O2-forming Activity (GO:0016174)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "DUOX2"
+     ]
+    },
+    {
+     "term": "Pyrimidine Nucleobase Transmembrane Transporter Activity (GO:0005350)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Ether Hydrolase Activity (GO:0016803)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "fatty-acyl-CoA Synthase Activity (GO:0004321)",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ACSM3"
+     ]
+    },
+    {
+     "term": "Alcohol Dehydrogenase [NAD(P)+] Activity (GO:0018455)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    },
+    {
+     "term": "Pyrimidine Nucleoside Transmembrane Transporter Activity (GO:0015214)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Retinal Dehydrogenase Activity (GO:0001758)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "AKR1B10"
+     ]
+    },
+    {
+     "term": "Estrogen 16-Alpha-Hydroxylase Activity (GO:0101020)",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "CYP3A5"
+     ]
+    },
+    {
+     "term": "Superoxide-Generating NAD(P)H Oxidase Activity (GO:0016175)",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "DUOX2"
+     ]
+    },
+    {
+     "term": "Alcohol Dehydrogenase (NAD+) Activity (GO:0004022)",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    },
+    {
+     "term": "Tumor Necrosis Factor Receptor Activity (GO:0005031)",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "TNFRSF11A"
+     ]
+    },
+    {
+     "term": "UDP Phosphatase Activity (GO:0045134)",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ENTPD5"
+     ]
+    },
+    {
+     "term": "Nucleoside Transmembrane Transporter Activity (GO:0005337)",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Hydrolase Activity, Acting On Carbon-Nitrogen (But Not Peptide) Bonds, In Linear Amidines (GO:0016813)",
+     "p": 0.024924355773343985,
+     "combined": 167.27707721282206,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "PADI2"
+     ]
+    },
+    {
+     "term": "GDP Phosphatase Activity (GO:0004382)",
+     "p": 0.024924355773343985,
+     "combined": 167.27707721282206,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "ENTPD5"
+     ]
+    },
+    {
+     "term": "Purine Nucleobase Transmembrane Transporter Activity (GO:0005345)",
+     "p": 0.024924355773343985,
+     "combined": 167.27707721282206,
+     "adj_p": 0.10485418635682642,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    }
+   ],
+   "KEGG_2021_Human": [
+    {
+     "term": "Caffeine metabolism",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.11846188048117147,
+     "n_overlap": 1,
+     "overlap": [
+      "NAT2"
+     ]
+    },
+    {
+     "term": "One carbon pool by folate",
+     "p": 0.0014164270510532773,
+     "combined": 268.9443273175631,
+     "adj_p": 0.020113264124956537,
+     "n_overlap": 2,
+     "overlap": [
+      "ALDH1L1",
+      "AMT"
+     ]
+    },
+    {
+     "term": "Drug metabolism",
+     "p": 1.283307454865981e-05,
+     "combined": 212.7154019922965,
+     "adj_p": 0.0009111482929548464,
+     "n_overlap": 5,
+     "overlap": [
+      "ADH1C",
+      "CYP3A5",
+      "FMO5",
+      "NAT2",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Butanoate metabolism",
+     "p": 0.0027777903833347837,
+     "combined": 167.00759218053403,
+     "adj_p": 0.032870519536128275,
+     "n_overlap": 2,
+     "overlap": [
+      "ACSM3",
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Galactose metabolism",
+     "p": 0.003398799697079565,
+     "combined": 144.5766162187934,
+     "adj_p": 0.03447353978466416,
+     "n_overlap": 2,
+     "overlap": [
+      "AKR1B10",
+      "SI"
+     ]
+    },
+    {
+     "term": "Sulfur metabolism",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.15904271890805208,
+     "n_overlap": 1,
+     "overlap": [
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Synthesis and degradation of ketone bodies",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.15904271890805208,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Steroid hormone biosynthesis",
+     "p": 0.000666966557175277,
+     "combined": 141.92103825154322,
+     "adj_p": 0.020113264124956537,
+     "n_overlap": 3,
+     "overlap": [
+      "CYP3A5",
+      "HSD11B2",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Pentose and glucuronate interconversions",
+     "p": 0.004078511728993495,
+     "combined": 126.8012552696238,
+     "adj_p": 0.03542821117463416,
+     "n_overlap": 2,
+     "overlap": [
+      "AKR1B10",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Retinol metabolism",
+     "p": 0.0009159793277753663,
+     "combined": 121.10061918842435,
+     "adj_p": 0.020113264124956537,
+     "n_overlap": 3,
+     "overlap": [
+      "ADH1C",
+      "CYP3A5",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Metabolism of xenobiotics by cytochrome P450",
+     "p": 0.0012647293611733879,
+     "combined": 102.81504683870072,
+     "adj_p": 0.020113264124956537,
+     "n_overlap": 3,
+     "overlap": [
+      "ADH1C",
+      "CYP3A5",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Nitrogen metabolism",
+     "p": 0.046566525769346376,
+     "combined": 69.45074052559761,
+     "adj_p": 0.23615880925882804,
+     "n_overlap": 1,
+     "overlap": [
+      "CA12"
+     ]
+    },
+    {
+     "term": "Terpenoid backbone biosynthesis",
+     "p": 0.05985257433019706,
+     "combined": 48.57194341390608,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Folate biosynthesis",
+     "p": 0.07035034469412263,
+     "combined": 38.45116817407706,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "AKR1B10"
+     ]
+    },
+    {
+     "term": "Chemical carcinogenesis",
+     "p": 0.004490900008052218,
+     "combined": 34.87429907563602,
+     "adj_p": 0.03542821117463416,
+     "n_overlap": 4,
+     "overlap": [
+      "CYP3A5",
+      "EPHX2",
+      "NAT2",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Ascorbate and aldarate metabolism",
+     "p": 0.08073296790405966,
+     "combined": 31.42210254292495,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Glyoxylate and dicarboxylate metabolism",
+     "p": 0.08073296790405966,
+     "combined": 31.42210254292495,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "AMT"
+     ]
+    },
+    {
+     "term": "Staphylococcus aureus infection",
+     "p": 0.029120497828234886,
+     "combined": 27.956729816786826,
+     "adj_p": 0.15904271890805208,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "DEFA6"
+     ]
+    },
+    {
+     "term": "Fructose and mannose metabolism",
+     "p": 0.08844511634204166,
+     "combined": 27.43978900166533,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "AKR1B10"
+     ]
+    },
+    {
+     "term": "Starch and sucrose metabolism",
+     "p": 0.09609371046911784,
+     "combined": 24.226216623281367,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "SI"
+     ]
+    },
+    {
+     "term": "Tyrosine metabolism",
+     "p": 0.09609371046911784,
+     "combined": 24.226216623281367,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    },
+    {
+     "term": "Mucin type O-glycan biosynthesis",
+     "p": 0.09609371046911784,
+     "combined": 24.226216623281367,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "GALNT6"
+     ]
+    },
+    {
+     "term": "Aldosterone-regulated sodium reabsorption",
+     "p": 0.09862920766612057,
+     "combined": 23.290226801945256,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Glycine, serine and threonine metabolism",
+     "p": 0.10619386186177694,
+     "combined": 20.809670369697198,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "AMT"
+     ]
+    },
+    {
+     "term": "Fatty acid degradation",
+     "p": 0.11369615520357845,
+     "combined": 18.73222500578713,
+     "adj_p": 0.2632487191688743,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    }
+   ],
+   "Reactome_2022": [
+    {
+     "term": "Alpha-defensins R-HSA-1462054",
+     "p": 0.0002132861522526422,
+     "combined": 1040.3298692469639,
+     "adj_p": 0.012370596830653247,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "DEFA6"
+     ]
+    },
+    {
+     "term": "Beta Oxidation Of butanoyl-CoA To acetyl-CoA R-HSA-77352",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "ACSM3"
+     ]
+    },
+    {
+     "term": "VLDL Clearance R-HSA-8964046",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "APOBR"
+     ]
+    },
+    {
+     "term": "Synthesis Of Ketone Bodies R-HSA-77111",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Synthesis Of Epoxy (EET) And Dihydroxyeicosatrienoic Acids (DHET) R-HSA-2142670",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Phosphate Bond Hydrolysis By NTPDase Proteins R-HSA-8850843",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "ENTPD5"
+     ]
+    },
+    {
+     "term": "Biosynthesis Of Maresins R-HSA-9018682",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Ketone Body Metabolism R-HSA-74182",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Creatine Metabolism R-HSA-71288",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "CKB"
+     ]
+    },
+    {
+     "term": "Glucocorticoid Biosynthesis R-HSA-194002",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Thyroxine Biosynthesis R-HSA-209968",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "DUOX2"
+     ]
+    },
+    {
+     "term": "Mitochondrial Fatty Acid Beta-Oxidation Of Saturated Fatty Acids R-HSA-77286",
+     "p": 0.03037970354233477,
+     "combined": 126.63456015986765,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "ACSM3"
+     ]
+    },
+    {
+     "term": "Regulation Of Signaling By NODAL R-HSA-1433617",
+     "p": 0.03037970354233477,
+     "combined": 126.63456015986765,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "LEFTY1"
+     ]
+    },
+    {
+     "term": "Ethanol Oxidation R-HSA-71384",
+     "p": 0.03037970354233477,
+     "combined": 126.63456015986765,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "ADH1C"
+     ]
+    },
+    {
+     "term": "Plasma Lipoprotein Clearance R-HSA-8964043",
+     "p": 0.004317955753706619,
+     "combined": 121.67773430237344,
+     "adj_p": 0.07155469534713826,
+     "n_overlap": 2,
+     "overlap": [
+      "APOBR",
+      "CES3"
+     ]
+    },
+    {
+     "term": "Lysine Catabolism R-HSA-71064",
+     "p": 0.03309612573679984,
+     "combined": 112.2949128878184,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "CRYM"
+     ]
+    },
+    {
+     "term": "Reversible Hydration Of Carbon Dioxide R-HSA-1475029",
+     "p": 0.03309612573679984,
+     "combined": 112.2949128878184,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "CA12"
+     ]
+    },
+    {
+     "term": "Presynaptic Depolarization And Calcium Channel Opening R-HSA-112308",
+     "p": 0.03309612573679984,
+     "combined": 112.2949128878184,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "CACNA2D2"
+     ]
+    },
+    {
+     "term": "Transport Of Nucleosides And Free Purine And Pyrimidine Bases Across Plasma Membrane R-HSA-83936",
+     "p": 0.03309612573679984,
+     "combined": 112.2949128878184,
+     "adj_p": 0.12384356727318649,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Defensins R-HSA-1461973",
+     "p": 0.006460009734687234,
+     "combined": 90.65348059020808,
+     "adj_p": 0.09367014115296489,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "DEFA6"
+     ]
+    },
+    {
+     "term": "Phase 2 - Plateau Phase R-HSA-5576893",
+     "p": 0.04120062760444105,
+     "combined": 82.54907099640234,
+     "adj_p": 0.14288314142158726,
+     "n_overlap": 1,
+     "overlap": [
+      "CACNA2D2"
+     ]
+    },
+    {
+     "term": "Biological Oxidations R-HSA-211859",
+     "p": 0.00035720467887769843,
+     "combined": 72.08364400835514,
+     "adj_p": 0.013811914249937671,
+     "n_overlap": 5,
+     "overlap": [
+      "ADH1C",
+      "CES3",
+      "CYP3A5",
+      "SULT1B1",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "TNF Receptor Superfamily (TNFSF) Members Mediating Non-Canonical NF-kB Pathway R-HSA-5676594",
+     "p": 0.046566525769346376,
+     "combined": 69.45074052559761,
+     "adj_p": 0.1459923510606535,
+     "n_overlap": 1,
+     "overlap": [
+      "TNFRSF11A"
+     ]
+    },
+    {
+     "term": "Metabolism Of Folate And Pterines R-HSA-196757",
+     "p": 0.046566525769346376,
+     "combined": 69.45074052559761,
+     "adj_p": 0.1459923510606535,
+     "n_overlap": 1,
+     "overlap": [
+      "ALDH1L1"
+     ]
+    },
+    {
+     "term": "Biosynthesis Of DHA-derived SPMs R-HSA-9018677",
+     "p": 0.046566525769346376,
+     "combined": 69.45074052559761,
+     "adj_p": 0.1459923510606535,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    }
+   ],
+   "MSigDB_Hallmark_2020": [
+    {
+     "term": "Estrogen Response Late",
+     "p": 0.002374631427088841,
+     "combined": 46.83494770645078,
+     "adj_p": 0.03561947140633262,
+     "n_overlap": 4,
+     "overlap": [
+      "CA12",
+      "CACNA2D2",
+      "CKB",
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "p": 0.009874227030656456,
+     "combined": 33.37146076092408,
+     "adj_p": 0.07405670272992342,
+     "n_overlap": 3,
+     "overlap": [
+      "ACSM3",
+      "ADH1C",
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Pperoxisome",
+     "p": 0.03438015926406667,
+     "combined": 24.282138481972,
+     "adj_p": 0.1475291922920899,
+     "n_overlap": 2,
+     "overlap": [
+      "EPHX2",
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Bile Acid Metabolism",
+     "p": 0.03934111794455731,
+     "combined": 21.606939548930715,
+     "adj_p": 0.1475291922920899,
+     "n_overlap": 2,
+     "overlap": [
+      "EPHX2",
+      "SULT1B1"
+     ]
+    },
+    {
+     "term": "Xenobiotic Metabolism",
+     "p": 0.10799756435943055,
+     "combined": 8.220654292796869,
+     "adj_p": 0.20249543317393226,
+     "n_overlap": 2,
+     "overlap": [
+      "ADH1C",
+      "ENTPD5"
+     ]
+    },
+    {
+     "term": "Hypoxia",
+     "p": 0.10799756435943055,
+     "combined": 8.220654292796869,
+     "adj_p": 0.20249543317393226,
+     "n_overlap": 2,
+     "overlap": [
+      "CA12",
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "heme Metabolism",
+     "p": 0.10799756435943055,
+     "combined": 8.220654292796869,
+     "adj_p": 0.20249543317393226,
+     "n_overlap": 2,
+     "overlap": [
+      "ALDH1L1",
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "KRAS Signaling Dn",
+     "p": 0.10799756435943055,
+     "combined": 8.220654292796869,
+     "adj_p": 0.20249543317393226,
+     "n_overlap": 2,
+     "overlap": [
+      "AKR1B10",
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Spermatogenesis",
+     "p": 0.31600522900333927,
+     "combined": 3.0964791075487264,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "ART3"
+     ]
+    },
+    {
+     "term": "Coagulation",
+     "p": 0.32177381987244924,
+     "combined": 2.9806614630909483,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Adipogenesis",
+     "p": 0.4308418497249187,
+     "combined": 1.5190105312629703,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "EPHX2"
+     ]
+    },
+    {
+     "term": "Estrogen Response Early",
+     "p": 0.4308418497249187,
+     "combined": 1.5190105312629703,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "CA12"
+     ]
+    },
+    {
+     "term": "Myogenesis",
+     "p": 0.4308418497249187,
+     "combined": 1.5190105312629703,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "CKB"
+     ]
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "p": 0.4308418497249187,
+     "combined": 1.5190105312629703,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Inflammatory Response",
+     "p": 0.4308418497249187,
+     "combined": 1.5190105312629703,
+     "adj_p": 0.4308418497249187,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    }
+   ],
+   "Human_Gene_Atlas": [
+    {
+     "term": "colon",
+     "p": 2.2662173982824844e-09,
+     "combined": 343.6640147768997,
+     "adj_p": 6.572030455019205e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ADH1C",
+      "CA12",
+      "CES3",
+      "CLCA1",
+      "CWH43",
+      "HSD11B2",
+      "LEFTY1",
+      "LRRC19",
+      "NAT2",
+      "RNF186"
+     ]
+    },
+    {
+     "term": "small intestine",
+     "p": 1.702772507756794e-07,
+     "combined": 241.77653481693534,
+     "adj_p": 2.4690201362473516e-06,
+     "n_overlap": 8,
+     "overlap": [
+      "ADH1C",
+      "AKR1B10",
+      "CYP3A5",
+      "DEFA5",
+      "DEFA6",
+      "OLFM4",
+      "PBLD",
+      "SI"
+     ]
+    },
+    {
+     "term": "Trachea",
+     "p": 0.0010814656903985842,
+     "combined": 111.3495332146077,
+     "adj_p": 0.007840626255389735,
+     "n_overlap": 3,
+     "overlap": [
+      "ATP12A",
+      "KIAA1324",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Liver",
+     "p": 5.016330455864024e-05,
+     "combined": 60.18893769775147,
+     "adj_p": 0.0004849119440668556,
+     "n_overlap": 9,
+     "overlap": [
+      "ADH1C",
+      "ALDH1L1",
+      "AMT",
+      "CES3",
+      "ENTPD5",
+      "EPHX2",
+      "FMO5",
+      "HMGCS2",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Prostate",
+     "p": 0.005188592516737998,
+     "combined": 32.540724352737115,
+     "adj_p": 0.03009383659708039,
+     "n_overlap": 4,
+     "overlap": [
+      "CWH43",
+      "FOXA1",
+      "HOXB13",
+      "KIAA1324"
+     ]
+    },
+    {
+     "term": "Fetalliver",
+     "p": 0.04862729346921953,
+     "combined": 17.89939174963254,
+     "adj_p": 0.20145593008676665,
+     "n_overlap": 2,
+     "overlap": [
+      "FMO5",
+      "PBLD"
+     ]
+    },
+    {
+     "term": "Kidney",
+     "p": 0.060104829915035865,
+     "combined": 14.730744752815419,
+     "adj_p": 0.217880008442005,
+     "n_overlap": 2,
+     "overlap": [
+      "CA12",
+      "PBLD"
+     ]
+    },
+    {
+     "term": "GlobusPallidus",
+     "p": 0.1526758411244444,
+     "combined": 11.716147287670386,
+     "adj_p": 0.48387917520745516,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Adrenalgland",
+     "p": 0.16685488800257076,
+     "combined": 10.112994282689028,
+     "adj_p": 0.48387917520745516,
+     "n_overlap": 1,
+     "overlap": [
+      "TBX3"
+     ]
+    },
+    {
+     "term": "pineal day",
+     "p": 0.04434867840839484,
+     "combined": 8.536422704202163,
+     "adj_p": 0.20145593008676665,
+     "n_overlap": 5,
+     "overlap": [
+      "CDHR1",
+      "CKB",
+      "PADI2",
+      "PLCE1",
+      "PPP1R9A"
+     ]
+    },
+    {
+     "term": "Pituitary",
+     "p": 0.21023521709648554,
+     "combined": 6.785058365980069,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 1,
+     "overlap": [
+      "KIAA1324"
+     ]
+    },
+    {
+     "term": "Pancreas",
+     "p": 0.23648206344495054,
+     "combined": 5.477499328550885,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Spinalcord",
+     "p": 0.2556031314183557,
+     "combined": 4.73152542260774,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 1,
+     "overlap": [
+      "PADI2"
+     ]
+    },
+    {
+     "term": "PancreaticIslet",
+     "p": 0.29244509067793895,
+     "combined": 3.631999990339842,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Leukemia chronicMyelogenousK-562",
+     "p": 0.29443850084097517,
+     "combined": 3.5823860798545817,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 1,
+     "overlap": [
+      "ACSM3"
+     ]
+    },
+    {
+     "term": "Placenta",
+     "p": 0.3139482071754545,
+     "combined": 2.0805790856484077,
+     "adj_p": 0.5355587063581283,
+     "n_overlap": 2,
+     "overlap": [
+      "HSD11B2",
+      "TBX3"
+     ]
+    },
+    {
+     "term": "pineal night",
+     "p": 0.2922137160506567,
+     "combined": 2.0001960432802757,
+     "adj_p": 0.5336697827742675,
+     "n_overlap": 3,
+     "overlap": [
+      "CDHR1",
+      "PLCE1",
+      "PPP1R9A"
+     ]
+    },
+    {
+     "term": "BDCA4+ DendriticCells",
+     "p": 0.4051734747561331,
+     "combined": 1.3201721037529508,
+     "adj_p": 0.6527794871071033,
+     "n_overlap": 2,
+     "overlap": [
+      "ATP8A1",
+      "DNASE1L3"
+     ]
+    },
+    {
+     "term": "Wholebrain",
+     "p": 0.49186096555219855,
+     "combined": 1.0636640466698348,
+     "adj_p": 0.7131984000506879,
+     "n_overlap": 1,
+     "overlap": [
+      "CRYM"
+     ]
+    },
+    {
+     "term": "CD71+ EarlyErythroid",
+     "p": 0.4610136512194164,
+     "combined": 1.009379284585315,
+     "adj_p": 0.7036524150191092,
+     "n_overlap": 2,
+     "overlap": [
+      "GALNT6",
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Lung",
+     "p": 0.5703095387460762,
+     "combined": 0.673137424835538,
+     "adj_p": 0.7435851607704168,
+     "n_overlap": 1,
+     "overlap": [
+      "CACNA2D2"
+     ]
+    },
+    {
+     "term": "Fetalbrain",
+     "p": 0.6009813594863425,
+     "combined": 0.5606248315412435,
+     "adj_p": 0.7435851607704168,
+     "n_overlap": 1,
+     "overlap": [
+      "KIAA0319"
+     ]
+    },
+    {
+     "term": "SmoothMuscle",
+     "p": 0.6419779388188334,
+     "combined": 0.43589998102069083,
+     "adj_p": 0.7435851607704168,
+     "n_overlap": 1,
+     "overlap": [
+      "CA12"
+     ]
+    },
+    {
+     "term": "CD105+ Endothelial",
+     "p": 0.6490650816741661,
+     "combined": 0.4168884589993768,
+     "adj_p": 0.7435851607704168,
+     "n_overlap": 1,
+     "overlap": [
+      "GALNT6"
+     ]
+    },
+    {
+     "term": "Testis",
+     "p": 0.6628284916941739,
+     "combined": 0.3818773427715982,
+     "adj_p": 0.7435851607704168,
+     "n_overlap": 1,
+     "overlap": [
+      "ART3"
+     ]
+    }
+   ],
+   "PanglaoDB_Augmented_2021": [
+    {
+     "term": "Serotonergic Neurons",
+     "p": 5.352197255694381e-15,
+     "combined": 1714.604446199424,
+     "adj_p": 4.388801749669392e-13,
+     "n_overlap": 11,
+     "overlap": [
+      "ACSM3",
+      "CLCA1",
+      "CYP3A5",
+      "FMO5",
+      "PBLD",
+      "RNF186",
+      "SI",
+      "SLC28A2",
+      "SPINK1",
+      "SULT1B1",
+      "UGT2B15"
+     ]
+    },
+    {
+     "term": "Foveolar Cells",
+     "p": 2.7897945286868655e-11,
+     "combined": 879.2765911527471,
+     "adj_p": 7.625438378410766e-10,
+     "n_overlap": 9,
+     "overlap": [
+      "ADH1C",
+      "AKR1B10",
+      "ARL14",
+      "DUOX2",
+      "FOXA1",
+      "HMGCS2",
+      "PIGR",
+      "RNF186",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Enterocytes",
+     "p": 3.255123537821517e-13,
+     "combined": 810.993006778841,
+     "adj_p": 1.3346006505068221e-11,
+     "n_overlap": 12,
+     "overlap": [
+      "ADH1C",
+      "ART3",
+      "CLCA1",
+      "DEFA5",
+      "DEFA6",
+      "EPHX2",
+      "HMGCS2",
+      "NAT2",
+      "RNF186",
+      "SI",
+      "SLC28A2",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Paneth Cells",
+     "p": 1.0510406603069957e-10,
+     "combined": 708.9912088328227,
+     "adj_p": 2.1546333536293412e-09,
+     "n_overlap": 9,
+     "overlap": [
+      "ADH1C",
+      "CLCA1",
+      "DEFA5",
+      "DEFA6",
+      "OLFM4",
+      "PIGR",
+      "RNF186",
+      "SI",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Goblet Cells",
+     "p": 1.690194276567109e-09,
+     "combined": 585.5770692405335,
+     "adj_p": 2.7719186135700586e-08,
+     "n_overlap": 8,
+     "overlap": [
+      "ADH1C",
+      "ARL14",
+      "CLCA1",
+      "DEFA5",
+      "HSD11B2",
+      "PIGR",
+      "RNF186",
+      "SI"
+     ]
+    },
+    {
+     "term": "Merkel Cells",
+     "p": 2.482830124852466e-08,
+     "combined": 477.2305330167393,
+     "adj_p": 3.3932011706317034e-07,
+     "n_overlap": 7,
+     "overlap": [
+      "ARL14",
+      "CLCA1",
+      "FOXA1",
+      "HSD11B2",
+      "NAT2",
+      "RNF186",
+      "SI"
+     ]
+    },
+    {
+     "term": "Acinar Cells",
+     "p": 5.3512682524118466e-08,
+     "combined": 405.33619540231825,
+     "adj_p": 6.268628524253877e-07,
+     "n_overlap": 7,
+     "overlap": [
+      "ADH1C",
+      "DUOX2",
+      "HMGCS2",
+      "OLFM4",
+      "PIGR",
+      "RNF186",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Airway Epithelial Cells",
+     "p": 0.00019834789688704868,
+     "combined": 131.45944804958364,
+     "adj_p": 0.0018071697271931102,
+     "n_overlap": 4,
+     "overlap": [
+      "ADH1C",
+      "CWH43",
+      "DUOX2",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Spermatozoa",
+     "p": 0.00023794237869751185,
+     "combined": 122.4368959135931,
+     "adj_p": 0.001951127505319597,
+     "n_overlap": 4,
+     "overlap": [
+      "ADH1C",
+      "ALDH1L1",
+      "FMO5",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Epithelial Cells",
+     "p": 3.226104365063212e-05,
+     "combined": 115.50647572934545,
+     "adj_p": 0.00033067569741897923,
+     "n_overlap": 6,
+     "overlap": [
+      "DUOX2",
+      "FMO5",
+      "FOXA1",
+      "PIGR",
+      "SELENBP1",
+      "SI"
+     ]
+    },
+    {
+     "term": "Ductal Cells",
+     "p": 0.0005104630636664153,
+     "combined": 90.26988590486584,
+     "adj_p": 0.0036916702833582056,
+     "n_overlap": 4,
+     "overlap": [
+      "ADH1C",
+      "AKR1B10",
+      "HMGCS2",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Cholangiocytes",
+     "p": 0.000540244431710957,
+     "combined": 88.20734228424465,
+     "adj_p": 0.0036916702833582056,
+     "n_overlap": 4,
+     "overlap": [
+      "ADH1C",
+      "DUOX2",
+      "HMGCS2",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Distal Tubule Cells",
+     "p": 0.0005872065938369257,
+     "combined": 85.24956144065452,
+     "adj_p": 0.0037039185149713772,
+     "n_overlap": 4,
+     "overlap": [
+      "ALDH1L1",
+      "CWH43",
+      "CYP3A5",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Enterochromaffin Cells",
+     "p": 0.0035387981499328046,
+     "combined": 59.78909191973158,
+     "adj_p": 0.018608158011348262,
+     "n_overlap": 3,
+     "overlap": [
+      "CLCA1",
+      "RNF186",
+      "SI"
+     ]
+    },
+    {
+     "term": "Gastric Chief Cells",
+     "p": 0.0035387981499328046,
+     "combined": 59.78909191973158,
+     "adj_p": 0.018608158011348262,
+     "n_overlap": 3,
+     "overlap": [
+      "HMGCS2",
+      "HSD11B2",
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Follicular Cells",
+     "p": 0.0036308600997752706,
+     "combined": 58.95782071691646,
+     "adj_p": 0.018608158011348262,
+     "n_overlap": 3,
+     "overlap": [
+      "CYP3A5",
+      "FMO5",
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Airway Goblet Cells",
+     "p": 0.004420324064535159,
+     "combined": 52.9140746325403,
+     "adj_p": 0.02132156313481665,
+     "n_overlap": 3,
+     "overlap": [
+      "DUOX2",
+      "GALNT6",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Sertoli Cells",
+     "p": 0.009874227030656456,
+     "combined": 33.37146076092408,
+     "adj_p": 0.04498258980632385,
+     "n_overlap": 3,
+     "overlap": [
+      "PADI2",
+      "SELENBP1",
+      "TBX3"
+     ]
+    },
+    {
+     "term": "Ionocytes",
+     "p": 0.03620982538119779,
+     "combined": 23.22195032203271,
+     "adj_p": 0.1448250433982045,
+     "n_overlap": 2,
+     "overlap": [
+      "ATP12A",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Crypt Cells",
+     "p": 0.038076484605837825,
+     "combined": 22.231546574423238,
+     "adj_p": 0.1448250433982045,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PPP1R9A"
+     ]
+    },
+    {
+     "term": "Clara Cells",
+     "p": 0.0399794130234733,
+     "combined": 21.304696162805552,
+     "adj_p": 0.1448250433982045,
+     "n_overlap": 2,
+     "overlap": [
+      "DUOX2",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Hepatoblasts",
+     "p": 0.040621658514130535,
+     "combined": 21.00889471539754,
+     "adj_p": 0.1448250433982045,
+     "n_overlap": 2,
+     "overlap": [
+      "FOXA1",
+      "HMGCS2"
+     ]
+    },
+    {
+     "term": "Intercalated Cells",
+     "p": 0.043229621393427294,
+     "combined": 19.886428901600805,
+     "adj_p": 0.14770120642754325,
+     "n_overlap": 2,
+     "overlap": [
+      "ALDH1L1",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Tanycytes",
+     "p": 0.045225797851912185,
+     "combined": 19.10362178319555,
+     "adj_p": 0.14834061695427195,
+     "n_overlap": 2,
+     "overlap": [
+      "CACNA2D2",
+      "CRYM"
+     ]
+    },
+    {
+     "term": "Hepatocytes",
+     "p": 0.02402484490275848,
+     "combined": 19.097718772323073,
+     "adj_p": 0.10368617273822081,
+     "n_overlap": 3,
+     "overlap": [
+      "ENTPD5",
+      "FOXA1",
+      "HMGCS2"
+     ]
+    }
+   ],
+   "Tabula_Sapiens": [
+    {
+     "term": "Small Intestine-mature Enterocyte",
+     "p": 0.00017701179211161472,
+     "combined": 137.39800592224685,
+     "adj_p": 0.004336788906734561,
+     "n_overlap": 4,
+     "overlap": [
+      "CYP3A5",
+      "DEFA5",
+      "DEFA6",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Small Intestine-small Intestine Goblet Cell",
+     "p": 0.00017701179211161472,
+     "combined": 137.39800592224685,
+     "adj_p": 0.004336788906734561,
+     "n_overlap": 4,
+     "overlap": [
+      "CLCA1",
+      "DEFA5",
+      "DEFA6",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Small Intestine-goblet Cell",
+     "p": 0.0027744926921681934,
+     "combined": 68.1842009003188,
+     "adj_p": 0.022658356986040244,
+     "n_overlap": 3,
+     "overlap": [
+      "CLCA1",
+      "DEFA5",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Large Intestine-large Intestine Goblet Cell",
+     "p": 0.0027744926921681934,
+     "combined": 68.1842009003188,
+     "adj_p": 0.022658356986040244,
+     "n_overlap": 3,
+     "overlap": [
+      "CLCA1",
+      "PIGR",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Small Intestine-enterocyte Of Epithelium Of Small Intestine",
+     "p": 0.0027744926921681934,
+     "combined": 68.1842009003188,
+     "adj_p": 0.022658356986040244,
+     "n_overlap": 3,
+     "overlap": [
+      "CYP3A5",
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Small Intestine-intestinal Crypt Stem Cell Of Small Intestine",
+     "p": 0.0027744926921681934,
+     "combined": 68.1842009003188,
+     "adj_p": 0.022658356986040244,
+     "n_overlap": 3,
+     "overlap": [
+      "OLFM4",
+      "PIGR",
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Small Intestine-immature Enterocyte",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Small Intestine-intestinal Crypt Stem Cell",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Small Intestine-transit Amplifying Cell Of Small Intestine",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Prostate-club Cell Of Prostate Epithelium",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Prostate-hillock-club Cell Of Prostate Epithelium",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "OLFM4",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Large Intestine-goblet Cell",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "CLCA1",
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Large Intestine-mature Enterocyte",
+     "p": 0.03199941777272016,
+     "combined": 25.81658262777106,
+     "adj_p": 0.12061319006640676,
+     "n_overlap": 2,
+     "overlap": [
+      "PIGR",
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Lung-respiratory Mucous Cell",
+     "p": 0.24290874569606433,
+     "combined": 5.210290922491977,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Lymph Node-erythrocyte",
+     "p": 0.24290874569606433,
+     "combined": 5.210290922491977,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Bladder-bladder Urothelial Cell",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Eye-erythroid Lineage Cell",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Eye-lacrimal Gland Functional Unit Cell",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Small Intestine-duodenum Glandular Cell",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "PIGR"
+     ]
+    },
+    {
+     "term": "Blood-erythrocyte",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SELENBP1"
+     ]
+    },
+    {
+     "term": "Liver-endothelial Cell Of Hepatic Sinusoid",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "DNASE1L3"
+     ]
+    },
+    {
+     "term": "Small Intestine-intestinal Enteroendocrine Cell",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Liver-hepatocyte",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "CYP3A5"
+     ]
+    },
+    {
+     "term": "Liver-intrahepatic Cholangiocyte",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Small Intestine-paneth Cell Of Epithelium Of Small Intestine",
+     "p": 0.24503914356804327,
+     "combined": 5.125576482532065,
+     "adj_p": 0.24503914356804327,
+     "n_overlap": 1,
+     "overlap": [
+      "PIGR"
+     ]
+    }
+   ],
+   "Jensen_TISSUES": [
+    {
+     "term": "Crypt",
+     "p": 0.0004991438321826876,
+     "combined": 561.2983429060394,
+     "adj_p": 0.08482562414802947,
+     "n_overlap": 2,
+     "overlap": [
+      "DEFA5",
+      "OLFM4"
+     ]
+    },
+    {
+     "term": "Epicotyl",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP8A1"
+     ]
+    },
+    {
+     "term": "Nasopharyngeal carcinoma cell",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ARHGAP44"
+     ]
+    },
+    {
+     "term": "Gastroduodenal mucosa",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP12A"
+     ]
+    },
+    {
+     "term": "Harderian gland",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "AMT"
+     ]
+    },
+    {
+     "term": "Bundle sheath cell",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "AMT"
+     ]
+    },
+    {
+     "term": "Stipule",
+     "p": 0.013923079575958213,
+     "combined": 387.3986174905012,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "SI"
+     ]
+    },
+    {
+     "term": "Endocervix",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "DEFA5"
+     ]
+    },
+    {
+     "term": "Hi-5 cell",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ALDH1L1"
+     ]
+    },
+    {
+     "term": "Intestinal epithelium",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "DEFA5"
+     ]
+    },
+    {
+     "term": "Shoot",
+     "p": 0.016684771898756546,
+     "combined": 296.7835926147705,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP12A"
+     ]
+    },
+    {
+     "term": "Ciliary epithelium",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "BEST2"
+     ]
+    },
+    {
+     "term": "Plant candle",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "DNASE1L3"
+     ]
+    },
+    {
+     "term": "Intestinal mucosa",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "DEFA5"
+     ]
+    },
+    {
+     "term": "M5076 cell",
+     "p": 0.019438868522823557,
+     "combined": 238.07667848957996,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC28A2"
+     ]
+    },
+    {
+     "term": "Citrullinemia",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "Digestive cell",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "SPINK1"
+     ]
+    },
+    {
+     "term": "fh4",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ALDH1L1"
+     ]
+    },
+    {
+     "term": "n18",
+     "p": 0.022185389719098877,
+     "combined": 197.21169430337935,
+     "adj_p": 0.16860896186515145,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP8A1"
+     ]
+    },
+    {
+     "term": "Barrett's esophagus",
+     "p": 0.0025840054228735494,
+     "combined": 175.83060786137105,
+     "adj_p": 0.14373997862362636,
+     "n_overlap": 2,
+     "overlap": [
+      "ATP12A",
+      "DEFA5"
+     ]
+    },
+    {
+     "term": "Bone marrow-derived macrophage",
+     "p": 0.024924355773343985,
+     "combined": 167.27707721282206,
+     "adj_p": 0.1775860348850759,
+     "n_overlap": 1,
+     "overlap": [
+      "TNFRSF11A"
+     ]
+    },
+    {
+     "term": "Hypopharynx",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.17998606910264578,
+     "n_overlap": 1,
+     "overlap": [
+      "ATP12A"
+     ]
+    },
+    {
+     "term": "Anterior visceral endoderm",
+     "p": 0.027655786962103315,
+     "combined": 144.49533489369063,
+     "adj_p": 0.17998606910264578,
+     "n_overlap": 1,
+     "overlap": [
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Myoepithelial cell",
+     "p": 0.03037970354233477,
+     "combined": 126.63456015986765,
+     "adj_p": 0.17998606910264578,
+     "n_overlap": 1,
+     "overlap": [
+      "HSD11B2"
+     ]
+    },
+    {
+     "term": "Frt",
+     "p": 0.03037970354233477,
+     "combined": 126.63456015986765,
+     "adj_p": 0.17998606910264578,
+     "n_overlap": 1,
+     "overlap": [
+      "CLCA1"
+     ]
+    }
+   ]
+  }
+ },
+ "间质层": {
+  "n": 156,
+  "uid": 139957372,
+  "libs": {
+   "GO_Biological_Process_2023": [
+    {
+     "term": "Collagen Fibril Organization (GO:0030199)",
+     "p": 1.5813677728423726e-14,
+     "combined": 1540.7722158865854,
+     "adj_p": 5.250141005836677e-12,
+     "n_overlap": 11,
+     "overlap": [
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL5A1",
+      "COL5A2",
+      "DDR2",
+      "GREM1",
+      "LOX",
+      "LOXL1",
+      "LUM"
+     ]
+    },
+    {
+     "term": "Extracellular Matrix Organization (GO:0030198)",
+     "p": 1.905137518642835e-20,
+     "combined": 953.1628331945898,
+     "adj_p": 2.5300226247576846e-17,
+     "n_overlap": 22,
+     "overlap": [
+      "ADAMTS1",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "CTSK",
+      "DDR2",
+      "GREM1",
+      "LOX",
+      "LOXL1",
+      "LUM",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "POSTN"
+     ]
+    },
+    {
+     "term": "Extracellular Structure Organization (GO:0043062)",
+     "p": 2.7435081850040403e-16,
+     "combined": 869.7023430498218,
+     "adj_p": 1.4117924419284503e-13,
+     "n_overlap": 16,
+     "overlap": [
+      "ADAMTS1",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "POSTN"
+     ]
+    },
+    {
+     "term": "External Encapsulating Structure Organization (GO:0045229)",
+     "p": 3.1892901549588484e-16,
+     "combined": 856.7913332243966,
+     "adj_p": 1.4117924419284503e-13,
+     "n_overlap": 16,
+     "overlap": [
+      "ADAMTS1",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "POSTN"
+     ]
+    },
+    {
+     "term": "Eye Morphogenesis (GO:0048592)",
+     "p": 2.881953119780083e-07,
+     "combined": 706.3207467833777,
+     "adj_p": 4.784042178834938e-05,
+     "n_overlap": 5,
+     "overlap": [
+      "COL5A1",
+      "COL5A2",
+      "EFEMP1",
+      "FBN1",
+      "MFAP2"
+     ]
+    },
+    {
+     "term": "Embryonic Eye Morphogenesis (GO:0048048)",
+     "p": 3.777693906090379e-05,
+     "combined": 660.2171793686081,
+     "adj_p": 0.0020067110029152093,
+     "n_overlap": 3,
+     "overlap": [
+      "EFEMP1",
+      "FBN1",
+      "MFAP2"
+     ]
+    },
+    {
+     "term": "Negative Regulation Of Monocyte Chemotaxis (GO:0090027)",
+     "p": 0.0005952569504185748,
+     "combined": 637.8767604238993,
+     "adj_p": 0.011798525823221901,
+     "n_overlap": 2,
+     "overlap": [
+      "DUSP1",
+      "GREM1"
+     ]
+    },
+    {
+     "term": "Endoderm Formation (GO:0001706)",
+     "p": 8.588628594611491e-09,
+     "combined": 617.5153274778909,
+     "adj_p": 1.9009497956073436e-06,
+     "n_overlap": 7,
+     "overlap": [
+      "COL4A2",
+      "DUSP1",
+      "DUSP5",
+      "FN1",
+      "INHBA",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Cellular Response To UV-A (GO:0071492)",
+     "p": 5.3658192727452e-05,
+     "combined": 546.3719020165803,
+     "adj_p": 0.002464564185294784,
+     "n_overlap": 3,
+     "overlap": [
+      "MMP1",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Endodermal Cell Differentiation (GO:0035987)",
+     "p": 1.2813259626423385e-07,
+     "combined": 503.250396450468,
+     "adj_p": 2.430858397698608e-05,
+     "n_overlap": 6,
+     "overlap": [
+      "COL11A1",
+      "COL4A2",
+      "FN1",
+      "INHBA",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Negative Regulation Of Fibrinolysis (GO:0051918)",
+     "p": 7.335787267371665e-05,
+     "combined": 462.8478142602716,
+     "adj_p": 0.003044351715959241,
+     "n_overlap": 3,
+     "overlap": [
+      "PLAU",
+      "SERPINE1",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Negative Regulation Of Plasminogen Activation (GO:0010757)",
+     "p": 0.0008883122339049933,
+     "combined": 452.59595869610916,
+     "adj_p": 0.01552208745560304,
+     "n_overlap": 2,
+     "overlap": [
+      "PLAU",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Negative Regulation Of Coagulation (GO:0050819)",
+     "p": 9.725102178906713e-05,
+     "combined": 399.2156773148474,
+     "adj_p": 0.0036899816267394613,
+     "n_overlap": 3,
+     "overlap": [
+      "PROCR",
+      "SERPINE1",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Regulation Of Smooth Muscle Cell Migration (GO:0014910)",
+     "p": 1.2599666166993678e-05,
+     "combined": 392.4694914034061,
+     "adj_p": 0.0011154904446511735,
+     "n_overlap": 4,
+     "overlap": [
+      "IGFBP3",
+      "PDGFRB",
+      "PLAU",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Response To UV-A (GO:0070141)",
+     "p": 0.00012570338818179694,
+     "combined": 349.29562073215567,
+     "adj_p": 0.0045117324190655774,
+     "n_overlap": 3,
+     "overlap": [
+      "MMP1",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Positive Regulation Of Apoptotic Cell Clearance (GO:2000427)",
+     "p": 0.0012372706273500286,
+     "combined": 344.98461872764625,
+     "adj_p": 0.01979633003760046,
+     "n_overlap": 2,
+     "overlap": [
+      "C3",
+      "CCL2"
+     ]
+    },
+    {
+     "term": "Positive Regulation Of Extracellular Matrix Disassembly (GO:0090091)",
+     "p": 0.0012372706273500286,
+     "combined": 344.98461872764625,
+     "adj_p": 0.01979633003760046,
+     "n_overlap": 2,
+     "overlap": [
+      "DDR2",
+      "IL6"
+     ]
+    },
+    {
+     "term": "Regulation Of Apoptotic Cell Clearance (GO:2000425)",
+     "p": 0.0012372706273500286,
+     "combined": 344.98461872764625,
+     "adj_p": 0.01979633003760046,
+     "n_overlap": 2,
+     "overlap": [
+      "C3",
+      "CCL2"
+     ]
+    },
+    {
+     "term": "Blood Coagulation, Fibrin Clot Formation (GO:0072378)",
+     "p": 0.00015907156995412518,
+     "combined": 309.20235030853047,
+     "adj_p": 0.00541659089484816,
+     "n_overlap": 3,
+     "overlap": [
+      "FBLN1",
+      "FLNA",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Protein Activation Cascade (GO:0072376)",
+     "p": 0.00015907156995412518,
+     "combined": 309.20235030853047,
+     "adj_p": 0.00541659089484816,
+     "n_overlap": 3,
+     "overlap": [
+      "FBLN1",
+      "FLNA",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Negative Regulation Of Protein Processing (GO:0010955)",
+     "p": 0.00019770315814565995,
+     "combined": 276.3758955918875,
+     "adj_p": 0.006403653512620401,
+     "n_overlap": 3,
+     "overlap": [
+      "GAS1",
+      "PLAU",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Dehydroascorbic Acid Transport (GO:0070837)",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.022341844223217375,
+     "n_overlap": 2,
+     "overlap": [
+      "SLC2A14",
+      "SLC2A3"
+     ]
+    },
+    {
+     "term": "Skin Morphogenesis (GO:0043589)",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.022341844223217375,
+     "n_overlap": 2,
+     "overlap": [
+      "COL1A1",
+      "COL1A2"
+     ]
+    },
+    {
+     "term": "Positive Regulation Of Membrane Invagination (GO:1905155)",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.022341844223217375,
+     "n_overlap": 2,
+     "overlap": [
+      "C3",
+      "RAB31"
+     ]
+    },
+    {
+     "term": "Integrin Activation (GO:0033622)",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.022341844223217375,
+     "n_overlap": 2,
+     "overlap": [
+      "FERMT2",
+      "FN1"
+     ]
+    }
+   ],
+   "GO_Cellular_Component_2023": [
+    {
+     "term": "Collagen-Containing Extracellular Matrix (GO:0062023)",
+     "p": 5.819737175179091e-41,
+     "combined": 2234.741211811095,
+     "adj_p": 6.34351352094521e-39,
+     "n_overlap": 45,
+     "overlap": [
+      "ADAMTS1",
+      "AEBP1",
+      "ASPN",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "DCN",
+      "EFEMP1",
+      "FBLN1",
+      "FBLN2",
+      "FBN1",
+      "FN1",
+      "GREM1",
+      "HTRA1"
+     ]
+    },
+    {
+     "term": "Endoplasmic Reticulum Lumen (GO:0005788)",
+     "p": 6.073481279746227e-23,
+     "combined": 856.2305896034646,
+     "adj_p": 3.3100472974616934e-21,
+     "n_overlap": 28,
+     "overlap": [
+      "C3",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "IGFBP3",
+      "IGFBP7",
+      "IL6",
+      "LGALS1",
+      "MXRA8",
+      "PTGS2",
+      "SDC2",
+      "SERPING1"
+     ]
+    },
+    {
+     "term": "Serine Protease Inhibitor Complex (GO:0097180)",
+     "p": 0.0005952569504185748,
+     "combined": 637.8767604238993,
+     "adj_p": 0.005406917299635388,
+     "n_overlap": 2,
+     "overlap": [
+      "PLAU",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Perisynaptic Extracellular Matrix (GO:0098966)",
+     "p": 0.002099392299803221,
+     "combined": 226.93334256833475,
+     "adj_p": 0.01525558404523674,
+     "n_overlap": 2,
+     "overlap": [
+      "TNC",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Intracellular Organelle Lumen (GO:0070013)",
+     "p": 2.7369317281977216e-15,
+     "combined": 216.2529857768045,
+     "adj_p": 9.944185279118389e-14,
+     "n_overlap": 34,
+     "overlap": [
+      "C3",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "IGFBP3",
+      "IGFBP7",
+      "IL6",
+      "LGALS1",
+      "LUM",
+      "MMP11",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Serine-Type Endopeptidase Complex (GO:1905370)",
+     "p": 0.002610828604653701,
+     "combined": 191.53614663562257,
+     "adj_p": 0.017786269869203338,
+     "n_overlap": 2,
+     "overlap": [
+      "PLAU",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Basement Membrane (GO:0005604)",
+     "p": 2.8669656399198395e-05,
+     "combined": 167.2854708590361,
+     "adj_p": 0.00039062406843907814,
+     "n_overlap": 5,
+     "overlap": [
+      "COL15A1",
+      "COL4A1",
+      "COL4A2",
+      "FBN1",
+      "TNC"
+     ]
+    },
+    {
+     "term": "Microfibril (GO:0001527)",
+     "p": 0.0031747138731931905,
+     "combined": 164.64875419279534,
+     "adj_p": 0.020355518363415162,
+     "n_overlap": 2,
+     "overlap": [
+      "FBN1",
+      "MFAP2"
+     ]
+    },
+    {
+     "term": "Platelet Alpha Granule Lumen (GO:0031093)",
+     "p": 1.2628183371737247e-05,
+     "combined": 148.77013344125461,
+     "adj_p": 0.00021642773392459416,
+     "n_overlap": 6,
+     "overlap": [
+      "FN1",
+      "ISLR",
+      "SERPINE1",
+      "SERPING1",
+      "SPARC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Serine-Type Peptidase Complex (GO:1905286)",
+     "p": 0.003790209421286504,
+     "combined": 143.61191514014556,
+     "adj_p": 0.022951823717790497,
+     "n_overlap": 2,
+     "overlap": [
+      "PLAU",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Supramolecular Fiber (GO:0099512)",
+     "p": 0.0001727147952250968,
+     "combined": 141.15836412282667,
+     "adj_p": 0.00209176807550395,
+     "n_overlap": 4,
+     "overlap": [
+      "FBLN1",
+      "FBN1",
+      "MFAP2",
+      "MYH10"
+     ]
+    },
+    {
+     "term": "Platelet Alpha Granule (GO:0031091)",
+     "p": 6.189340245458401e-06,
+     "combined": 135.78291702487013,
+     "adj_p": 0.00016865952168874143,
+     "n_overlap": 7,
+     "overlap": [
+      "FN1",
+      "ISLR",
+      "SERPINE1",
+      "SERPING1",
+      "SPARC",
+      "THBS2",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Endopeptidase Complex (GO:1905369)",
+     "p": 0.005172725227483539,
+     "combined": 112.98993547505206,
+     "adj_p": 0.029675107883984513,
+     "n_overlap": 2,
+     "overlap": [
+      "PLAU",
+      "THBD"
+     ]
+    },
+    {
+     "term": "Extrinsic Component Of Endosome Membrane (GO:0031313)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.17252908780456508,
+     "n_overlap": 1,
+     "overlap": [
+      "SNX10"
+     ]
+    },
+    {
+     "term": "Lysosomal Lumen (GO:0043202)",
+     "p": 0.0005671349259514207,
+     "combined": 60.390283665174486,
+     "adj_p": 0.005406917299635388,
+     "n_overlap": 5,
+     "overlap": [
+      "CTSK",
+      "DCN",
+      "LUM",
+      "SDC2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Focal Adhesion (GO:0005925)",
+     "p": 1.1190747063884241e-05,
+     "combined": 53.953874862957235,
+     "adj_p": 0.00021642773392459416,
+     "n_overlap": 13,
+     "overlap": [
+      "AKAP12",
+      "CNN1",
+      "CSRP2",
+      "DDR2",
+      "FERMT2",
+      "FLNA",
+      "MCAM",
+      "PDGFRB",
+      "PLAU",
+      "PROCR",
+      "THY1",
+      "TNC",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Cell-Substrate Junction (GO:0030055)",
+     "p": 1.3899028784148249e-05,
+     "combined": 51.79843069057745,
+     "adj_p": 0.00021642773392459416,
+     "n_overlap": 13,
+     "overlap": [
+      "AKAP12",
+      "CNN1",
+      "CSRP2",
+      "DDR2",
+      "FERMT2",
+      "FLNA",
+      "MCAM",
+      "PDGFRB",
+      "PLAU",
+      "PROCR",
+      "THY1",
+      "TNC",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Perineuronal Net (GO:0072534)",
+     "p": 0.06073287883778701,
+     "combined": 51.21547862254709,
+     "adj_p": 0.21494076771828988,
+     "n_overlap": 1,
+     "overlap": [
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Golgi Lumen (GO:0005796)",
+     "p": 0.0011236344926704388,
+     "combined": 46.747698647281894,
+     "adj_p": 0.009421243053929064,
+     "n_overlap": 5,
+     "overlap": [
+      "DCN",
+      "LUM",
+      "MMP11",
+      "SDC2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Secretory Granule Lumen (GO:0034774)",
+     "p": 0.0001930179271561421,
+     "combined": 37.4033462333885,
+     "adj_p": 0.002103895406001949,
+     "n_overlap": 10,
+     "overlap": [
+      "C3",
+      "CHI3L1",
+      "FN1",
+      "GRP",
+      "ISLR",
+      "S100A9",
+      "SERPINE1",
+      "SERPING1",
+      "SPARC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Extracellular Membrane-Bounded Organelle (GO:0065010)",
+     "p": 0.010012218853441106,
+     "combined": 33.08356994589462,
+     "adj_p": 0.05456659275125403,
+     "n_overlap": 3,
+     "overlap": [
+      "COL6A2",
+      "COL6A3",
+      "FBLN2"
+     ]
+    },
+    {
+     "term": "Vacuolar Lumen (GO:0005775)",
+     "p": 0.0016689485983119622,
+     "combined": 32.49605394784214,
+     "adj_p": 0.012993956944000276,
+     "n_overlap": 6,
+     "overlap": [
+      "C3",
+      "CTSK",
+      "DCN",
+      "LUM",
+      "SDC2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Early Phagosome (GO:0032009)",
+     "p": 0.08255043847948365,
+     "combined": 31.917970668797693,
+     "adj_p": 0.2646469939489329,
+     "n_overlap": 1,
+     "overlap": [
+      "RAB31"
+     ]
+    },
+    {
+     "term": "Extracellular Vesicle (GO:1903561)",
+     "p": 0.011512967603305087,
+     "combined": 30.386905165363267,
+     "adj_p": 0.05975778422667879,
+     "n_overlap": 3,
+     "overlap": [
+      "COL6A2",
+      "COL6A3",
+      "FBLN2"
+     ]
+    },
+    {
+     "term": "Aggresome (GO:0016235)",
+     "p": 0.030401420170137482,
+     "combined": 27.235376562442703,
+     "adj_p": 0.13807311660604107,
+     "n_overlap": 2,
+     "overlap": [
+      "SLC2A14",
+      "SLC2A3"
+     ]
+    }
+   ],
+   "GO_Molecular_Function_2023": [
+    {
+     "term": "Platelet-Derived Growth Factor Binding (GO:0048407)",
+     "p": 6.609992888874733e-09,
+     "combined": 2474.578021014898,
+     "adj_p": 1.1765787342197024e-06,
+     "n_overlap": 5,
+     "overlap": [
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL5A1",
+      "PDGFRB"
+     ]
+    },
+    {
+     "term": "Dehydroascorbic Acid Transmembrane Transporter Activity (GO:0033300)",
+     "p": 0.0012372706273500286,
+     "combined": 344.98461872764625,
+     "adj_p": 0.020021288333482285,
+     "n_overlap": 2,
+     "overlap": [
+      "SLC2A14",
+      "SLC2A3"
+     ]
+    },
+    {
+     "term": "Chemokine Activity (GO:0008009)",
+     "p": 2.8669656399198395e-05,
+     "combined": 167.2854708590361,
+     "adj_p": 0.001020639767811463,
+     "n_overlap": 5,
+     "overlap": [
+      "CCL18",
+      "CCL2",
+      "CCL8",
+      "CXCL5",
+      "CXCL8"
+     ]
+    },
+    {
+     "term": "D-glucose Transmembrane Transporter Activity (GO:0055056)",
+     "p": 0.0031747138731931905,
+     "combined": 164.64875419279534,
+     "adj_p": 0.03767327129522586,
+     "n_overlap": 2,
+     "overlap": [
+      "SLC2A14",
+      "SLC2A3"
+     ]
+    },
+    {
+     "term": "Toll-like Receptor Binding (GO:0035325)",
+     "p": 0.0031747138731931905,
+     "combined": 164.64875419279534,
+     "adj_p": 0.03767327129522586,
+     "n_overlap": 2,
+     "overlap": [
+      "S100A9",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Chemokine Receptor Binding (GO:0042379)",
+     "p": 4.321620497551292e-05,
+     "combined": 146.4061751721667,
+     "adj_p": 0.0012613164774748992,
+     "n_overlap": 5,
+     "overlap": [
+      "CCL18",
+      "CCL2",
+      "CCL8",
+      "CXCL5",
+      "CXCL8"
+     ]
+    },
+    {
+     "term": "arachidonate-CoA Ligase Activity (GO:0047676)",
+     "p": 0.038399898051902255,
+     "combined": 104.31041517729149,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "ACSL4"
+     ]
+    },
+    {
+     "term": "Keratin Filament Binding (GO:1990254)",
+     "p": 0.038399898051902255,
+     "combined": 104.31041517729149,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "VIM"
+     ]
+    },
+    {
+     "term": "Double-Stranded Methylated DNA Binding (GO:0010385)",
+     "p": 0.038399898051902255,
+     "combined": 104.31041517729149,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "EGR1"
+     ]
+    },
+    {
+     "term": "Acetylcholine Receptor Inhibitor Activity (GO:0030550)",
+     "p": 0.038399898051902255,
+     "combined": 104.31041517729149,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "LY6E"
+     ]
+    },
+    {
+     "term": "Hexose Transmembrane Transporter Activity (GO:0015149)",
+     "p": 0.006751859622178829,
+     "combined": 91.93793776071972,
+     "adj_p": 0.06209860899866398,
+     "n_overlap": 2,
+     "overlap": [
+      "SLC2A14",
+      "SLC2A3"
+     ]
+    },
+    {
+     "term": "CXCR Chemokine Receptor Binding (GO:0045236)",
+     "p": 0.006751859622178829,
+     "combined": 91.93793776071972,
+     "adj_p": 0.06209860899866398,
+     "n_overlap": 2,
+     "overlap": [
+      "CXCL5",
+      "CXCL8"
+     ]
+    },
+    {
+     "term": "Serine-Type Peptidase Activity (GO:0008236)",
+     "p": 1.587032161209786e-05,
+     "combined": 87.8646179243609,
+     "adj_p": 0.0008000726207499865,
+     "n_overlap": 8,
+     "overlap": [
+      "C1S",
+      "CTSK",
+      "HTRA1",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "PLAU"
+     ]
+    },
+    {
+     "term": "Arachidonic Acid Binding (GO:0050544)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "S100A9"
+     ]
+    },
+    {
+     "term": "Icosatetraenoic Acid Binding (GO:0050543)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "S100A9"
+     ]
+    },
+    {
+     "term": "Insulin-Like Growth Factor II Binding (GO:0031995)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "IGFBP3"
+     ]
+    },
+    {
+     "term": "Interleukin-6 Receptor Binding (GO:0005138)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "IL6"
+     ]
+    },
+    {
+     "term": "NAD(P)H Oxidase H2O2-forming Activity (GO:0016174)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "NOX4"
+     ]
+    },
+    {
+     "term": "Morphogen Activity (GO:0016015)",
+     "p": 0.0459022343700219,
+     "combined": 78.87580619532028,
+     "adj_p": 0.2095025055862538,
+     "n_overlap": 1,
+     "overlap": [
+      "GREM1"
+     ]
+    },
+    {
+     "term": "Protease Binding (GO:0002020)",
+     "p": 5.6688381010107826e-05,
+     "combined": 76.792042374268,
+     "adj_p": 0.0012613164774748992,
+     "n_overlap": 7,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COMP",
+      "FN1",
+      "SERPINE1",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Serine-Type Endopeptidase Activity (GO:0004252)",
+     "p": 5.6688381010107826e-05,
+     "combined": 76.792042374268,
+     "adj_p": 0.0012613164774748992,
+     "n_overlap": 7,
+     "overlap": [
+      "C1S",
+      "CTSK",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "PLAU"
+     ]
+    },
+    {
+     "term": "Fructose Transmembrane Transporter Activity (GO:0005353)",
+     "p": 0.05334641212217211,
+     "combined": 62.52059939552601,
+     "adj_p": 0.21196965555149191,
+     "n_overlap": 1,
+     "overlap": [
+      "SLC2A3"
+     ]
+    },
+    {
+     "term": "Oxidoreductase Activity, Acting On Paired Donors, With Oxidation Of A Pair Of Donors Resulting In The Reduction Of Molecular Oxygen To Two Molecules Of Water (GO:0016717)",
+     "p": 0.05334641212217211,
+     "combined": 62.52059939552601,
+     "adj_p": 0.21196965555149191,
+     "n_overlap": 1,
+     "overlap": [
+      "FADS3"
+     ]
+    },
+    {
+     "term": "Icosanoid Binding (GO:0050542)",
+     "p": 0.05334641212217211,
+     "combined": 62.52059939552601,
+     "adj_p": 0.21196965555149191,
+     "n_overlap": 1,
+     "overlap": [
+      "S100A9"
+     ]
+    },
+    {
+     "term": "G Protein-Coupled Glutamate Receptor Binding (GO:0035256)",
+     "p": 0.05334641212217211,
+     "combined": 62.52059939552601,
+     "adj_p": 0.21196965555149191,
+     "n_overlap": 1,
+     "overlap": [
+      "HOMER1"
+     ]
+    }
+   ],
+   "KEGG_2021_Human": [
+    {
+     "term": "AGE-RAGE signaling pathway in diabetic complications",
+     "p": 4.233929284287113e-14,
+     "combined": 697.4885475469462,
+     "adj_p": 6.3085546335877985e-12,
+     "n_overlap": 14,
+     "overlap": [
+      "CCL2",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "CXCL8",
+      "EGR1",
+      "FN1",
+      "IL6",
+      "MMP2",
+      "NOX4",
+      "SERPINE1",
+      "THBD"
+     ]
+    },
+    {
+     "term": "ECM-receptor interaction",
+     "p": 4.076239177382549e-12,
+     "combined": 568.4567216120219,
+     "adj_p": 2.2802506691241808e-10,
+     "n_overlap": 12,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "FN1",
+      "SPP1",
+      "THBS2",
+      "TNC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Protein digestion and absorption",
+     "p": 2.7460117787612946e-11,
+     "combined": 439.8892964983443,
+     "adj_p": 1.0228893875885823e-09,
+     "n_overlap": 12,
+     "overlap": [
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3"
+     ]
+    },
+    {
+     "term": "Malaria",
+     "p": 1.1567827804424972e-07,
+     "combined": 345.5429667555515,
+     "adj_p": 2.154507928574151e-06,
+     "n_overlap": 7,
+     "overlap": [
+      "CCL2",
+      "COMP",
+      "CXCL8",
+      "IL6",
+      "SDC2",
+      "THBS2",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Focal adhesion",
+     "p": 4.59110872978023e-12,
+     "combined": 317.0567033830691,
+     "adj_p": 2.2802506691241808e-10,
+     "n_overlap": 16,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "FLNA",
+      "FN1",
+      "MYL9",
+      "MYLK",
+      "PDGFRB",
+      "SPP1",
+      "THBS2",
+      "TNC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Complement and coagulation cascades",
+     "p": 2.1043759558531228e-08,
+     "combined": 281.49751614656327,
+     "adj_p": 5.225866957035254e-07,
+     "n_overlap": 9,
+     "overlap": [
+      "C1S",
+      "C3",
+      "C5AR1",
+      "PLAU",
+      "PROCR",
+      "SERPINE1",
+      "SERPING1",
+      "THBD",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Amoebiasis",
+     "p": 1.0459610926191e-07,
+     "combined": 208.99339890455443,
+     "adj_p": 2.154507928574151e-06,
+     "n_overlap": 9,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "CXCL8",
+      "FN1",
+      "IL6",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Rheumatoid arthritis",
+     "p": 6.648373327488097e-07,
+     "combined": 178.7259468513256,
+     "adj_p": 8.963825089697984e-06,
+     "n_overlap": 8,
+     "overlap": [
+      "CCL2",
+      "CCL3L3",
+      "CTSK",
+      "CXCL5",
+      "CXCL8",
+      "IL6",
+      "MMP1",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "IL-17 signaling pathway",
+     "p": 7.219187991703074e-07,
+     "combined": 175.61587426189354,
+     "adj_p": 8.963825089697984e-06,
+     "n_overlap": 8,
+     "overlap": [
+      "CCL2",
+      "CXCL5",
+      "CXCL8",
+      "IL6",
+      "MMP1",
+      "MMP9",
+      "PTGS2",
+      "S100A9"
+     ]
+    },
+    {
+     "term": "Viral protein interaction with cytokine and cytokine receptor",
+     "p": 1.1601563661297439e-06,
+     "combined": 158.6073503181533,
+     "adj_p": 1.2347378468095131e-05,
+     "n_overlap": 8,
+     "overlap": [
+      "ACKR3",
+      "CCL18",
+      "CCL2",
+      "CCL3L3",
+      "CCL8",
+      "CXCL5",
+      "CXCL8",
+      "IL6"
+     ]
+    },
+    {
+     "term": "Relaxin signaling pathway",
+     "p": 7.826433742113574e-07,
+     "combined": 141.4954345035814,
+     "adj_p": 8.970297135191711e-06,
+     "n_overlap": 9,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "GNG11",
+      "MMP1",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Pertussis",
+     "p": 2.8498653979013132e-05,
+     "combined": 118.25590644336721,
+     "adj_p": 0.0002653937151795598,
+     "n_overlap": 6,
+     "overlap": [
+      "C1S",
+      "C3",
+      "CXCL5",
+      "CXCL8",
+      "IL6",
+      "SERPING1"
+     ]
+    },
+    {
+     "term": "PI3K-Akt signaling pathway",
+     "p": 1.8605612783438782e-08,
+     "combined": 117.39744660341339,
+     "adj_p": 5.225866957035254e-07,
+     "n_overlap": 16,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "FN1",
+      "GNG11",
+      "IL6",
+      "PDGFRB",
+      "SPP1",
+      "THBS2",
+      "TLR2",
+      "TNC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Bladder cancer",
+     "p": 0.00028808038013613754,
+     "combined": 114.84497302617153,
+     "adj_p": 0.0021461988320142246,
+     "n_overlap": 4,
+     "overlap": [
+      "CXCL8",
+      "MMP1",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Proteoglycans in cancer",
+     "p": 6.385574867855157e-07,
+     "combined": 109.60452543560547,
+     "adj_p": 8.963825089697984e-06,
+     "n_overlap": 11,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "DCN",
+      "FLNA",
+      "FN1",
+      "LUM",
+      "MMP2",
+      "MMP9",
+      "PLAU",
+      "SDC2",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Chagas disease",
+     "p": 1.5243541335418975e-05,
+     "combined": 108.32229902941268,
+     "adj_p": 0.00015141917726516183,
+     "n_overlap": 7,
+     "overlap": [
+      "C3",
+      "CCL2",
+      "CCL3L3",
+      "CXCL8",
+      "IL6",
+      "SERPINE1",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Human papillomavirus infection",
+     "p": 3.3757105477866186e-07,
+     "combined": 90.49938870018087,
+     "adj_p": 5.588676351335625e-06,
+     "n_overlap": 14,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "FN1",
+      "PDGFRB",
+      "PTGS2",
+      "SPP1",
+      "THBS2",
+      "TNC",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Toll-like receptor signaling pathway",
+     "p": 0.00016536431653807126,
+     "combined": 70.17776386043,
+     "adj_p": 0.0012968043770617168,
+     "n_overlap": 6,
+     "overlap": [
+      "CCL3L3",
+      "CTSK",
+      "CXCL8",
+      "IL6",
+      "SPP1",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Legionellosis",
+     "p": 0.0010201851029961082,
+     "combined": 67.684150800803,
+     "adj_p": 0.005846445397939236,
+     "n_overlap": 4,
+     "overlap": [
+      "C3",
+      "CXCL8",
+      "IL6",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "TGF-beta signaling pathway",
+     "p": 0.0008504047320638908,
+     "combined": 51.96214851475389,
+     "adj_p": 0.005279596044896655,
+     "n_overlap": 5,
+     "overlap": [
+      "DCN",
+      "FBN1",
+      "GREM1",
+      "INHBA",
+      "INHBB"
+     ]
+    },
+    {
+     "term": "Coronavirus disease",
+     "p": 8.868901879530292e-05,
+     "combined": 50.26208775466493,
+     "adj_p": 0.0007773331647353022,
+     "n_overlap": 9,
+     "overlap": [
+      "C1S",
+      "C3",
+      "C5AR1",
+      "CCL2",
+      "CXCL8",
+      "IL6",
+      "MMP1",
+      "TLR2",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Vascular smooth muscle contraction",
+     "p": 0.0006210709908401128,
+     "combined": 45.855626100778295,
+     "adj_p": 0.004406646554056038,
+     "n_overlap": 6,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "EDNRA",
+      "MYH10",
+      "MYL9",
+      "MYLK"
+     ]
+    },
+    {
+     "term": "Cytokine-cytokine receptor interaction",
+     "p": 0.00011036760262549071,
+     "combined": 42.82999793652473,
+     "adj_p": 0.0009135984883998955,
+     "n_overlap": 10,
+     "overlap": [
+      "ACKR3",
+      "CCL18",
+      "CCL2",
+      "CCL3L3",
+      "CCL8",
+      "CXCL5",
+      "CXCL8",
+      "IL6",
+      "INHBA",
+      "INHBB"
+     ]
+    },
+    {
+     "term": "Fluid shear stress and atherosclerosis",
+     "p": 0.0007829077568432203,
+     "combined": 42.400854819509625,
+     "adj_p": 0.005100299448605494,
+     "n_overlap": 6,
+     "overlap": [
+      "CCL2",
+      "DUSP1",
+      "MMP2",
+      "MMP9",
+      "SDC2",
+      "THBD"
+     ]
+    },
+    {
+     "term": "TNF signaling pathway",
+     "p": 0.0018582707185192595,
+     "combined": 38.4070081841684,
+     "adj_p": 0.009547666795150678,
+     "n_overlap": 5,
+     "overlap": [
+      "CCL2",
+      "CXCL5",
+      "IL6",
+      "MMP9",
+      "PTGS2"
+     ]
+    }
+   ],
+   "Reactome_2022": [
+    {
+     "term": "Assembly Of Collagen Fibrils And Other Multimeric Structures R-HSA-2022090",
+     "p": 3.756507081248692e-21,
+     "combined": 2596.1000162031237,
+     "adj_p": 6.968320635716324e-19,
+     "n_overlap": 16,
+     "overlap": [
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "LOX",
+      "LOXL1",
+      "MMP9",
+      "PCOLCE"
+     ]
+    },
+    {
+     "term": "Extracellular Matrix Organization R-HSA-1474244",
+     "p": 2.205293764326471e-34,
+     "combined": 1858.405810232697,
+     "adj_p": 8.181639865651207e-32,
+     "n_overlap": 37,
+     "overlap": [
+      "ADAMTS1",
+      "ASPN",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "CTSK",
+      "DCN",
+      "DDR2",
+      "EFEMP1",
+      "FBLN1",
+      "FBLN2",
+      "FBN1",
+      "FN1",
+      "HTRA1"
+     ]
+    },
+    {
+     "term": "Collagen Chain Trimerization R-HSA-8948216",
+     "p": 5.613533648066697e-16,
+     "combined": 1811.7754677444684,
+     "adj_p": 5.206552458581862e-14,
+     "n_overlap": 12,
+     "overlap": [
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3"
+     ]
+    },
+    {
+     "term": "Collagen Formation R-HSA-1474290",
+     "p": 1.1195902440746405e-17,
+     "combined": 1191.725946012443,
+     "adj_p": 1.3845599351723055e-15,
+     "n_overlap": 16,
+     "overlap": [
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "LOX",
+      "LOXL1",
+      "MMP9",
+      "PCOLCE"
+     ]
+    },
+    {
+     "term": "Collagen Biosynthesis And Modifying Enzymes R-HSA-1650814",
+     "p": 4.202239013969432e-15,
+     "combined": 1102.8813381991981,
+     "adj_p": 3.1180613483653185e-13,
+     "n_overlap": 13,
+     "overlap": [
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "PCOLCE"
+     ]
+    },
+    {
+     "term": "Scavenging By Class A Receptors R-HSA-3000480",
+     "p": 2.881953119780083e-07,
+     "combined": 706.3207467833777,
+     "adj_p": 8.91003839532009e-06,
+     "n_overlap": 5,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2"
+     ]
+    },
+    {
+     "term": "Crosslinking Of Collagen Fibrils R-HSA-2243919",
+     "p": 5.3658192727452e-05,
+     "combined": 546.3719020165803,
+     "adj_p": 0.0009048722500856678,
+     "n_overlap": 3,
+     "overlap": [
+      "LOX",
+      "LOXL1",
+      "PCOLCE"
+     ]
+    },
+    {
+     "term": "Elastic Fibre Formation R-HSA-1566948",
+     "p": 1.9138450564934286e-08,
+     "combined": 516.9110561193612,
+     "adj_p": 7.889294621767356e-07,
+     "n_overlap": 7,
+     "overlap": [
+      "EFEMP1",
+      "FBLN1",
+      "FBLN2",
+      "FBN1",
+      "LOX",
+      "LOXL1",
+      "MFAP2"
+     ]
+    },
+    {
+     "term": "Regulation Of IGF Transport And Uptake By IGFBPs R-HSA-381426",
+     "p": 7.932942855047086e-13,
+     "combined": 497.3609522502391,
+     "adj_p": 4.9052029987041146e-11,
+     "n_overlap": 14,
+     "overlap": [
+      "C3",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "IGFBP3",
+      "IGFBP7",
+      "IL6",
+      "LGALS1",
+      "MMP1",
+      "MMP2",
+      "MXRA8",
+      "SDC2",
+      "SPARCL1",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Post-translational Protein Phosphorylation R-HSA-8957275",
+     "p": 3.873812276699342e-11,
+     "combined": 419.76098324285874,
+     "adj_p": 2.0531205066506514e-09,
+     "n_overlap": 12,
+     "overlap": [
+      "C3",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "IGFBP3",
+      "IGFBP7",
+      "IL6",
+      "LGALS1",
+      "MXRA8",
+      "SDC2",
+      "SPARCL1",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "RHO GTPases Activate PAKs R-HSA-5627123",
+     "p": 1.9220333631323413e-05,
+     "combined": 333.3005188695845,
+     "adj_p": 0.0003753023040642625,
+     "n_overlap": 4,
+     "overlap": [
+      "FLNA",
+      "MYH10",
+      "MYL9",
+      "MYLK"
+     ]
+    },
+    {
+     "term": "Collagen Degradation R-HSA-1442490",
+     "p": 6.304155198783113e-07,
+     "combined": 332.7354413212515,
+     "adj_p": 1.670601127677525e-05,
+     "n_overlap": 6,
+     "overlap": [
+      "COL15A1",
+      "CTSK",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Binding And Uptake Of Ligands By Scavenger Receptors R-HSA-2173782",
+     "p": 7.337546215766895e-07,
+     "combined": 319.77592106526583,
+     "adj_p": 1.814819764033012e-05,
+     "n_overlap": 6,
+     "overlap": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "SPARC"
+     ]
+    },
+    {
+     "term": "ECM Proteoglycans R-HSA-3000178",
+     "p": 2.2747494629166696e-07,
+     "combined": 296.36865100249344,
+     "adj_p": 7.672109552200767e-06,
+     "n_overlap": 7,
+     "overlap": [
+      "ASPN",
+      "COMP",
+      "DCN",
+      "LUM",
+      "SERPINE1",
+      "SPARC",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Activation Of Matrix Metalloproteinases R-HSA-1592389",
+     "p": 5.3862727338704895e-06,
+     "combined": 284.2962555243818,
+     "adj_p": 0.00011754748142740892,
+     "n_overlap": 5,
+     "overlap": [
+      "CTSK",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Defective CHST14 Causes EDS, Musculocontractural Type R-HSA-3595174",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.01268552172967828,
+     "n_overlap": 2,
+     "overlap": [
+      "DCN",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Defective CHST3 Causes SEDCJD R-HSA-3595172",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.01268552172967828,
+     "n_overlap": 2,
+     "overlap": [
+      "DCN",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Defective CHSY1 Causes TPBS R-HSA-3595177",
+     "p": 0.0016412534852413947,
+     "combined": 275.34006143936904,
+     "adj_p": 0.01268552172967828,
+     "n_overlap": 2,
+     "overlap": [
+      "DCN",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Interleukin-4 And Interleukin-13 Signaling R-HSA-6785807",
+     "p": 1.1461508330678321e-08,
+     "combined": 254.9495195966484,
+     "adj_p": 5.315274488352072e-07,
+     "n_overlap": 10,
+     "overlap": [
+      "CCL2",
+      "COL1A2",
+      "CXCL8",
+      "FN1",
+      "IL6",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "PTGS2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "GP1b-IX-V Activation Signaling R-HSA-430116",
+     "p": 0.002099392299803221,
+     "combined": 226.93334256833475,
+     "adj_p": 0.0155774908645399,
+     "n_overlap": 2,
+     "overlap": [
+      "FLNA",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Signaling By PDGF R-HSA-186797",
+     "p": 3.0955602570229387e-06,
+     "combined": 218.38987265258478,
+     "adj_p": 7.177830345971939e-05,
+     "n_overlap": 6,
+     "overlap": [
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "PDGFRB",
+      "THBS2"
+     ]
+    },
+    {
+     "term": "Molecules Associated With Elastic Fibres R-HSA-2129379",
+     "p": 6.301771364954133e-05,
+     "combined": 210.1983738976871,
+     "adj_p": 0.0009741488234991597,
+     "n_overlap": 4,
+     "overlap": [
+      "EFEMP1",
+      "FBLN1",
+      "FBLN2",
+      "MFAP2"
+     ]
+    },
+    {
+     "term": "Glycoprotein Hormones R-HSA-209822",
+     "p": 0.002610828604653701,
+     "combined": 191.53614663562257,
+     "adj_p": 0.018627257929356215,
+     "n_overlap": 2,
+     "overlap": [
+      "INHBA",
+      "INHBB"
+     ]
+    },
+    {
+     "term": "Degradation Of Extracellular Matrix R-HSA-1474228",
+     "p": 1.858777913705131e-07,
+     "combined": 187.34448681683818,
+     "adj_p": 6.8960660598460366e-06,
+     "n_overlap": 9,
+     "overlap": [
+      "ADAMTS1",
+      "COL15A1",
+      "CTSK",
+      "DCN",
+      "HTRA1",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Smooth Muscle Contraction R-HSA-445355",
+     "p": 2.0515667097507906e-05,
+     "combined": 186.29516895110316,
+     "adj_p": 0.0003805656246587717,
+     "n_overlap": 5,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "MYL9",
+      "MYLK",
+      "TPM2"
+     ]
+    }
+   ],
+   "MSigDB_Hallmark_2020": [
+    {
+     "term": "Epithelial Mesenchymal Transition",
+     "p": 6.367154080753902e-70,
+     "combined": 11380.461843910218,
+     "adj_p": 2.355847009878944e-68,
+     "n_overlap": 54,
+     "overlap": [
+      "CALD1",
+      "CDH11",
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "CXCL8",
+      "DCN",
+      "FAP",
+      "FBLN1",
+      "FBLN2",
+      "FBN1",
+      "FERMT2",
+      "FLNA",
+      "FN1",
+      "FSTL1",
+      "GAS1"
+     ]
+    },
+    {
+     "term": "Angiogenesis",
+     "p": 2.875184063440399e-10,
+     "combined": 840.4483660504262,
+     "adj_p": 2.659545258682369e-09,
+     "n_overlap": 8,
+     "overlap": [
+      "COL3A1",
+      "COL5A2",
+      "FSTL1",
+      "LUM",
+      "POSTN",
+      "SPP1",
+      "THBD",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Coagulation",
+     "p": 6.447566526129812e-16,
+     "combined": 697.2884337290506,
+     "adj_p": 1.1927998073340152e-14,
+     "n_overlap": 17,
+     "overlap": [
+      "C1S",
+      "C3",
+      "COMP",
+      "CTSK",
+      "FBN1",
+      "FN1",
+      "HTRA1",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "PLAU",
+      "SERPINE1",
+      "SERPING1",
+      "SPARC",
+      "THBD",
+      "VWF"
+     ]
+    },
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "p": 4.253803103469295e-12,
+     "combined": 319.72786527460164,
+     "adj_p": 5.246357160945465e-11,
+     "n_overlap": 16,
+     "overlap": [
+      "ACKR3",
+      "CCL2",
+      "DUSP1",
+      "DUSP5",
+      "EGR1",
+      "G0S2",
+      "GEM",
+      "IL6",
+      "INHBA",
+      "PLAU",
+      "PTGS2",
+      "SERPINE1",
+      "SLC2A3",
+      "TLR2",
+      "TNC",
+      "TNFAIP6"
+     ]
+    },
+    {
+     "term": "Myogenesis",
+     "p": 5.805062653564042e-10,
+     "combined": 221.60255842229395,
+     "adj_p": 4.295746363637391e-09,
+     "n_overlap": 14,
+     "overlap": [
+      "AEBP1",
+      "COL15A1",
+      "COL1A1",
+      "COL3A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "COX7A1",
+      "IGFBP3",
+      "IGFBP7",
+      "MYLK",
+      "SPARC",
+      "TAGLN",
+      "TPM2"
+     ]
+    },
+    {
+     "term": "Hypoxia",
+     "p": 6.023901656395117e-09,
+     "combined": 180.8743171692652,
+     "adj_p": 3.1840623040945615e-08,
+     "n_overlap": 13,
+     "overlap": [
+      "ACKR3",
+      "AKAP12",
+      "COL5A1",
+      "CSRP2",
+      "DCN",
+      "DUSP1",
+      "IGFBP3",
+      "IL6",
+      "LOX",
+      "SDC2",
+      "SERPINE1",
+      "SLC2A3",
+      "TMEM45A"
+     ]
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "p": 6.023901656395117e-09,
+     "combined": 180.8743171692652,
+     "adj_p": 3.1840623040945615e-08,
+     "n_overlap": 13,
+     "overlap": [
+      "ADGRL4",
+      "AKAP12",
+      "G0S2",
+      "GNG11",
+      "GPNMB",
+      "IGFBP3",
+      "INHBA",
+      "MMP11",
+      "MMP9",
+      "PLAU",
+      "PTGS2",
+      "SPARCL1",
+      "SPP1"
+     ]
+    },
+    {
+     "term": "UV Response Dn",
+     "p": 1.957357155684614e-07,
+     "combined": 155.6177286919213,
+     "adj_p": 9.05277684504134e-07,
+     "n_overlap": 10,
+     "overlap": [
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL5A2",
+      "DUSP1",
+      "EFEMP1",
+      "PDGFRB",
+      "SDC2",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Inflammatory Response",
+     "p": 4.996776506059256e-07,
+     "combined": 114.46757082319974,
+     "adj_p": 2.0542303413799163e-06,
+     "n_overlap": 11,
+     "overlap": [
+      "C5AR1",
+      "CCL2",
+      "CXCL8",
+      "IL6",
+      "INHBA",
+      "LY6E",
+      "RGS1",
+      "SERPINE1",
+      "TLR2",
+      "TNFAIP6",
+      "VIP"
+     ]
+    },
+    {
+     "term": "Apical Junction",
+     "p": 3.946812022529778e-06,
+     "combined": 88.15677985949915,
+     "adj_p": 1.460320448336018e-05,
+     "n_overlap": 10,
+     "overlap": [
+      "ACTG2",
+      "CDH11",
+      "FBN1",
+      "MMP2",
+      "MMP9",
+      "MYH10",
+      "MYL9",
+      "THY1",
+      "VCAN",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Complement",
+     "p": 2.8077395078240487e-05,
+     "combined": 66.02441467378554,
+     "adj_p": 9.444214708135437e-05,
+     "n_overlap": 9,
+     "overlap": [
+      "C1S",
+      "C3",
+      "COL4A2",
+      "DUSP5",
+      "FN1",
+      "IL6",
+      "S100A9",
+      "SERPINE1",
+      "SERPING1"
+     ]
+    },
+    {
+     "term": "Allograft Rejection",
+     "p": 0.00017828212013519068,
+     "combined": 47.758693829177794,
+     "adj_p": 0.0005497032037501713,
+     "n_overlap": 8,
+     "overlap": [
+      "CCL2",
+      "FLNA",
+      "IL6",
+      "INHBA",
+      "INHBB",
+      "MMP9",
+      "THY1",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Interferon Gamma Response",
+     "p": 0.000999469669433475,
+     "combined": 33.04527812162309,
+     "adj_p": 0.002844644443772198,
+     "n_overlap": 7,
+     "overlap": [
+      "C1S",
+      "CCL2",
+      "IL6",
+      "LY6E",
+      "PTGS2",
+      "SERPING1",
+      "TNFAIP6"
+     ]
+    },
+    {
+     "term": "Glycolysis",
+     "p": 0.004881296288813892,
+     "combined": 21.563725498401826,
+     "adj_p": 0.012900568763293858,
+     "n_overlap": 6,
+     "overlap": [
+      "COL5A1",
+      "DCN",
+      "HOMER1",
+      "IGFBP3",
+      "SDC2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Apoptosis",
+     "p": 0.008662572761407679,
+     "combined": 19.844893513683978,
+     "adj_p": 0.021367679478138942,
+     "n_overlap": 5,
+     "overlap": [
+      "DCN",
+      "IL6",
+      "LUM",
+      "MMP2",
+      "PDGFRB"
+     ]
+    },
+    {
+     "term": "Apical Surface",
+     "p": 0.04619704312259586,
+     "combined": 18.8274494354999,
+     "adj_p": 0.08996266292294983,
+     "n_overlap": 2,
+     "overlap": [
+      "GAS1",
+      "THY1"
+     ]
+    },
+    {
+     "term": "TGF-beta Signaling",
+     "p": 0.06647537662261678,
+     "combined": 13.400250099941374,
+     "adj_p": 0.12297944675184105,
+     "n_overlap": 2,
+     "overlap": [
+      "RAB31",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Interferon Alpha Response",
+     "p": 0.04032717847871271,
+     "combined": 13.227348823453777,
+     "adj_p": 0.08289475576179833,
+     "n_overlap": 3,
+     "overlap": [
+      "C1S",
+      "LY6E",
+      "PROCR"
+     ]
+    },
+    {
+     "term": "Adipogenesis",
+     "p": 0.020424522640324048,
+     "combined": 12.982617171774654,
+     "adj_p": 0.04723170860574936,
+     "n_overlap": 5,
+     "overlap": [
+      "C3",
+      "COL15A1",
+      "COL4A1",
+      "MYLK",
+      "SPARCL1"
+     ]
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "p": 0.03538550343351794,
+     "combined": 11.242858947240315,
+     "adj_p": 0.07701550747295081,
+     "n_overlap": 4,
+     "overlap": [
+      "ACSL4",
+      "G0S2",
+      "LGALS1",
+      "TDO2"
+     ]
+    },
+    {
+     "term": "Estrogen Response Late",
+     "p": 0.07168158735983322,
+     "combined": 6.952567640819991,
+     "adj_p": 0.12629613011018234,
+     "n_overlap": 4,
+     "overlap": [
+      "PDLIM3",
+      "RAB31",
+      "S100A9",
+      "SNX10"
+     ]
+    },
+    {
+     "term": "IL-6/JAK/STAT3 Signaling",
+     "p": 0.14771568760392784,
+     "combined": 5.773630767246967,
+     "adj_p": 0.2376295844063187,
+     "n_overlap": 2,
+     "overlap": [
+      "IL6",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "UV Response Up",
+     "p": 0.12626162888703873,
+     "combined": 5.154256670432168,
+     "adj_p": 0.21234910312820152,
+     "n_overlap": 3,
+     "overlap": [
+      "IL6",
+      "NPTX2",
+      "PDLIM3"
+     ]
+    },
+    {
+     "term": "Hedgehog Signaling",
+     "p": 0.24583805673584785,
+     "combined": 5.1232546733342605,
+     "adj_p": 0.33688918886023594,
+     "n_overlap": 1,
+     "overlap": [
+      "THY1"
+     ]
+    },
+    {
+     "term": "Androgen Response",
+     "p": 0.1835199217140049,
+     "combined": 4.436522833603623,
+     "adj_p": 0.2829265459757576,
+     "n_overlap": 2,
+     "overlap": [
+      "ADAMTS1",
+      "AKAP12"
+     ]
+    }
+   ],
+   "Human_Gene_Atlas": [
+    {
+     "term": "SmoothMuscle",
+     "p": 2.253149105492649e-37,
+     "combined": 1890.7868240604698,
+     "adj_p": 1.239232008020957e-35,
+     "n_overlap": 42,
+     "overlap": [
+      "CALD1",
+      "CCL2",
+      "CCL8",
+      "CDH11",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "CTGF",
+      "CXCL5",
+      "CYR61",
+      "EFEMP1",
+      "EHD2",
+      "FAP",
+      "FBN1",
+      "FERMT2",
+      "FKBP10",
+      "FN1",
+      "FSTL1",
+      "GNG11",
+      "GREM1",
+      "IL6"
+     ]
+    },
+    {
+     "term": "Uterus",
+     "p": 9.500957241659e-22,
+     "combined": 977.9050489275668,
+     "adj_p": 2.612763241456225e-20,
+     "n_overlap": 24,
+     "overlap": [
+      "ACTG2",
+      "ASPN",
+      "BAG2",
+      "CALD1",
+      "CNN1",
+      "COL3A1",
+      "CYR61",
+      "DCN",
+      "EDNRA",
+      "FERMT2",
+      "FILIP1L",
+      "FLNA",
+      "ISLR",
+      "LUM",
+      "MCAM",
+      "MEIS1",
+      "MYL9",
+      "MYLK",
+      "PCOLCE",
+      "PLN",
+      "SFRP4",
+      "TAGLN",
+      "TMEM47",
+      "TPM2"
+     ]
+    },
+    {
+     "term": "Adipocyte",
+     "p": 3.553623125437223e-20,
+     "combined": 910.283101498414,
+     "adj_p": 6.514975729968242e-19,
+     "n_overlap": 22,
+     "overlap": [
+      "C1S",
+      "CD248",
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "CTSK",
+      "DCN",
+      "DDR2",
+      "EHD2",
+      "FBLN2",
+      "FERMT2",
+      "FN1",
+      "FSTL1",
+      "G0S2",
+      "MCAM",
+      "MGP",
+      "MMP2",
+      "MXRA8",
+      "PDGFRB"
+     ]
+    },
+    {
+     "term": "Placenta",
+     "p": 2.9534294162630715e-09,
+     "combined": 128.79720063787323,
+     "adj_p": 4.0609654473617235e-08,
+     "n_overlap": 18,
+     "overlap": [
+      "APOLD1",
+      "COL15A1",
+      "COL4A1",
+      "COL4A2",
+      "EGFL6",
+      "FADS3",
+      "FBLN1",
+      "FN1",
+      "GPNMB",
+      "GULP1",
+      "HTRA1",
+      "IGFBP3",
+      "INHBA",
+      "MMP11",
+      "PLAU",
+      "PROCR",
+      "RBMS1",
+      "THBD"
+     ]
+    },
+    {
+     "term": "CardiacMyocytes",
+     "p": 3.155713940574972e-08,
+     "combined": 128.76347975453123,
+     "adj_p": 3.4712853346324696e-07,
+     "n_overlap": 14,
+     "overlap": [
+      "COL1A1",
+      "COL5A1",
+      "COL5A2",
+      "CTGF",
+      "EFEMP1",
+      "FN1",
+      "FSTL1",
+      "LOX",
+      "LOXL1",
+      "MFAP2",
+      "POSTN",
+      "SERPINE1",
+      "SPARC",
+      "SULF1"
+     ]
+    },
+    {
+     "term": "UterusCorpus",
+     "p": 0.000119197552919236,
+     "combined": 77.58867566451092,
+     "adj_p": 0.0010926442350929965,
+     "n_overlap": 6,
+     "overlap": [
+      "CHI3L1",
+      "CTSK",
+      "FBLN1",
+      "GAS1",
+      "GEM",
+      "MMP2"
+     ]
+    },
+    {
+     "term": "retina",
+     "p": 0.0016414718500589792,
+     "combined": 28.029830201674965,
+     "adj_p": 0.012897278821891978,
+     "n_overlap": 7,
+     "overlap": [
+      "CSRP2",
+      "ISLR",
+      "KIAA1462",
+      "MCAM",
+      "NR2F1",
+      "SFRP4",
+      "TMEM47"
+     ]
+    },
+    {
+     "term": "Lung",
+     "p": 0.002446323994740854,
+     "combined": 21.83997202187633,
+     "adj_p": 0.016818477463843372,
+     "n_overlap": 8,
+     "overlap": [
+      "CCL18",
+      "COL6A2",
+      "DUSP1",
+      "LY6E",
+      "NXN",
+      "PRKCDBP",
+      "THBD",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Prostate",
+     "p": 0.0034530381268928047,
+     "combined": 21.57073801578697,
+     "adj_p": 0.021101899664344916,
+     "n_overlap": 7,
+     "overlap": [
+      "CALD1",
+      "EDNRA",
+      "FLNA",
+      "GUCY1A3",
+      "INHBB",
+      "MYLK",
+      "NXN"
+     ]
+    },
+    {
+     "term": "Ovary",
+     "p": 0.040651388972638584,
+     "combined": 21.12218269948091,
+     "adj_p": 0.22358263934951222,
+     "n_overlap": 2,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1"
+     ]
+    },
+    {
+     "term": "OlfactoryBulb",
+     "p": 0.1370157835893833,
+     "combined": 6.298237582708861,
+     "adj_p": 0.6279890081180067,
+     "n_overlap": 2,
+     "overlap": [
+      "RGS1",
+      "SPARC"
+     ]
+    },
+    {
+     "term": "PrefrontalCortex",
+     "p": 0.051908153266949655,
+     "combined": 6.025657150485327,
+     "adj_p": 0.25954076633474826,
+     "n_overlap": 8,
+     "overlap": [
+      "APOLD1",
+      "CHN1",
+      "COL11A1",
+      "HOMER1",
+      "SPARCL1",
+      "THY1",
+      "TMEM47",
+      "ZCCHC24"
+     ]
+    },
+    {
+     "term": "OccipitalLobe",
+     "p": 0.2398988831818414,
+     "combined": 5.366133418342826,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 1,
+     "overlap": [
+      "GUCY1B3"
+     ]
+    },
+    {
+     "term": "Lymphnode",
+     "p": 0.2517311187494596,
+     "combined": 4.896600610022758,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 1,
+     "overlap": [
+      "CCL18"
+     ]
+    },
+    {
+     "term": "Fetallung",
+     "p": 0.2748493245776993,
+     "combined": 4.125403955249718,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 1,
+     "overlap": [
+      "THBD"
+     ]
+    },
+    {
+     "term": "CD33+ Myeloid",
+     "p": 0.16183628188758403,
+     "combined": 2.8128483963283295,
+     "adj_p": 0.6846919618320862,
+     "n_overlap": 8,
+     "overlap": [
+      "DUSP1",
+      "EGR1",
+      "RAB31",
+      "RBMS1",
+      "RGS2",
+      "SLC2A3",
+      "TLR2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Fetalliver",
+     "p": 0.2578560699863573,
+     "combined": 2.799285224015285,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 2,
+     "overlap": [
+      "ACSL4",
+      "TDO2"
+     ]
+    },
+    {
+     "term": "Bonemarrow",
+     "p": 0.3348291839644622,
+     "combined": 2.7395584589081747,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 1,
+     "overlap": [
+      "MMP9"
+     ]
+    },
+    {
+     "term": "WholeBlood",
+     "p": 0.21363620438674055,
+     "combined": 2.3499797341041666,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 6,
+     "overlap": [
+      "C5AR1",
+      "CHI3L1",
+      "RGS2",
+      "S100A9",
+      "SNX10",
+      "TNFAIP6"
+     ]
+    },
+    {
+     "term": "Fetalbrain",
+     "p": 0.24869157184762006,
+     "combined": 2.227174201064461,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 4,
+     "overlap": [
+      "CSRP2",
+      "HDGFRP3",
+      "NR2F1",
+      "ROBO1"
+     ]
+    },
+    {
+     "term": "GlobusPallidus",
+     "p": 0.3704041132132606,
+     "combined": 2.1858372687418623,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 1,
+     "overlap": [
+      "COL6A2"
+     ]
+    },
+    {
+     "term": "Kidney",
+     "p": 0.3040340660541661,
+     "combined": 2.176241956777936,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 2,
+     "overlap": [
+      "COL6A2",
+      "NOX4"
+     ]
+    },
+    {
+     "term": "FetalThyroid",
+     "p": 0.4040879514783871,
+     "combined": 1.7788785448056414,
+     "adj_p": 0.7839940432929954,
+     "n_overlap": 1,
+     "overlap": [
+      "SDC2"
+     ]
+    },
+    {
+     "term": "colon",
+     "p": 0.3266951756000057,
+     "combined": 1.6851024571281636,
+     "adj_p": 0.7835471625665128,
+     "n_overlap": 3,
+     "overlap": [
+      "ACTG2",
+      "PLN",
+      "VIP"
+     ]
+    },
+    {
+     "term": "Thymus",
+     "p": 0.4133786773726703,
+     "combined": 1.6823137212059243,
+     "adj_p": 0.7839940432929954,
+     "n_overlap": 1,
+     "overlap": [
+      "CCL18"
+     ]
+    }
+   ],
+   "PanglaoDB_Augmented_2021": [
+    {
+     "term": "Pancreatic Stellate Cells",
+     "p": 1.900120482370904e-69,
+     "combined": 20135.51132844898,
+     "adj_p": 2.2041397595502487e-67,
+     "n_overlap": 46,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "CD248",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "EHD2",
+      "FAP",
+      "FBLN2",
+      "FBN1",
+      "FN1",
+      "FSTL1"
+     ]
+    },
+    {
+     "term": "Pulmonary Vascular Smooth Muscle Cells",
+     "p": 1.4733071586385941e-55,
+     "combined": 13185.947978159038,
+     "adj_p": 5.696787680069231e-54,
+     "n_overlap": 38,
+     "overlap": [
+      "ADGRL4",
+      "AEBP1",
+      "C1S",
+      "CALD1",
+      "CD248",
+      "CDH11",
+      "CNN1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "FAP",
+      "FBLN2",
+      "FBN1",
+      "FSTL1",
+      "GNG11",
+      "IGFBP7"
+     ]
+    },
+    {
+     "term": "Stromal Cells",
+     "p": 7.133857465833892e-55,
+     "combined": 10113.399020640674,
+     "adj_p": 1.6550549320734628e-53,
+     "n_overlap": 40,
+     "overlap": [
+      "ADGRL4",
+      "AEBP1",
+      "C1S",
+      "CD248",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBLN2",
+      "FBN1",
+      "FSTL1",
+      "HTRA1",
+      "IGFBP7"
+     ]
+    },
+    {
+     "term": "Myofibroblasts",
+     "p": 2.0504741650138774e-49,
+     "combined": 9867.623513526429,
+     "adj_p": 2.3785500314160977e-48,
+     "n_overlap": 35,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "CNN1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "HTRA1",
+      "ISLR",
+      "LUM",
+      "MMP2"
+     ]
+    },
+    {
+     "term": "Chondrocytes",
+     "p": 3.136095482349478e-55,
+     "combined": 8776.052465747294,
+     "adj_p": 9.094676898813486e-54,
+     "n_overlap": 42,
+     "overlap": [
+      "ADGRL4",
+      "AEBP1",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "COL10A1",
+      "COL11A1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBN1",
+      "FN1"
+     ]
+    },
+    {
+     "term": "Osteoblasts",
+     "p": 4.1135147186583435e-54,
+     "combined": 7978.823549045898,
+     "adj_p": 7.952795122739464e-53,
+     "n_overlap": 42,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "C5AR1",
+      "CALD1",
+      "CDH11",
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "EDNRA",
+      "EFEMP1",
+      "EGFL6",
+      "EHD2",
+      "FAP",
+      "FBN1",
+      "FN1",
+      "FSTL1"
+     ]
+    },
+    {
+     "term": "Mesangial Cells",
+     "p": 4.088612682520133e-53,
+     "combined": 7932.944255125165,
+     "adj_p": 6.775415302461936e-52,
+     "n_overlap": 41,
+     "overlap": [
+      "ADGRL4",
+      "AKAP12",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "EFEMP1",
+      "EHD2",
+      "FAP",
+      "FBN1",
+      "FILIP1L",
+      "FLNA",
+      "FN1"
+     ]
+    },
+    {
+     "term": "Vascular Smooth Muscle Cells",
+     "p": 4.5745207411003275e-45,
+     "combined": 7737.72535467611,
+     "adj_p": 4.422036716396983e-44,
+     "n_overlap": 33,
+     "overlap": [
+      "ADAMTS1",
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "CNN1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBN1",
+      "FSTL1",
+      "ISLR",
+      "LUM"
+     ]
+    },
+    {
+     "term": "Hepatic Stellate Cells",
+     "p": 6.816006178996714e-50,
+     "combined": 7659.943265930524,
+     "adj_p": 8.785074630706876e-49,
+     "n_overlap": 38,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "CCL2",
+      "CDH11",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "HTRA1",
+      "IGFBP3",
+      "IGFBP7"
+     ]
+    },
+    {
+     "term": "Airway Smooth Muscle Cells",
+     "p": 7.641386329585796e-44,
+     "combined": 7562.6916674419335,
+     "adj_p": 6.818467801784249e-43,
+     "n_overlap": 32,
+     "overlap": [
+      "ACTG2",
+      "ADAMTS1",
+      "ADGRL4",
+      "CALD1",
+      "CDH11",
+      "CNN1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "EDNRA",
+      "EHD2",
+      "FBN1",
+      "FSTL1",
+      "GNG11",
+      "IGFBP7",
+      "LOX",
+      "LOXL1"
+     ]
+    },
+    {
+     "term": "Fibroblasts",
+     "p": 4.852607877726907e-59,
+     "combined": 6842.410867103204,
+     "adj_p": 2.814512569081606e-57,
+     "n_overlap": 50,
+     "overlap": [
+      "ACKR3",
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "CD248",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COX7A1",
+      "CTSK",
+      "CXCL8",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "EFEMP1",
+      "EGR1"
+     ]
+    },
+    {
+     "term": "Smooth Muscle Cells",
+     "p": 1.9292460431851703e-50,
+     "combined": 6286.292756730631,
+     "adj_p": 2.797406762618497e-49,
+     "n_overlap": 41,
+     "overlap": [
+      "ACKR3",
+      "ACTG2",
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "CNN1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A3",
+      "COX7A1",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "EHD2",
+      "FBLN2",
+      "FBN1",
+      "FSTL1"
+     ]
+    },
+    {
+     "term": "Peritubular Myoid Cells",
+     "p": 1.586263256072685e-42,
+     "combined": 5864.0632664913455,
+     "adj_p": 1.3143324121745106e-41,
+     "n_overlap": 33,
+     "overlap": [
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A2",
+      "COL6A3",
+      "COX7A1",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "EFEMP1",
+      "FBLN2",
+      "FSTL1",
+      "HTRA1",
+      "ISLR",
+      "LUM",
+      "MGP"
+     ]
+    },
+    {
+     "term": "Pericytes",
+     "p": 3.742132161471908e-45,
+     "combined": 5317.08124309784,
+     "adj_p": 3.9462484611885574e-44,
+     "n_overlap": 37,
+     "overlap": [
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "CD248",
+      "CDH11",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COX7A1",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FAP",
+      "FBLN2",
+      "FBN1",
+      "FSTL1",
+      "HTRA1",
+      "ISLR"
+     ]
+    },
+    {
+     "term": "Juxtaglomerular Cells",
+     "p": 1.0071167757329358e-37,
+     "combined": 5196.973325191726,
+     "adj_p": 7.788369732334703e-37,
+     "n_overlap": 29,
+     "overlap": [
+      "ACTG2",
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "CALD1",
+      "CD248",
+      "CDH11",
+      "CNN1",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL6A3",
+      "DCN",
+      "EDNRA",
+      "ISLR",
+      "LUM",
+      "MGP",
+      "MMP2",
+      "MYL9",
+      "MYLK",
+      "PDGFRB"
+     ]
+    },
+    {
+     "term": "Endothelial Cells (Aorta)",
+     "p": 3.647789696540145e-34,
+     "combined": 2557.1737032877268,
+     "adj_p": 2.644647529991605e-33,
+     "n_overlap": 32,
+     "overlap": [
+      "ACKR3",
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COX7A1",
+      "DCN",
+      "EDNRA",
+      "EFEMP1",
+      "EHD2",
+      "FBN1",
+      "FN1",
+      "FSTL1",
+      "HTRA1",
+      "IGFBP7",
+      "ISLR",
+      "LOX",
+      "LUM"
+     ]
+    },
+    {
+     "term": "Mesothelial Cells",
+     "p": 2.439032078511584e-28,
+     "combined": 2125.7533772241127,
+     "adj_p": 1.6642807123961396e-27,
+     "n_overlap": 26,
+     "overlap": [
+      "ACKR3",
+      "ADGRL4",
+      "C1S",
+      "CDH11",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A2",
+      "DCN",
+      "DUSP5",
+      "EDNRA",
+      "EFEMP1",
+      "EHD2",
+      "FN1",
+      "FSTL1",
+      "HTRA1",
+      "IGFBP3",
+      "ISLR",
+      "LOX",
+      "LUM",
+      "POSTN",
+      "PTGS2"
+     ]
+    },
+    {
+     "term": "Adipocyte Progenitor Cells",
+     "p": 1.1151874803634332e-24,
+     "combined": 1923.0621429057155,
+     "adj_p": 6.160083224864678e-24,
+     "n_overlap": 22,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "COL1A1",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "EDNRA",
+      "EFEMP1",
+      "EHD2",
+      "FBLN1",
+      "FBN1",
+      "FERMT2",
+      "FKBP10",
+      "FSTL1",
+      "GAS1",
+      "ISLR",
+      "LOX",
+      "LUM",
+      "MMP2",
+      "PCOLCE"
+     ]
+    },
+    {
+     "term": "Myoblasts",
+     "p": 2.8984600646145615e-25,
+     "combined": 1872.6646319958488,
+     "adj_p": 1.7695861447120483e-24,
+     "n_overlap": 23,
+     "overlap": [
+      "CALD1",
+      "CCL2",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "EDNRA",
+      "EHD2",
+      "FBN1",
+      "FERMT2",
+      "FKBP10",
+      "FN1",
+      "FSTL1",
+      "HTRA1",
+      "ISLR",
+      "LUM",
+      "MMP2",
+      "POSTN",
+      "TMEM47",
+      "TPM2"
+     ]
+    },
+    {
+     "term": "Meningeal Cells",
+     "p": 3.8261791555240134e-23,
+     "combined": 1687.028812946526,
+     "adj_p": 1.9297251393077634e-22,
+     "n_overlap": 21,
+     "overlap": [
+      "CALD1",
+      "CDH11",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A2",
+      "DCN",
+      "DDR2",
+      "EDNRA",
+      "FBLN1",
+      "FERMT2",
+      "FSTL1",
+      "HTRA1",
+      "ISLR",
+      "LUM",
+      "MMP2",
+      "POSTN",
+      "SULF1",
+      "THY1",
+      "TMEM47"
+     ]
+    },
+    {
+     "term": "Loop Of Henle Cells",
+     "p": 4.216368436471995e-25,
+     "combined": 1636.1478275313661,
+     "adj_p": 2.4454936931537566e-24,
+     "n_overlap": 24,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "C3",
+      "CALD1",
+      "CDH11",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "DCN",
+      "EDNRA",
+      "FSTL1",
+      "GEM",
+      "HTRA1",
+      "IGFBP7",
+      "ISLR",
+      "LUM",
+      "MYL9",
+      "POSTN",
+      "PTGS2",
+      "SERPING1",
+      "SPARCL1",
+      "TMEM47",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Leydig Cells",
+     "p": 8.729147619868225e-24,
+     "combined": 1484.3079284871308,
+     "adj_p": 4.602641472294155e-23,
+     "n_overlap": 23,
+     "overlap": [
+      "ADGRL4",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "DCN",
+      "EDNRA",
+      "EFEMP1",
+      "FBLN1",
+      "HTRA1",
+      "IGFBP3",
+      "INHBA",
+      "ISLR",
+      "LUM",
+      "POSTN",
+      "SERPING1",
+      "SPARCL1",
+      "THBS2",
+      "TMEM47"
+     ]
+    },
+    {
+     "term": "Adipocytes",
+     "p": 2.8963883683033774e-25,
+     "combined": 1270.5330090482064,
+     "adj_p": 1.7695861447120483e-24,
+     "n_overlap": 27,
+     "overlap": [
+      "ADGRL4",
+      "ASPN",
+      "C1S",
+      "C3",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL6A2",
+      "COL6A3",
+      "COX7A1",
+      "DCN",
+      "FAP",
+      "GULP1",
+      "HTRA1",
+      "IGFBP7",
+      "ISLR",
+      "LOX",
+      "LUM",
+      "MMP2",
+      "MYL9",
+      "PDGFRB",
+      "POSTN",
+      "SERPING1"
+     ]
+    },
+    {
+     "term": "His Bundle Cells",
+     "p": 1.5976146680649698e-18,
+     "combined": 1222.7929970595335,
+     "adj_p": 6.863825981316167e-18,
+     "n_overlap": 17,
+     "overlap": [
+      "AKAP12",
+      "CALD1",
+      "CDH11",
+      "COL4A1",
+      "COL4A2",
+      "CSRP2",
+      "EDNRA",
+      "FBLN1",
+      "FBN1",
+      "FERMT2",
+      "FKBP10",
+      "FSTL1",
+      "MCAM",
+      "MYH10",
+      "PDLIM3",
+      "THY1",
+      "TMEM47"
+     ]
+    },
+    {
+     "term": "Melanocytes",
+     "p": 2.5768310526680224e-20,
+     "combined": 1158.2112789435919,
+     "adj_p": 1.1956496084379624e-19,
+     "n_overlap": 20,
+     "overlap": [
+      "CALD1",
+      "COL1A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A2",
+      "DDR2",
+      "EHD2",
+      "FAP",
+      "FBN1",
+      "FILIP1L",
+      "FN1",
+      "FSTL1",
+      "GPNMB",
+      "HTRA1",
+      "LOX",
+      "LUM",
+      "MMP2",
+      "POSTN",
+      "THBS2",
+      "TNC"
+     ]
+    }
+   ],
+   "Tabula_Sapiens": [
+    {
+     "term": "Pancreas-fibroblast",
+     "p": 1.9803389428155554e-29,
+     "combined": 3125.599807043154,
+     "adj_p": 6.139050722728222e-27,
+     "n_overlap": 24,
+     "overlap": [
+      "ADAMTS1",
+      "C1S",
+      "C3",
+      "CALD1",
+      "CCL2",
+      "COL15A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "EGR1",
+      "FBLN1",
+      "IGFBP7",
+      "MGP",
+      "MMP2",
+      "NR2F1",
+      "PDGFRB",
+      "SERPINE1",
+      "SPARCL1",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Thymus-vascular Associated Smooth Muscle Cell",
+     "p": 1.7384154986108715e-15,
+     "combined": 840.4574070456468,
+     "adj_p": 1.7963626818979006e-13,
+     "n_overlap": 15,
+     "overlap": [
+      "ACTG2",
+      "ADAMTS1",
+      "CALD1",
+      "CCL2",
+      "EGR1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "MYLK",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Liver-fibroblast",
+     "p": 1.7384154986108715e-15,
+     "combined": 840.4574070456468,
+     "adj_p": 1.7963626818979006e-13,
+     "n_overlap": 15,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL6A2",
+      "DCN",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Trachea-connective Tissue Cell",
+     "p": 4.233929284287113e-14,
+     "combined": 697.4885475469462,
+     "adj_p": 2.6250361562580104e-12,
+     "n_overlap": 14,
+     "overlap": [
+      "C1S",
+      "C3",
+      "COL1A2",
+      "COL3A1",
+      "COL6A2",
+      "DCN",
+      "FBLN1",
+      "FBN1",
+      "LGALS1",
+      "MGP",
+      "MMP2",
+      "SERPING1",
+      "SPARCL1",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Vasculature-smooth Muscle Cell",
+     "p": 4.233929284287113e-14,
+     "combined": 697.4885475469462,
+     "adj_p": 2.6250361562580104e-12,
+     "n_overlap": 14,
+     "overlap": [
+      "CALD1",
+      "COL1A2",
+      "FLNA",
+      "FN1",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VCAN",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Fat-smooth Muscle Cell",
+     "p": 8.277678464811497e-13,
+     "combined": 581.0448441906375,
+     "adj_p": 3.662392317910743e-11,
+     "n_overlap": 13,
+     "overlap": [
+      "CALD1",
+      "CNN1",
+      "FLNA",
+      "FN1",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "PLN",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Uterus-pericyte Cell",
+     "p": 9.451335013963207e-13,
+     "combined": 571.5997426556346,
+     "adj_p": 3.662392317910743e-11,
+     "n_overlap": 13,
+     "overlap": [
+      "CALD1",
+      "COL1A1",
+      "COL1A2",
+      "CXCL8",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Salivary Gland-adventitial Cell",
+     "p": 9.451335013963207e-13,
+     "combined": 571.5997426556346,
+     "adj_p": 3.662392317910743e-11,
+     "n_overlap": 13,
+     "overlap": [
+      "C1S",
+      "C3",
+      "COL1A2",
+      "COL6A2",
+      "COL6A3",
+      "DCN",
+      "FBLN1",
+      "IGFBP7",
+      "MGP",
+      "MMP2",
+      "SERPING1",
+      "SPARCL1",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Bladder-pericyte Cell",
+     "p": 1.9244693227588216e-11,
+     "combined": 461.60540877460636,
+     "adj_p": 5.423504455047589e-10,
+     "n_overlap": 12,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "CCL2",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Lung-pericyte Cell",
+     "p": 1.9244693227588216e-11,
+     "combined": 461.60540877460636,
+     "adj_p": 5.423504455047589e-10,
+     "n_overlap": 12,
+     "overlap": [
+      "CALD1",
+      "COL4A1",
+      "COL4A2",
+      "IGFBP7",
+      "LGALS1",
+      "MYL9",
+      "PDGFRB",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Tongue-pericyte Cell",
+     "p": 1.9244693227588216e-11,
+     "combined": 461.60540877460636,
+     "adj_p": 5.423504455047589e-10,
+     "n_overlap": 12,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "COL1A2",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Bladder-smooth Muscle Cell",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "CNN1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MYL9",
+      "MYLK",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2"
+     ]
+    },
+    {
+     "term": "Lung-bronchial Smooth Muscle Cell",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "CALD1",
+      "EGR1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Vasculature-fibroblast",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "C1S",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL6A2",
+      "DCN",
+      "FBLN1",
+      "IGFBP7",
+      "MGP",
+      "SPARCL1",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Vasculature-pericyte Cell",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Trachea-fibroblast",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "C1S",
+      "C3",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL6A2",
+      "DCN",
+      "EFEMP1",
+      "FBLN1",
+      "MGP",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Heart-smooth Muscle Cell",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "CALD1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Muscle-smooth Muscle Cell",
+     "p": 3.5543945921195774e-10,
+     "combined": 366.37347144332205,
+     "adj_p": 6.121457353094828e-09,
+     "n_overlap": 11,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "EGR1",
+      "FLNA",
+      "IGFBP7",
+      "LGALS1",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Lung-alveolar Fibroblast",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "DCN",
+      "EGR1",
+      "FBLN1",
+      "IGFBP7",
+      "LGALS1",
+      "LUM",
+      "MGP",
+      "SERPING1",
+      "SPARCL1",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Muscle-pericyte Cell",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "CCL2",
+      "EGR1",
+      "IGFBP7",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Uterus-myometrial Cell",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Salivary Gland-pericyte Cell",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Prostate-smooth Muscle Cell",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "CALD1",
+      "EGR1",
+      "IGFBP7",
+      "LGALS1",
+      "MGP",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Fat-myofibroblast Cell",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ADAMTS1",
+      "CALD1",
+      "EGR1",
+      "IGFBP7",
+      "LGALS1",
+      "MYL9",
+      "SPARCL1",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Skin-cell Of Skeletal Muscle",
+     "p": 5.915621615100231e-09,
+     "combined": 284.81944477787897,
+     "adj_p": 7.335370802724287e-08,
+     "n_overlap": 10,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "CNN1",
+      "FLNA",
+      "LGALS1",
+      "MYL9",
+      "MYLK",
+      "TAGLN",
+      "TPM2",
+      "VIM"
+     ]
+    }
+   ],
+   "Jensen_TISSUES": [
+    {
+     "term": "Myofibroblast",
+     "p": 8.133877533677757e-26,
+     "combined": 3113.5390704016922,
+     "adj_p": 1.2770187727874078e-23,
+     "n_overlap": 20,
+     "overlap": [
+      "CALD1",
+      "CCL2",
+      "CDH11",
+      "COL1A1",
+      "COL1A2",
+      "CTGF",
+      "DCN",
+      "FBLN2",
+      "IL6",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "NOX4",
+      "PDGFRB",
+      "POSTN",
+      "SERPINE1",
+      "SPP1",
+      "TAGLN",
+      "THY1",
+      "TNC"
+     ]
+    },
+    {
+     "term": "Tendon",
+     "p": 1.8277390028783857e-20,
+     "combined": 1353.246788210829,
+     "adj_p": 2.152162675889299e-18,
+     "n_overlap": 19,
+     "overlap": [
+      "CCL2",
+      "CDH11",
+      "CHI3L1",
+      "COL1A1",
+      "COL3A1",
+      "COL5A1",
+      "COMP",
+      "CTGF",
+      "CTSK",
+      "DCN",
+      "IL6",
+      "LUM",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "PTGS2",
+      "THY1",
+      "TNC",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Cartilage",
+     "p": 4.74960693482293e-10,
+     "combined": 1176.2704211072366,
+     "adj_p": 6.391613903718857e-09,
+     "n_overlap": 7,
+     "overlap": [
+      "ASPN",
+      "CHI3L1",
+      "COMP",
+      "FN1",
+      "HTRA1",
+      "LUM",
+      "TNC"
+     ]
+    },
+    {
+     "term": "Vascular cell",
+     "p": 9.574182241674643e-13,
+     "combined": 1137.941540767428,
+     "adj_p": 1.9606260155777206e-11,
+     "n_overlap": 10,
+     "overlap": [
+      "CCL2",
+      "IL6",
+      "MCAM",
+      "MGP",
+      "MMP9",
+      "NOX4",
+      "PTGS2",
+      "SERPINE1",
+      "THBD",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Neointima",
+     "p": 2.1621349549744007e-14,
+     "combined": 1128.525279063089,
+     "adj_p": 8.235480025179854e-13,
+     "n_overlap": 12,
+     "overlap": [
+      "CCL2",
+      "CSRP2",
+      "EGR1",
+      "MMP2",
+      "MMP9",
+      "MYH10",
+      "PDGFRB",
+      "SERPINE1",
+      "SPP1",
+      "TNC",
+      "VCAN",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Gizzard",
+     "p": 1.007109171684287e-08,
+     "combined": 973.6618918033741,
+     "adj_p": 9.680579997210187e-08,
+     "n_overlap": 6,
+     "overlap": [
+      "ACTG2",
+      "CALD1",
+      "MYL9",
+      "MYLK",
+      "TAGLN",
+      "TPM2"
+     ]
+    },
+    {
+     "term": "Stellate cell",
+     "p": 1.679074790814786e-06,
+     "combined": 867.6467132492631,
+     "adj_p": 1.0687084141537353e-05,
+     "n_overlap": 4,
+     "overlap": [
+      "CTGF",
+      "IL6",
+      "MMP2",
+      "PDGFRB"
+     ]
+    },
+    {
+     "term": "Wound fluid",
+     "p": 2.5329627396497274e-05,
+     "combined": 823.3990855533323,
+     "adj_p": 0.00012881586476064965,
+     "n_overlap": 3,
+     "overlap": [
+      "MMP1",
+      "MMP2",
+      "MMP9"
+     ]
+    },
+    {
+     "term": "Stromal cell",
+     "p": 8.026558073686657e-19,
+     "combined": 792.3854906849961,
+     "adj_p": 7.561017705412831e-17,
+     "n_overlap": 21,
+     "overlap": [
+      "CCL2",
+      "CD248",
+      "DCN",
+      "IGFBP3",
+      "IL6",
+      "MCAM",
+      "MMP1",
+      "MMP11",
+      "MMP2",
+      "MMP9",
+      "PDGFRB",
+      "PLAU",
+      "POSTN",
+      "PTGS2",
+      "SERPINE1",
+      "SPARC",
+      "SPP1",
+      "THY1",
+      "TNC",
+      "VCAN",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Periodontal ligament",
+     "p": 1.3330052718718787e-10,
+     "combined": 689.2524020665486,
+     "adj_p": 1.9620171345364215e-09,
+     "n_overlap": 9,
+     "overlap": [
+      "ASPN",
+      "DCN",
+      "FBN1",
+      "IL6",
+      "MCAM",
+      "MMP1",
+      "POSTN",
+      "SPARC",
+      "SPP1"
+     ]
+    },
+    {
+     "term": "Granulation tissue",
+     "p": 3.8184841599790467e-07,
+     "combined": 646.8824791917403,
+     "adj_p": 2.6843373721643747e-06,
+     "n_overlap": 5,
+     "overlap": [
+      "CTGF",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "TNC"
+     ]
+    },
+    {
+     "term": "Nerve",
+     "p": 2.2024956115528444e-14,
+     "combined": 641.1767556864955,
+     "adj_p": 8.235480025179854e-13,
+     "n_overlap": 15,
+     "overlap": [
+      "AKAP12",
+      "C1S",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A2",
+      "COL6A2",
+      "CYR61",
+      "DCN",
+      "FLNA",
+      "FN1",
+      "SPARC",
+      "SPARCL1",
+      "TAGLN",
+      "VIM"
+     ]
+    },
+    {
+     "term": "Synovial tissue",
+     "p": 2.3033451865996078e-12,
+     "combined": 613.2216831578365,
+     "adj_p": 4.5203149287017305e-11,
+     "n_overlap": 12,
+     "overlap": [
+      "CCL2",
+      "CDH11",
+      "CHI3L1",
+      "COMP",
+      "CTSK",
+      "IL6",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "PTGS2",
+      "THY1",
+      "TLR2"
+     ]
+    },
+    {
+     "term": "Intervertebral disc",
+     "p": 2.8001433073329613e-10,
+     "combined": 606.0172132527797,
+     "adj_p": 3.879022052217132e-09,
+     "n_overlap": 9,
+     "overlap": [
+      "COL1A1",
+      "COMP",
+      "DCN",
+      "HTRA1",
+      "IL6",
+      "LUM",
+      "MMP1",
+      "MMP2",
+      "VCAN"
+     ]
+    },
+    {
+     "term": "Bone matrix",
+     "p": 1.597499455256825e-09,
+     "combined": 602.4138119662383,
+     "adj_p": 1.9292878036563193e-08,
+     "n_overlap": 8,
+     "overlap": [
+      "COL1A1",
+      "CTSK",
+      "DCN",
+      "MGP",
+      "MMP1",
+      "MMP9",
+      "SPARC",
+      "SPP1"
+     ]
+    },
+    {
+     "term": "Bone",
+     "p": 7.01606570122476e-30,
+     "combined": 591.6604160273287,
+     "adj_p": 3.3045669452768625e-27,
+     "n_overlap": 60,
+     "overlap": [
+      "ADAMTS1",
+      "AKAP12",
+      "C1S",
+      "CALD1",
+      "CDH11",
+      "COL11A1",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL4A1",
+      "COL4A2",
+      "COL5A1",
+      "COL5A2",
+      "COL6A2",
+      "COL6A3",
+      "COMP",
+      "CTGF",
+      "CTSK",
+      "CYR61",
+      "DCN",
+      "DDR2",
+      "DUSP1",
+      "FBLN1",
+      "FBN1"
+     ]
+    },
+    {
+     "term": "Vascular system",
+     "p": 2.1928993417927637e-26,
+     "combined": 571.3839952025274,
+     "adj_p": 5.1642779499219585e-24,
+     "n_overlap": 47,
+     "overlap": [
+      "ASPN",
+      "CALD1",
+      "COL1A1",
+      "COL4A1",
+      "COL5A2",
+      "CTGF",
+      "CYR61",
+      "DCN",
+      "DDR2",
+      "DFNA5",
+      "EFEMP1",
+      "EGR1",
+      "EHD2",
+      "FAP",
+      "FILIP1L",
+      "FKBP10",
+      "FN1",
+      "FSTL1",
+      "GPNMB",
+      "GREM1",
+      "GULP1",
+      "IGFBP3",
+      "IGFBP7",
+      "INHBA"
+     ]
+    },
+    {
+     "term": "Keloid",
+     "p": 8.373678982141152e-08,
+     "combined": 561.7301532111073,
+     "adj_p": 6.800004828600833e-07,
+     "n_overlap": 6,
+     "overlap": [
+      "CTGF",
+      "DCN",
+      "MMP1",
+      "POSTN",
+      "SERPINE1",
+      "TNC"
+     ]
+    },
+    {
+     "term": "Mesenchyme",
+     "p": 9.235101656234946e-18,
+     "combined": 551.732108151829,
+     "adj_p": 6.213904114409514e-16,
+     "n_overlap": 23,
+     "overlap": [
+      "CALD1",
+      "CDH11",
+      "COL10A1",
+      "COL1A1",
+      "CTGF",
+      "DCN",
+      "FN1",
+      "GREM1",
+      "IL6",
+      "MCAM",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "PDGFRB",
+      "POSTN",
+      "SPARC",
+      "SPP1",
+      "TAGLN",
+      "THY1",
+      "TNC",
+      "VCAN",
+      "VIM",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Peritoneal mesothelium",
+     "p": 6.025153581319912e-06,
+     "combined": 522.745755284901,
+     "adj_p": 3.378389686668665e-05,
+     "n_overlap": 4,
+     "overlap": [
+      "CCL2",
+      "CTGF",
+      "IL6",
+      "SERPINE1"
+     ]
+    },
+    {
+     "term": "Vasculature",
+     "p": 6.306753154810067e-13,
+     "combined": 510.88068790982,
+     "adj_p": 1.4852403679577706e-11,
+     "n_overlap": 14,
+     "overlap": [
+      "CCL2",
+      "CD248",
+      "EDNRA",
+      "IL6",
+      "MCAM",
+      "MMP2",
+      "MMP9",
+      "NOX4",
+      "PDGFRB",
+      "PTGS2",
+      "SERPINE1",
+      "THBD",
+      "VIP",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Blood vessel endothelium",
+     "p": 8.883214322956925e-13,
+     "combined": 490.8133830711577,
+     "adj_p": 1.901815430051233e-11,
+     "n_overlap": 14,
+     "overlap": [
+      "CCL2",
+      "DCN",
+      "EDNRA",
+      "EGR1",
+      "IGFBP7",
+      "IL6",
+      "LOX",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "MYLK",
+      "NOX4",
+      "SERPINE1",
+      "SPP1"
+     ]
+    },
+    {
+     "term": "Mesenchymal stem cell",
+     "p": 1.20629036775424e-13,
+     "combined": 468.35329194932314,
+     "adj_p": 3.551017270076544e-12,
+     "n_overlap": 16,
+     "overlap": [
+      "CCL2",
+      "COL10A1",
+      "COL1A1",
+      "COMP",
+      "DCN",
+      "IL6",
+      "MCAM",
+      "MMP2",
+      "MMP9",
+      "PDGFRB",
+      "SPARC",
+      "SPP1",
+      "THY1",
+      "TNC",
+      "TNFAIP6",
+      "VWF"
+     ]
+    },
+    {
+     "term": "HUVEC cell",
+     "p": 4.6793896417127466e-12,
+     "combined": 468.25325289090927,
+     "adj_p": 8.815970084986814e-11,
+     "n_overlap": 13,
+     "overlap": [
+      "CCL2",
+      "IL6",
+      "MCAM",
+      "MMP1",
+      "MMP2",
+      "MMP9",
+      "NOX4",
+      "PLAU",
+      "PROCR",
+      "PTGS2",
+      "SERPINE1",
+      "THBD",
+      "VWF"
+     ]
+    },
+    {
+     "term": "Dental pulp",
+     "p": 3.291822651023405e-08,
+     "combined": 458.11275435305294,
+     "adj_p": 2.9816316704461997e-07,
+     "n_overlap": 7,
+     "overlap": [
+      "COL1A1",
+      "MCAM",
+      "MMP2",
+      "SPARC",
+      "SPP1",
+      "THY1",
+      "TNC"
+     ]
+    }
+   ]
+  }
+ }
+}

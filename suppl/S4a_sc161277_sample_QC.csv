@@ -1,0 +1,14 @@
+﻿GSM,patient,stage,n_cells_raw,n_cells_after_QC,QC_retention_%,median_UMI_after_QC,n_epithelial,epithelial_%_of_QC,included_in_proportion_decomposition,note
+GSM4904234,Patient0,carcinoma,2947,1865,63.3,8435.0,1009,54.1,yes,
+GSM4904235,Patient1,adenoma,4118,3287,79.8,13589.0,730,22.2,yes,
+GSM4904236,Patient1,carcinoma,3862,3395,87.9,16677.0,2247,66.2,yes,
+GSM4904237,Patient1,normal,3868,3139,81.2,3722.0,243,7.7,yes,
+GSM4904238,Patient2,adenoma,4383,2382,54.3,7553.0,607,25.5,yes,
+GSM4904239,Patient2,carcinoma,7452,5264,70.6,3721.0,1438,27.3,yes,
+GSM4904240,Patient2,normal,7549,4937,65.4,3477.0,1507,30.5,yes,
+GSM4904241,Patient2,para-cancer,4812,3310,68.8,3283.0,390,11.8,yes,
+GSM4904242,Patient3,adenoma,4137,3849,93.0,2439.0,148,3.8,no (low epithelial yield),second adenoma of Patient 3; pooled by cell-count weighting
+GSM4904243,Patient3,adenoma,2657,2464,92.7,2802.0,71,2.9,no (low epithelial yield),second adenoma of Patient 3; pooled by cell-count weighting
+GSM4904244,Patient3,blood,2185,2183,99.9,2664.0,0,0.0,no (negative control),zero epithelial cells under the EPCAM/KRT threshold
+GSM4904245,Patient3,carcinoma,2628,2446,93.1,2428.0,188,7.7,yes,
+GSM4904246,Patient3,normal,4184,3832,91.6,2892.0,108,2.8,no (low epithelial yield),

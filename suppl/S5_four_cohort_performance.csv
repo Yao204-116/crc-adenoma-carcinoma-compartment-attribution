@@ -1,0 +1,5 @@
+﻿cohort,platform,design,n_normal,n_adenoma,n_carcinoma,auc_signature,auc_up_component,auc_down_component,gene_direction_concordance,n_genes_tested,auc_adenoma_vs_normal,note
+GSE4183,GPL570,8 normal / 15 adenoma / 15 carcinoma,8,15,15,0.844,0.92,0.32,0.917,313,0.525,15 IBD samples present in the series are not used in any contrast reported here
+GSE117606,GPL25373,65 normal / 69 adenoma / 74 carcinoma,65,69,74,0.918,0.901,0.09,0.99,294,0.159,adenoma n = 69 as annotated (includes 10 sessile serrated adenomas); excluding SSA (n = 59) leaves whole-signature and up-component AUCs within 0.01 (0.921 and 0.906) — all downstream analyses use the 59-adenoma definition
+GSE128435,GPL4133,5 normal / 22 adenoma / 31 carcinoma,5,22,31,0.538,0.394,0.408,0.511,311,0.182,excluded from all downstream analyses: gene-level concordance 51% (chance) points to a technical rather than a biological discrepancy
+GSE15960,GPL570,6 normal / 6 adenoma / 6 carcinoma,6,6,6,1.0,0.306,0.0,0.636,313,0.556,

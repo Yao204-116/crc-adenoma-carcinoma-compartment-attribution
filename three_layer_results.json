@@ -1,0 +1,411 @@
+{
+ "GSE4183": {
+  "gpl": "GPL570",
+  "n": {
+   "other": 15,
+   "carcinoma": 15,
+   "normal": 8,
+   "adenoma": 15
+  },
+  "auc": {
+   "313全签名": {
+    "n_genes": 313,
+    "auc_ca_vs_no": 0.9333333333333333,
+    "median_normal": -0.279506739321729,
+    "median_carcinoma": 0.1862277562322199,
+    "auc_ad_vs_no": 0.43333333333333335,
+    "auc_ca_vs_ad": 0.92,
+    "median_adenoma": -0.31854915638491016
+   },
+   "上调分量(210)": {
+    "n_genes": 210,
+    "auc_ca_vs_no": 0.95,
+    "median_normal": -0.5745354398808183,
+    "median_carcinoma": 0.4130681941504819,
+    "auc_ad_vs_no": 0.49166666666666664,
+    "auc_ca_vs_ad": 0.92,
+    "median_adenoma": -0.5824378460565518
+   },
+   "下调分量(103)": {
+    "n_genes": 103,
+    "auc_ca_vs_no": 0.30833333333333335,
+    "median_normal": 0.32291605778652666,
+    "median_carcinoma": 0.05376061497223532,
+    "auc_ad_vs_no": 0.45,
+    "auc_ca_vs_ad": 0.32,
+    "median_adenoma": 0.30876319718836337
+   },
+   "间质·激活/CAF": {
+    "n_genes": 43,
+    "auc_ca_vs_no": 0.9333333333333333,
+    "median_normal": -0.6258644276707181,
+    "median_carcinoma": 0.6084430274719735,
+    "auc_ad_vs_no": 0.725,
+    "auc_ca_vs_ad": 0.8488888888888889,
+    "median_adenoma": -0.4560528946235117
+   },
+   "间质·基线": {
+    "n_genes": 29,
+    "auc_ca_vs_no": 0.7583333333333333,
+    "median_normal": -0.05630654048644646,
+    "median_carcinoma": 0.23127113420808534,
+    "auc_ad_vs_no": 0.09166666666666666,
+    "auc_ca_vs_ad": 0.8977777777777778,
+    "median_adenoma": -0.6869583696832214
+   },
+   "上皮·分化/功能": {
+    "n_genes": 41,
+    "auc_ca_vs_no": 0.3333333333333333,
+    "median_normal": 0.3850585857330535,
+    "median_carcinoma": 0.32247072080777067,
+    "auc_ad_vs_no": 0.11666666666666667,
+    "auc_ca_vs_ad": 0.6133333333333333,
+    "median_adenoma": -0.09611204913318283
+   },
+   "上皮·基线/结构": {
+    "n_genes": 23,
+    "auc_ca_vs_no": 0.275,
+    "median_normal": 0.2711724148627061,
+    "median_carcinoma": -0.03973583777412035,
+    "auc_ad_vs_no": 0.35833333333333334,
+    "auc_ca_vs_ad": 0.3111111111111111,
+    "median_adenoma": 0.09809668640020475
+   },
+   "髓系·激活": {
+    "n_genes": 26,
+    "auc_ca_vs_no": 0.8583333333333333,
+    "median_normal": -0.4971909130983019,
+    "median_carcinoma": -0.10130222723394598,
+    "auc_ad_vs_no": 0.6333333333333333,
+    "auc_ca_vs_ad": 0.7422222222222222,
+    "median_adenoma": -0.3751154579402633
+   },
+   "泛间质·6": {
+    "n_genes": 6,
+    "auc_ca_vs_no": 0.9166666666666666,
+    "median_normal": -0.7269588509158104,
+    "median_carcinoma": 0.57756013548333,
+    "auc_ad_vs_no": 0.675,
+    "auc_ca_vs_ad": 0.8177777777777778,
+    "median_adenoma": -0.594053804177607
+   },
+   "上皮分化·核心8": {
+    "n_genes": 8,
+    "auc_ca_vs_no": 0.55,
+    "median_normal": 0.13203255727380908,
+    "median_carcinoma": 0.36196926273237406,
+    "auc_ad_vs_no": 0.4583333333333333,
+    "auc_ca_vs_ad": 0.5422222222222223,
+    "median_adenoma": 0.03325549021138606
+   },
+   "纯上皮基线·7": {
+    "n_genes": 7,
+    "auc_ca_vs_no": 0.18333333333333332,
+    "median_normal": 0.4589725788076554,
+    "median_carcinoma": -0.031226190032217483,
+    "auc_ad_vs_no": 0.13333333333333333,
+    "auc_ca_vs_ad": 0.5022222222222222,
+    "median_adenoma": 0.09899203802887205
+   },
+   "相代谢·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.2,
+    "median_normal": 0.733459325585063,
+    "median_carcinoma": -0.11077693996091771,
+    "auc_ad_vs_no": 0.06666666666666667,
+    "auc_ca_vs_ad": 0.5066666666666667,
+    "median_adenoma": 0.16224137099092198
+   },
+   "潘氏细胞·4": {
+    "n_genes": 4,
+    "auc_ca_vs_no": 0.8416666666666667,
+    "median_normal": -0.9579809588995164,
+    "median_carcinoma": 0.0780333996406117,
+    "auc_ad_vs_no": 0.925,
+    "auc_ca_vs_ad": 0.24444444444444444,
+    "median_adenoma": 0.5815128883904357
+   },
+   "黏液杯状·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.49166666666666664,
+    "median_normal": 0.18926297725188906,
+    "median_carcinoma": 0.3642273771699371,
+    "auc_ad_vs_no": 0.5666666666666667,
+    "auc_ca_vs_ad": 0.4177777777777778,
+    "median_adenoma": 0.35175650548605336
+   }
+  }
+ },
+ "GSE117606": {
+  "gpl": "GPL25373",
+  "n": {
+   "carcinoma": 74,
+   "normal": 65,
+   "adenoma": 69
+  },
+  "auc": {
+   "313全签名": {
+    "n_genes": 294,
+    "auc_ca_vs_no": 0.5669438669438669,
+    "median_normal": 0.07313480368679873,
+    "median_carcinoma": 0.1139215154257794,
+    "auc_ad_vs_no": 0.146711259754738,
+    "auc_ca_vs_ad": 0.8249118683901293,
+    "median_adenoma": -0.19954415639972573
+   },
+   "上调分量(210)": {
+    "n_genes": 195,
+    "auc_ca_vs_no": 0.7438669438669439,
+    "median_normal": -0.02629735619187036,
+    "median_carcinoma": 0.5021706659503102,
+    "auc_ad_vs_no": 0.14247491638795987,
+    "auc_ca_vs_ad": 0.9012925969447708,
+    "median_adenoma": -0.5188879012062938
+   },
+   "下调分量(103)": {
+    "n_genes": 99,
+    "auc_ca_vs_no": 0.137006237006237,
+    "median_normal": 0.23516951071770795,
+    "median_carcinoma": -0.6684820619011445,
+    "auc_ad_vs_no": 0.7638795986622073,
+    "auc_ca_vs_ad": 0.08950254602428516,
+    "median_adenoma": 0.4012697514249145
+   },
+   "间质·激活/CAF": {
+    "n_genes": 41,
+    "auc_ca_vs_no": 0.8550935550935551,
+    "median_normal": -0.3276434942448332,
+    "median_carcinoma": 0.7009021279126599,
+    "auc_ad_vs_no": 0.26443701226309924,
+    "auc_ca_vs_ad": 0.900117508813161,
+    "median_adenoma": -0.5377674154260017
+   },
+   "间质·基线": {
+    "n_genes": 29,
+    "auc_ca_vs_no": 0.49126819126819127,
+    "median_normal": 0.2077616804411179,
+    "median_carcinoma": 0.261099526711451,
+    "auc_ad_vs_no": 0.12931995540691194,
+    "auc_ca_vs_ad": 0.8211907559733647,
+    "median_adenoma": -0.6092140126543616
+   },
+   "上皮·分化/功能": {
+    "n_genes": 41,
+    "auc_ca_vs_no": 0.07505197505197506,
+    "median_normal": 0.4856506908051635,
+    "median_carcinoma": -0.58774198045055,
+    "auc_ad_vs_no": 0.26421404682274247,
+    "auc_ca_vs_ad": 0.16039952996474735,
+    "median_adenoma": 0.0370372070936726
+   },
+   "上皮·基线/结构": {
+    "n_genes": 21,
+    "auc_ca_vs_no": 0.4268191268191268,
+    "median_normal": 0.05193879107214505,
+    "median_carcinoma": -0.13404854479277223,
+    "auc_ad_vs_no": 0.670680044593088,
+    "auc_ca_vs_ad": 0.25048962005483744,
+    "median_adenoma": 0.31281774594302286
+   },
+   "髓系·激活": {
+    "n_genes": 25,
+    "auc_ca_vs_no": 0.7237006237006237,
+    "median_normal": -0.18323877755979726,
+    "median_carcinoma": 0.1818919491893008,
+    "auc_ad_vs_no": 0.4309921962095875,
+    "auc_ca_vs_ad": 0.7555816686251469,
+    "median_adenoma": -0.23124341060390283
+   },
+   "泛间质·6": {
+    "n_genes": 6,
+    "auc_ca_vs_no": 0.8706860706860707,
+    "median_normal": -0.44572595224867984,
+    "median_carcinoma": 0.9148866907216755,
+    "auc_ad_vs_no": 0.2573021181716834,
+    "auc_ca_vs_ad": 0.9240109674892284,
+    "median_adenoma": -0.6635387087199363
+   },
+   "上皮分化·核心8": {
+    "n_genes": 8,
+    "auc_ca_vs_no": 0.16133056133056134,
+    "median_normal": 0.336216938974764,
+    "median_carcinoma": -0.7014852740210222,
+    "auc_ad_vs_no": 0.6037904124860647,
+    "auc_ca_vs_ad": 0.12436349392871132,
+    "median_adenoma": 0.42045489715335205
+   },
+   "纯上皮基线·7": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.37276507276507276,
+    "median_normal": 0.2572500824414629,
+    "median_carcinoma": 0.018932894775029806,
+    "auc_ad_vs_no": 0.44749163879598663,
+    "auc_ca_vs_ad": 0.41421856639247945,
+    "median_adenoma": 0.12213577820855454
+   },
+   "相代谢·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.11351351351351352,
+    "median_normal": 0.32467390319525286,
+    "median_carcinoma": -0.7460551296433209,
+    "auc_ad_vs_no": 0.4936454849498328,
+    "auc_ca_vs_ad": 0.13141402271837055,
+    "median_adenoma": 0.40578026446851295
+   },
+   "潘氏细胞·4": {
+    "n_genes": 4,
+    "auc_ca_vs_no": 0.5733887733887734,
+    "median_normal": -0.42538579346589145,
+    "median_carcinoma": -0.3007303212221245,
+    "auc_ad_vs_no": 0.8617614269788183,
+    "auc_ca_vs_ad": 0.2264003133568351,
+    "median_adenoma": 0.7143960722091418
+   },
+   "黏液杯状·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.20873180873180874,
+    "median_normal": 0.2447893608933549,
+    "median_carcinoma": -0.5660101479346563,
+    "auc_ad_vs_no": 0.696989966555184,
+    "auc_ca_vs_ad": 0.13963963963963963,
+    "median_adenoma": 0.5206743068082315
+   }
+  }
+ },
+ "GSE15960": {
+  "gpl": "GPL570",
+  "n": {
+   "carcinoma": 6,
+   "normal": 6,
+   "adenoma": 6
+  },
+  "auc": {
+   "313全签名": {
+    "n_genes": 313,
+    "auc_ca_vs_no": 0.19444444444444445,
+    "median_normal": 0.023003118606875803,
+    "median_carcinoma": -0.28800166724565174,
+    "auc_ad_vs_no": 1.0,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.2776831428494594
+   },
+   "上调分量(210)": {
+    "n_genes": 210,
+    "auc_ca_vs_no": 0.6944444444444444,
+    "median_normal": -0.1526095585461404,
+    "median_carcinoma": -0.016282966301158684,
+    "auc_ad_vs_no": 0.8611111111111112,
+    "auc_ca_vs_ad": 0.3055555555555556,
+    "median_adenoma": 0.13802557737069082
+   },
+   "下调分量(103)": {
+    "n_genes": 103,
+    "auc_ca_vs_no": 0.0,
+    "median_normal": 0.3052949760857917,
+    "median_carcinoma": -0.9333289930213697,
+    "auc_ad_vs_no": 0.9444444444444444,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.6816210647536224
+   },
+   "间质·激活/CAF": {
+    "n_genes": 43,
+    "auc_ca_vs_no": 0.5555555555555556,
+    "median_normal": -0.022040932891028635,
+    "median_carcinoma": -0.11069725179980057,
+    "auc_ad_vs_no": 0.8333333333333334,
+    "auc_ca_vs_ad": 0.2222222222222222,
+    "median_adenoma": 0.15743752444174008
+   },
+   "间质·基线": {
+    "n_genes": 29,
+    "auc_ca_vs_no": 0.027777777777777776,
+    "median_normal": 0.11985915263954716,
+    "median_carcinoma": -0.4729495476706653,
+    "auc_ad_vs_no": 0.8333333333333334,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.34499293476169357
+   },
+   "上皮·分化/功能": {
+    "n_genes": 41,
+    "auc_ca_vs_no": 0.0,
+    "median_normal": 0.36023162456143565,
+    "median_carcinoma": -0.7272518994466377,
+    "auc_ad_vs_no": 0.5,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.42598280551093404
+   },
+   "上皮·基线/结构": {
+    "n_genes": 23,
+    "auc_ca_vs_no": 0.19444444444444445,
+    "median_normal": 0.3172156429618465,
+    "median_carcinoma": -0.03265956886595617,
+    "auc_ad_vs_no": 0.2222222222222222,
+    "auc_ca_vs_ad": 0.6388888888888888,
+    "median_adenoma": -0.18711275704493613
+   },
+   "髓系·激活": {
+    "n_genes": 26,
+    "auc_ca_vs_no": 0.5277777777777778,
+    "median_normal": -0.1915466123852947,
+    "median_carcinoma": -0.20120373396387203,
+    "auc_ad_vs_no": 0.8611111111111112,
+    "auc_ca_vs_ad": 0.08333333333333333,
+    "median_adenoma": 0.47543279721678616
+   },
+   "泛间质·6": {
+    "n_genes": 6,
+    "auc_ca_vs_no": 0.5,
+    "median_normal": -0.16886395209238642,
+    "median_carcinoma": -0.19663278359095965,
+    "auc_ad_vs_no": 0.6944444444444444,
+    "auc_ca_vs_ad": 0.3611111111111111,
+    "median_adenoma": 0.0452281466379651
+   },
+   "上皮分化·核心8": {
+    "n_genes": 8,
+    "auc_ca_vs_no": 0.0,
+    "median_normal": 0.5861379473262385,
+    "median_carcinoma": -1.3484268479804045,
+    "auc_ad_vs_no": 0.8611111111111112,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.7405448896052443
+   },
+   "纯上皮基线·7": {
+    "n_genes": 7,
+    "auc_ca_vs_no": 0.2777777777777778,
+    "median_normal": 0.2728253927903369,
+    "median_carcinoma": -0.1907552842908501,
+    "auc_ad_vs_no": 0.2222222222222222,
+    "auc_ca_vs_ad": 0.5833333333333334,
+    "median_adenoma": -0.33295268682052837
+   },
+   "相代谢·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.0,
+    "median_normal": 0.3777618093409286,
+    "median_carcinoma": -1.002999461144976,
+    "auc_ad_vs_no": 0.8055555555555556,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.6404984614304955
+   },
+   "潘氏细胞·4": {
+    "n_genes": 4,
+    "auc_ca_vs_no": 0.5277777777777778,
+    "median_normal": -0.2452672485562207,
+    "median_carcinoma": 0.03979890232135755,
+    "auc_ad_vs_no": 0.9444444444444444,
+    "auc_ca_vs_ad": 0.1388888888888889,
+    "median_adenoma": 0.6722612624782287
+   },
+   "黏液杯状·5": {
+    "n_genes": 5,
+    "auc_ca_vs_no": 0.0,
+    "median_normal": 0.5996735567557923,
+    "median_carcinoma": -1.3715252305057577,
+    "auc_ad_vs_no": 0.5,
+    "auc_ca_vs_ad": 0.0,
+    "median_adenoma": 0.6597119870034454
+   }
+  }
+ }
+}

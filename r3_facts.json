@@ -1,0 +1,269 @@
+{
+ "panel_table": {
+  "上皮·分化/功能": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "D",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "D",
+    "GSE15960": "D"
+   },
+   "raw_str": "ADP",
+   "adj_str": "ADD",
+   "robust_P_3of3": false
+  },
+  "上皮·基线/结构": {
+   "raw_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "P",
+    "GSE15960": "A"
+   },
+   "adj_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "P",
+    "GSE15960": "A"
+   },
+   "raw_str": "DPA",
+   "adj_str": "DPA",
+   "robust_P_3of3": false
+  },
+  "上皮分化·核心8": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "P",
+    "GSE15960": "D"
+   },
+   "raw_str": "APP",
+   "adj_str": "APD",
+   "robust_P_3of3": false
+  },
+  "上调分量(210)": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "A"
+   },
+   "raw_str": "AAP",
+   "adj_str": "AAA",
+   "robust_P_3of3": false
+  },
+  "下调分量(103)": {
+   "raw_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "raw_str": "DPP",
+   "adj_str": "DPP",
+   "robust_P_3of3": false
+  },
+  "泛间质·6": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "A"
+   },
+   "raw_str": "AAP",
+   "adj_str": "AAA",
+   "robust_P_3of3": false
+  },
+  "潘氏细胞·4": {
+   "raw_patterns": {
+    "GSE4183": "P",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "P",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "raw_str": "PPP",
+   "adj_str": "PPP",
+   "robust_P_3of3": true
+  },
+  "相代谢·5": {
+   "raw_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "D",
+    "GSE15960": "D"
+   },
+   "raw_str": "DPP",
+   "adj_str": "DDD",
+   "robust_P_3of3": false
+  },
+  "纯上皮基线·7": {
+   "raw_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "D",
+    "GSE15960": "A"
+   },
+   "adj_patterns": {
+    "GSE4183": "D",
+    "GSE117606": "D",
+    "GSE15960": "A"
+   },
+   "raw_str": "DDA",
+   "adj_str": "DDA",
+   "robust_P_3of3": false
+  },
+  "间质·基线": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "raw_str": "AAP",
+   "adj_str": "AAP",
+   "robust_P_3of3": false
+  },
+  "间质·激活/CAF": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "A"
+   },
+   "raw_str": "AAP",
+   "adj_str": "AAA",
+   "robust_P_3of3": false
+  },
+  "髓系·激活": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "A",
+    "GSE15960": "P"
+   },
+   "raw_str": "AAP",
+   "adj_str": "AAP",
+   "robust_P_3of3": false
+  },
+  "黏液杯状·5": {
+   "raw_patterns": {
+    "GSE4183": "A",
+    "GSE117606": "P",
+    "GSE15960": "P"
+   },
+   "adj_patterns": {
+    "GSE4183": "P",
+    "GSE117606": "P",
+    "GSE15960": "D"
+   },
+   "raw_str": "APP",
+   "adj_str": "PPD",
+   "robust_P_3of3": false
+  }
+ },
+ "robust_P_panels": [
+  "潘氏细胞·4"
+ ],
+ "paneth_detail": {
+  "GSE4183": {
+   "raw": {
+    "normal": -0.9579809588995164,
+    "adenoma": 0.5815128883904357,
+    "carcinoma": 0.0780333996406117,
+    "pattern": "P"
+   },
+   "adj": {
+    "normal": -0.9810232029457975,
+    "adenoma": 0.5917764949358003,
+    "carcinoma": 0.11056156131808034,
+    "pattern": "P"
+   }
+  },
+  "GSE117606": {
+   "raw": {
+    "normal": -0.42538579346589145,
+    "adenoma": 0.8036118362112554,
+    "carcinoma": -0.3007303212221245,
+    "pattern": "P"
+   },
+   "adj": {
+    "normal": -0.4285043620270052,
+    "adenoma": 0.7489538001456787,
+    "carcinoma": -0.26104922149137455,
+    "pattern": "P"
+   }
+  },
+  "GSE15960": {
+   "raw": {
+    "normal": -0.2452672485562207,
+    "adenoma": 0.6722612624782287,
+    "carcinoma": 0.03979890232135755,
+    "pattern": "P"
+   },
+   "adj": {
+    "normal": -0.15588117391284037,
+    "adenoma": 0.45693701421962574,
+    "carcinoma": 0.19345685276428287,
+    "pattern": "P"
+   }
+  }
+ },
+ "cohorts": {
+  "GSE4183": {
+   "kind": "全组织",
+   "platform": "Affymetrix",
+   "design": "15 腺瘤 / 15 癌 / 8 正常",
+   "gpl": "GPL570",
+   "n_genes": 21753
+  },
+  "GSE117606": {
+   "kind": "全组织",
+   "platform": "Agilent",
+   "design": "59 腺瘤 / 74 癌 / 65 癌旁（+10 SSA 剔除）",
+   "gpl": "GPL25373",
+   "n_genes": 19194
+  },
+  "GSE15960": {
+   "kind": "LCM 纯上皮",
+   "platform": "Affymetrix",
+   "design": "6 腺瘤 / 6 癌 / 6 正常",
+   "gpl": "GPL570",
+   "n_genes": 21753
+  }
+ }
+}

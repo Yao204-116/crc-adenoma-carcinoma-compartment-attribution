@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Runtime caches / downloaded platform annotations (regenerated on first run)
+geo_cache/
+*.annot.gz
+GPL*_map.tsv
+_embed.html
+
+# Local scratch
+*.log
+_pre_repo_backup/
+_desktop_pdf_backup*

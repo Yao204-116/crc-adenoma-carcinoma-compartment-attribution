@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;padding:0;background:#ffffff;}
+svg{display:block;}
+</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="740" viewBox="0 0 1240 740" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1240" height="740" fill="#ffffff"/>
+  <defs>
+    <marker id="arw" viewBox="0 0 8 8" refX="6" refY="3" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Title ===== -->
+  <text x="30" y="30" font-size="19" font-weight="700" fill="#0f172a">Figure 1 | Study design: the adenoma&#8211;carcinoma axis probed at three resolutions, with one spatial audit</text>
+  <text x="30" y="52" font-size="11.5" fill="#64748b">One 313-gene consensus signature is scored in whole tissue, in laser-capture&#8211;purified epithelium and in single cells, so that composition (P) can be separated from cell-intrinsic state (U).</text>
+
+  <!-- ===== A. Discovery ===== -->
+  <text x="30" y="88" font-size="12.5" font-weight="700" fill="#334155">A &#183; Discovery cohorts &#8212; signature construction (four independent progression cohorts)</text>
+
+  <g>
+    <rect x="44" y="98" width="268" height="50" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+    <text x="56" y="119" font-size="11.5" font-weight="700" fill="#1e3a8a">GSE41258 &#183; GPL96</text>
+    <text x="56" y="136" font-size="10.5" fill="#334155">tumour vs polyp</text>
+  </g>
+  <g>
+    <rect x="328" y="98" width="268" height="50" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+    <text x="340" y="119" font-size="11.5" font-weight="700" fill="#1e3a8a">GSE37364 &#183; GPL570</text>
+    <text x="340" y="136" font-size="10.5" fill="#334155">carcinoma vs adenoma</text>
+  </g>
+  <g>
+    <rect x="612" y="98" width="268" height="50" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+    <text x="624" y="119" font-size="11.5" font-weight="700" fill="#1e3a8a">GSE20916 &#183; GPL570</text>
+    <text x="624" y="136" font-size="10.5" fill="#334155">carcinoma vs adenoma (macrodissected)</text>
+  </g>
+  <g>
+    <rect x="896" y="98" width="268" height="50" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+    <text x="908" y="119" font-size="11.5" font-weight="700" fill="#1e3a8a">GSE41657 &#183; GPL6480</text>
+    <text x="908" y="136" font-size="10.5" fill="#334155">carcinoma vs adenoma (Agilent)</text>
+  </g>
+
+  <!-- converging arrows -->
+  <g stroke="#2563eb" stroke-width="1.3" fill="none">
+    <path d="M178 148 L178 160 L620 160"/>
+    <path d="M462 148 L462 160"/>
+    <path d="M746 148 L746 160"/>
+    <path d="M1030 148 L1030 160 L620 160"/>
+  </g>
+  <path d="M620 160 L620 170" stroke="#2563eb" stroke-width="1.6" fill="none" marker-end="url(#arw)"/>
+
+  <rect x="44" y="172" width="1120" height="32" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.1"/>
+  <text x="58" y="192" font-size="10.8" fill="#334155">Stouffer weighted-Z meta-analysis &#183; Benjamini&#8211;Hochberg FDR &#183; directional concordance in <tspan font-weight="700">4/4</tspan> cohorts is an inclusion criterion, not a result</text>
+  <text x="1150" y="192" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="end">313 genes (210 up / 103 down)</text>
+
+  <!-- ===== B. Three resolutions + spatial audit ===== -->
+  <text x="30" y="234" font-size="12.5" font-weight="700" fill="#334155">B &#183; Three resolutions that make the split measurable &#8212; plus one independent resource that cannot</text>
+
+  <!-- B1 bulk -->
+  <rect x="30" y="246" width="283" height="248" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="30" y="246" width="283" height="24" rx="7" fill="#e2e8f0"/>
+  <text x="42" y="263" font-size="11.5" font-weight="700" fill="#0f172a">1 &#183; Whole tissue (bulk)</text>
+  <text x="44" y="291" font-size="11" font-weight="700" fill="#1e3a8a">GSE4183 &#183; GPL570</text>
+  <text x="44" y="308" font-size="10.5" fill="#334155">15 adenoma &#183; 15 carcinoma &#183; 8 normal</text>
+  <text x="44" y="324" font-size="10.5" fill="#94a3b8">(+15 IBD samples excluded)</text>
+  <text x="44" y="348" font-size="11" font-weight="700" fill="#1e3a8a">GSE117606 &#183; GPL25373</text>
+  <text x="44" y="365" font-size="10.5" fill="#334155">74 carcinoma &#183; 59 adenoma &#183; 65 adjacent</text>
+  <text x="44" y="381" font-size="10.5" fill="#94a3b8">(10 SSA excluded; 56 matched pairs)</text>
+  <line x1="44" y1="396" x2="299" y2="396" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="44" y="416" font-size="10.5" fill="#334155">Epithelium, stroma and immune cells</text>
+  <text x="44" y="431" font-size="10.5" fill="#334155">are mixed in every sample.</text>
+  <text x="44" y="452" font-size="10.5" font-weight="700" fill="#b45309">&#8594; a bulk read returns the whole-cell</text>
+  <text x="44" y="467" font-size="10.5" font-weight="700" fill="#b45309">mean (T), not who expressed it.</text>
+
+  <!-- B2 LCM -->
+  <rect x="329" y="246" width="283" height="248" rx="7" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <rect x="329" y="246" width="283" height="24" rx="7" fill="#ccfbf1"/>
+  <text x="341" y="263" font-size="11.5" font-weight="700" fill="#0f172a">2 &#183; Laser-capture (LCM)</text>
+  <text x="343" y="291" font-size="11" font-weight="700" fill="#0f766e">GSE15960 &#183; GPL570</text>
+  <text x="343" y="308" font-size="10.5" fill="#334155">6 adenoma &#183; 6 carcinoma &#183; 6 normal</text>
+  <text x="343" y="324" font-size="10.5" fill="#334155">laser-microdissected colonic</text>
+  <text x="343" y="340" font-size="10.5" fill="#334155">epithelial cells</text>
+  <line x1="343" y1="360" x2="598" y2="360" stroke="#99f6e4" stroke-width="1"/>
+  <text x="343" y="381" font-size="10.5" fill="#334155">Stroma and immune cells are</text>
+  <text x="343" y="396" font-size="10.5" fill="#334155">physically removed.</text>
+  <text x="343" y="419" font-size="10.5" font-weight="700" fill="#0f766e">&#8594; isolates the epithelial</text>
+  <text x="343" y="434" font-size="10.5" font-weight="700" fill="#0f766e">compartment: the natural control.</text>
+  <text x="343" y="456" font-size="10" fill="#64748b">drift checked against 3,000 stable</text>
+  <text x="343" y="470" font-size="10" fill="#64748b">genes (residual +0.171 reported)</text>
+
+  <!-- B3 single cell -->
+  <rect x="628" y="246" width="283" height="248" rx="7" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="628" y="246" width="283" height="24" rx="7" fill="#ede9fe"/>
+  <text x="640" y="263" font-size="11.5" font-weight="700" fill="#0f172a">3 &#183; Single cell</text>
+  <text x="642" y="291" font-size="11" font-weight="700" fill="#6d28d9">GSE161277 &#183; 10x Genomics</text>
+  <text x="642" y="308" font-size="10.5" fill="#334155">4 patients &#183; 13 libraries</text>
+  <text x="642" y="324" font-size="10.5" fill="#334155">54,782 barcodes &#8594; 42,353 after QC</text>
+  <text x="642" y="340" font-size="10.5" fill="#334155">8,686 epithelial (20.5%)</text>
+  <text x="642" y="356" font-size="10.5" fill="#64748b">peripheral blood = 0 epithelial cells</text>
+  <text x="642" y="371" font-size="10.5" fill="#64748b">(negative control for the threshold)</text>
+  <line x1="642" y1="388" x2="897" y2="388" stroke="#ddd6fe" stroke-width="1"/>
+  <text x="642" y="409" font-size="10.5" fill="#334155">Every cell keeps its own genes,</text>
+  <text x="642" y="424" font-size="10.5" fill="#334155">so the mean can be split.</text>
+  <text x="642" y="449" font-size="10.5" font-weight="700" fill="#6d28d9">&#8594; separates composition (P) from</text>
+  <text x="642" y="464" font-size="10.5" font-weight="700" fill="#6d28d9">cell-intrinsic state (U).</text>
+  <text x="642" y="484" font-size="10" fill="#64748b">3 informative matched triads; directional only</text>
+
+  <!-- C4 spatial audit -->
+  <rect x="927" y="246" width="283" height="248" rx="7" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5" stroke-dasharray="7 4"/>
+  <rect x="927" y="246" width="283" height="24" rx="7" fill="#ffe4e6"/>
+  <text x="939" y="263" font-size="11.5" font-weight="700" fill="#0f172a">4 &#183; Spatial audit (no adenoma)</text>
+  <text x="941" y="291" font-size="11" font-weight="700" fill="#be123c">GSE303070 &#183; CosMx SMI</text>
+  <text x="941" y="308" font-size="10.5" fill="#334155">352 fields of view &#183; ~1,000 genes</text>
+  <text x="941" y="324" font-size="10.5" fill="#334155">15 tumour &#183; 8 normal &#183; 1 control</text>
+  <text x="941" y="340" font-size="10.5" font-weight="700" fill="#be123c">no adenoma specimen exists</text>
+  <line x1="941" y1="356" x2="1196" y2="356" stroke="#fecdd3" stroke-width="1"/>
+  <text x="941" y="376" font-size="10.5" fill="#334155">Own reanalysis, per field of view:</text>
+  <text x="941" y="391" font-size="10.5" fill="#334155">epithelial fraction 0.457 (tumour) vs</text>
+  <text x="941" y="406" font-size="10.5" fill="#334155">0.356 (normal), P = 9.7 &#215; 10&#8315;&#8309;;</text>
+  <text x="941" y="421" font-size="10.5" fill="#334155">but 28.4% of normal fields are QC-fail</text>
+  <text x="941" y="436" font-size="10.5" fill="#334155">and 16.0% are lymphoid aggregate.</text>
+  <text x="941" y="457" font-size="10.5" font-weight="700" fill="#be123c">&#8594; sampling design, not tissue</text>
+  <text x="941" y="472" font-size="10.5" font-weight="700" fill="#be123c">composition: not used as a benchmark.</text>
+
+  <!-- ===== C. Decomposition ===== -->
+  <rect x="30" y="506" width="1180" height="90" rx="7" fill="#fffbeb" stroke="#fbbf24" stroke-width="1.4"/>
+  <text x="46" y="532" font-size="12.5" font-weight="700" fill="#78350f">C &#183; The identity that makes the four resources comparable</text>
+  <text x="470" y="538" font-size="21" font-weight="700" fill="#78350f">&#916;log&#8201;T  =  &#916;log&#8201;P  +  &#916;log&#8201;U</text>
+  <text x="46" y="560" font-size="10.5" fill="#57534e"><tspan font-weight="700">T</tspan> whole-cell mean score &#8212; what bulk and LCM measure</text>
+  <text x="46" y="577" font-size="10.5" fill="#57534e"><tspan font-weight="700">P</tspan> epithelial fraction of cells &#8212; composition</text>
+  <text x="46" y="594" font-size="10.5" fill="#57534e"><tspan font-weight="700">U</tspan> mean score within epithelial cells &#8212; cell-intrinsic state</text>
+  <text x="520" y="560" font-size="10.5" fill="#57534e">T = P &#215; U exactly, so the three resolutions each fix one term and read the others.</text>
+  <text x="520" y="577" font-size="10.5" fill="#57534e">A change in T can therefore be attributed, not merely described.</text>
+  <text x="946" y="560" font-size="10.5" fill="#57534e">Every key read is reported in two calibers</text>
+  <text x="946" y="577" font-size="10.5" fill="#57534e">(raw and drift-corrected); only reads that</text>
+  <text x="946" y="594" font-size="10.5" fill="#57534e">agree between the two enter the main text.</text>
+
+  <!-- ===== D. Findings ===== -->
+  <rect x="30" y="608" width="380" height="94" rx="7" fill="#fffbeb" stroke="#d97706" stroke-width="1.4"/>
+  <text x="44" y="628" font-size="11.5" font-weight="700" fill="#92400e">Up-component is largely not epithelial</text>
+  <text x="44" y="646" font-size="10.5" fill="#334155">In LCM epithelium only 31.6% of the whole-tissue</text>
+  <text x="44" y="661" font-size="10.5" fill="#334155">amplitude is retained, with 58.6% gene concordance</text>
+  <text x="44" y="676" font-size="10.5" fill="#334155">(near chance): the signal is real, but its source is not</text>
+  <text x="44" y="691" font-size="10.5" fill="#334155">epithelial (all 54 EMT genes are stromal).</text>
+
+  <rect x="428" y="608" width="380" height="94" rx="7" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="442" y="628" font-size="11.5" font-weight="700" fill="#166534">Down-component is epithelial-intrinsic</text>
+  <text x="442" y="646" font-size="10.5" fill="#334155">Amplified 2.04&#215; in LCM epithelium, with 93.2% of</text>
+  <text x="442" y="661" font-size="10.5" fill="#334155">genes concordant: diluted, not created, in whole tissue.</text>
+  <text x="442" y="676" font-size="10.5" fill="#334155">Enrichment is colonic enterocyte / Paneth / goblet</text>
+  <text x="442" y="691" font-size="10.5" fill="#334155">identity, not inflammation or mesenchyme.</text>
+
+  <rect x="826" y="608" width="384" height="94" rx="7" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="840" y="628" font-size="11.5" font-weight="700" fill="#9f1239">A Paneth programme peaks in adenoma</text>
+  <text x="840" y="646" font-size="10.5" fill="#334155">normal &lt; carcinoma &lt; adenoma in 3/3 cohorts under</text>
+  <text x="840" y="661" font-size="10.5" fill="#334155">both calibers; DEFA6 is higher in adenoma in 6/6</text>
+  <text x="840" y="676" font-size="10.5" fill="#334155">matched within-patient comparisons, and the state</text>
+  <text x="840" y="691" font-size="10.5" fill="#334155">term (U) dominates over composition (P).</text>
+
+  <rect x="30" y="708" width="1180" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="44" y="725" font-size="10.5" fill="#475569"><tspan font-weight="700">Negative controls.</tspan> Pure-epithelial baseline panel (7 genes): 28/56 = 50.0% concordance, P = 0.70. Mixed 313-gene score in LCM epithelium: AUC 0.111.</text>
+</svg>
+</body></html>

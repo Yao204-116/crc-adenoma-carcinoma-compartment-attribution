@@ -1,0 +1,2287 @@
+﻿panel,n_genes,order_in_panel,gene,component_of_313_signature
+间质·激活/CAF,43,1,ADAM12,not in 313
+间质·激活/CAF,43,2,ADAMTS2,not in 313
+间质·激活/CAF,43,3,ANGPTL4,not in 313
+间质·激活/CAF,43,4,ASPN,UP
+间质·激活/CAF,43,5,BGN,not in 313
+间质·激活/CAF,43,6,CDH11,UP
+间质·激活/CAF,43,7,COL10A1,UP
+间质·激活/CAF,43,8,COL11A1,UP
+间质·激活/CAF,43,9,COL16A1,not in 313
+间质·激活/CAF,43,10,COL8A1,not in 313
+间质·激活/CAF,43,11,COMP,UP
+间质·激活/CAF,43,12,CTGF,UP
+间质·激活/CAF,43,13,CTHRC1,not in 313
+间质·激活/CAF,43,14,EMILIN1,not in 313
+间质·激活/CAF,43,15,FAP,UP
+间质·激活/CAF,43,16,FNDC1,not in 313
+间质·激活/CAF,43,17,GREM1,UP
+间质·激活/CAF,43,18,INHBA,UP
+间质·激活/CAF,43,19,ISLR,UP
+间质·激活/CAF,43,20,LOX,UP
+间质·激活/CAF,43,21,LOXL2,UP
+间质·激活/CAF,43,22,LRRC15,not in 313
+间质·激活/CAF,43,23,MMP1,UP
+间质·激活/CAF,43,24,MMP11,UP
+间质·激活/CAF,43,25,MMP13,not in 313
+间质·激活/CAF,43,26,MMP14,not in 313
+间质·激活/CAF,43,27,MMP3,UP
+间质·激活/CAF,43,28,NID2,not in 313
+间质·激活/CAF,43,29,PLOD2,not in 313
+间质·激活/CAF,43,30,POSTN,UP
+间质·激活/CAF,43,31,PXDN,not in 313
+间质·激活/CAF,43,32,SEMA3C,not in 313
+间质·激活/CAF,43,33,SERPINE1,UP
+间质·激活/CAF,43,34,SPARC,UP
+间质·激活/CAF,43,35,SULF1,UP
+间质·激活/CAF,43,36,SULF2,not in 313
+间质·激活/CAF,43,37,THBS1,not in 313
+间质·激活/CAF,43,38,THBS2,UP
+间质·激活/CAF,43,39,THY1,UP
+间质·激活/CAF,43,40,TIMP1,not in 313
+间质·激活/CAF,43,41,TNC,UP
+间质·激活/CAF,43,42,VEGFA,not in 313
+间质·激活/CAF,43,43,WNT5A,not in 313
+间质·基线,31,1,C7,not in 313
+间质·基线,31,2,CAV1,not in 313
+间质·基线,31,3,CAV2,not in 313
+间质·基线,31,4,CCN1,not in 313
+间质·基线,31,5,CCN2,not in 313
+间质·基线,31,6,CFH,not in 313
+间质·基线,31,7,DCN,UP
+间质·基线,31,8,ECM1,not in 313
+间质·基线,31,9,FBLN1,UP
+间质·基线,31,10,FBLN2,UP
+间质·基线,31,11,FMOD,not in 313
+间质·基线,31,12,GAS6,not in 313
+间质·基线,31,13,IGFBP5,not in 313
+间质·基线,31,14,IGFBP7,UP
+间质·基线,31,15,ITGA1,not in 313
+间质·基线,31,16,LAMA4,not in 313
+间质·基线,31,17,LAMB1,not in 313
+间质·基线,31,18,LUM,UP
+间质·基线,31,19,MFAP4,not in 313
+间质·基线,31,20,MFAP5,not in 313
+间质·基线,31,21,MMP2,UP
+间质·基线,31,22,NBL1,not in 313
+间质·基线,31,23,NNMT,not in 313
+间质·基线,31,24,OGN,not in 313
+间质·基线,31,25,PCOLCE,UP
+间质·基线,31,26,PDGFRA,not in 313
+间质·基线,31,27,PRELP,not in 313
+间质·基线,31,28,PTGDS,not in 313
+间质·基线,31,29,RARRES2,not in 313
+间质·基线,31,30,SERPINF1,not in 313
+间质·基线,31,31,SOD3,not in 313
+上皮·分化/功能,41,1,ADH1C,DOWN
+上皮·分化/功能,41,2,AGR2,not in 313
+上皮·分化/功能,41,3,ANPEP,not in 313
+上皮·分化/功能,41,4,APOA4,not in 313
+上皮·分化/功能,41,5,AQP8,not in 313
+上皮·分化/功能,41,6,CA1,not in 313
+上皮·分化/功能,41,7,CA2,not in 313
+上皮·分化/功能,41,8,CD177,not in 313
+上皮·分化/功能,41,9,CDX2,not in 313
+上皮·分化/功能,41,10,CEACAM7,not in 313
+上皮·分化/功能,41,11,CLCA4,not in 313
+上皮·分化/功能,41,12,FABP1,not in 313
+上皮·分化/功能,41,13,FCGBP,DOWN
+上皮·分化/功能,41,14,GUCA2A,not in 313
+上皮·分化/功能,41,15,GUCA2B,not in 313
+上皮·分化/功能,41,16,HNF4A,not in 313
+上皮·分化/功能,41,17,HPGD,not in 313
+上皮·分化/功能,41,18,ITLN1,not in 313
+上皮·分化/功能,41,19,KRT20,not in 313
+上皮·分化/功能,41,20,KRT23,UP
+上皮·分化/功能,41,21,MEP1A,not in 313
+上皮·分化/功能,41,22,MUC1,not in 313
+上皮·分化/功能,41,23,MUC12,not in 313
+上皮·分化/功能,41,24,MUC13,not in 313
+上皮·分化/功能,41,25,MUC2,DOWN
+上皮·分化/功能,41,26,MUC20,not in 313
+上皮·分化/功能,41,27,MUC4,DOWN
+上皮·分化/功能,41,28,OLFM4,DOWN
+上皮·分化/功能,41,29,PIGR,DOWN
+上皮·分化/功能,41,30,PLAC8,not in 313
+上皮·分化/功能,41,31,REG4,not in 313
+上皮·分化/功能,41,32,SI,DOWN
+上皮·分化/功能,41,33,SLC12A2,not in 313
+上皮·分化/功能,41,34,SLC26A3,not in 313
+上皮·分化/功能,41,35,SLC51B,not in 313
+上皮·分化/功能,41,36,SPINK4,DOWN
+上皮·分化/功能,41,37,TFF1,not in 313
+上皮·分化/功能,41,38,TFF2,not in 313
+上皮·分化/功能,41,39,TFF3,not in 313
+上皮·分化/功能,41,40,VIL1,not in 313
+上皮·分化/功能,41,41,ZG16,not in 313
+上皮·基线/结构,24,1,CDH1,not in 313
+上皮·基线/结构,24,2,CLDN3,not in 313
+上皮·基线/结构,24,3,CLDN4,not in 313
+上皮·基线/结构,24,4,CLDN7,not in 313
+上皮·基线/结构,24,5,DSC2,not in 313
+上皮·基线/结构,24,6,DSP,not in 313
+上皮·基线/结构,24,7,EHF,not in 313
+上皮·基线/结构,24,8,ELF3,not in 313
+上皮·基线/结构,24,9,EPCAM,not in 313
+上皮·基线/结构,24,10,ESRP1,not in 313
+上皮·基线/结构,24,11,ESRP2,not in 313
+上皮·基线/结构,24,12,GRHL2,not in 313
+上皮·基线/结构,24,13,ITGA6,not in 313
+上皮·基线/结构,24,14,ITGB4,not in 313
+上皮·基线/结构,24,15,JUP,not in 313
+上皮·基线/结构,24,16,KRT18,not in 313
+上皮·基线/结构,24,17,KRT19,not in 313
+上皮·基线/结构,24,18,KRT8,not in 313
+上皮·基线/结构,24,19,OCLN,not in 313
+上皮·基线/结构,24,20,PKP2,not in 313
+上皮·基线/结构,24,21,PKP3,not in 313
+上皮·基线/结构,24,22,PRSS8,not in 313
+上皮·基线/结构,24,23,RAB25,not in 313
+上皮·基线/结构,24,24,SFN,not in 313
+髓系·激活,27,1,APOE,not in 313
+髓系·激活,27,2,C5AR1,UP
+髓系·激活,27,3,CCL18,UP
+髓系·激活,27,4,CCL19,not in 313
+髓系·激活,27,5,CCL2,UP
+髓系·激活,27,6,CCL20,not in 313
+髓系·激活,27,7,CCL3,not in 313
+髓系·激活,27,8,CCL4,UP
+髓系·激活,27,9,CD274,not in 313
+髓系·激活,27,10,CXCL8,UP
+髓系·激活,27,11,FCGR3B,UP
+髓系·激活,27,12,FCN1,not in 313
+髓系·激活,27,13,IDO1,not in 313
+髓系·激活,27,14,IL10,not in 313
+髓系·激活,27,15,LGALS3,not in 313
+髓系·激活,27,16,MMP12,not in 313
+髓系·激活,27,17,MMP8,not in 313
+髓系·激活,27,18,MMP9,UP
+髓系·激活,27,19,MNDA,UP
+髓系·激活,27,20,PDCD1LG2,not in 313
+髓系·激活,27,21,S100A12,not in 313
+髓系·激活,27,22,S100A8,UP
+髓系·激活,27,23,S100A9,UP
+髓系·激活,27,24,SIGLEC1,not in 313
+髓系·激活,27,25,SPP1,UP
+髓系·激活,27,26,TCN1,DOWN
+髓系·激活,27,27,TREM2,not in 313
+泛间质·6,6,1,ASPN,UP
+泛间质·6,6,2,COL11A1,UP
+泛间质·6,6,3,FAP,UP
+泛间质·6,6,4,INHBA,UP
+泛间质·6,6,5,POSTN,UP
+泛间质·6,6,6,THBS2,UP
+上皮分化·核心8,8,1,CLCA1,DOWN
+上皮分化·核心8,8,2,FCGBP,DOWN
+上皮分化·核心8,8,3,ITLN1,not in 313
+上皮分化·核心8,8,4,MUC2,DOWN
+上皮分化·核心8,8,5,REG4,not in 313
+上皮分化·核心8,8,6,SI,DOWN
+上皮分化·核心8,8,7,SPINK4,DOWN
+上皮分化·核心8,8,8,ZG16,not in 313
+纯上皮基线·7,7,1,CDH1,not in 313
+纯上皮基线·7,7,2,CDH17,not in 313
+纯上皮基线·7,7,3,EPCAM,not in 313
+纯上皮基线·7,7,4,KRT18,not in 313
+纯上皮基线·7,7,5,KRT19,not in 313
+纯上皮基线·7,7,6,KRT8,not in 313
+纯上皮基线·7,7,7,VIL1,not in 313
+相代谢·5,5,1,ADH1C,DOWN
+相代谢·5,5,2,CYP3A5,DOWN
+相代谢·5,5,3,FMO5,DOWN
+相代谢·5,5,4,NAT2,DOWN
+相代谢·5,5,5,UGT2B15,DOWN
+潘氏细胞·4,4,1,DEFA5,DOWN
+潘氏细胞·4,4,2,DEFA6,DOWN
+潘氏细胞·4,4,3,OLFM4,DOWN
+潘氏细胞·4,4,4,SPINK1,DOWN
+黏液杯状·5,5,1,CLCA1,DOWN
+黏液杯状·5,5,2,FCGBP,DOWN
+黏液杯状·5,5,3,MUC2,DOWN
+黏液杯状·5,5,4,SPINK4,DOWN
+黏液杯状·5,5,5,WFDC2,DOWN
+Up-regulated component,210,1,ACKR3,up
+Up-regulated component,210,2,ACSL4,up
+Up-regulated component,210,3,ACTG2,up
+Up-regulated component,210,4,ADAMTS1,up
+Up-regulated component,210,5,ADGRL4,up
+Up-regulated component,210,6,AEBP1,up
+Up-regulated component,210,7,AKAP12,up
+Up-regulated component,210,8,ANOS1,up
+Up-regulated component,210,9,APOLD1,up
+Up-regulated component,210,10,AQP9,up
+Up-regulated component,210,11,AREG,up
+Up-regulated component,210,12,ASPN,up
+Up-regulated component,210,13,ATF3,up
+Up-regulated component,210,14,BAG2,up
+Up-regulated component,210,15,BCL2A1,up
+Up-regulated component,210,16,BST2,up
+Up-regulated component,210,17,C1S,up
+Up-regulated component,210,18,C3,up
+Up-regulated component,210,19,C5AR1,up
+Up-regulated component,210,20,CALD1,up
+Up-regulated component,210,21,CCL18,up
+Up-regulated component,210,22,CCL2,up
+Up-regulated component,210,23,CCL3L3,up
+Up-regulated component,210,24,CCL4,up
+Up-regulated component,210,25,CCL8,up
+Up-regulated component,210,26,CD248,up
+Up-regulated component,210,27,CDH11,up
+Up-regulated component,210,28,CHI3L1,up
+Up-regulated component,210,29,CHN1,up
+Up-regulated component,210,30,CLDN1,up
+Up-regulated component,210,31,CNN1,up
+Up-regulated component,210,32,COL10A1,up
+Up-regulated component,210,33,COL11A1,up
+Up-regulated component,210,34,COL15A1,up
+Up-regulated component,210,35,COL1A1,up
+Up-regulated component,210,36,COL1A2,up
+Up-regulated component,210,37,COL3A1,up
+Up-regulated component,210,38,COL4A1,up
+Up-regulated component,210,39,COL4A2,up
+Up-regulated component,210,40,COL5A1,up
+Up-regulated component,210,41,COL5A2,up
+Up-regulated component,210,42,COL6A2,up
+Up-regulated component,210,43,COL6A3,up
+Up-regulated component,210,44,COMP,up
+Up-regulated component,210,45,COX7A1,up
+Up-regulated component,210,46,CSRP2,up
+Up-regulated component,210,47,CTGF,up
+Up-regulated component,210,48,CTSK,up
+Up-regulated component,210,49,CXCL10,up
+Up-regulated component,210,50,CXCL13,up
+Up-regulated component,210,51,CXCL5,up
+Up-regulated component,210,52,CXCL6,up
+Up-regulated component,210,53,CXCL8,up
+Up-regulated component,210,54,CXCL9,up
+Up-regulated component,210,55,CYR61,up
+Up-regulated component,210,56,DCN,up
+Up-regulated component,210,57,DDR2,up
+Up-regulated component,210,58,DFNA5,up
+Up-regulated component,210,59,DIO2,up
+Up-regulated component,210,60,DUSP1,up
+Up-regulated component,210,61,DUSP5,up
+Up-regulated component,210,62,EDNRA,up
+Up-regulated component,210,63,EFEMP1,up
+Up-regulated component,210,64,EGFL6,up
+Up-regulated component,210,65,EGR1,up
+Up-regulated component,210,66,EHD2,up
+Up-regulated component,210,67,EREG,up
+Up-regulated component,210,68,FADS3,up
+Up-regulated component,210,69,FAP,up
+Up-regulated component,210,70,FBLN1,up
+Up-regulated component,210,71,FBLN2,up
+Up-regulated component,210,72,FBN1,up
+Up-regulated component,210,73,FCGR1B,up
+Up-regulated component,210,74,FCGR3B,up
+Up-regulated component,210,75,FERMT2,up
+Up-regulated component,210,76,FILIP1L,up
+Up-regulated component,210,77,FKBP10,up
+Up-regulated component,210,78,FLNA,up
+Up-regulated component,210,79,FN1,up
+Up-regulated component,210,80,FPR1,up
+Up-regulated component,210,81,FSTL1,up
+Up-regulated component,210,82,G0S2,up
+Up-regulated component,210,83,GAL,up
+Up-regulated component,210,84,GAS1,up
+Up-regulated component,210,85,GEM,up
+Up-regulated component,210,86,GGT5,up
+Up-regulated component,210,87,GNG11,up
+Up-regulated component,210,88,GNG4,up
+Up-regulated component,210,89,GPM6B,up
+Up-regulated component,210,90,GPNMB,up
+Up-regulated component,210,91,GREM1,up
+Up-regulated component,210,92,GRP,up
+Up-regulated component,210,93,GUCY1A3,up
+Up-regulated component,210,94,GUCY1B3,up
+Up-regulated component,210,95,GULP1,up
+Up-regulated component,210,96,GZMB,up
+Up-regulated component,210,97,HCAR3,up
+Up-regulated component,210,98,HDGFRP3,up
+Up-regulated component,210,99,HOMER1,up
+Up-regulated component,210,100,HSD11B1,up
+Up-regulated component,210,101,HTRA1,up
+Up-regulated component,210,102,IFIT1,up
+Up-regulated component,210,103,IGF2BP3,up
+Up-regulated component,210,104,IGFBP3,up
+Up-regulated component,210,105,IGFBP7,up
+Up-regulated component,210,106,IL13RA2,up
+Up-regulated component,210,107,IL1RN,up
+Up-regulated component,210,108,IL24,up
+Up-regulated component,210,109,IL6,up
+Up-regulated component,210,110,INHBA,up
+Up-regulated component,210,111,INHBB,up
+Up-regulated component,210,112,INS-IGF2,up
+Up-regulated component,210,113,ISG15,up
+Up-regulated component,210,114,ISLR,up
+Up-regulated component,210,115,KIAA1462,up
+Up-regulated component,210,116,KRT23,up
+Up-regulated component,210,117,LARP6,up
+Up-regulated component,210,118,LGALS1,up
+Up-regulated component,210,119,LOX,up
+Up-regulated component,210,120,LOXL1,up
+Up-regulated component,210,121,LOXL2,up
+Up-regulated component,210,122,LUM,up
+Up-regulated component,210,123,LY6E,up
+Up-regulated component,210,124,MCAM,up
+Up-regulated component,210,125,MEIS1,up
+Up-regulated component,210,126,MFAP2,up
+Up-regulated component,210,127,MGP,up
+Up-regulated component,210,128,MME,up
+Up-regulated component,210,129,MMP1,up
+Up-regulated component,210,130,MMP11,up
+Up-regulated component,210,131,MMP2,up
+Up-regulated component,210,132,MMP3,up
+Up-regulated component,210,133,MMP9,up
+Up-regulated component,210,134,MNDA,up
+Up-regulated component,210,135,MXRA8,up
+Up-regulated component,210,136,MYH10,up
+Up-regulated component,210,137,MYL9,up
+Up-regulated component,210,138,MYLK,up
+Up-regulated component,210,139,NCF2,up
+Up-regulated component,210,140,NOX4,up
+Up-regulated component,210,141,NPTX2,up
+Up-regulated component,210,142,NR2F1,up
+Up-regulated component,210,143,NR4A3,up
+Up-regulated component,210,144,NUP210,up
+Up-regulated component,210,145,NXN,up
+Up-regulated component,210,146,OSM,up
+Up-regulated component,210,147,PCOLCE,up
+Up-regulated component,210,148,PDGFRB,up
+Up-regulated component,210,149,PDLIM3,up
+Up-regulated component,210,150,PDPN,up
+Up-regulated component,210,151,PLAU,up
+Up-regulated component,210,152,PLN,up
+Up-regulated component,210,153,POSTN,up
+Up-regulated component,210,154,PPBP,up
+Up-regulated component,210,155,PRKCDBP,up
+Up-regulated component,210,156,PROCR,up
+Up-regulated component,210,157,PTGS2,up
+Up-regulated component,210,158,RAB31,up
+Up-regulated component,210,159,RBMS1,up
+Up-regulated component,210,160,RBP1,up
+Up-regulated component,210,161,RCN3,up
+Up-regulated component,210,162,RFTN1,up
+Up-regulated component,210,163,RGS1,up
+Up-regulated component,210,164,RGS16,up
+Up-regulated component,210,165,RGS2,up
+Up-regulated component,210,166,ROBO1,up
+Up-regulated component,210,167,RSAD2,up
+Up-regulated component,210,168,S100A8,up
+Up-regulated component,210,169,S100A9,up
+Up-regulated component,210,170,SCRN1,up
+Up-regulated component,210,171,SDC2,up
+Up-regulated component,210,172,SELE,up
+Up-regulated component,210,173,SERPINE1,up
+Up-regulated component,210,174,SERPING1,up
+Up-regulated component,210,175,SFRP4,up
+Up-regulated component,210,176,SLC2A14,up
+Up-regulated component,210,177,SLC2A3,up
+Up-regulated component,210,178,SNX10,up
+Up-regulated component,210,179,SPARC,up
+Up-regulated component,210,180,SPARCL1,up
+Up-regulated component,210,181,SPOCK1,up
+Up-regulated component,210,182,SPP1,up
+Up-regulated component,210,183,STC2,up
+Up-regulated component,210,184,SULF1,up
+Up-regulated component,210,185,TAGLN,up
+Up-regulated component,210,186,TCFL5,up
+Up-regulated component,210,187,TDO2,up
+Up-regulated component,210,188,TESC,up
+Up-regulated component,210,189,TFPI2,up
+Up-regulated component,210,190,TGM2,up
+Up-regulated component,210,191,THBD,up
+Up-regulated component,210,192,THBS2,up
+Up-regulated component,210,193,THY1,up
+Up-regulated component,210,194,TLR2,up
+Up-regulated component,210,195,TMEM45A,up
+Up-regulated component,210,196,TMEM47,up
+Up-regulated component,210,197,TNC,up
+Up-regulated component,210,198,TNFAIP6,up
+Up-regulated component,210,199,TPM2,up
+Up-regulated component,210,200,TREM1,up
+Up-regulated component,210,201,TRIB3,up
+Up-regulated component,210,202,UBD,up
+Up-regulated component,210,203,VCAN,up
+Up-regulated component,210,204,VIM,up
+Up-regulated component,210,205,VIP,up
+Up-regulated component,210,206,VSIG4,up
+Up-regulated component,210,207,VWF,up
+Up-regulated component,210,208,WASF3,up
+Up-regulated component,210,209,WWC2,up
+Up-regulated component,210,210,ZCCHC24,up
+Down-regulated component,103,1,ACSM3,down
+Down-regulated component,103,2,ADH1C,down
+Down-regulated component,103,3,ADH6,down
+Down-regulated component,103,4,ADTRP,down
+Down-regulated component,103,5,AKAP7,down
+Down-regulated component,103,6,AKR1B10,down
+Down-regulated component,103,7,ALDH1A1,down
+Down-regulated component,103,8,ALDH1L1,down
+Down-regulated component,103,9,ALDH3A1,down
+Down-regulated component,103,10,AMT,down
+Down-regulated component,103,11,APOBR,down
+Down-regulated component,103,12,ARHGAP44,down
+Down-regulated component,103,13,ARL14,down
+Down-regulated component,103,14,ART3,down
+Down-regulated component,103,15,ASRGL1,down
+Down-regulated component,103,16,ATOH1,down
+Down-regulated component,103,17,ATP12A,down
+Down-regulated component,103,18,ATP2A3,down
+Down-regulated component,103,19,ATP8A1,down
+Down-regulated component,103,20,BCAS1,down
+Down-regulated component,103,21,BEST2,down
+Down-regulated component,103,22,BLNK,down
+Down-regulated component,103,23,CA12,down
+Down-regulated component,103,24,CACNA2D2,down
+Down-regulated component,103,25,CAPN9,down
+Down-regulated component,103,26,CDHR1,down
+Down-regulated component,103,27,CES3,down
+Down-regulated component,103,28,CHST5,down
+Down-regulated component,103,29,CKB,down
+Down-regulated component,103,30,CLCA1,down
+Down-regulated component,103,31,COL17A1,down
+Down-regulated component,103,32,CRYM,down
+Down-regulated component,103,33,CTSE,down
+Down-regulated component,103,34,CWH43,down
+Down-regulated component,103,35,CYP3A5,down
+Down-regulated component,103,36,DEFA5,down
+Down-regulated component,103,37,DEFA6,down
+Down-regulated component,103,38,DNAJC12,down
+Down-regulated component,103,39,DNASE1L3,down
+Down-regulated component,103,40,DUOX2,down
+Down-regulated component,103,41,ENTPD5,down
+Down-regulated component,103,42,EPHX2,down
+Down-regulated component,103,43,FAM189A1,down
+Down-regulated component,103,44,FCGBP,down
+Down-regulated component,103,45,FMO5,down
+Down-regulated component,103,46,FOXA1,down
+Down-regulated component,103,47,GALNT6,down
+Down-regulated component,103,48,HAVCR1,down
+Down-regulated component,103,49,HMGCS2,down
+Down-regulated component,103,50,HOXB13,down
+Down-regulated component,103,51,HSD11B2,down
+Down-regulated component,103,52,HYAL1,down
+Down-regulated component,103,53,ID3,down
+Down-regulated component,103,54,ID4,down
+Down-regulated component,103,55,IGFBP2,down
+Down-regulated component,103,56,IGHA2,down
+Down-regulated component,103,57,JCHAIN,down
+Down-regulated component,103,58,KIAA0319,down
+Down-regulated component,103,59,KIAA1324,down
+Down-regulated component,103,60,KLK1,down
+Down-regulated component,103,61,KLK11,down
+Down-regulated component,103,62,L1TD1,down
+Down-regulated component,103,63,LEFTY1,down
+Down-regulated component,103,64,LRRC19,down
+Down-regulated component,103,65,MB,down
+Down-regulated component,103,66,MLPH,down
+Down-regulated component,103,67,MT1M,down
+Down-regulated component,103,68,MTSS1,down
+Down-regulated component,103,69,MUC2,down
+Down-regulated component,103,70,MUC4,down
+Down-regulated component,103,71,MUC5B,down
+Down-regulated component,103,72,NAT2,down
+Down-regulated component,103,73,NPDC1,down
+Down-regulated component,103,74,NR3C2,down
+Down-regulated component,103,75,NXPE4,down
+Down-regulated component,103,76,OLFM4,down
+Down-regulated component,103,77,PADI2,down
+Down-regulated component,103,78,PBLD,down
+Down-regulated component,103,79,PCSK1,down
+Down-regulated component,103,80,PIGR,down
+Down-regulated component,103,81,PLCB4,down
+Down-regulated component,103,82,PLCE1,down
+Down-regulated component,103,83,PPP1R9A,down
+Down-regulated component,103,84,PRKACB,down
+Down-regulated component,103,85,PRUNE2,down
+Down-regulated component,103,86,PTGDR,down
+Down-regulated component,103,87,QPCT,down
+Down-regulated component,103,88,RGS13,down
+Down-regulated component,103,89,RNF186,down
+Down-regulated component,103,90,SCGB2A1,down
+Down-regulated component,103,91,SELENBP1,down
+Down-regulated component,103,92,SI,down
+Down-regulated component,103,93,SLC28A2,down
+Down-regulated component,103,94,SLC38A4,down
+Down-regulated component,103,95,SPINK1,down
+Down-regulated component,103,96,SPINK4,down
+Down-regulated component,103,97,SULT1B1,down
+Down-regulated component,103,98,TBX3,down
+Down-regulated component,103,99,TCN1,down
+Down-regulated component,103,100,TLR4,down
+Down-regulated component,103,101,TNFRSF11A,down
+Down-regulated component,103,102,UGT2B15,down
+Down-regulated component,103,103,WFDC2,down
+WGCNA-turquoise (Tumor vs Polyp),1015,1,HSPA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,2,EPHB3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,3,MMP14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,4,MSN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,5,MLEC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,6,CSRP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,7,SPARC,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,8,PTP4A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,9,CALU,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,10,DPYSL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,11,ANXA5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,12,SPARCL1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,13,HSPA1B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,14,PLOD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,15,CTSB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,16,FLNA,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,17,CKB,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,18,PALLD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,19,ABLIM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,20,ACTA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,21,ANXA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,22,SERPING1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,23,ANXA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,24,CD99,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,25,ADD3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,26,GNAI2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,27,DUSP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,28,MYL9,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,29,STOM,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,30,MMP2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,31,SYNGR2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,32,LGALS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,33,THBS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,34,CPE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,35,GPNMB,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,36,TIMP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,37,IGFBP7,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,38,BHLHE40,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,39,HTRA1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,40,PLS3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,41,BGN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,42,AKR1B1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,43,CYR61,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,44,PRNP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,45,NREP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,46,SH3BGRL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,47,ENO2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,48,EMP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,49,ETS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,50,GPX3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,51,UCHL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,52,ITGA5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,53,VIM,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,54,DPYSL3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,55,COL6A3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,56,CNN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,57,SCRN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,58,NQO1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,59,JUNB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,60,MYH11,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,61,LAMB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,62,IGFBP4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,63,SNURF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,64,APOD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,65,FHL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,66,CLIC4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,67,SORD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,68,FSCN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,69,PODXL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,70,CALD1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,71,TNC,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,72,HSPG2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,73,ITGA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,74,TIMP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,75,GJA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,76,TPD52,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,77,EGR1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,78,CLCN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,79,LUM,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,80,TMEM106C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,81,FBLN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,82,AEBP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,83,SH3BP5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,84,FAM127A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,85,PRKAB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,86,HSPB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,87,EFEMP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,88,BNIP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,89,COL3A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,90,PLAT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,91,NR3C1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,92,DCN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,93,SLC20A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,94,PLK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,95,ACSL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,96,NID1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,97,CBX6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,98,RAI14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,99,ALDH3A2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,100,PLTP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,101,VWF,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,102,WWTR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,103,LY6E,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,104,PKN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,105,DKK3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,106,ARL4C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,107,FADS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,108,DES,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,109,LOC101928916,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,110,TDP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,111,PDGFRB,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,112,ACTG2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,113,SERPINF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,114,MGP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,115,COL1A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,116,PAM,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,117,TRIM2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,118,ITGAV,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,119,SPOCK1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,120,ACADS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,121,TCEAL4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,122,RGS2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,123,BASP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,124,COL1A2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,125,ACSL4,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,126,CYP1B1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,127,CTSK,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,128,PFKFB3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,129,PCOLCE,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,130,FXYD3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,131,SLC2A3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,132,ACADM,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,133,GALE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,134,MYLK,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,135,CRABP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,136,PLOD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,137,SERPINE1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,138,TNFAIP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,139,WIPF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,140,AXL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,141,FMOD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,142,CKMT1A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,143,GFPT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,144,FOXO1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,145,LTBP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,146,MIR4680,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,147,PKIG,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,148,ABHD14A-ACY1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,149,GPC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,150,PALM2-AKAP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,151,SYNE2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,152,FBN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,153,CLDN7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,154,SYNPO,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,155,DBN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,156,GAA,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,157,AHR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,158,GPX2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,159,FUCA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,160,PCK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,161,CXCL8,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,162,CD93,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,163,DDIT4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,164,MAP7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,165,UNC13B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,166,ADAM12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,167,KIF13B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,168,MPP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,169,RGS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,170,C7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,171,AMOTL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,172,PTPRK,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,173,CHSY1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,174,CAV1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,175,CHST15,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,176,KLHL21,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,177,THBS2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,178,IMPA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,179,BCL6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,180,TIMP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,181,ALDH1A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,182,RASSF2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,183,S100A4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,184,MYO6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,185,ATXN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,186,UPP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,187,F13A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,188,CAV2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,189,COL5A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,190,PTPRM,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,191,MMP15,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,192,DUSP14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,193,APOE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,194,ARRB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,195,ARMCX2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,196,MFAP2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,197,RBP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,198,IGFBP5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,199,ARHGAP32,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,200,CDH2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,201,TPBG,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,202,COL15A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,203,RTN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,204,RCAN2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,205,CPQ,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,206,S100A9,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,207,LOXL1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,208,FSTL3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,209,ZEB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,210,ALDH5A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,211,PROCR,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,212,CTSF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,213,CXCL12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,214,PKD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,215,DFNA5,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,216,FZD7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,217,EMP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,218,ADCY7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,219,RBMS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,220,TCF4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,221,ARHGEF17,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,222,LMOD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,223,MPZL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,224,SSBP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,225,GUCY1B3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,226,TSPAN8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,227,IL32,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,228,LRRC32,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,229,IGFBP6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,230,CFI,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,231,VCAM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,232,SMARCA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,233,MMP11,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,234,FBLN2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,235,THBD,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,236,HEPH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,237,SLC4A4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,238,ARHGAP29,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,239,TCEA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,240,KDR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,241,MMP9,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,242,CNN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,243,CA12,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,244,FABP4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,245,F2R,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,246,SPRY2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,247,IQCJ-SCHIP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,248,ETHE1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,249,RNF144A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,250,MAOB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,251,WASF3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,252,SFRP4,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,253,MEIS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,254,P3H4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,255,PBX3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,256,TPM2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,257,NID2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,258,GNG11,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,259,PREP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,260,HSD11B2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,261,PDE2A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,262,FILIP1L,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,263,COL7A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,264,TPST1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,265,EMILIN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,266,WASF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,267,ALOX5AP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,268,PIGR,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,269,GLIPR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,270,GULP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,271,LMO2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,272,FADS3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,273,LGALS4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,274,PMAIP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,275,AMT,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,276,LOX,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,277,KBTBD11,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,278,COL11A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,279,NEO1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,280,GOLIM4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,281,ABCA3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,282,SEC23A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,283,COL16A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,284,S100P,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,285,MAOA,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,286,SLC12A2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,287,GAS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,288,EDNRA,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,289,TIE1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,290,GEM,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,291,MMP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,292,CLDN5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,293,TOM1L1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,294,FAM216A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,295,UGT1A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,296,ACOT13,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,297,COX7A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,298,SLC7A7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,299,NUAK1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,300,STC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,301,CDK14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,302,CCL21,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,303,HMGCS2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,304,ASL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,305,VCAN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,306,TFF3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,307,PARVB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,308,S1PR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,309,ME3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,310,FOXA1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,311,CDH5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,312,LTBP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,313,IRS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,314,PARM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,315,SGCE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,316,PANX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,317,ABCA8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,318,CSPG4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,319,PTGS2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,320,DSC2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,321,RCBTB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,322,THBS4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,323,EML1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,324,MYB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,325,CACNA2D2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,326,CADPS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,327,B3GNT3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,328,GMDS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,329,AOC3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,330,RAMP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,331,TLR2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,332,INHBA,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,333,TCF21,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,334,PLN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,335,SRPX,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,336,SSPN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,337,RDX,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,338,TRAPPC6A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,339,PFN2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,340,DOCK4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,341,MAP3K8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,342,CFTR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,343,CYP2J2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,344,MPDZ,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,345,BCAP29,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,346,MAMLD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,347,PLEKHA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,348,GFPT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,349,TMPRSS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,350,MAN2A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,351,PLCE1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,352,CCL3L3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,353,CLEC11A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,354,GCAT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,355,DDR2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,356,ADAM8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,357,PLS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,358,ANOS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,359,IL6,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,360,ALDH1L1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,361,HCAR3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,362,EHHADH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,363,PDGFRL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,364,EGR2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,365,INHBB,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,366,KCNH2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,367,BMP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,368,SMPDL3B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,369,EHD2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,370,SERPINI1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,371,ARHGAP44,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,372,ITGBL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,373,CALB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,374,BCHE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,375,HOXB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,376,MST1R,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,377,PLAU,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,378,CRYM,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,379,ZNF175,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,380,SRPX2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,381,CMAHP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,382,TAGLN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,383,DNASE1L3,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,384,PCSK5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,385,ANGPT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,386,SNX7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,387,ROR2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,388,SLC44A4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,389,MMRN1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,390,PRRG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,391,MEOX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,392,CDA,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,393,REPS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,394,RAPGEF4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,395,HSD17B6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,396,CDS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,397,COMP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,398,PCDHGA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,399,ITGB7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,400,OSMR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,401,ENTPD5,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,402,CYP3A5,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,403,SLC27A2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,404,FMO5,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,405,BIK,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,406,FGF7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,407,SLC3A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,408,TRPC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,409,REG3A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,410,NGFR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,411,ADORA2B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,412,ARSE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,413,PNLIP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,414,GPA33,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,415,FOXF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,416,CYP3A7-CYP3A51P,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,417,COL10A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,418,ACSM3,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,419,TDO2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,420,PRR5-ARHGAP8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,421,WNT5A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,422,CYP3A4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,423,TGM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,424,LEFTY1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,425,KIAA0319,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,426,TNFAIP6,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,427,ATP2C2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,428,OVOL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,429,CTH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,430,MATN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,431,UGT1A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,432,ECM2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,433,EGR3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,434,ARHGAP6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,435,MEOX2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,436,CST1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,437,SPINK1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,438,ADH1C,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,439,P2RY2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,440,ARHGAP22,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,441,PLA2G1B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,442,GUCY2C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,443,DAPK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,444,GRP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,445,MAF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,446,NOX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,447,F2RL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,448,CDX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,449,EPYC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,450,AKR7A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,451,PLXNC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,452,LDB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,453,CYP4F12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,454,AKR1B10,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,455,MAP4K4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,456,VIP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,457,EFEMP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,458,RENBP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,459,SLC5A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,460,HTR2B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,461,SI,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,462,XK,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,463,SLC35A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,464,NAT2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,465,CH25H,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,466,ADGRL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,467,PPFIA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,468,PTK7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,469,CSRP2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,470,GIF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,471,TNFRSF11A,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,472,MMP23A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,473,GGT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,474,APOBEC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,475,CDH11,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,476,GABRA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,477,ISLR,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,478,LOC100652777,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,479,HIST1H2BN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,480,MITF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,481,RFX3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,482,SLC28A2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,483,GABRB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,484,ATP12A,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,485,UGT2B15,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,486,BFSP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,487,DDO,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,488,TNFSF4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,489,DEGS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,490,BEST2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,491,MEIS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,492,DEFA5,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,493,AQP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,494,P4HA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,495,GADD45B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,496,SULT1B1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,497,ENTPD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,498,NINL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,499,SERPINH1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,500,PKP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,501,CEP170P1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,502,CYP3A43,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,503,CSN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,504,PROS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,505,DEFA6,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,506,RBPMS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,507,CXCL5,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,508,SCN7A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,509,NAALADL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,510,TNFSF14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,511,MEF2C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,512,DPT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,513,COL21A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,514,PSD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,515,CYP2C18,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,516,ABCC3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,517,LSR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,518,PTPRH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,519,ANXA13,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,520,ACKR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,521,UGT8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,522,ESM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,523,PDE1A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,524,C4B_2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,525,SLC6A7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,526,PITX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,527,FUT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,528,PPARG,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,529,CST2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,530,VAT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,531,FDFT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,532,EID1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,533,MAGED2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,534,C1S,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,535,FSTL1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,536,PTRF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,537,CLU,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,538,CCNG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,539,THY1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,540,GABARAPL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,541,SRI,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,542,ID1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,543,MIR1908,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,544,CRIP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,545,PECAM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,546,CADM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,547,RGS5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,548,COL18A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,549,MCAM,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,550,CTGF,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,551,TUBA1A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,552,PLPP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,553,COL6A2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,554,AGR2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,555,C10ORF10,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,556,TUBB6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,557,PIM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,558,BICD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,559,FERMT2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,560,STX3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,561,TSPAN4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,562,SLC39A8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,563,CRYAB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,564,TPM4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,565,PLPP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,566,ECM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,567,EPHX2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,568,CHI3L1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,569,BAG2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,570,SPON1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,571,SYNE1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,572,DUSP5,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,573,GPM6A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,574,PDZD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,575,RARRES2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,576,NR2F1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,577,HDGFRP3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,578,IGF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,579,NDN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,580,PLA2G16,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,581,EPHB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,582,MXRA5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,583,TST,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,584,LOC100653057,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,585,PDLIM3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,586,TGFB1I1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,587,TMEM47,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,588,ITGA7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,589,TFPI,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,590,SMAGP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,591,RIN2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,592,MOXD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,593,ACE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,594,MFAP5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,595,CHRDL1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,596,PLA2G4C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,597,PADI2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,598,HOXB13,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,599,TRIM9,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,600,SPP1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,601,RHOD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,602,SLIT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,603,TP53TG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,604,CCL18,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,605,KCNMB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,606,VILL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,607,FAP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,608,GATA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,609,OLR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,610,NOS2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,611,ST8SIA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,612,IGFBP3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,613,FYN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,614,CLCA1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,615,SPAG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,616,PMP22,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,617,ART3,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,618,LAMA5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,619,ATP8A1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,620,FZD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,621,MAB21L2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,622,CCKBR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,623,FUT6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,624,ADGRA3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,625,FN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,626,NRP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,627,AKAP12,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,628,SLCO3A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,629,MFGE8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,630,MEG3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,631,POSTN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,632,PLAUR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,633,ZEB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,634,LEF1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,635,MGLL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,636,GGTLC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,637,LRIG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,638,HOPX,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,639,MDFIC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,640,NCALD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,641,BDH1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,642,MYO1A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,643,COL4A2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,644,COL4A1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,645,PXDN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,646,MAPK3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,647,C1R,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,648,RHOB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,649,RHOQ,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,650,SDC2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,651,KCTD12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,652,PLXND1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,653,QKI,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,654,FNBP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,655,SULF1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,656,MYH10,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,657,ZCCHC24,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,658,RBM38,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,659,NBEAL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,660,NEDD4L,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,661,MXRA7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,662,LCN2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,663,AIM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,664,FRYL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,665,CAP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,666,DENND5A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,667,CHN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,668,RFTN1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,669,RRAS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,670,ELN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,671,LOC102724229,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,672,MFAP4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,673,SYNM,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,674,OLFM4,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,675,FAM171A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,676,NAB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,677,JAM3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,678,AHCYL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,679,HEG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,680,PPFIBP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,681,CCDC69,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,682,PDZRN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,683,PXDC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,684,ADGRF5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,685,TBC1D9,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,686,ACKR3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,687,AHNAK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,688,NACC2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,689,ANGPTL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,690,PRKCDBP,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,691,TTC28,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,692,OLFML2A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,693,LPCAT4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,694,SLC35D2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,695,STARD13,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,696,COL4A5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,697,OLFML2B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,698,SNAI2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,699,C2ORF72,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,700,GPX7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,701,CDKN1C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,702,ROBO1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,703,CDR2L,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,704,LOC730101,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,705,SACS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,706,TMEM30B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,707,KIAA1462,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,708,NECTIN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,709,SRGAP2C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,710,TMEM158,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,711,CDHR1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,712,ZNF787,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,713,TJP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,714,STON1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,715,MXRA8,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,716,PGAP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,717,NPTX2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,718,COL2A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,719,PLPPR4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,720,G0S2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,721,PDZD8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,722,GLCE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,723,APLNR,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,724,AQP5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,725,COL9A2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,726,FAM134B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,727,GOLGA8N,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,728,HOMER1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,729,CFH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,730,IRAK3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,731,CLMN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,732,DCBLD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,733,LRRC15,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,734,TWIST1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,735,FAM169A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,736,SUPT20H,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,737,CCL8,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,738,ATP10B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,739,FUT3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,740,LOC654342,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,741,ZG16,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,742,MYRIP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,743,LOC102724788,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,744,SELENBP1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,745,HLX,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,746,NAT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,747,HOXA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,748,ITGA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,749,PKD1P1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,750,FAM63B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,751,NBPF26,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,752,MIR22,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,753,DIXDC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,754,ZNF423,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,755,PLXDC2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,756,SLC38A6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,757,CNIH3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,758,SEMA6A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,759,DENND5B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,760,LOC100129518,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,761,ADTRP,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,762,KIAA0754,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,763,CFHR1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,764,LOC102724250,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,765,BEX4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,766,LOC102724197,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,767,GSDMB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,768,DKFZP564C152,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,769,SLC2A14,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,770,LAMB2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,771,CCL2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,772,USP53,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,773,BTNL3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,774,SFXN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,775,LOC100289473,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,776,ABCA6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,777,ZSCAN18,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,778,ZBTB7C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,779,GSTK1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,780,A2M,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,781,RAB31,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,782,C3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,783,GOLM1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,784,TNS3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,785,BACE2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,786,CMPK1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,787,CYBRD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,788,FXYD6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,789,DSG2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,790,BACE1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,791,MAP7D1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,792,FAM127B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,793,BEX3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,794,FAM129A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,795,HSD17B11,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,796,SQRDL,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,797,TSPYL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,798,RBM47,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,799,NDUFC2-KCTD14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,800,CMAS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,801,OLFML3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,802,NANS,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,803,PLEKHO1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,804,PNMA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,805,AP1M2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,806,SAV1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,807,KRCC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,808,GALNT7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,809,ACSL5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,810,RCBTB1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,811,GOLPH3L,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,812,LOC728392,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,813,SNX10,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,814,MBIP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,815,PLBD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,816,CAPRIN2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,817,GREM1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,818,TRPS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,819,MRPL39,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,820,MAFB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,821,MAGEH1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,822,LMCD1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,823,CPPED1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,824,LOC101928615,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,825,PHLDA3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,826,LOC100130872,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,827,LHFP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,828,PJA1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,829,PCTP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,830,MUC13,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,831,SYBU,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,832,TSPAN15,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,833,ARMCX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,834,APIP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,835,RAB29,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,836,PDGFC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,837,SEZ6L2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,838,RGCC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,839,PALMD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,840,PACSIN3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,841,WWC2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,842,MIR6732,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,843,C14ORF132,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,844,EGFL7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,845,TMEM132A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,846,DSE,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,847,RNF25,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,848,TNS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,849,MARC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,850,CSGALNACT2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,851,SLC37A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,852,HSPB7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,853,TMEM168,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,854,MYO5C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,855,SOBP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,856,COL5A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,857,PLGRKT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,858,PLEKHA4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,859,CD248,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,860,CEP70,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,861,CSGALNACT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,862,LYVE1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,863,ITIH5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,864,PXMP2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,865,ASPN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,866,SLC24A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,867,RCN3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,868,IL20RA,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,869,PRR15L,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,870,ADGRL4,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,871,PDLIM2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,872,IFT74,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,873,DACT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,874,PPARGC1A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,875,TWSG1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,876,RHBDF2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,877,ZNF331,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,878,FKBP10,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,879,IL17RB,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,880,TSPAN12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,881,TMEM204,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,882,GPRC5C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,883,TRPM4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,884,KLF2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,885,MIR6773,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,886,EPS8L3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,887,TMEM45A,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,888,ELMO3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,889,FA2H,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,890,ARHGAP10,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,891,RAI2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,892,C4ORF19,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,893,EGFL6,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,894,WFDC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,895,NXN,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,896,WWC3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,897,FJX1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,898,PBLD,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,899,TMC5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,900,PDZK1IP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,901,LRP12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,902,SUGCT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,903,RAB11FIP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,904,TBX3,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,905,SMPD3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,906,QSER1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,907,DUOX2,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,908,RNF186,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,909,POF1B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,910,NOX4,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,911,ZFPM2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,912,TESMIN,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,913,SLC6A14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,914,LATS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,915,GAL3ST4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,916,CYP26B1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,917,NUDT11,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,918,FAM198B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,919,GOLGA2P5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,920,CLEC5A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,921,TMEM255A,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,922,FGD6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,923,DKK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,924,LTBP3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,925,ADAMTS5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,926,UGT2A3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,927,L1TD1,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,928,GALNT6,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,929,GIPC2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,930,HS3ST3A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,931,PRR16,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,932,APOBR,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,933,STYK1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,934,PLEKHG6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,935,FBXL8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,936,PPP1R14D,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,937,C5AR1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,938,LOC101928274,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,939,EPB41L4B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,940,DNLZ,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,941,CCDC102B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,942,PDZD3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,943,FAM83E,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,944,CLDN16,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,945,CES3,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,946,C11ORF16,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,947,KLHL29,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,948,MCF2L-AS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,949,SGK2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,950,LRRC19,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,951,LMAN1L,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,952,POC1B-GALNT4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,953,KCNK12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,954,ARL14,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,955,PACS1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,956,ZNF770,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,957,SYTL2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,958,FAR2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,959,ZNF532,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,960,LRRC31,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,961,CBLC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,962,NXPE4,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,963,CWH43,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,964,HHLA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,965,B3GALT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,966,APOLD1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,967,RUNX1-IT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,968,MANSC1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,969,ATP1A1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,970,A1CF,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,971,RAB23,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,972,KRTAP1-3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,973,C1QTNF3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,974,STXBP6,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,975,ITM2C,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,976,LBH,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,977,COLEC12,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,978,ASAP1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,979,PER3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,980,PPP1R9A,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,981,NBEA,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,982,BCL2L14,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,983,HDHD3,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,984,SNORA11E,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,985,SYNC,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,986,LOC101928551,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,987,TAS2R4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,988,CACNG5,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,989,GLT8D2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,990,RRAGD,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,991,PLVAP,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,992,BHLHE41,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,993,CRISPLD2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,994,RPL23AP7,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,995,HSPB8,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,996,CHPT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,997,COL5A2,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,998,CANT1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,999,EHBP1L1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1000,ADGRA2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1001,PHF11,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1002,ZNF512B,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1003,KIAA1324,DOWN
+WGCNA-turquoise (Tumor vs Polyp),1015,1004,CALML4,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1005,COL8A2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1006,NLGN4X,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1007,EOGT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1008,GUCY1A3,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,1009,EEF2KMT,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1010,CSNK1E,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1011,LOC102725271,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1012,AMIGO2,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1013,ADAMTS1,UP
+WGCNA-turquoise (Tumor vs Polyp),1015,1014,ZDHHC8P1,not in 313
+WGCNA-turquoise (Tumor vs Polyp),1015,1015,KCNE4,not in 313
+turquoise ∩ up-component,156,1,SPARC,UP
+turquoise ∩ up-component,156,2,SPARCL1,UP
+turquoise ∩ up-component,156,3,FLNA,UP
+turquoise ∩ up-component,156,4,SERPING1,UP
+turquoise ∩ up-component,156,5,DUSP1,UP
+turquoise ∩ up-component,156,6,MYL9,UP
+turquoise ∩ up-component,156,7,MMP2,UP
+turquoise ∩ up-component,156,8,LGALS1,UP
+turquoise ∩ up-component,156,9,GPNMB,UP
+turquoise ∩ up-component,156,10,IGFBP7,UP
+turquoise ∩ up-component,156,11,HTRA1,UP
+turquoise ∩ up-component,156,12,CYR61,UP
+turquoise ∩ up-component,156,13,VIM,UP
+turquoise ∩ up-component,156,14,COL6A3,UP
+turquoise ∩ up-component,156,15,SCRN1,UP
+turquoise ∩ up-component,156,16,CALD1,UP
+turquoise ∩ up-component,156,17,TNC,UP
+turquoise ∩ up-component,156,18,EGR1,UP
+turquoise ∩ up-component,156,19,LUM,UP
+turquoise ∩ up-component,156,20,FBLN1,UP
+turquoise ∩ up-component,156,21,AEBP1,UP
+turquoise ∩ up-component,156,22,EFEMP1,UP
+turquoise ∩ up-component,156,23,COL3A1,UP
+turquoise ∩ up-component,156,24,DCN,UP
+turquoise ∩ up-component,156,25,VWF,UP
+turquoise ∩ up-component,156,26,LY6E,UP
+turquoise ∩ up-component,156,27,PDGFRB,UP
+turquoise ∩ up-component,156,28,ACTG2,UP
+turquoise ∩ up-component,156,29,MGP,UP
+turquoise ∩ up-component,156,30,COL1A1,UP
+turquoise ∩ up-component,156,31,SPOCK1,UP
+turquoise ∩ up-component,156,32,RGS2,UP
+turquoise ∩ up-component,156,33,COL1A2,UP
+turquoise ∩ up-component,156,34,ACSL4,UP
+turquoise ∩ up-component,156,35,CTSK,UP
+turquoise ∩ up-component,156,36,PCOLCE,UP
+turquoise ∩ up-component,156,37,SLC2A3,UP
+turquoise ∩ up-component,156,38,MYLK,UP
+turquoise ∩ up-component,156,39,SERPINE1,UP
+turquoise ∩ up-component,156,40,FBN1,UP
+turquoise ∩ up-component,156,41,CXCL8,UP
+turquoise ∩ up-component,156,42,RGS1,UP
+turquoise ∩ up-component,156,43,THBS2,UP
+turquoise ∩ up-component,156,44,COL5A1,UP
+turquoise ∩ up-component,156,45,MFAP2,UP
+turquoise ∩ up-component,156,46,RBP1,UP
+turquoise ∩ up-component,156,47,COL15A1,UP
+turquoise ∩ up-component,156,48,S100A9,UP
+turquoise ∩ up-component,156,49,LOXL1,UP
+turquoise ∩ up-component,156,50,PROCR,UP
+turquoise ∩ up-component,156,51,DFNA5,UP
+turquoise ∩ up-component,156,52,RBMS1,UP
+turquoise ∩ up-component,156,53,GUCY1B3,UP
+turquoise ∩ up-component,156,54,MMP11,UP
+turquoise ∩ up-component,156,55,FBLN2,UP
+turquoise ∩ up-component,156,56,THBD,UP
+turquoise ∩ up-component,156,57,MMP9,UP
+turquoise ∩ up-component,156,58,CNN1,UP
+turquoise ∩ up-component,156,59,WASF3,UP
+turquoise ∩ up-component,156,60,SFRP4,UP
+turquoise ∩ up-component,156,61,MEIS1,UP
+turquoise ∩ up-component,156,62,TPM2,UP
+turquoise ∩ up-component,156,63,GNG11,UP
+turquoise ∩ up-component,156,64,FILIP1L,UP
+turquoise ∩ up-component,156,65,GULP1,UP
+turquoise ∩ up-component,156,66,FADS3,UP
+turquoise ∩ up-component,156,67,LOX,UP
+turquoise ∩ up-component,156,68,COL11A1,UP
+turquoise ∩ up-component,156,69,GAS1,UP
+turquoise ∩ up-component,156,70,EDNRA,UP
+turquoise ∩ up-component,156,71,GEM,UP
+turquoise ∩ up-component,156,72,MMP1,UP
+turquoise ∩ up-component,156,73,COX7A1,UP
+turquoise ∩ up-component,156,74,VCAN,UP
+turquoise ∩ up-component,156,75,PTGS2,UP
+turquoise ∩ up-component,156,76,TLR2,UP
+turquoise ∩ up-component,156,77,INHBA,UP
+turquoise ∩ up-component,156,78,PLN,UP
+turquoise ∩ up-component,156,79,CCL3L3,UP
+turquoise ∩ up-component,156,80,DDR2,UP
+turquoise ∩ up-component,156,81,ANOS1,UP
+turquoise ∩ up-component,156,82,IL6,UP
+turquoise ∩ up-component,156,83,HCAR3,UP
+turquoise ∩ up-component,156,84,INHBB,UP
+turquoise ∩ up-component,156,85,EHD2,UP
+turquoise ∩ up-component,156,86,PLAU,UP
+turquoise ∩ up-component,156,87,TAGLN,UP
+turquoise ∩ up-component,156,88,COMP,UP
+turquoise ∩ up-component,156,89,COL10A1,UP
+turquoise ∩ up-component,156,90,TDO2,UP
+turquoise ∩ up-component,156,91,TNFAIP6,UP
+turquoise ∩ up-component,156,92,GRP,UP
+turquoise ∩ up-component,156,93,VIP,UP
+turquoise ∩ up-component,156,94,CSRP2,UP
+turquoise ∩ up-component,156,95,CDH11,UP
+turquoise ∩ up-component,156,96,ISLR,UP
+turquoise ∩ up-component,156,97,CXCL5,UP
+turquoise ∩ up-component,156,98,C1S,UP
+turquoise ∩ up-component,156,99,FSTL1,UP
+turquoise ∩ up-component,156,100,THY1,UP
+turquoise ∩ up-component,156,101,MCAM,UP
+turquoise ∩ up-component,156,102,CTGF,UP
+turquoise ∩ up-component,156,103,COL6A2,UP
+turquoise ∩ up-component,156,104,FERMT2,UP
+turquoise ∩ up-component,156,105,CHI3L1,UP
+turquoise ∩ up-component,156,106,BAG2,UP
+turquoise ∩ up-component,156,107,DUSP5,UP
+turquoise ∩ up-component,156,108,NR2F1,UP
+turquoise ∩ up-component,156,109,HDGFRP3,UP
+turquoise ∩ up-component,156,110,PDLIM3,UP
+turquoise ∩ up-component,156,111,TMEM47,UP
+turquoise ∩ up-component,156,112,SPP1,UP
+turquoise ∩ up-component,156,113,CCL18,UP
+turquoise ∩ up-component,156,114,FAP,UP
+turquoise ∩ up-component,156,115,IGFBP3,UP
+turquoise ∩ up-component,156,116,FN1,UP
+turquoise ∩ up-component,156,117,AKAP12,UP
+turquoise ∩ up-component,156,118,POSTN,UP
+turquoise ∩ up-component,156,119,COL4A2,UP
+turquoise ∩ up-component,156,120,COL4A1,UP
+turquoise ∩ up-component,156,121,SDC2,UP
+turquoise ∩ up-component,156,122,SULF1,UP
+turquoise ∩ up-component,156,123,MYH10,UP
+turquoise ∩ up-component,156,124,ZCCHC24,UP
+turquoise ∩ up-component,156,125,CHN1,UP
+turquoise ∩ up-component,156,126,RFTN1,UP
+turquoise ∩ up-component,156,127,ACKR3,UP
+turquoise ∩ up-component,156,128,PRKCDBP,UP
+turquoise ∩ up-component,156,129,ROBO1,UP
+turquoise ∩ up-component,156,130,KIAA1462,UP
+turquoise ∩ up-component,156,131,MXRA8,UP
+turquoise ∩ up-component,156,132,NPTX2,UP
+turquoise ∩ up-component,156,133,G0S2,UP
+turquoise ∩ up-component,156,134,HOMER1,UP
+turquoise ∩ up-component,156,135,CCL8,UP
+turquoise ∩ up-component,156,136,SLC2A14,UP
+turquoise ∩ up-component,156,137,CCL2,UP
+turquoise ∩ up-component,156,138,RAB31,UP
+turquoise ∩ up-component,156,139,C3,UP
+turquoise ∩ up-component,156,140,SNX10,UP
+turquoise ∩ up-component,156,141,GREM1,UP
+turquoise ∩ up-component,156,142,WWC2,UP
+turquoise ∩ up-component,156,143,CD248,UP
+turquoise ∩ up-component,156,144,ASPN,UP
+turquoise ∩ up-component,156,145,RCN3,UP
+turquoise ∩ up-component,156,146,ADGRL4,UP
+turquoise ∩ up-component,156,147,FKBP10,UP
+turquoise ∩ up-component,156,148,TMEM45A,UP
+turquoise ∩ up-component,156,149,EGFL6,UP
+turquoise ∩ up-component,156,150,NXN,UP
+turquoise ∩ up-component,156,151,NOX4,UP
+turquoise ∩ up-component,156,152,C5AR1,UP
+turquoise ∩ up-component,156,153,APOLD1,UP
+turquoise ∩ up-component,156,154,COL5A2,UP
+turquoise ∩ up-component,156,155,GUCY1A3,UP
+turquoise ∩ up-component,156,156,ADAMTS1,UP
+turquoise ∩ down-component,56,1,CKB,DOWN
+turquoise ∩ down-component,56,2,CA12,DOWN
+turquoise ∩ down-component,56,3,HSD11B2,DOWN
+turquoise ∩ down-component,56,4,PIGR,DOWN
+turquoise ∩ down-component,56,5,AMT,DOWN
+turquoise ∩ down-component,56,6,HMGCS2,DOWN
+turquoise ∩ down-component,56,7,FOXA1,DOWN
+turquoise ∩ down-component,56,8,CACNA2D2,DOWN
+turquoise ∩ down-component,56,9,PLCE1,DOWN
+turquoise ∩ down-component,56,10,ALDH1L1,DOWN
+turquoise ∩ down-component,56,11,ARHGAP44,DOWN
+turquoise ∩ down-component,56,12,CRYM,DOWN
+turquoise ∩ down-component,56,13,DNASE1L3,DOWN
+turquoise ∩ down-component,56,14,ENTPD5,DOWN
+turquoise ∩ down-component,56,15,CYP3A5,DOWN
+turquoise ∩ down-component,56,16,FMO5,DOWN
+turquoise ∩ down-component,56,17,ACSM3,DOWN
+turquoise ∩ down-component,56,18,LEFTY1,DOWN
+turquoise ∩ down-component,56,19,KIAA0319,DOWN
+turquoise ∩ down-component,56,20,SPINK1,DOWN
+turquoise ∩ down-component,56,21,ADH1C,DOWN
+turquoise ∩ down-component,56,22,AKR1B10,DOWN
+turquoise ∩ down-component,56,23,SI,DOWN
+turquoise ∩ down-component,56,24,NAT2,DOWN
+turquoise ∩ down-component,56,25,TNFRSF11A,DOWN
+turquoise ∩ down-component,56,26,SLC28A2,DOWN
+turquoise ∩ down-component,56,27,ATP12A,DOWN
+turquoise ∩ down-component,56,28,UGT2B15,DOWN
+turquoise ∩ down-component,56,29,BEST2,DOWN
+turquoise ∩ down-component,56,30,DEFA5,DOWN
+turquoise ∩ down-component,56,31,SULT1B1,DOWN
+turquoise ∩ down-component,56,32,DEFA6,DOWN
+turquoise ∩ down-component,56,33,EPHX2,DOWN
+turquoise ∩ down-component,56,34,PADI2,DOWN
+turquoise ∩ down-component,56,35,HOXB13,DOWN
+turquoise ∩ down-component,56,36,CLCA1,DOWN
+turquoise ∩ down-component,56,37,ART3,DOWN
+turquoise ∩ down-component,56,38,ATP8A1,DOWN
+turquoise ∩ down-component,56,39,OLFM4,DOWN
+turquoise ∩ down-component,56,40,CDHR1,DOWN
+turquoise ∩ down-component,56,41,SELENBP1,DOWN
+turquoise ∩ down-component,56,42,ADTRP,DOWN
+turquoise ∩ down-component,56,43,PBLD,DOWN
+turquoise ∩ down-component,56,44,TBX3,DOWN
+turquoise ∩ down-component,56,45,DUOX2,DOWN
+turquoise ∩ down-component,56,46,RNF186,DOWN
+turquoise ∩ down-component,56,47,L1TD1,DOWN
+turquoise ∩ down-component,56,48,GALNT6,DOWN
+turquoise ∩ down-component,56,49,APOBR,DOWN
+turquoise ∩ down-component,56,50,CES3,DOWN
+turquoise ∩ down-component,56,51,LRRC19,DOWN
+turquoise ∩ down-component,56,52,ARL14,DOWN
+turquoise ∩ down-component,56,53,NXPE4,DOWN
+turquoise ∩ down-component,56,54,CWH43,DOWN
+turquoise ∩ down-component,56,55,PPP1R9A,DOWN
+turquoise ∩ down-component,56,56,KIAA1324,DOWN
+PPI Hub genes (Tumor vs Polyp),545,1,CLCA1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,2,THBS2,UP
+PPI Hub genes (Tumor vs Polyp),545,3,SPP1,UP
+PPI Hub genes (Tumor vs Polyp),545,4,COL11A1,UP
+PPI Hub genes (Tumor vs Polyp),545,5,NXPE4,DOWN
+PPI Hub genes (Tumor vs Polyp),545,6,DUOX2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,7,FAP,UP
+PPI Hub genes (Tumor vs Polyp),545,8,ASPN,UP
+PPI Hub genes (Tumor vs Polyp),545,9,FN1,UP
+PPI Hub genes (Tumor vs Polyp),545,10,COL10A1,UP
+PPI Hub genes (Tumor vs Polyp),545,11,CNN1,UP
+PPI Hub genes (Tumor vs Polyp),545,12,COL1A2,UP
+PPI Hub genes (Tumor vs Polyp),545,13,MFAP2,UP
+PPI Hub genes (Tumor vs Polyp),545,14,CCL18,UP
+PPI Hub genes (Tumor vs Polyp),545,15,SULF1,UP
+PPI Hub genes (Tumor vs Polyp),545,16,C3,UP
+PPI Hub genes (Tumor vs Polyp),545,17,NPTX2,UP
+PPI Hub genes (Tumor vs Polyp),545,18,COMP,UP
+PPI Hub genes (Tumor vs Polyp),545,19,EMILIN1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,20,BGN,not in 313
+PPI Hub genes (Tumor vs Polyp),545,21,MYL9,UP
+PPI Hub genes (Tumor vs Polyp),545,22,AEBP1,UP
+PPI Hub genes (Tumor vs Polyp),545,23,VCAN,UP
+PPI Hub genes (Tumor vs Polyp),545,24,SERPINE1,UP
+PPI Hub genes (Tumor vs Polyp),545,25,GREM1,UP
+PPI Hub genes (Tumor vs Polyp),545,26,COL5A2,UP
+PPI Hub genes (Tumor vs Polyp),545,27,SI,DOWN
+PPI Hub genes (Tumor vs Polyp),545,28,L1TD1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,29,HMGCS2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,30,OLFM4,DOWN
+PPI Hub genes (Tumor vs Polyp),545,31,PIGR,DOWN
+PPI Hub genes (Tumor vs Polyp),545,32,MGP,UP
+PPI Hub genes (Tumor vs Polyp),545,33,TAGLN,UP
+PPI Hub genes (Tumor vs Polyp),545,34,GAS1,UP
+PPI Hub genes (Tumor vs Polyp),545,35,LY6E,UP
+PPI Hub genes (Tumor vs Polyp),545,36,DEFA5,DOWN
+PPI Hub genes (Tumor vs Polyp),545,37,CST1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,38,RAB31,UP
+PPI Hub genes (Tumor vs Polyp),545,39,COL5A1,UP
+PPI Hub genes (Tumor vs Polyp),545,40,COL15A1,UP
+PPI Hub genes (Tumor vs Polyp),545,41,LOC102725271,not in 313
+PPI Hub genes (Tumor vs Polyp),545,42,SPARC,UP
+PPI Hub genes (Tumor vs Polyp),545,43,ISLR,UP
+PPI Hub genes (Tumor vs Polyp),545,44,FKBP10,UP
+PPI Hub genes (Tumor vs Polyp),545,45,APOE,not in 313
+PPI Hub genes (Tumor vs Polyp),545,46,HOPX,not in 313
+PPI Hub genes (Tumor vs Polyp),545,47,MEIS1,UP
+PPI Hub genes (Tumor vs Polyp),545,48,FBLN2,UP
+PPI Hub genes (Tumor vs Polyp),545,49,COL6A3,UP
+PPI Hub genes (Tumor vs Polyp),545,50,GRP,UP
+PPI Hub genes (Tumor vs Polyp),545,51,TNC,UP
+PPI Hub genes (Tumor vs Polyp),545,52,ADH1C,DOWN
+PPI Hub genes (Tumor vs Polyp),545,53,RBMS1,UP
+PPI Hub genes (Tumor vs Polyp),545,54,ITGBL1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,55,LOC100130872,not in 313
+PPI Hub genes (Tumor vs Polyp),545,56,DCN,UP
+PPI Hub genes (Tumor vs Polyp),545,57,THY1,UP
+PPI Hub genes (Tumor vs Polyp),545,58,SFRP4,UP
+PPI Hub genes (Tumor vs Polyp),545,59,TIMP3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,60,COL1A1,UP
+PPI Hub genes (Tumor vs Polyp),545,61,GPNMB,UP
+PPI Hub genes (Tumor vs Polyp),545,62,PDGFRB,UP
+PPI Hub genes (Tumor vs Polyp),545,63,FXYD6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,64,TWIST1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,65,LCN2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,66,SPOCK1,UP
+PPI Hub genes (Tumor vs Polyp),545,67,HTRA1,UP
+PPI Hub genes (Tumor vs Polyp),545,68,LOC101928916,not in 313
+PPI Hub genes (Tumor vs Polyp),545,69,ZCCHC24,UP
+PPI Hub genes (Tumor vs Polyp),545,70,SPINK1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,71,MXRA5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,72,MYLK,UP
+PPI Hub genes (Tumor vs Polyp),545,73,LUM,UP
+PPI Hub genes (Tumor vs Polyp),545,74,ZG16,not in 313
+PPI Hub genes (Tumor vs Polyp),545,75,KIAA1324,DOWN
+PPI Hub genes (Tumor vs Polyp),545,76,LGALS1,UP
+PPI Hub genes (Tumor vs Polyp),545,77,EGR2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,78,COX7A1,UP
+PPI Hub genes (Tumor vs Polyp),545,79,FLNA,UP
+PPI Hub genes (Tumor vs Polyp),545,80,FBN1,UP
+PPI Hub genes (Tumor vs Polyp),545,81,PCOLCE,UP
+PPI Hub genes (Tumor vs Polyp),545,82,AKAP12,UP
+PPI Hub genes (Tumor vs Polyp),545,83,SLC2A3,UP
+PPI Hub genes (Tumor vs Polyp),545,84,SELENBP1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,85,MATN3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,86,LOXL1,UP
+PPI Hub genes (Tumor vs Polyp),545,87,TBX3,DOWN
+PPI Hub genes (Tumor vs Polyp),545,88,OLFML2B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,89,C1S,UP
+PPI Hub genes (Tumor vs Polyp),545,90,ARL14,DOWN
+PPI Hub genes (Tumor vs Polyp),545,91,COL18A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,92,WWC2,UP
+PPI Hub genes (Tumor vs Polyp),545,93,DKK2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,94,SERPING1,UP
+PPI Hub genes (Tumor vs Polyp),545,95,SERPINF1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,96,ID1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,97,COL2A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,98,DDR2,UP
+PPI Hub genes (Tumor vs Polyp),545,99,CDH11,UP
+PPI Hub genes (Tumor vs Polyp),545,100,COL4A1,UP
+PPI Hub genes (Tumor vs Polyp),545,101,MMP2,UP
+PPI Hub genes (Tumor vs Polyp),545,102,ACTG2,UP
+PPI Hub genes (Tumor vs Polyp),545,103,ROBO1,UP
+PPI Hub genes (Tumor vs Polyp),545,104,FOXA1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,105,AHNAK2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,106,HOXB13,DOWN
+PPI Hub genes (Tumor vs Polyp),545,107,SLC2A14,UP
+PPI Hub genes (Tumor vs Polyp),545,108,CYR61,UP
+PPI Hub genes (Tumor vs Polyp),545,109,COL3A1,UP
+PPI Hub genes (Tumor vs Polyp),545,110,COL4A2,UP
+PPI Hub genes (Tumor vs Polyp),545,111,NAT2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,112,RNF186,DOWN
+PPI Hub genes (Tumor vs Polyp),545,113,COL6A2,UP
+PPI Hub genes (Tumor vs Polyp),545,114,PDZK1IP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,115,LTBP3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,116,MMP1,UP
+PPI Hub genes (Tumor vs Polyp),545,117,CHI3L1,UP
+PPI Hub genes (Tumor vs Polyp),545,118,NOX4,UP
+PPI Hub genes (Tumor vs Polyp),545,119,FSTL1,UP
+PPI Hub genes (Tumor vs Polyp),545,120,RCN3,UP
+PPI Hub genes (Tumor vs Polyp),545,121,RAI14,not in 313
+PPI Hub genes (Tumor vs Polyp),545,122,DEFA6,DOWN
+PPI Hub genes (Tumor vs Polyp),545,123,ADGRA2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,124,TUBB6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,125,TRIM9,not in 313
+PPI Hub genes (Tumor vs Polyp),545,126,EDNRA,UP
+PPI Hub genes (Tumor vs Polyp),545,127,CALD1,UP
+PPI Hub genes (Tumor vs Polyp),545,128,SLC6A14,not in 313
+PPI Hub genes (Tumor vs Polyp),545,129,HSD11B2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,130,CA12,DOWN
+PPI Hub genes (Tumor vs Polyp),545,131,UGT2A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,132,G0S2,UP
+PPI Hub genes (Tumor vs Polyp),545,133,AKR1B10,DOWN
+PPI Hub genes (Tumor vs Polyp),545,134,CKB,DOWN
+PPI Hub genes (Tumor vs Polyp),545,135,C5AR1,UP
+PPI Hub genes (Tumor vs Polyp),545,136,MMP11,UP
+PPI Hub genes (Tumor vs Polyp),545,137,SCRN1,UP
+PPI Hub genes (Tumor vs Polyp),545,138,PXDN,not in 313
+PPI Hub genes (Tumor vs Polyp),545,139,GPA33,not in 313
+PPI Hub genes (Tumor vs Polyp),545,140,PLN,UP
+PPI Hub genes (Tumor vs Polyp),545,141,VIM,UP
+PPI Hub genes (Tumor vs Polyp),545,142,MAFB,not in 313
+PPI Hub genes (Tumor vs Polyp),545,143,SNAI2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,144,CTSK,UP
+PPI Hub genes (Tumor vs Polyp),545,145,IGFBP3,UP
+PPI Hub genes (Tumor vs Polyp),545,146,CXCL8,UP
+PPI Hub genes (Tumor vs Polyp),545,147,FADS2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,148,CYP3A5,DOWN
+PPI Hub genes (Tumor vs Polyp),545,149,POSTN,UP
+PPI Hub genes (Tumor vs Polyp),545,150,POC1B-GALNT4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,151,HOMER1,UP
+PPI Hub genes (Tumor vs Polyp),545,152,REG3A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,153,TNFRSF11A,DOWN
+PPI Hub genes (Tumor vs Polyp),545,154,LOC100652777,not in 313
+PPI Hub genes (Tumor vs Polyp),545,155,PTRF,not in 313
+PPI Hub genes (Tumor vs Polyp),545,156,RFTN1,UP
+PPI Hub genes (Tumor vs Polyp),545,157,LRRC19,DOWN
+PPI Hub genes (Tumor vs Polyp),545,158,PRR16,not in 313
+PPI Hub genes (Tumor vs Polyp),545,159,DNASE1L3,DOWN
+PPI Hub genes (Tumor vs Polyp),545,160,SYNM,not in 313
+PPI Hub genes (Tumor vs Polyp),545,161,DPT,not in 313
+PPI Hub genes (Tumor vs Polyp),545,162,EHD2,UP
+PPI Hub genes (Tumor vs Polyp),545,163,CST2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,164,INHBB,UP
+PPI Hub genes (Tumor vs Polyp),545,165,CCL3L3,UP
+PPI Hub genes (Tumor vs Polyp),545,166,SPARCL1,UP
+PPI Hub genes (Tumor vs Polyp),545,167,SUGCT,not in 313
+PPI Hub genes (Tumor vs Polyp),545,168,ACSM3,DOWN
+PPI Hub genes (Tumor vs Polyp),545,169,SLC28A2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,170,SERPINH1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,171,TPM2,UP
+PPI Hub genes (Tumor vs Polyp),545,172,NOX1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,173,WASF1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,174,LRRC31,not in 313
+PPI Hub genes (Tumor vs Polyp),545,175,CADPS,not in 313
+PPI Hub genes (Tumor vs Polyp),545,176,LAMA5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,177,TNFAIP6,UP
+PPI Hub genes (Tumor vs Polyp),545,178,C1R,not in 313
+PPI Hub genes (Tumor vs Polyp),545,179,CD248,UP
+PPI Hub genes (Tumor vs Polyp),545,180,RARRES2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,181,EFEMP1,UP
+PPI Hub genes (Tumor vs Polyp),545,182,COL7A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,183,LBH,not in 313
+PPI Hub genes (Tumor vs Polyp),545,184,NR2F1,UP
+PPI Hub genes (Tumor vs Polyp),545,185,TCF4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,186,ARMCX2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,187,SLC44A4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,188,FSTL3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,189,MSN,not in 313
+PPI Hub genes (Tumor vs Polyp),545,190,ADGRL4,UP
+PPI Hub genes (Tumor vs Polyp),545,191,NXN,UP
+PPI Hub genes (Tumor vs Polyp),545,192,LEFTY1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,193,SNX10,UP
+PPI Hub genes (Tumor vs Polyp),545,194,INHBA,UP
+PPI Hub genes (Tumor vs Polyp),545,195,MYH11,not in 313
+PPI Hub genes (Tumor vs Polyp),545,196,TMEM47,UP
+PPI Hub genes (Tumor vs Polyp),545,197,S100A4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,198,PTK7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,199,ADAMTS1,UP
+PPI Hub genes (Tumor vs Polyp),545,200,DBN1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,201,BAG2,UP
+PPI Hub genes (Tumor vs Polyp),545,202,WASF3,UP
+PPI Hub genes (Tumor vs Polyp),545,203,PDGFC,not in 313
+PPI Hub genes (Tumor vs Polyp),545,204,S100P,not in 313
+PPI Hub genes (Tumor vs Polyp),545,205,CFHR1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,206,MAB21L2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,207,CRYM,DOWN
+PPI Hub genes (Tumor vs Polyp),545,208,FERMT2,UP
+PPI Hub genes (Tumor vs Polyp),545,209,RBP1,UP
+PPI Hub genes (Tumor vs Polyp),545,210,CCL2,UP
+PPI Hub genes (Tumor vs Polyp),545,211,LHFP,not in 313
+PPI Hub genes (Tumor vs Polyp),545,212,GEM,UP
+PPI Hub genes (Tumor vs Polyp),545,213,CXCL5,UP
+PPI Hub genes (Tumor vs Polyp),545,214,TFF3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,215,KIAA1462,UP
+PPI Hub genes (Tumor vs Polyp),545,216,PDLIM3,UP
+PPI Hub genes (Tumor vs Polyp),545,217,EPHX2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,218,ANOS1,UP
+PPI Hub genes (Tumor vs Polyp),545,219,MYH10,UP
+PPI Hub genes (Tumor vs Polyp),545,220,FILIP1L,UP
+PPI Hub genes (Tumor vs Polyp),545,221,EMP3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,222,FJX1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,223,PKD1P1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,224,PDLIM2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,225,PALM2-AKAP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,226,HSPB1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,227,MFGE8,not in 313
+PPI Hub genes (Tumor vs Polyp),545,228,JAM3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,229,CWH43,DOWN
+PPI Hub genes (Tumor vs Polyp),545,230,NUDT11,not in 313
+PPI Hub genes (Tumor vs Polyp),545,231,IGFBP6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,232,ITM2C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,233,PBX3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,234,CTGF,UP
+PPI Hub genes (Tumor vs Polyp),545,235,GNG11,UP
+PPI Hub genes (Tumor vs Polyp),545,236,MAGEH1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,237,BFSP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,238,SLC6A7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,239,TDO2,UP
+PPI Hub genes (Tumor vs Polyp),545,240,PBLD,DOWN
+PPI Hub genes (Tumor vs Polyp),545,241,UGT1A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,242,GUCY1B3,UP
+PPI Hub genes (Tumor vs Polyp),545,243,DPYSL3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,244,C10ORF10,not in 313
+PPI Hub genes (Tumor vs Polyp),545,245,RGS2,UP
+PPI Hub genes (Tumor vs Polyp),545,246,EGFL6,UP
+PPI Hub genes (Tumor vs Polyp),545,247,PKD2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,248,GUCY1A3,UP
+PPI Hub genes (Tumor vs Polyp),545,249,MCAM,UP
+PPI Hub genes (Tumor vs Polyp),545,250,GUCY2C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,251,ALDH1A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,252,MXRA8,UP
+PPI Hub genes (Tumor vs Polyp),545,253,ZEB2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,254,CDKN1C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,255,PLXND1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,256,PLAU,UP
+PPI Hub genes (Tumor vs Polyp),545,257,TMEM204,not in 313
+PPI Hub genes (Tumor vs Polyp),545,258,UGT1A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,259,SRGAP2C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,260,GALNT7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,261,ADGRL2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,262,CBX6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,263,FSCN1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,264,CDHR1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,265,ANGPTL2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,266,CSRP2,UP
+PPI Hub genes (Tumor vs Polyp),545,267,IGFBP5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,268,EFEMP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,269,PADI2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,270,IL32,not in 313
+PPI Hub genes (Tumor vs Polyp),545,271,CHRDL1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,272,TMC5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,273,KCNE4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,274,XK,not in 313
+PPI Hub genes (Tumor vs Polyp),545,275,ARHGEF17,not in 313
+PPI Hub genes (Tumor vs Polyp),545,276,MMP9,UP
+PPI Hub genes (Tumor vs Polyp),545,277,HS3ST3A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,278,IQCJ-SCHIP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,279,AQP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,280,IGFBP7,UP
+PPI Hub genes (Tumor vs Polyp),545,281,PLOD2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,282,CCL8,UP
+PPI Hub genes (Tumor vs Polyp),545,283,CEP170P1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,284,FMO5,DOWN
+PPI Hub genes (Tumor vs Polyp),545,285,ZFPM2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,286,PACSIN3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,287,CES3,DOWN
+PPI Hub genes (Tumor vs Polyp),545,288,CHN1,UP
+PPI Hub genes (Tumor vs Polyp),545,289,KLHL21,not in 313
+PPI Hub genes (Tumor vs Polyp),545,290,NAT1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,291,TGFB1I1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,292,SDC2,UP
+PPI Hub genes (Tumor vs Polyp),545,293,TRPM4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,294,SLC27A2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,295,PMAIP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,296,GJA1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,297,HLX,not in 313
+PPI Hub genes (Tumor vs Polyp),545,298,VWF,UP
+PPI Hub genes (Tumor vs Polyp),545,299,FAM83E,not in 313
+PPI Hub genes (Tumor vs Polyp),545,300,MXRA7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,301,ANGPT2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,302,CCL21,not in 313
+PPI Hub genes (Tumor vs Polyp),545,303,SULT1B1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,304,TSPAN12,not in 313
+PPI Hub genes (Tumor vs Polyp),545,305,CYP3A7-CYP3A51P,not in 313
+PPI Hub genes (Tumor vs Polyp),545,306,NUAK1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,307,SMPDL3B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,308,COL8A2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,309,TNFSF4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,310,S100A9,UP
+PPI Hub genes (Tumor vs Polyp),545,311,PROCR,UP
+PPI Hub genes (Tumor vs Polyp),545,312,TRPS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,313,PMP22,not in 313
+PPI Hub genes (Tumor vs Polyp),545,314,ARL4C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,315,BMP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,316,LGALS4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,317,ABCC3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,318,CHST15,not in 313
+PPI Hub genes (Tumor vs Polyp),545,319,NID2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,320,TNS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,321,ENO2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,322,CFH,not in 313
+PPI Hub genes (Tumor vs Polyp),545,323,MFAP5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,324,SLC20A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,325,CDH5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,326,SNORA11E,not in 313
+PPI Hub genes (Tumor vs Polyp),545,327,MAOA,not in 313
+PPI Hub genes (Tumor vs Polyp),545,328,PLTP,not in 313
+PPI Hub genes (Tumor vs Polyp),545,329,ZEB1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,330,HSPG2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,331,EHHADH,not in 313
+PPI Hub genes (Tumor vs Polyp),545,332,ATP8A1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,333,AGR2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,334,CNIH3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,335,ASAP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,336,PLEKHA4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,337,PLEKHO1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,338,TSPAN8,not in 313
+PPI Hub genes (Tumor vs Polyp),545,339,SLC12A2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,340,TMEM30B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,341,PRKCDBP,UP
+PPI Hub genes (Tumor vs Polyp),545,342,IGFBP4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,343,DSE,not in 313
+PPI Hub genes (Tumor vs Polyp),545,344,GMDS,not in 313
+PPI Hub genes (Tumor vs Polyp),545,345,CACNA2D2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,346,ACSL4,UP
+PPI Hub genes (Tumor vs Polyp),545,347,TMEM45A,UP
+PPI Hub genes (Tumor vs Polyp),545,348,TIMP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,349,AOC3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,350,RNF144A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,351,CD93,not in 313
+PPI Hub genes (Tumor vs Polyp),545,352,TMEM158,not in 313
+PPI Hub genes (Tumor vs Polyp),545,353,ARRB2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,354,FAM169A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,355,CRIP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,356,APOBR,DOWN
+PPI Hub genes (Tumor vs Polyp),545,357,BACE2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,358,MIR1908,not in 313
+PPI Hub genes (Tumor vs Polyp),545,359,APOBEC1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,360,C4ORF19,not in 313
+PPI Hub genes (Tumor vs Polyp),545,361,EPS8L3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,362,COL16A1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,363,LOC100653057,not in 313
+PPI Hub genes (Tumor vs Polyp),545,364,HHLA2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,365,SMPD3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,366,AXL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,367,HOXA1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,368,ADTRP,DOWN
+PPI Hub genes (Tumor vs Polyp),545,369,TNS3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,370,SFXN3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,371,VCAM1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,372,NID1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,373,MMP14,not in 313
+PPI Hub genes (Tumor vs Polyp),545,374,ITGA5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,375,TRPC1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,376,WNT5A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,377,BNIP3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,378,TUBA1A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,379,FADS3,UP
+PPI Hub genes (Tumor vs Polyp),545,380,SACS,not in 313
+PPI Hub genes (Tumor vs Polyp),545,381,MITF,not in 313
+PPI Hub genes (Tumor vs Polyp),545,382,FAM127A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,383,EPYC,not in 313
+PPI Hub genes (Tumor vs Polyp),545,384,IL6,UP
+PPI Hub genes (Tumor vs Polyp),545,385,TMEM132A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,386,ESM1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,387,MEG3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,388,ITGA6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,389,DKK3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,390,AKR1B1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,391,ZNF423,not in 313
+PPI Hub genes (Tumor vs Polyp),545,392,PARM1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,393,TLR2,UP
+PPI Hub genes (Tumor vs Polyp),545,394,C2ORF72,not in 313
+PPI Hub genes (Tumor vs Polyp),545,395,ECM2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,396,VILL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,397,LOX,UP
+PPI Hub genes (Tumor vs Polyp),545,398,UGT8,not in 313
+PPI Hub genes (Tumor vs Polyp),545,399,DSC2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,400,LTBP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,401,SGCE,not in 313
+PPI Hub genes (Tumor vs Polyp),545,402,CRISPLD2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,403,MAP7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,404,HEG1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,405,FBLN1,UP
+PPI Hub genes (Tumor vs Polyp),545,406,GALNT6,DOWN
+PPI Hub genes (Tumor vs Polyp),545,407,RBM38,not in 313
+PPI Hub genes (Tumor vs Polyp),545,408,POF1B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,409,ANXA6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,410,CRYAB,not in 313
+PPI Hub genes (Tumor vs Polyp),545,411,RDX,not in 313
+PPI Hub genes (Tumor vs Polyp),545,412,GPC1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,413,CYP3A43,not in 313
+PPI Hub genes (Tumor vs Polyp),545,414,MGLL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,415,PLA2G16,not in 313
+PPI Hub genes (Tumor vs Polyp),545,416,BEST2,DOWN
+PPI Hub genes (Tumor vs Polyp),545,417,FAM216A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,418,MFAP4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,419,RGCC,not in 313
+PPI Hub genes (Tumor vs Polyp),545,420,AMIGO2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,421,ZNF532,not in 313
+PPI Hub genes (Tumor vs Polyp),545,422,PLPPR4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,423,NDN,not in 313
+PPI Hub genes (Tumor vs Polyp),545,424,ACSL1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,425,DFNA5,UP
+PPI Hub genes (Tumor vs Polyp),545,426,TIMP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,427,MOXD1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,428,PLBD1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,429,SLC7A7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,430,PPARG,not in 313
+PPI Hub genes (Tumor vs Polyp),545,431,BEX4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,432,NEDD4L,not in 313
+PPI Hub genes (Tumor vs Polyp),545,433,RAB29,not in 313
+PPI Hub genes (Tumor vs Polyp),545,434,SEMA6A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,435,KBTBD11,not in 313
+PPI Hub genes (Tumor vs Polyp),545,436,BCL2L14,not in 313
+PPI Hub genes (Tumor vs Polyp),545,437,LRIG1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,438,EPHB3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,439,ALOX5AP,not in 313
+PPI Hub genes (Tumor vs Polyp),545,440,PTPRM,not in 313
+PPI Hub genes (Tumor vs Polyp),545,441,NQO1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,442,PLOD1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,443,PFKFB3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,444,KLF2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,445,NAB2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,446,CKMT1A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,447,ATP2C2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,448,OLFML3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,449,ENTPD5,DOWN
+PPI Hub genes (Tumor vs Polyp),545,450,CFTR,not in 313
+PPI Hub genes (Tumor vs Polyp),545,451,UPP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,452,NR3C1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,453,ADGRF5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,454,ALDH1L1,DOWN
+PPI Hub genes (Tumor vs Polyp),545,455,WWTR1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,456,EGR1,UP
+PPI Hub genes (Tumor vs Polyp),545,457,QKI,not in 313
+PPI Hub genes (Tumor vs Polyp),545,458,GLT8D2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,459,COL5A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,460,CYP1B1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,461,COL4A5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,462,CLEC5A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,463,DUSP14,not in 313
+PPI Hub genes (Tumor vs Polyp),545,464,BASP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,465,AHCYL2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,466,PARVB,not in 313
+PPI Hub genes (Tumor vs Polyp),545,467,MAP3K8,not in 313
+PPI Hub genes (Tumor vs Polyp),545,468,ZNF331,not in 313
+PPI Hub genes (Tumor vs Polyp),545,469,APLNR,not in 313
+PPI Hub genes (Tumor vs Polyp),545,470,MPDZ,not in 313
+PPI Hub genes (Tumor vs Polyp),545,471,NEO1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,472,SQRDL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,473,CCDC102B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,474,CCDC69,not in 313
+PPI Hub genes (Tumor vs Polyp),545,475,IRS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,476,EGFL7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,477,FAM134B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,478,TMPRSS2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,479,KCNH2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,480,MBIP,not in 313
+PPI Hub genes (Tumor vs Polyp),545,481,RRAGD,not in 313
+PPI Hub genes (Tumor vs Polyp),545,482,RTN1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,483,RUNX1-IT1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,484,CLMN,not in 313
+PPI Hub genes (Tumor vs Polyp),545,485,DENND5A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,486,CYP26B1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,487,MEOX1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,488,KIF13B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,489,KIAA0319,DOWN
+PPI Hub genes (Tumor vs Polyp),545,490,CLEC11A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,491,PPP1R14D,not in 313
+PPI Hub genes (Tumor vs Polyp),545,492,RFX3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,493,NAALADL1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,494,RHOD,not in 313
+PPI Hub genes (Tumor vs Polyp),545,495,LDB2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,496,PPP1R9A,DOWN
+PPI Hub genes (Tumor vs Polyp),545,497,KRCC1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,498,EML1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,499,ARHGAP10,not in 313
+PPI Hub genes (Tumor vs Polyp),545,500,BICD2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,501,FAM129A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,502,CALML4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,503,CLDN5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,504,THBS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,505,TIE1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,506,NRP1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,507,ETS2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,508,HSPB8,not in 313
+PPI Hub genes (Tumor vs Polyp),545,509,HDGFRP3,UP
+PPI Hub genes (Tumor vs Polyp),545,510,FRYL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,511,GADD45B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,512,CSPG4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,513,SYNC,not in 313
+PPI Hub genes (Tumor vs Polyp),545,514,LOC102724788,not in 313
+PPI Hub genes (Tumor vs Polyp),545,515,STC1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,516,NINL,not in 313
+PPI Hub genes (Tumor vs Polyp),545,517,ADAMTS5,not in 313
+PPI Hub genes (Tumor vs Polyp),545,518,RHBDF2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,519,PPARGC1A,not in 313
+PPI Hub genes (Tumor vs Polyp),545,520,ACKR3,UP
+PPI Hub genes (Tumor vs Polyp),545,521,CAV1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,522,SLC35A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,523,ADCY7,not in 313
+PPI Hub genes (Tumor vs Polyp),545,524,GOLM1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,525,MYO5C,not in 313
+PPI Hub genes (Tumor vs Polyp),545,526,SLC24A3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,527,DEGS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,528,PAM,not in 313
+PPI Hub genes (Tumor vs Polyp),545,529,HSPA1B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,530,CDA,not in 313
+PPI Hub genes (Tumor vs Polyp),545,531,TDP2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,532,RNF25,not in 313
+PPI Hub genes (Tumor vs Polyp),545,533,ATP10B,not in 313
+PPI Hub genes (Tumor vs Polyp),545,534,F2R,not in 313
+PPI Hub genes (Tumor vs Polyp),545,535,GATA6,not in 313
+PPI Hub genes (Tumor vs Polyp),545,536,ARHGAP29,not in 313
+PPI Hub genes (Tumor vs Polyp),545,537,CSGALNACT2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,538,COL9A2,not in 313
+PPI Hub genes (Tumor vs Polyp),545,539,PRNP,not in 313
+PPI Hub genes (Tumor vs Polyp),545,540,CLCN3,not in 313
+PPI Hub genes (Tumor vs Polyp),545,541,PLS1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,542,MAP4K4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,543,DDIT4,not in 313
+PPI Hub genes (Tumor vs Polyp),545,544,MAP7D1,not in 313
+PPI Hub genes (Tumor vs Polyp),545,545,FXYD3,not in 313
