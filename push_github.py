@@ -318,12 +318,19 @@ def main():
             log("7/8", f"Zenodo DOI 已取回：{doi}")
         else:
             log("7/8", "\n".join([
-                "还没等到 Zenodo DOI。常见原因（按概率排序）：",
-                "　1. Zenodo 侧还没打开这个仓库的开关 —— 打开",
-                "　　 https://zenodo.org/account/settings/github/ 找到该仓库并把开关拨到 ON。",
-                "　　 **开关必须在发 release 之前打开**，否则这一次 release 不会被归档；",
-                "　　 打开开关后重跑本脚本（会新建一个新版本的 release）即可。",
-                "　2. 仓库还是私有 —— Zenodo 只归档公开仓库。",
+                "还没等到 Zenodo DOI。先做这个 3 秒判定：",
+                "　★ GET /repos/<owner>/<repo>/hooks —— Zenodo 打开开关时**一定**会在仓库上",
+                "　　 装一条 `release` 事件的 webhook（关掉开关则删除它）。",
+                "　　 看不到这条 hook = 开关没生效（页面显示 ON 也可能因为 create_hook 静默失败）。",
+                "　　 用本人同样的 token 直接查：",
+                "　　 python -c \"import urllib.request,json;t=open('_push/.ghtoken').read().strip();"
+                "r=urllib.request.Request('https://api.github.com/repos/OWNER/REPO/hooks',"
+                "headers={'Authorization':'Bearer '+t,'User-Agent':'x'});"
+                "print([(h['config'].get('url'),h['events']) for h in json.load(urllib.request.urlopen(r))])\"",
+                "　其余常见原因（按概率排序）：",
+                "　1. 仓库还是私有 —— Zenodo 只归档公开仓库。",
+                "　2. 开关是**在发 release 之后**才打开的 —— Zenodo 只认开启之后的 release；",
+                "　　 重发一个新版本即可（重跑本脚本会新建 release）。",
                 "　3. 刚发完 release，Zenodo 还在排队（通常几分钟）。",
                 "　稍后单独取 DOI：python push_github.py --skip-release --no-create "
                 f"--poll 20"]))
@@ -363,9 +370,14 @@ def main():
     print("\n" + "=" * 72)
     print(f"仓库：{html_url}")
     print(f"DOI ：{('https://doi.org/' + doi) if doi else '（尚未取到）'}")
-    if not doi:
-        print("      打开 https://zenodo.org/account/settings/github/ 开启该仓库的开关后，")
-        print("      重跑：python push_github.py --skip-release --no-create")
+    if not doi and args.skip_release:
+        print("      --skip-release 已跳过 release —— 本次没有尝试归档，属预期。")
+        print("      要取 DOI，去掉 --skip-release 重跑。")
+    elif not doi:
+        print("      若已确认 Zenodo 开关是打开的，通常只是还在排队，稍后单独取：")
+        print("      重跑：python push_github.py --skip-release --no-create --poll 20")
+        print("      开关状态可用仓库 webhook 佐证：Zenodo 打开开关时会在仓库上装一条")
+        print("      `release` 事件的 hook（GET /repos/<o>/<r>/hooks）——看不到就是没生效。")
     print("=" * 72)
 
 
