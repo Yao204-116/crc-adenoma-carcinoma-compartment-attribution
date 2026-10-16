@@ -133,8 +133,8 @@ once the article is published).
 
 | | |
 |---|---|
-| Source repository | \<REPO_URL\> |
-| Archived version (DOI) | minted by the Zenodo–GitHub integration for every tagged release |
+| Source repository | https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution |
+| Archived version (DOI) | not yet minted (Zenodo assigns one to each tagged release) |
 | License | **MIT** — see `LICENSE` |
 
 Each tagged release of this repository is automatically archived by Zenodo, which mints a
@@ -144,7 +144,7 @@ statement of the manuscript. Metadata for the DOI record is declared in `.zenodo
 ### Reproducing the archived release
 
 ```bash
-git clone <REPO_URL>
+git clone https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution
 cd <repo>
 pip install -r REQUIREMENTS.txt
 python build_suppl_tables.py      # smoke test: rebuilds Supplementary Tables S1-S5

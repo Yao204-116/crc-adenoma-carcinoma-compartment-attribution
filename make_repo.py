@@ -4,9 +4,9 @@
 原则：**只复制，绝不修改原文件**（两个脚本的路径可移植化改造已在源文件完成）。
 产物：`repo/`
 """
+import json
 import os
 import shutil
-
 SRC = os.path.dirname(os.path.abspath(__file__))
 DST = os.path.join(SRC, "repo")
 
@@ -101,6 +101,37 @@ for doc in DOCS:
     put(doc, doc)
 for a in ASSETS:
     put(os.path.join(ASSETS_DIR, a), a)
+
+
+# ---------------------------------------------------------------- README 占位符填充
+# ★ 必须在**打包阶段**做，不能只交给 push_github：否则本脚本每次重跑都会拿
+#   _repo_assets/ 里的原版把 push_github 已填好的 URL 打回占位符（实测发生过，
+#   结果公开 README 的 "Source repository" 一格长期显示占位符）。
+#   占位符在 markdown 里写作反斜杠转义形式（\<REPO_URL\>），故两种写法都替换。
+def _fill_readme():
+    path = os.path.join(DST, "README.md")
+    if not os.path.exists(path):
+        return
+    vals = {}
+    ca = os.path.join(SRC, "code_availability.json")
+    if os.path.exists(ca):
+        try:
+            vals = json.load(open(ca, encoding="utf-8"))
+        except Exception:
+            vals = {}
+    doi = vals.get("doi")
+    sub = {
+        "REPO_URL": vals.get("repo_url") or "not pushed yet",
+        "ARCHIVED_DOI": ("https://doi.org/" + doi) if doi
+                        else "not yet minted (Zenodo assigns one to each tagged release)",
+    }
+    s = open(path, encoding="utf-8").read()
+    for key, val in sub.items():
+        s = s.replace("\\<%s\\>" % key, val).replace("<%s>" % key, val)
+    open(path, "w", encoding="utf-8").write(s)
+
+
+_fill_readme()
 
 n_tree = {}
 for t in TREES:

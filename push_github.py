@@ -195,8 +195,9 @@ def main():
     readme = os.path.join(REPO_DIR, "README.md")
     if os.path.exists(readme):
         txt = open(readme, encoding="utf-8").read()
-        if "<REPO_URL>" in txt:
-            open(readme, "w", encoding="utf-8").write(txt.replace("<REPO_URL>", html_url))
+        new = txt.replace("\\<REPO_URL\\>", html_url).replace("<REPO_URL>", html_url)
+        if new != txt:
+            open(readme, "w", encoding="utf-8").write(new)
             git("add", "README.md")
             if git("diff", "--cached", "--quiet", check=False).returncode != 0:
                 git("commit", "-q", "-m", "README: fill in repository URL")
@@ -280,6 +281,20 @@ def main():
     with open(capath, "w", encoding="utf-8") as fh:
         json.dump(old, fh, ensure_ascii=False, indent=2)
     log("8/8", f"已写入 code_availability.json：{json.dumps(ca, ensure_ascii=False)}")
+
+    # README 里的 DOI 占位符一并回填（make_repo.py 打包时也做一次，这一步是拿 DOI 之后的补充）
+    readme = os.path.join(REPO_DIR, "README.md")
+    if os.path.exists(readme):
+        txt = open(readme, encoding="utf-8").read()
+        val = ("https://doi.org/" + doi) if doi else \
+              "not yet minted (Zenodo assigns one to each tagged release)"
+        new = txt.replace("\\<ARCHIVED_DOI\\>", val).replace("<ARCHIVED_DOI>", val)
+        if new != txt:
+            open(readme, "w", encoding="utf-8").write(new)
+            git("add", "README.md")
+            if git("diff", "--cached", "--quiet", check=False).returncode != 0:
+                git("commit", "-q", "-m", "README: fill in the archived-version DOI")
+                log("8/8", "README 已填入归档 DOI")
 
     rc = subprocess.run([sys.executable, os.path.join(HERE, "build_bmc_manuscript.py")],
                         cwd=HERE, capture_output=True, text=True)
