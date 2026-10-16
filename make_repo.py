@@ -112,8 +112,14 @@ for t in TREES:
     n_tree[t] = n
 
 # ---------------------------------------------------------------- 报告
-tot = sum(os.path.getsize(os.path.join(r, f))
-          for r, _, fs in os.walk(DST) for f in fs)
+def _size(root):
+    """统计复制内容的大小，**排除 .git** —— 否则重跑时数字会混入版本库体积。"""
+    return sum(os.path.getsize(os.path.join(r, f))
+               for r, _ds, fs in os.walk(root)
+               if ".git" not in r.split(os.sep) for f in fs)
+
+
+tot = _size(DST)
 print(f"仓库目录 : {DST}")
 print(f"复制文件 : {len(copied)} 个 | 合计 {tot / 1024 / 1024:.2f} MB")
 print(f"  · 脚本 {len(SCRIPTS)} 个")
