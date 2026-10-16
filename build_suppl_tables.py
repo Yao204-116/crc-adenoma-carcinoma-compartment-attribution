@@ -9,7 +9,10 @@ build_suppl_tables.py
 输出：suppl/*.csv + suppl/Supplementary_Tables_S1-S4.xlsx
 数字全部来自落盘 JSON/CSV，不重新计算。
 """
-import csv, json, os
+import csv, json, os, re, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fig_en          # ★ 显示名的唯一英文映射（图与补充表共用，避免两处漂移）
 
 BASE = os.environ.get("AACA_BASE") or os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(BASE, 'suppl')
@@ -65,13 +68,16 @@ tier = {d['gene']: d['tier_change'] for d in
 S2 = [['panel', 'n_genes', 'order_in_panel', 'gene', 'component_of_313_signature']]
 for panel, genes in pd_.items():
     for i, g in enumerate(genes, 1):
-        S2.append([panel, len(genes), i, g, tier.get(g, 'not in 313')])
+        S2.append([fig_en.panel_en(panel), len(genes), i, g, tier.get(g, 'not in 313')])
 # 两个由 313 签名切出的分量面板
 up = [d['gene'] for d in (dict(zip(rows[0], r)) for r in rows[1:]) if d['tier_change'] == 'UP']
 dn = [d['gene'] for d in (dict(zip(rows[0], r)) for r in rows[1:]) if d['tier_change'] == 'DOWN']
-for panel, genes in [('Up-regulated component', up), ('Down-regulated component', dn)]:
+# ★ 名字必须与 S3/S5 与图（fig3/fig5/figS2 的 "up-component·210"）一致，
+#   否则同一基因集在 S2 与 S3 里叫两个名字，审稿人无法交叉核对。
+#   注意 component_of_313_signature 列仍要写 up / down（不是把中文前缀切出来）。
+for panel, genes, tag in [("上调分量(210)", up, "up"), ("下调分量(103)", dn, "down")]:
     for i, g in enumerate(genes, 1):
-        S2.append([panel, len(genes), i, g, panel.split('-')[0].lower()])
+        S2.append([fig_en.panel_en(panel), len(genes), i, g, tag])
 
 # 用户自有基因集（WGCNA turquoise 模块 + PPI Hub）——R2 ¶3/¶5 引用，必须可查
 def genes_from(path, col, filt=None):
@@ -128,7 +134,9 @@ for panel, v in pt.items():
             fm = 'peak in at most one cohort'
         else:
             fm = 'inconsistent between cohorts / calibers'
-    S3.append([panel, len(pd_.get(panel, [])) if panel in pd_ else NG.get(panel, ''),
+    # ★ 查表仍用中文键（pd_ / NG 都按中文键存），只有**写出去的名字**过 panel_en()
+    S3.append([fig_en.panel_en(panel),
+               len(pd_.get(panel, [])) if panel in pd_ else NG.get(panel, ''),
                rp['GSE4183'], ap['GSE4183'],
                rp['GSE117606'], ap['GSE117606'],
                rp['GSE15960'], ap['GSE15960'],
@@ -157,11 +165,11 @@ for sub, cohorts in sens.items():
             if not isinstance(m, dict):
                 continue
             no, ad, ca = m.get('normal'), m.get('adenoma'), m.get('carcinoma')
-            S3b.append([sub, coh, cal_name,
+            S3b.append([fig_en.panel_en(sub), coh, cal_name,
                         round(no, 3) if no is not None else '',
                         round(ad, 3) if ad is not None else '',
                         round(ca, 3) if ca is not None else '',
-                        m.get('pattern', ''),
+                        fig_en.panel_en(m.get('pattern', '')),
                         'yes' if (no is not None and ad is not None and ca is not None
                                   and no < ca and ca < ad) else 'no'])
 w_csv('S3b_paneth_sensitivity.csv', S3b)
@@ -294,3 +302,21 @@ print('XLSX ->', xlsx, os.path.getsize(xlsx), 'bytes')
 print('S4a QC 合计 raw=%d qc=%d epi=%d' % (
     sum(r[3] for r in S4a[1:]), sum(r[4] for r in S4a[1:]), sum(r[7] for r in S4a[1:])))
 print('S3 robust 面板:', [r[0] for r in S3[1:] if r[10] == 'YES'])
+
+# ---------------------------------------------------------------- 自检：不能有中文
+CJK = re.compile(r"[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]")
+bad = []
+for name in ['S1_313gene_attribution.csv', 'S2_panel_gene_membership.csv',
+             'S3_panel_pattern_matrix.csv', 'S3b_paneth_sensitivity.csv',
+             'S4a_sc161277_sample_QC.csv', 'S4b_sc161277_decomposition.csv',
+             'S5_four_cohort_performance.csv']:
+    s = open(os.path.join(OUT, name), encoding='utf-8-sig').read()
+    hit = sorted(set(CJK.findall(s)))
+    if hit:
+        bad.append((name, hit))
+if bad:
+    for n, h in bad:
+        print('  !! %s 仍有中文：%s' % (n, ''.join(h)[:60]))
+    raise SystemExit('补充表仍有中文，拒绝交付')
+print('自检：7 张 CSV 均无中文/全角字符 ✓')
+

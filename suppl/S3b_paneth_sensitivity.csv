@@ -1,31 +1,31 @@
 ﻿sub-panel,cohort,caliber,normal,adenoma,carcinoma,pattern,ordering_normal<ca<ad_holds
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE4183,raw,-0.958,0.582,0.078,P 腺瘤峰,yes
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE4183,adj,-0.981,0.592,0.111,P 腺瘤峰,yes
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE117606,raw,-0.425,0.804,-0.301,P 腺瘤峰,yes
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE117606,adj,-0.429,0.749,-0.261,P 腺瘤峰,yes
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE15960,raw,-0.245,0.672,0.04,P 腺瘤峰,yes
-全4基因(DEFA5/6+OLFM4+SPINK1),GSE15960,adj,-0.156,0.457,0.193,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE4183,raw,-1.238,0.641,-0.059,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE4183,adj,-1.203,0.761,0.02,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE117606,raw,-0.601,0.768,-0.496,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE117606,adj,-0.567,0.697,-0.462,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE15960,raw,-0.7,1.062,-0.422,P 腺瘤峰,yes
-纯潘氏(DEFA5+DEFA6),GSE15960,adj,-0.711,0.854,-0.193,P 腺瘤峰,yes
-仅OLFM4(干细胞共享),GSE4183,raw,-1.099,0.55,0.332,P 腺瘤峰,yes
-仅OLFM4(干细胞共享),GSE4183,adj,-1.137,0.556,0.454,P 腺瘤峰,yes
-仅OLFM4(干细胞共享),GSE117606,raw,-0.185,0.849,-0.131,P 腺瘤峰,yes
-仅OLFM4(干细胞共享),GSE117606,adj,-0.211,0.737,-0.082,P 腺瘤峰,yes
-仅OLFM4(干细胞共享),GSE15960,raw,-0.016,0.79,-0.162,P 腺瘤峰,no
-仅OLFM4(干细胞共享),GSE15960,adj,-0.027,0.602,0.063,P 腺瘤峰,yes
-仅SPINK1,GSE4183,raw,-0.378,0.627,0.159,P 腺瘤峰,yes
-仅SPINK1,GSE4183,adj,-0.342,0.634,0.129,P 腺瘤峰,yes
-仅SPINK1,GSE117606,raw,-0.37,0.967,0.023,P 腺瘤峰,yes
-仅SPINK1,GSE117606,adj,-0.304,0.852,0.074,P 腺瘤峰,yes
-仅SPINK1,GSE15960,raw,0.574,0.269,-0.365,D 单调降,no
-仅SPINK1,GSE15960,adj,0.604,0.056,-0.132,D 单调降,no
-去OLFM4(DEFA5/6+SPINK1),GSE4183,raw,-0.867,0.539,-0.116,P 腺瘤峰,yes
-去OLFM4(DEFA5/6+SPINK1),GSE4183,adj,-0.831,0.601,-0.037,P 腺瘤峰,yes
-去OLFM4(DEFA5/6+SPINK1),GSE117606,raw,-0.505,0.699,-0.404,P 腺瘤峰,yes
-去OLFM4(DEFA5/6+SPINK1),GSE117606,adj,-0.488,0.659,-0.378,P 腺瘤峰,yes
-去OLFM4(DEFA5/6+SPINK1),GSE15960,raw,-0.28,0.7,-0.049,P 腺瘤峰,yes
-去OLFM4(DEFA5/6+SPINK1),GSE15960,adj,-0.191,0.484,0.105,P 腺瘤峰,yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE4183,raw,-0.958,0.582,0.078,P (adenoma peak),yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE4183,adj,-0.981,0.592,0.111,P (adenoma peak),yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE117606,raw,-0.425,0.804,-0.301,P (adenoma peak),yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE117606,adj,-0.429,0.749,-0.261,P (adenoma peak),yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE15960,raw,-0.245,0.672,0.04,P (adenoma peak),yes
+all four genes (DEFA5/6 + OLFM4 + SPINK1),GSE15960,adj,-0.156,0.457,0.193,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE4183,raw,-1.238,0.641,-0.059,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE4183,adj,-1.203,0.761,0.02,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE117606,raw,-0.601,0.768,-0.496,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE117606,adj,-0.567,0.697,-0.462,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE15960,raw,-0.7,1.062,-0.422,P (adenoma peak),yes
+Paneth core only (DEFA5 + DEFA6),GSE15960,adj,-0.711,0.854,-0.193,P (adenoma peak),yes
+OLFM4 only (shared with stem cells),GSE4183,raw,-1.099,0.55,0.332,P (adenoma peak),yes
+OLFM4 only (shared with stem cells),GSE4183,adj,-1.137,0.556,0.454,P (adenoma peak),yes
+OLFM4 only (shared with stem cells),GSE117606,raw,-0.185,0.849,-0.131,P (adenoma peak),yes
+OLFM4 only (shared with stem cells),GSE117606,adj,-0.211,0.737,-0.082,P (adenoma peak),yes
+OLFM4 only (shared with stem cells),GSE15960,raw,-0.016,0.79,-0.162,P (adenoma peak),no
+OLFM4 only (shared with stem cells),GSE15960,adj,-0.027,0.602,0.063,P (adenoma peak),yes
+SPINK1 only,GSE4183,raw,-0.378,0.627,0.159,P (adenoma peak),yes
+SPINK1 only,GSE4183,adj,-0.342,0.634,0.129,P (adenoma peak),yes
+SPINK1 only,GSE117606,raw,-0.37,0.967,0.023,P (adenoma peak),yes
+SPINK1 only,GSE117606,adj,-0.304,0.852,0.074,P (adenoma peak),yes
+SPINK1 only,GSE15960,raw,0.574,0.269,-0.365,D (monotone decrease),no
+SPINK1 only,GSE15960,adj,0.604,0.056,-0.132,D (monotone decrease),no
+without OLFM4 (DEFA5/6 + SPINK1),GSE4183,raw,-0.867,0.539,-0.116,P (adenoma peak),yes
+without OLFM4 (DEFA5/6 + SPINK1),GSE4183,adj,-0.831,0.601,-0.037,P (adenoma peak),yes
+without OLFM4 (DEFA5/6 + SPINK1),GSE117606,raw,-0.505,0.699,-0.404,P (adenoma peak),yes
+without OLFM4 (DEFA5/6 + SPINK1),GSE117606,adj,-0.488,0.659,-0.378,P (adenoma peak),yes
+without OLFM4 (DEFA5/6 + SPINK1),GSE15960,raw,-0.28,0.7,-0.049,P (adenoma peak),yes
+without OLFM4 (DEFA5/6 + SPINK1),GSE15960,adj,-0.191,0.484,0.105,P (adenoma peak),yes

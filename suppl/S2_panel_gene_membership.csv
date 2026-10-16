@@ -1,518 +1,518 @@
 ﻿panel,n_genes,order_in_panel,gene,component_of_313_signature
-间质·激活/CAF,43,1,ADAM12,not in 313
-间质·激活/CAF,43,2,ADAMTS2,not in 313
-间质·激活/CAF,43,3,ANGPTL4,not in 313
-间质·激活/CAF,43,4,ASPN,UP
-间质·激活/CAF,43,5,BGN,not in 313
-间质·激活/CAF,43,6,CDH11,UP
-间质·激活/CAF,43,7,COL10A1,UP
-间质·激活/CAF,43,8,COL11A1,UP
-间质·激活/CAF,43,9,COL16A1,not in 313
-间质·激活/CAF,43,10,COL8A1,not in 313
-间质·激活/CAF,43,11,COMP,UP
-间质·激活/CAF,43,12,CTGF,UP
-间质·激活/CAF,43,13,CTHRC1,not in 313
-间质·激活/CAF,43,14,EMILIN1,not in 313
-间质·激活/CAF,43,15,FAP,UP
-间质·激活/CAF,43,16,FNDC1,not in 313
-间质·激活/CAF,43,17,GREM1,UP
-间质·激活/CAF,43,18,INHBA,UP
-间质·激活/CAF,43,19,ISLR,UP
-间质·激活/CAF,43,20,LOX,UP
-间质·激活/CAF,43,21,LOXL2,UP
-间质·激活/CAF,43,22,LRRC15,not in 313
-间质·激活/CAF,43,23,MMP1,UP
-间质·激活/CAF,43,24,MMP11,UP
-间质·激活/CAF,43,25,MMP13,not in 313
-间质·激活/CAF,43,26,MMP14,not in 313
-间质·激活/CAF,43,27,MMP3,UP
-间质·激活/CAF,43,28,NID2,not in 313
-间质·激活/CAF,43,29,PLOD2,not in 313
-间质·激活/CAF,43,30,POSTN,UP
-间质·激活/CAF,43,31,PXDN,not in 313
-间质·激活/CAF,43,32,SEMA3C,not in 313
-间质·激活/CAF,43,33,SERPINE1,UP
-间质·激活/CAF,43,34,SPARC,UP
-间质·激活/CAF,43,35,SULF1,UP
-间质·激活/CAF,43,36,SULF2,not in 313
-间质·激活/CAF,43,37,THBS1,not in 313
-间质·激活/CAF,43,38,THBS2,UP
-间质·激活/CAF,43,39,THY1,UP
-间质·激活/CAF,43,40,TIMP1,not in 313
-间质·激活/CAF,43,41,TNC,UP
-间质·激活/CAF,43,42,VEGFA,not in 313
-间质·激活/CAF,43,43,WNT5A,not in 313
-间质·基线,31,1,C7,not in 313
-间质·基线,31,2,CAV1,not in 313
-间质·基线,31,3,CAV2,not in 313
-间质·基线,31,4,CCN1,not in 313
-间质·基线,31,5,CCN2,not in 313
-间质·基线,31,6,CFH,not in 313
-间质·基线,31,7,DCN,UP
-间质·基线,31,8,ECM1,not in 313
-间质·基线,31,9,FBLN1,UP
-间质·基线,31,10,FBLN2,UP
-间质·基线,31,11,FMOD,not in 313
-间质·基线,31,12,GAS6,not in 313
-间质·基线,31,13,IGFBP5,not in 313
-间质·基线,31,14,IGFBP7,UP
-间质·基线,31,15,ITGA1,not in 313
-间质·基线,31,16,LAMA4,not in 313
-间质·基线,31,17,LAMB1,not in 313
-间质·基线,31,18,LUM,UP
-间质·基线,31,19,MFAP4,not in 313
-间质·基线,31,20,MFAP5,not in 313
-间质·基线,31,21,MMP2,UP
-间质·基线,31,22,NBL1,not in 313
-间质·基线,31,23,NNMT,not in 313
-间质·基线,31,24,OGN,not in 313
-间质·基线,31,25,PCOLCE,UP
-间质·基线,31,26,PDGFRA,not in 313
-间质·基线,31,27,PRELP,not in 313
-间质·基线,31,28,PTGDS,not in 313
-间质·基线,31,29,RARRES2,not in 313
-间质·基线,31,30,SERPINF1,not in 313
-间质·基线,31,31,SOD3,not in 313
-上皮·分化/功能,41,1,ADH1C,DOWN
-上皮·分化/功能,41,2,AGR2,not in 313
-上皮·分化/功能,41,3,ANPEP,not in 313
-上皮·分化/功能,41,4,APOA4,not in 313
-上皮·分化/功能,41,5,AQP8,not in 313
-上皮·分化/功能,41,6,CA1,not in 313
-上皮·分化/功能,41,7,CA2,not in 313
-上皮·分化/功能,41,8,CD177,not in 313
-上皮·分化/功能,41,9,CDX2,not in 313
-上皮·分化/功能,41,10,CEACAM7,not in 313
-上皮·分化/功能,41,11,CLCA4,not in 313
-上皮·分化/功能,41,12,FABP1,not in 313
-上皮·分化/功能,41,13,FCGBP,DOWN
-上皮·分化/功能,41,14,GUCA2A,not in 313
-上皮·分化/功能,41,15,GUCA2B,not in 313
-上皮·分化/功能,41,16,HNF4A,not in 313
-上皮·分化/功能,41,17,HPGD,not in 313
-上皮·分化/功能,41,18,ITLN1,not in 313
-上皮·分化/功能,41,19,KRT20,not in 313
-上皮·分化/功能,41,20,KRT23,UP
-上皮·分化/功能,41,21,MEP1A,not in 313
-上皮·分化/功能,41,22,MUC1,not in 313
-上皮·分化/功能,41,23,MUC12,not in 313
-上皮·分化/功能,41,24,MUC13,not in 313
-上皮·分化/功能,41,25,MUC2,DOWN
-上皮·分化/功能,41,26,MUC20,not in 313
-上皮·分化/功能,41,27,MUC4,DOWN
-上皮·分化/功能,41,28,OLFM4,DOWN
-上皮·分化/功能,41,29,PIGR,DOWN
-上皮·分化/功能,41,30,PLAC8,not in 313
-上皮·分化/功能,41,31,REG4,not in 313
-上皮·分化/功能,41,32,SI,DOWN
-上皮·分化/功能,41,33,SLC12A2,not in 313
-上皮·分化/功能,41,34,SLC26A3,not in 313
-上皮·分化/功能,41,35,SLC51B,not in 313
-上皮·分化/功能,41,36,SPINK4,DOWN
-上皮·分化/功能,41,37,TFF1,not in 313
-上皮·分化/功能,41,38,TFF2,not in 313
-上皮·分化/功能,41,39,TFF3,not in 313
-上皮·分化/功能,41,40,VIL1,not in 313
-上皮·分化/功能,41,41,ZG16,not in 313
-上皮·基线/结构,24,1,CDH1,not in 313
-上皮·基线/结构,24,2,CLDN3,not in 313
-上皮·基线/结构,24,3,CLDN4,not in 313
-上皮·基线/结构,24,4,CLDN7,not in 313
-上皮·基线/结构,24,5,DSC2,not in 313
-上皮·基线/结构,24,6,DSP,not in 313
-上皮·基线/结构,24,7,EHF,not in 313
-上皮·基线/结构,24,8,ELF3,not in 313
-上皮·基线/结构,24,9,EPCAM,not in 313
-上皮·基线/结构,24,10,ESRP1,not in 313
-上皮·基线/结构,24,11,ESRP2,not in 313
-上皮·基线/结构,24,12,GRHL2,not in 313
-上皮·基线/结构,24,13,ITGA6,not in 313
-上皮·基线/结构,24,14,ITGB4,not in 313
-上皮·基线/结构,24,15,JUP,not in 313
-上皮·基线/结构,24,16,KRT18,not in 313
-上皮·基线/结构,24,17,KRT19,not in 313
-上皮·基线/结构,24,18,KRT8,not in 313
-上皮·基线/结构,24,19,OCLN,not in 313
-上皮·基线/结构,24,20,PKP2,not in 313
-上皮·基线/结构,24,21,PKP3,not in 313
-上皮·基线/结构,24,22,PRSS8,not in 313
-上皮·基线/结构,24,23,RAB25,not in 313
-上皮·基线/结构,24,24,SFN,not in 313
-髓系·激活,27,1,APOE,not in 313
-髓系·激活,27,2,C5AR1,UP
-髓系·激活,27,3,CCL18,UP
-髓系·激活,27,4,CCL19,not in 313
-髓系·激活,27,5,CCL2,UP
-髓系·激活,27,6,CCL20,not in 313
-髓系·激活,27,7,CCL3,not in 313
-髓系·激活,27,8,CCL4,UP
-髓系·激活,27,9,CD274,not in 313
-髓系·激活,27,10,CXCL8,UP
-髓系·激活,27,11,FCGR3B,UP
-髓系·激活,27,12,FCN1,not in 313
-髓系·激活,27,13,IDO1,not in 313
-髓系·激活,27,14,IL10,not in 313
-髓系·激活,27,15,LGALS3,not in 313
-髓系·激活,27,16,MMP12,not in 313
-髓系·激活,27,17,MMP8,not in 313
-髓系·激活,27,18,MMP9,UP
-髓系·激活,27,19,MNDA,UP
-髓系·激活,27,20,PDCD1LG2,not in 313
-髓系·激活,27,21,S100A12,not in 313
-髓系·激活,27,22,S100A8,UP
-髓系·激活,27,23,S100A9,UP
-髓系·激活,27,24,SIGLEC1,not in 313
-髓系·激活,27,25,SPP1,UP
-髓系·激活,27,26,TCN1,DOWN
-髓系·激活,27,27,TREM2,not in 313
-泛间质·6,6,1,ASPN,UP
-泛间质·6,6,2,COL11A1,UP
-泛间质·6,6,3,FAP,UP
-泛间质·6,6,4,INHBA,UP
-泛间质·6,6,5,POSTN,UP
-泛间质·6,6,6,THBS2,UP
-上皮分化·核心8,8,1,CLCA1,DOWN
-上皮分化·核心8,8,2,FCGBP,DOWN
-上皮分化·核心8,8,3,ITLN1,not in 313
-上皮分化·核心8,8,4,MUC2,DOWN
-上皮分化·核心8,8,5,REG4,not in 313
-上皮分化·核心8,8,6,SI,DOWN
-上皮分化·核心8,8,7,SPINK4,DOWN
-上皮分化·核心8,8,8,ZG16,not in 313
-纯上皮基线·7,7,1,CDH1,not in 313
-纯上皮基线·7,7,2,CDH17,not in 313
-纯上皮基线·7,7,3,EPCAM,not in 313
-纯上皮基线·7,7,4,KRT18,not in 313
-纯上皮基线·7,7,5,KRT19,not in 313
-纯上皮基线·7,7,6,KRT8,not in 313
-纯上皮基线·7,7,7,VIL1,not in 313
-相代谢·5,5,1,ADH1C,DOWN
-相代谢·5,5,2,CYP3A5,DOWN
-相代谢·5,5,3,FMO5,DOWN
-相代谢·5,5,4,NAT2,DOWN
-相代谢·5,5,5,UGT2B15,DOWN
-潘氏细胞·4,4,1,DEFA5,DOWN
-潘氏细胞·4,4,2,DEFA6,DOWN
-潘氏细胞·4,4,3,OLFM4,DOWN
-潘氏细胞·4,4,4,SPINK1,DOWN
-黏液杯状·5,5,1,CLCA1,DOWN
-黏液杯状·5,5,2,FCGBP,DOWN
-黏液杯状·5,5,3,MUC2,DOWN
-黏液杯状·5,5,4,SPINK4,DOWN
-黏液杯状·5,5,5,WFDC2,DOWN
-Up-regulated component,210,1,ACKR3,up
-Up-regulated component,210,2,ACSL4,up
-Up-regulated component,210,3,ACTG2,up
-Up-regulated component,210,4,ADAMTS1,up
-Up-regulated component,210,5,ADGRL4,up
-Up-regulated component,210,6,AEBP1,up
-Up-regulated component,210,7,AKAP12,up
-Up-regulated component,210,8,ANOS1,up
-Up-regulated component,210,9,APOLD1,up
-Up-regulated component,210,10,AQP9,up
-Up-regulated component,210,11,AREG,up
-Up-regulated component,210,12,ASPN,up
-Up-regulated component,210,13,ATF3,up
-Up-regulated component,210,14,BAG2,up
-Up-regulated component,210,15,BCL2A1,up
-Up-regulated component,210,16,BST2,up
-Up-regulated component,210,17,C1S,up
-Up-regulated component,210,18,C3,up
-Up-regulated component,210,19,C5AR1,up
-Up-regulated component,210,20,CALD1,up
-Up-regulated component,210,21,CCL18,up
-Up-regulated component,210,22,CCL2,up
-Up-regulated component,210,23,CCL3L3,up
-Up-regulated component,210,24,CCL4,up
-Up-regulated component,210,25,CCL8,up
-Up-regulated component,210,26,CD248,up
-Up-regulated component,210,27,CDH11,up
-Up-regulated component,210,28,CHI3L1,up
-Up-regulated component,210,29,CHN1,up
-Up-regulated component,210,30,CLDN1,up
-Up-regulated component,210,31,CNN1,up
-Up-regulated component,210,32,COL10A1,up
-Up-regulated component,210,33,COL11A1,up
-Up-regulated component,210,34,COL15A1,up
-Up-regulated component,210,35,COL1A1,up
-Up-regulated component,210,36,COL1A2,up
-Up-regulated component,210,37,COL3A1,up
-Up-regulated component,210,38,COL4A1,up
-Up-regulated component,210,39,COL4A2,up
-Up-regulated component,210,40,COL5A1,up
-Up-regulated component,210,41,COL5A2,up
-Up-regulated component,210,42,COL6A2,up
-Up-regulated component,210,43,COL6A3,up
-Up-regulated component,210,44,COMP,up
-Up-regulated component,210,45,COX7A1,up
-Up-regulated component,210,46,CSRP2,up
-Up-regulated component,210,47,CTGF,up
-Up-regulated component,210,48,CTSK,up
-Up-regulated component,210,49,CXCL10,up
-Up-regulated component,210,50,CXCL13,up
-Up-regulated component,210,51,CXCL5,up
-Up-regulated component,210,52,CXCL6,up
-Up-regulated component,210,53,CXCL8,up
-Up-regulated component,210,54,CXCL9,up
-Up-regulated component,210,55,CYR61,up
-Up-regulated component,210,56,DCN,up
-Up-regulated component,210,57,DDR2,up
-Up-regulated component,210,58,DFNA5,up
-Up-regulated component,210,59,DIO2,up
-Up-regulated component,210,60,DUSP1,up
-Up-regulated component,210,61,DUSP5,up
-Up-regulated component,210,62,EDNRA,up
-Up-regulated component,210,63,EFEMP1,up
-Up-regulated component,210,64,EGFL6,up
-Up-regulated component,210,65,EGR1,up
-Up-regulated component,210,66,EHD2,up
-Up-regulated component,210,67,EREG,up
-Up-regulated component,210,68,FADS3,up
-Up-regulated component,210,69,FAP,up
-Up-regulated component,210,70,FBLN1,up
-Up-regulated component,210,71,FBLN2,up
-Up-regulated component,210,72,FBN1,up
-Up-regulated component,210,73,FCGR1B,up
-Up-regulated component,210,74,FCGR3B,up
-Up-regulated component,210,75,FERMT2,up
-Up-regulated component,210,76,FILIP1L,up
-Up-regulated component,210,77,FKBP10,up
-Up-regulated component,210,78,FLNA,up
-Up-regulated component,210,79,FN1,up
-Up-regulated component,210,80,FPR1,up
-Up-regulated component,210,81,FSTL1,up
-Up-regulated component,210,82,G0S2,up
-Up-regulated component,210,83,GAL,up
-Up-regulated component,210,84,GAS1,up
-Up-regulated component,210,85,GEM,up
-Up-regulated component,210,86,GGT5,up
-Up-regulated component,210,87,GNG11,up
-Up-regulated component,210,88,GNG4,up
-Up-regulated component,210,89,GPM6B,up
-Up-regulated component,210,90,GPNMB,up
-Up-regulated component,210,91,GREM1,up
-Up-regulated component,210,92,GRP,up
-Up-regulated component,210,93,GUCY1A3,up
-Up-regulated component,210,94,GUCY1B3,up
-Up-regulated component,210,95,GULP1,up
-Up-regulated component,210,96,GZMB,up
-Up-regulated component,210,97,HCAR3,up
-Up-regulated component,210,98,HDGFRP3,up
-Up-regulated component,210,99,HOMER1,up
-Up-regulated component,210,100,HSD11B1,up
-Up-regulated component,210,101,HTRA1,up
-Up-regulated component,210,102,IFIT1,up
-Up-regulated component,210,103,IGF2BP3,up
-Up-regulated component,210,104,IGFBP3,up
-Up-regulated component,210,105,IGFBP7,up
-Up-regulated component,210,106,IL13RA2,up
-Up-regulated component,210,107,IL1RN,up
-Up-regulated component,210,108,IL24,up
-Up-regulated component,210,109,IL6,up
-Up-regulated component,210,110,INHBA,up
-Up-regulated component,210,111,INHBB,up
-Up-regulated component,210,112,INS-IGF2,up
-Up-regulated component,210,113,ISG15,up
-Up-regulated component,210,114,ISLR,up
-Up-regulated component,210,115,KIAA1462,up
-Up-regulated component,210,116,KRT23,up
-Up-regulated component,210,117,LARP6,up
-Up-regulated component,210,118,LGALS1,up
-Up-regulated component,210,119,LOX,up
-Up-regulated component,210,120,LOXL1,up
-Up-regulated component,210,121,LOXL2,up
-Up-regulated component,210,122,LUM,up
-Up-regulated component,210,123,LY6E,up
-Up-regulated component,210,124,MCAM,up
-Up-regulated component,210,125,MEIS1,up
-Up-regulated component,210,126,MFAP2,up
-Up-regulated component,210,127,MGP,up
-Up-regulated component,210,128,MME,up
-Up-regulated component,210,129,MMP1,up
-Up-regulated component,210,130,MMP11,up
-Up-regulated component,210,131,MMP2,up
-Up-regulated component,210,132,MMP3,up
-Up-regulated component,210,133,MMP9,up
-Up-regulated component,210,134,MNDA,up
-Up-regulated component,210,135,MXRA8,up
-Up-regulated component,210,136,MYH10,up
-Up-regulated component,210,137,MYL9,up
-Up-regulated component,210,138,MYLK,up
-Up-regulated component,210,139,NCF2,up
-Up-regulated component,210,140,NOX4,up
-Up-regulated component,210,141,NPTX2,up
-Up-regulated component,210,142,NR2F1,up
-Up-regulated component,210,143,NR4A3,up
-Up-regulated component,210,144,NUP210,up
-Up-regulated component,210,145,NXN,up
-Up-regulated component,210,146,OSM,up
-Up-regulated component,210,147,PCOLCE,up
-Up-regulated component,210,148,PDGFRB,up
-Up-regulated component,210,149,PDLIM3,up
-Up-regulated component,210,150,PDPN,up
-Up-regulated component,210,151,PLAU,up
-Up-regulated component,210,152,PLN,up
-Up-regulated component,210,153,POSTN,up
-Up-regulated component,210,154,PPBP,up
-Up-regulated component,210,155,PRKCDBP,up
-Up-regulated component,210,156,PROCR,up
-Up-regulated component,210,157,PTGS2,up
-Up-regulated component,210,158,RAB31,up
-Up-regulated component,210,159,RBMS1,up
-Up-regulated component,210,160,RBP1,up
-Up-regulated component,210,161,RCN3,up
-Up-regulated component,210,162,RFTN1,up
-Up-regulated component,210,163,RGS1,up
-Up-regulated component,210,164,RGS16,up
-Up-regulated component,210,165,RGS2,up
-Up-regulated component,210,166,ROBO1,up
-Up-regulated component,210,167,RSAD2,up
-Up-regulated component,210,168,S100A8,up
-Up-regulated component,210,169,S100A9,up
-Up-regulated component,210,170,SCRN1,up
-Up-regulated component,210,171,SDC2,up
-Up-regulated component,210,172,SELE,up
-Up-regulated component,210,173,SERPINE1,up
-Up-regulated component,210,174,SERPING1,up
-Up-regulated component,210,175,SFRP4,up
-Up-regulated component,210,176,SLC2A14,up
-Up-regulated component,210,177,SLC2A3,up
-Up-regulated component,210,178,SNX10,up
-Up-regulated component,210,179,SPARC,up
-Up-regulated component,210,180,SPARCL1,up
-Up-regulated component,210,181,SPOCK1,up
-Up-regulated component,210,182,SPP1,up
-Up-regulated component,210,183,STC2,up
-Up-regulated component,210,184,SULF1,up
-Up-regulated component,210,185,TAGLN,up
-Up-regulated component,210,186,TCFL5,up
-Up-regulated component,210,187,TDO2,up
-Up-regulated component,210,188,TESC,up
-Up-regulated component,210,189,TFPI2,up
-Up-regulated component,210,190,TGM2,up
-Up-regulated component,210,191,THBD,up
-Up-regulated component,210,192,THBS2,up
-Up-regulated component,210,193,THY1,up
-Up-regulated component,210,194,TLR2,up
-Up-regulated component,210,195,TMEM45A,up
-Up-regulated component,210,196,TMEM47,up
-Up-regulated component,210,197,TNC,up
-Up-regulated component,210,198,TNFAIP6,up
-Up-regulated component,210,199,TPM2,up
-Up-regulated component,210,200,TREM1,up
-Up-regulated component,210,201,TRIB3,up
-Up-regulated component,210,202,UBD,up
-Up-regulated component,210,203,VCAN,up
-Up-regulated component,210,204,VIM,up
-Up-regulated component,210,205,VIP,up
-Up-regulated component,210,206,VSIG4,up
-Up-regulated component,210,207,VWF,up
-Up-regulated component,210,208,WASF3,up
-Up-regulated component,210,209,WWC2,up
-Up-regulated component,210,210,ZCCHC24,up
-Down-regulated component,103,1,ACSM3,down
-Down-regulated component,103,2,ADH1C,down
-Down-regulated component,103,3,ADH6,down
-Down-regulated component,103,4,ADTRP,down
-Down-regulated component,103,5,AKAP7,down
-Down-regulated component,103,6,AKR1B10,down
-Down-regulated component,103,7,ALDH1A1,down
-Down-regulated component,103,8,ALDH1L1,down
-Down-regulated component,103,9,ALDH3A1,down
-Down-regulated component,103,10,AMT,down
-Down-regulated component,103,11,APOBR,down
-Down-regulated component,103,12,ARHGAP44,down
-Down-regulated component,103,13,ARL14,down
-Down-regulated component,103,14,ART3,down
-Down-regulated component,103,15,ASRGL1,down
-Down-regulated component,103,16,ATOH1,down
-Down-regulated component,103,17,ATP12A,down
-Down-regulated component,103,18,ATP2A3,down
-Down-regulated component,103,19,ATP8A1,down
-Down-regulated component,103,20,BCAS1,down
-Down-regulated component,103,21,BEST2,down
-Down-regulated component,103,22,BLNK,down
-Down-regulated component,103,23,CA12,down
-Down-regulated component,103,24,CACNA2D2,down
-Down-regulated component,103,25,CAPN9,down
-Down-regulated component,103,26,CDHR1,down
-Down-regulated component,103,27,CES3,down
-Down-regulated component,103,28,CHST5,down
-Down-regulated component,103,29,CKB,down
-Down-regulated component,103,30,CLCA1,down
-Down-regulated component,103,31,COL17A1,down
-Down-regulated component,103,32,CRYM,down
-Down-regulated component,103,33,CTSE,down
-Down-regulated component,103,34,CWH43,down
-Down-regulated component,103,35,CYP3A5,down
-Down-regulated component,103,36,DEFA5,down
-Down-regulated component,103,37,DEFA6,down
-Down-regulated component,103,38,DNAJC12,down
-Down-regulated component,103,39,DNASE1L3,down
-Down-regulated component,103,40,DUOX2,down
-Down-regulated component,103,41,ENTPD5,down
-Down-regulated component,103,42,EPHX2,down
-Down-regulated component,103,43,FAM189A1,down
-Down-regulated component,103,44,FCGBP,down
-Down-regulated component,103,45,FMO5,down
-Down-regulated component,103,46,FOXA1,down
-Down-regulated component,103,47,GALNT6,down
-Down-regulated component,103,48,HAVCR1,down
-Down-regulated component,103,49,HMGCS2,down
-Down-regulated component,103,50,HOXB13,down
-Down-regulated component,103,51,HSD11B2,down
-Down-regulated component,103,52,HYAL1,down
-Down-regulated component,103,53,ID3,down
-Down-regulated component,103,54,ID4,down
-Down-regulated component,103,55,IGFBP2,down
-Down-regulated component,103,56,IGHA2,down
-Down-regulated component,103,57,JCHAIN,down
-Down-regulated component,103,58,KIAA0319,down
-Down-regulated component,103,59,KIAA1324,down
-Down-regulated component,103,60,KLK1,down
-Down-regulated component,103,61,KLK11,down
-Down-regulated component,103,62,L1TD1,down
-Down-regulated component,103,63,LEFTY1,down
-Down-regulated component,103,64,LRRC19,down
-Down-regulated component,103,65,MB,down
-Down-regulated component,103,66,MLPH,down
-Down-regulated component,103,67,MT1M,down
-Down-regulated component,103,68,MTSS1,down
-Down-regulated component,103,69,MUC2,down
-Down-regulated component,103,70,MUC4,down
-Down-regulated component,103,71,MUC5B,down
-Down-regulated component,103,72,NAT2,down
-Down-regulated component,103,73,NPDC1,down
-Down-regulated component,103,74,NR3C2,down
-Down-regulated component,103,75,NXPE4,down
-Down-regulated component,103,76,OLFM4,down
-Down-regulated component,103,77,PADI2,down
-Down-regulated component,103,78,PBLD,down
-Down-regulated component,103,79,PCSK1,down
-Down-regulated component,103,80,PIGR,down
-Down-regulated component,103,81,PLCB4,down
-Down-regulated component,103,82,PLCE1,down
-Down-regulated component,103,83,PPP1R9A,down
-Down-regulated component,103,84,PRKACB,down
-Down-regulated component,103,85,PRUNE2,down
-Down-regulated component,103,86,PTGDR,down
-Down-regulated component,103,87,QPCT,down
-Down-regulated component,103,88,RGS13,down
-Down-regulated component,103,89,RNF186,down
-Down-regulated component,103,90,SCGB2A1,down
-Down-regulated component,103,91,SELENBP1,down
-Down-regulated component,103,92,SI,down
-Down-regulated component,103,93,SLC28A2,down
-Down-regulated component,103,94,SLC38A4,down
-Down-regulated component,103,95,SPINK1,down
-Down-regulated component,103,96,SPINK4,down
-Down-regulated component,103,97,SULT1B1,down
-Down-regulated component,103,98,TBX3,down
-Down-regulated component,103,99,TCN1,down
-Down-regulated component,103,100,TLR4,down
-Down-regulated component,103,101,TNFRSF11A,down
-Down-regulated component,103,102,UGT2B15,down
-Down-regulated component,103,103,WFDC2,down
+stroma/activated-CAF,43,1,ADAM12,not in 313
+stroma/activated-CAF,43,2,ADAMTS2,not in 313
+stroma/activated-CAF,43,3,ANGPTL4,not in 313
+stroma/activated-CAF,43,4,ASPN,UP
+stroma/activated-CAF,43,5,BGN,not in 313
+stroma/activated-CAF,43,6,CDH11,UP
+stroma/activated-CAF,43,7,COL10A1,UP
+stroma/activated-CAF,43,8,COL11A1,UP
+stroma/activated-CAF,43,9,COL16A1,not in 313
+stroma/activated-CAF,43,10,COL8A1,not in 313
+stroma/activated-CAF,43,11,COMP,UP
+stroma/activated-CAF,43,12,CTGF,UP
+stroma/activated-CAF,43,13,CTHRC1,not in 313
+stroma/activated-CAF,43,14,EMILIN1,not in 313
+stroma/activated-CAF,43,15,FAP,UP
+stroma/activated-CAF,43,16,FNDC1,not in 313
+stroma/activated-CAF,43,17,GREM1,UP
+stroma/activated-CAF,43,18,INHBA,UP
+stroma/activated-CAF,43,19,ISLR,UP
+stroma/activated-CAF,43,20,LOX,UP
+stroma/activated-CAF,43,21,LOXL2,UP
+stroma/activated-CAF,43,22,LRRC15,not in 313
+stroma/activated-CAF,43,23,MMP1,UP
+stroma/activated-CAF,43,24,MMP11,UP
+stroma/activated-CAF,43,25,MMP13,not in 313
+stroma/activated-CAF,43,26,MMP14,not in 313
+stroma/activated-CAF,43,27,MMP3,UP
+stroma/activated-CAF,43,28,NID2,not in 313
+stroma/activated-CAF,43,29,PLOD2,not in 313
+stroma/activated-CAF,43,30,POSTN,UP
+stroma/activated-CAF,43,31,PXDN,not in 313
+stroma/activated-CAF,43,32,SEMA3C,not in 313
+stroma/activated-CAF,43,33,SERPINE1,UP
+stroma/activated-CAF,43,34,SPARC,UP
+stroma/activated-CAF,43,35,SULF1,UP
+stroma/activated-CAF,43,36,SULF2,not in 313
+stroma/activated-CAF,43,37,THBS1,not in 313
+stroma/activated-CAF,43,38,THBS2,UP
+stroma/activated-CAF,43,39,THY1,UP
+stroma/activated-CAF,43,40,TIMP1,not in 313
+stroma/activated-CAF,43,41,TNC,UP
+stroma/activated-CAF,43,42,VEGFA,not in 313
+stroma/activated-CAF,43,43,WNT5A,not in 313
+stromal-baseline,31,1,C7,not in 313
+stromal-baseline,31,2,CAV1,not in 313
+stromal-baseline,31,3,CAV2,not in 313
+stromal-baseline,31,4,CCN1,not in 313
+stromal-baseline,31,5,CCN2,not in 313
+stromal-baseline,31,6,CFH,not in 313
+stromal-baseline,31,7,DCN,UP
+stromal-baseline,31,8,ECM1,not in 313
+stromal-baseline,31,9,FBLN1,UP
+stromal-baseline,31,10,FBLN2,UP
+stromal-baseline,31,11,FMOD,not in 313
+stromal-baseline,31,12,GAS6,not in 313
+stromal-baseline,31,13,IGFBP5,not in 313
+stromal-baseline,31,14,IGFBP7,UP
+stromal-baseline,31,15,ITGA1,not in 313
+stromal-baseline,31,16,LAMA4,not in 313
+stromal-baseline,31,17,LAMB1,not in 313
+stromal-baseline,31,18,LUM,UP
+stromal-baseline,31,19,MFAP4,not in 313
+stromal-baseline,31,20,MFAP5,not in 313
+stromal-baseline,31,21,MMP2,UP
+stromal-baseline,31,22,NBL1,not in 313
+stromal-baseline,31,23,NNMT,not in 313
+stromal-baseline,31,24,OGN,not in 313
+stromal-baseline,31,25,PCOLCE,UP
+stromal-baseline,31,26,PDGFRA,not in 313
+stromal-baseline,31,27,PRELP,not in 313
+stromal-baseline,31,28,PTGDS,not in 313
+stromal-baseline,31,29,RARRES2,not in 313
+stromal-baseline,31,30,SERPINF1,not in 313
+stromal-baseline,31,31,SOD3,not in 313
+epithelial-differentiation,41,1,ADH1C,DOWN
+epithelial-differentiation,41,2,AGR2,not in 313
+epithelial-differentiation,41,3,ANPEP,not in 313
+epithelial-differentiation,41,4,APOA4,not in 313
+epithelial-differentiation,41,5,AQP8,not in 313
+epithelial-differentiation,41,6,CA1,not in 313
+epithelial-differentiation,41,7,CA2,not in 313
+epithelial-differentiation,41,8,CD177,not in 313
+epithelial-differentiation,41,9,CDX2,not in 313
+epithelial-differentiation,41,10,CEACAM7,not in 313
+epithelial-differentiation,41,11,CLCA4,not in 313
+epithelial-differentiation,41,12,FABP1,not in 313
+epithelial-differentiation,41,13,FCGBP,DOWN
+epithelial-differentiation,41,14,GUCA2A,not in 313
+epithelial-differentiation,41,15,GUCA2B,not in 313
+epithelial-differentiation,41,16,HNF4A,not in 313
+epithelial-differentiation,41,17,HPGD,not in 313
+epithelial-differentiation,41,18,ITLN1,not in 313
+epithelial-differentiation,41,19,KRT20,not in 313
+epithelial-differentiation,41,20,KRT23,UP
+epithelial-differentiation,41,21,MEP1A,not in 313
+epithelial-differentiation,41,22,MUC1,not in 313
+epithelial-differentiation,41,23,MUC12,not in 313
+epithelial-differentiation,41,24,MUC13,not in 313
+epithelial-differentiation,41,25,MUC2,DOWN
+epithelial-differentiation,41,26,MUC20,not in 313
+epithelial-differentiation,41,27,MUC4,DOWN
+epithelial-differentiation,41,28,OLFM4,DOWN
+epithelial-differentiation,41,29,PIGR,DOWN
+epithelial-differentiation,41,30,PLAC8,not in 313
+epithelial-differentiation,41,31,REG4,not in 313
+epithelial-differentiation,41,32,SI,DOWN
+epithelial-differentiation,41,33,SLC12A2,not in 313
+epithelial-differentiation,41,34,SLC26A3,not in 313
+epithelial-differentiation,41,35,SLC51B,not in 313
+epithelial-differentiation,41,36,SPINK4,DOWN
+epithelial-differentiation,41,37,TFF1,not in 313
+epithelial-differentiation,41,38,TFF2,not in 313
+epithelial-differentiation,41,39,TFF3,not in 313
+epithelial-differentiation,41,40,VIL1,not in 313
+epithelial-differentiation,41,41,ZG16,not in 313
+epithelial-structural,24,1,CDH1,not in 313
+epithelial-structural,24,2,CLDN3,not in 313
+epithelial-structural,24,3,CLDN4,not in 313
+epithelial-structural,24,4,CLDN7,not in 313
+epithelial-structural,24,5,DSC2,not in 313
+epithelial-structural,24,6,DSP,not in 313
+epithelial-structural,24,7,EHF,not in 313
+epithelial-structural,24,8,ELF3,not in 313
+epithelial-structural,24,9,EPCAM,not in 313
+epithelial-structural,24,10,ESRP1,not in 313
+epithelial-structural,24,11,ESRP2,not in 313
+epithelial-structural,24,12,GRHL2,not in 313
+epithelial-structural,24,13,ITGA6,not in 313
+epithelial-structural,24,14,ITGB4,not in 313
+epithelial-structural,24,15,JUP,not in 313
+epithelial-structural,24,16,KRT18,not in 313
+epithelial-structural,24,17,KRT19,not in 313
+epithelial-structural,24,18,KRT8,not in 313
+epithelial-structural,24,19,OCLN,not in 313
+epithelial-structural,24,20,PKP2,not in 313
+epithelial-structural,24,21,PKP3,not in 313
+epithelial-structural,24,22,PRSS8,not in 313
+epithelial-structural,24,23,RAB25,not in 313
+epithelial-structural,24,24,SFN,not in 313
+myeloid-activation,27,1,APOE,not in 313
+myeloid-activation,27,2,C5AR1,UP
+myeloid-activation,27,3,CCL18,UP
+myeloid-activation,27,4,CCL19,not in 313
+myeloid-activation,27,5,CCL2,UP
+myeloid-activation,27,6,CCL20,not in 313
+myeloid-activation,27,7,CCL3,not in 313
+myeloid-activation,27,8,CCL4,UP
+myeloid-activation,27,9,CD274,not in 313
+myeloid-activation,27,10,CXCL8,UP
+myeloid-activation,27,11,FCGR3B,UP
+myeloid-activation,27,12,FCN1,not in 313
+myeloid-activation,27,13,IDO1,not in 313
+myeloid-activation,27,14,IL10,not in 313
+myeloid-activation,27,15,LGALS3,not in 313
+myeloid-activation,27,16,MMP12,not in 313
+myeloid-activation,27,17,MMP8,not in 313
+myeloid-activation,27,18,MMP9,UP
+myeloid-activation,27,19,MNDA,UP
+myeloid-activation,27,20,PDCD1LG2,not in 313
+myeloid-activation,27,21,S100A12,not in 313
+myeloid-activation,27,22,S100A8,UP
+myeloid-activation,27,23,S100A9,UP
+myeloid-activation,27,24,SIGLEC1,not in 313
+myeloid-activation,27,25,SPP1,UP
+myeloid-activation,27,26,TCN1,DOWN
+myeloid-activation,27,27,TREM2,not in 313
+stromal/activation·6,6,1,ASPN,UP
+stromal/activation·6,6,2,COL11A1,UP
+stromal/activation·6,6,3,FAP,UP
+stromal/activation·6,6,4,INHBA,UP
+stromal/activation·6,6,5,POSTN,UP
+stromal/activation·6,6,6,THBS2,UP
+enterocyte-differentiation·8,8,1,CLCA1,DOWN
+enterocyte-differentiation·8,8,2,FCGBP,DOWN
+enterocyte-differentiation·8,8,3,ITLN1,not in 313
+enterocyte-differentiation·8,8,4,MUC2,DOWN
+enterocyte-differentiation·8,8,5,REG4,not in 313
+enterocyte-differentiation·8,8,6,SI,DOWN
+enterocyte-differentiation·8,8,7,SPINK4,DOWN
+enterocyte-differentiation·8,8,8,ZG16,not in 313
+pure-epithelial-baseline·7,7,1,CDH1,not in 313
+pure-epithelial-baseline·7,7,2,CDH17,not in 313
+pure-epithelial-baseline·7,7,3,EPCAM,not in 313
+pure-epithelial-baseline·7,7,4,KRT18,not in 313
+pure-epithelial-baseline·7,7,5,KRT19,not in 313
+pure-epithelial-baseline·7,7,6,KRT8,not in 313
+pure-epithelial-baseline·7,7,7,VIL1,not in 313
+metabolic·5,5,1,ADH1C,DOWN
+metabolic·5,5,2,CYP3A5,DOWN
+metabolic·5,5,3,FMO5,DOWN
+metabolic·5,5,4,NAT2,DOWN
+metabolic·5,5,5,UGT2B15,DOWN
+Paneth-cell·4,4,1,DEFA5,DOWN
+Paneth-cell·4,4,2,DEFA6,DOWN
+Paneth-cell·4,4,3,OLFM4,DOWN
+Paneth-cell·4,4,4,SPINK1,DOWN
+goblet·5,5,1,CLCA1,DOWN
+goblet·5,5,2,FCGBP,DOWN
+goblet·5,5,3,MUC2,DOWN
+goblet·5,5,4,SPINK4,DOWN
+goblet·5,5,5,WFDC2,DOWN
+up-component·210,210,1,ACKR3,up
+up-component·210,210,2,ACSL4,up
+up-component·210,210,3,ACTG2,up
+up-component·210,210,4,ADAMTS1,up
+up-component·210,210,5,ADGRL4,up
+up-component·210,210,6,AEBP1,up
+up-component·210,210,7,AKAP12,up
+up-component·210,210,8,ANOS1,up
+up-component·210,210,9,APOLD1,up
+up-component·210,210,10,AQP9,up
+up-component·210,210,11,AREG,up
+up-component·210,210,12,ASPN,up
+up-component·210,210,13,ATF3,up
+up-component·210,210,14,BAG2,up
+up-component·210,210,15,BCL2A1,up
+up-component·210,210,16,BST2,up
+up-component·210,210,17,C1S,up
+up-component·210,210,18,C3,up
+up-component·210,210,19,C5AR1,up
+up-component·210,210,20,CALD1,up
+up-component·210,210,21,CCL18,up
+up-component·210,210,22,CCL2,up
+up-component·210,210,23,CCL3L3,up
+up-component·210,210,24,CCL4,up
+up-component·210,210,25,CCL8,up
+up-component·210,210,26,CD248,up
+up-component·210,210,27,CDH11,up
+up-component·210,210,28,CHI3L1,up
+up-component·210,210,29,CHN1,up
+up-component·210,210,30,CLDN1,up
+up-component·210,210,31,CNN1,up
+up-component·210,210,32,COL10A1,up
+up-component·210,210,33,COL11A1,up
+up-component·210,210,34,COL15A1,up
+up-component·210,210,35,COL1A1,up
+up-component·210,210,36,COL1A2,up
+up-component·210,210,37,COL3A1,up
+up-component·210,210,38,COL4A1,up
+up-component·210,210,39,COL4A2,up
+up-component·210,210,40,COL5A1,up
+up-component·210,210,41,COL5A2,up
+up-component·210,210,42,COL6A2,up
+up-component·210,210,43,COL6A3,up
+up-component·210,210,44,COMP,up
+up-component·210,210,45,COX7A1,up
+up-component·210,210,46,CSRP2,up
+up-component·210,210,47,CTGF,up
+up-component·210,210,48,CTSK,up
+up-component·210,210,49,CXCL10,up
+up-component·210,210,50,CXCL13,up
+up-component·210,210,51,CXCL5,up
+up-component·210,210,52,CXCL6,up
+up-component·210,210,53,CXCL8,up
+up-component·210,210,54,CXCL9,up
+up-component·210,210,55,CYR61,up
+up-component·210,210,56,DCN,up
+up-component·210,210,57,DDR2,up
+up-component·210,210,58,DFNA5,up
+up-component·210,210,59,DIO2,up
+up-component·210,210,60,DUSP1,up
+up-component·210,210,61,DUSP5,up
+up-component·210,210,62,EDNRA,up
+up-component·210,210,63,EFEMP1,up
+up-component·210,210,64,EGFL6,up
+up-component·210,210,65,EGR1,up
+up-component·210,210,66,EHD2,up
+up-component·210,210,67,EREG,up
+up-component·210,210,68,FADS3,up
+up-component·210,210,69,FAP,up
+up-component·210,210,70,FBLN1,up
+up-component·210,210,71,FBLN2,up
+up-component·210,210,72,FBN1,up
+up-component·210,210,73,FCGR1B,up
+up-component·210,210,74,FCGR3B,up
+up-component·210,210,75,FERMT2,up
+up-component·210,210,76,FILIP1L,up
+up-component·210,210,77,FKBP10,up
+up-component·210,210,78,FLNA,up
+up-component·210,210,79,FN1,up
+up-component·210,210,80,FPR1,up
+up-component·210,210,81,FSTL1,up
+up-component·210,210,82,G0S2,up
+up-component·210,210,83,GAL,up
+up-component·210,210,84,GAS1,up
+up-component·210,210,85,GEM,up
+up-component·210,210,86,GGT5,up
+up-component·210,210,87,GNG11,up
+up-component·210,210,88,GNG4,up
+up-component·210,210,89,GPM6B,up
+up-component·210,210,90,GPNMB,up
+up-component·210,210,91,GREM1,up
+up-component·210,210,92,GRP,up
+up-component·210,210,93,GUCY1A3,up
+up-component·210,210,94,GUCY1B3,up
+up-component·210,210,95,GULP1,up
+up-component·210,210,96,GZMB,up
+up-component·210,210,97,HCAR3,up
+up-component·210,210,98,HDGFRP3,up
+up-component·210,210,99,HOMER1,up
+up-component·210,210,100,HSD11B1,up
+up-component·210,210,101,HTRA1,up
+up-component·210,210,102,IFIT1,up
+up-component·210,210,103,IGF2BP3,up
+up-component·210,210,104,IGFBP3,up
+up-component·210,210,105,IGFBP7,up
+up-component·210,210,106,IL13RA2,up
+up-component·210,210,107,IL1RN,up
+up-component·210,210,108,IL24,up
+up-component·210,210,109,IL6,up
+up-component·210,210,110,INHBA,up
+up-component·210,210,111,INHBB,up
+up-component·210,210,112,INS-IGF2,up
+up-component·210,210,113,ISG15,up
+up-component·210,210,114,ISLR,up
+up-component·210,210,115,KIAA1462,up
+up-component·210,210,116,KRT23,up
+up-component·210,210,117,LARP6,up
+up-component·210,210,118,LGALS1,up
+up-component·210,210,119,LOX,up
+up-component·210,210,120,LOXL1,up
+up-component·210,210,121,LOXL2,up
+up-component·210,210,122,LUM,up
+up-component·210,210,123,LY6E,up
+up-component·210,210,124,MCAM,up
+up-component·210,210,125,MEIS1,up
+up-component·210,210,126,MFAP2,up
+up-component·210,210,127,MGP,up
+up-component·210,210,128,MME,up
+up-component·210,210,129,MMP1,up
+up-component·210,210,130,MMP11,up
+up-component·210,210,131,MMP2,up
+up-component·210,210,132,MMP3,up
+up-component·210,210,133,MMP9,up
+up-component·210,210,134,MNDA,up
+up-component·210,210,135,MXRA8,up
+up-component·210,210,136,MYH10,up
+up-component·210,210,137,MYL9,up
+up-component·210,210,138,MYLK,up
+up-component·210,210,139,NCF2,up
+up-component·210,210,140,NOX4,up
+up-component·210,210,141,NPTX2,up
+up-component·210,210,142,NR2F1,up
+up-component·210,210,143,NR4A3,up
+up-component·210,210,144,NUP210,up
+up-component·210,210,145,NXN,up
+up-component·210,210,146,OSM,up
+up-component·210,210,147,PCOLCE,up
+up-component·210,210,148,PDGFRB,up
+up-component·210,210,149,PDLIM3,up
+up-component·210,210,150,PDPN,up
+up-component·210,210,151,PLAU,up
+up-component·210,210,152,PLN,up
+up-component·210,210,153,POSTN,up
+up-component·210,210,154,PPBP,up
+up-component·210,210,155,PRKCDBP,up
+up-component·210,210,156,PROCR,up
+up-component·210,210,157,PTGS2,up
+up-component·210,210,158,RAB31,up
+up-component·210,210,159,RBMS1,up
+up-component·210,210,160,RBP1,up
+up-component·210,210,161,RCN3,up
+up-component·210,210,162,RFTN1,up
+up-component·210,210,163,RGS1,up
+up-component·210,210,164,RGS16,up
+up-component·210,210,165,RGS2,up
+up-component·210,210,166,ROBO1,up
+up-component·210,210,167,RSAD2,up
+up-component·210,210,168,S100A8,up
+up-component·210,210,169,S100A9,up
+up-component·210,210,170,SCRN1,up
+up-component·210,210,171,SDC2,up
+up-component·210,210,172,SELE,up
+up-component·210,210,173,SERPINE1,up
+up-component·210,210,174,SERPING1,up
+up-component·210,210,175,SFRP4,up
+up-component·210,210,176,SLC2A14,up
+up-component·210,210,177,SLC2A3,up
+up-component·210,210,178,SNX10,up
+up-component·210,210,179,SPARC,up
+up-component·210,210,180,SPARCL1,up
+up-component·210,210,181,SPOCK1,up
+up-component·210,210,182,SPP1,up
+up-component·210,210,183,STC2,up
+up-component·210,210,184,SULF1,up
+up-component·210,210,185,TAGLN,up
+up-component·210,210,186,TCFL5,up
+up-component·210,210,187,TDO2,up
+up-component·210,210,188,TESC,up
+up-component·210,210,189,TFPI2,up
+up-component·210,210,190,TGM2,up
+up-component·210,210,191,THBD,up
+up-component·210,210,192,THBS2,up
+up-component·210,210,193,THY1,up
+up-component·210,210,194,TLR2,up
+up-component·210,210,195,TMEM45A,up
+up-component·210,210,196,TMEM47,up
+up-component·210,210,197,TNC,up
+up-component·210,210,198,TNFAIP6,up
+up-component·210,210,199,TPM2,up
+up-component·210,210,200,TREM1,up
+up-component·210,210,201,TRIB3,up
+up-component·210,210,202,UBD,up
+up-component·210,210,203,VCAN,up
+up-component·210,210,204,VIM,up
+up-component·210,210,205,VIP,up
+up-component·210,210,206,VSIG4,up
+up-component·210,210,207,VWF,up
+up-component·210,210,208,WASF3,up
+up-component·210,210,209,WWC2,up
+up-component·210,210,210,ZCCHC24,up
+down-component·103,103,1,ACSM3,down
+down-component·103,103,2,ADH1C,down
+down-component·103,103,3,ADH6,down
+down-component·103,103,4,ADTRP,down
+down-component·103,103,5,AKAP7,down
+down-component·103,103,6,AKR1B10,down
+down-component·103,103,7,ALDH1A1,down
+down-component·103,103,8,ALDH1L1,down
+down-component·103,103,9,ALDH3A1,down
+down-component·103,103,10,AMT,down
+down-component·103,103,11,APOBR,down
+down-component·103,103,12,ARHGAP44,down
+down-component·103,103,13,ARL14,down
+down-component·103,103,14,ART3,down
+down-component·103,103,15,ASRGL1,down
+down-component·103,103,16,ATOH1,down
+down-component·103,103,17,ATP12A,down
+down-component·103,103,18,ATP2A3,down
+down-component·103,103,19,ATP8A1,down
+down-component·103,103,20,BCAS1,down
+down-component·103,103,21,BEST2,down
+down-component·103,103,22,BLNK,down
+down-component·103,103,23,CA12,down
+down-component·103,103,24,CACNA2D2,down
+down-component·103,103,25,CAPN9,down
+down-component·103,103,26,CDHR1,down
+down-component·103,103,27,CES3,down
+down-component·103,103,28,CHST5,down
+down-component·103,103,29,CKB,down
+down-component·103,103,30,CLCA1,down
+down-component·103,103,31,COL17A1,down
+down-component·103,103,32,CRYM,down
+down-component·103,103,33,CTSE,down
+down-component·103,103,34,CWH43,down
+down-component·103,103,35,CYP3A5,down
+down-component·103,103,36,DEFA5,down
+down-component·103,103,37,DEFA6,down
+down-component·103,103,38,DNAJC12,down
+down-component·103,103,39,DNASE1L3,down
+down-component·103,103,40,DUOX2,down
+down-component·103,103,41,ENTPD5,down
+down-component·103,103,42,EPHX2,down
+down-component·103,103,43,FAM189A1,down
+down-component·103,103,44,FCGBP,down
+down-component·103,103,45,FMO5,down
+down-component·103,103,46,FOXA1,down
+down-component·103,103,47,GALNT6,down
+down-component·103,103,48,HAVCR1,down
+down-component·103,103,49,HMGCS2,down
+down-component·103,103,50,HOXB13,down
+down-component·103,103,51,HSD11B2,down
+down-component·103,103,52,HYAL1,down
+down-component·103,103,53,ID3,down
+down-component·103,103,54,ID4,down
+down-component·103,103,55,IGFBP2,down
+down-component·103,103,56,IGHA2,down
+down-component·103,103,57,JCHAIN,down
+down-component·103,103,58,KIAA0319,down
+down-component·103,103,59,KIAA1324,down
+down-component·103,103,60,KLK1,down
+down-component·103,103,61,KLK11,down
+down-component·103,103,62,L1TD1,down
+down-component·103,103,63,LEFTY1,down
+down-component·103,103,64,LRRC19,down
+down-component·103,103,65,MB,down
+down-component·103,103,66,MLPH,down
+down-component·103,103,67,MT1M,down
+down-component·103,103,68,MTSS1,down
+down-component·103,103,69,MUC2,down
+down-component·103,103,70,MUC4,down
+down-component·103,103,71,MUC5B,down
+down-component·103,103,72,NAT2,down
+down-component·103,103,73,NPDC1,down
+down-component·103,103,74,NR3C2,down
+down-component·103,103,75,NXPE4,down
+down-component·103,103,76,OLFM4,down
+down-component·103,103,77,PADI2,down
+down-component·103,103,78,PBLD,down
+down-component·103,103,79,PCSK1,down
+down-component·103,103,80,PIGR,down
+down-component·103,103,81,PLCB4,down
+down-component·103,103,82,PLCE1,down
+down-component·103,103,83,PPP1R9A,down
+down-component·103,103,84,PRKACB,down
+down-component·103,103,85,PRUNE2,down
+down-component·103,103,86,PTGDR,down
+down-component·103,103,87,QPCT,down
+down-component·103,103,88,RGS13,down
+down-component·103,103,89,RNF186,down
+down-component·103,103,90,SCGB2A1,down
+down-component·103,103,91,SELENBP1,down
+down-component·103,103,92,SI,down
+down-component·103,103,93,SLC28A2,down
+down-component·103,103,94,SLC38A4,down
+down-component·103,103,95,SPINK1,down
+down-component·103,103,96,SPINK4,down
+down-component·103,103,97,SULT1B1,down
+down-component·103,103,98,TBX3,down
+down-component·103,103,99,TCN1,down
+down-component·103,103,100,TLR4,down
+down-component·103,103,101,TNFRSF11A,down
+down-component·103,103,102,UGT2B15,down
+down-component·103,103,103,WFDC2,down
 WGCNA-turquoise (Tumor vs Polyp),1015,1,HSPA6,not in 313
 WGCNA-turquoise (Tumor vs Polyp),1015,2,EPHB3,not in 313
 WGCNA-turquoise (Tumor vs Polyp),1015,3,MMP14,not in 313

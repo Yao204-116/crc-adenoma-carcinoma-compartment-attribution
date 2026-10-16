@@ -17,7 +17,10 @@ sc161277_scan sc161277_pairs sc303070_compo sc303070_compo2 sc303070_compo3 sc30
 enrichr_dual gse117606_paired build_suppl_tables make_figs make_figs_sc make_figS1 make_figS3
 geo_dl geo_dl2 dl_ebi dl_loop dl_persist sc161277_dl_final gse303070_probe gse303070_tissue
 build_bmc_manuscript _fetch_bmc_refs verify_bmc gen_bmc_readiness make_upload_package
-make_repo push_github""".split()
+make_repo push_github
+fig_en check_fig_english""".split()
+# ★ fig_en 是**必须**进仓库的：它是显示名的唯一英文映射，
+#   make_figs* / build_suppl_tables 都 import 它；缺了它复现链直接断。
 
 # 落盘的中间产物（数字来源，供复算核对）
 MIDDLE = """panels_def.json suppl_table1_313genes.csv manuscript_facts.json r3_facts.json
@@ -43,13 +46,18 @@ UPSTREAM = [
 TREES = ["figs", "suppl"]
 DOCS = ["REPRODUCIBILITY.md"]
 
+# 树状目录里**不复制**的文件。
+# 补充表索引 HTML 是**内部**文档：正文为中文，且通篇用内部章节编号（R2 ¶3、Methods M12），
+# 放进公开仓库既不是英文、又泄露内部脚手架编号。它在工作区里保留，只是不进仓库。
+TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
+
 # 仓库专属文件（README / LICENSE / 依赖清单 / gitignore），源放在 _repo_assets/ 下，
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
           ".zenodo.json", "RELEASE_NOTES_v1.0.0.md"]
 
-copied, missing = [], []
+copied, missing, skipped = [], [], []
 
 
 def put(rel_src, rel_dst):
@@ -106,6 +114,9 @@ for t in TREES:
     for f in sorted(os.listdir(src_t)):
         sp = os.path.join(src_t, f)
         if os.path.isfile(sp):
+            if f in TREE_EXCLUDE:
+                skipped.append(f"{t}/{f}")
+                continue
             shutil.copy2(sp, os.path.join(dst_t, f))
             copied.append(f"{t}/{f}")
             n += 1
@@ -128,6 +139,10 @@ print(f"  · 三队列 DEG {len(DEG3)} 个")
 print(f"  · 上游 R 产物 {len(UPSTREAM)} 个 -> upstream_r/")
 for t, n in n_tree.items():
     print(f"  · {t}/ {n} 个")
+if skipped:
+    print(f"  · 主动排除 {len(skipped)} 个（内部文档，不进公开仓库）：")
+    for s in skipped:
+        print(f"      {s}")
 if missing:
     print("\n[缺失]")
     for m in missing:
