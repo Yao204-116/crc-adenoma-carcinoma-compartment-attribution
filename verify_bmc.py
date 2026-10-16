@@ -54,6 +54,29 @@ check("正文角标编号 ⊆ 文献表", used <= nums, f"正文用到 {sorted(u
 missing = sorted(nums - used)
 check("每条文献都被正文引用", not missing, f"未被引用: {missing}")
 
+# 4b 引文按正文首见序编号
+#     BMC / Vancouver 硬规定："cited in the text using consecutive numbers in square
+#     brackets"，编号即首次出现的顺序。原先只查了闭环（⊆ 文献表 + 无孤儿条目），
+#     没查顺序 —— 这一项此前只能人工核。
+#     ★ 必须展开 [11, 12] 与 [11-13] 这类多编号 / 区间角标：只用 \[\d+\] 会漏掉它们，
+#       从而把「已引用」误判成「未引用」，并算出错误的首见序。
+_bi = h.find("Background</h2>")
+_fl = h.find("Figure legends</h2>")
+_b = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h[_bi:_fl]))
+_first, _seq = {}, []
+for _m in re.finditer(r"\[([\d\s,\-–]+)\]", _b):
+    for _tok in re.split(r"\s*,\s*", _m.group(1).strip()):
+        _rg = re.match(r"^(\d+)\s*[\-–]\s*(\d+)$", _tok)
+        _ls = (list(range(int(_rg.group(1)), int(_rg.group(2)) + 1)) if _rg
+               else ([int(_tok)] if _tok.isdigit() else []))
+        for _n in _ls:
+            if _n not in _first:
+                _first[_n] = len(_seq)
+                _seq.append(_n)
+_expect = list(range(1, len(_seq) + 1))
+check("引文按正文首见序编号（Vancouver）", _seq == _expect,
+      f"首见序 {_seq}" if _seq == _expect else f"首见序 {_seq} ← 应为 {_expect}，需重排编号")
+
 # 5 图号引用顺序（只看主文 Background → Figure legends 之前）
 i_bg = h.find("Background</h2>")
 i_fl = h.find("Figure legends</h2>")

@@ -147,7 +147,7 @@ Figure numbers follow first-mention order in the manuscript.  The file names und
 ```
 build_bmc_manuscript.py   ->  Manuscript_BMC_Genomics_投稿版.html   (BMC Genomics format)
 _fetch_bmc_refs.py        ->  _bmc_references.json                   (Vancouver, re-fetched authors)
-verify_bmc.py             ->  19-point compliance self-check (all pass)
+verify_bmc.py             ->  21-point compliance self-check (all pass)
 gen_bmc_readiness.py      ->  BMC投稿准备报告_BMC_Genomics.html
 ```
 

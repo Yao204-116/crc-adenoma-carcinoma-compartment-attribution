@@ -194,7 +194,7 @@ Conclusions / List of abbreviations / Declarations / Additional files、清掉�
 <b>随后又补完两处此前留空的部分</b>：① Data availability 从"向通讯作者索取"改写为
 完整的<b>可复现链</b>（10 个 GEO 永久标识 + 直链 + 访问日期 + 按 BMC 软件字段格式列出的代码块）；
 ② Additional files 命名由"正文一套、上传一套"统一为 <span class="mono">Additional file 1&ndash;8</span>，
-并按<b>正文首见序</b>自动编号、补齐四要素。自检脚本同步扩到 <b>19 项</b>，全绿。<br>
+并按<b>正文首见序</b>自动编号、补齐四要素。自检脚本同步扩到 <b>21 项</b>，全绿。<br>
 <b>代码仓库已上线</b>：<span class="mono">github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution</span>
 （公开 · MIT · 91 文件），Code availability 中的仓库地址已回填为真实值。<br>
 <b>剩余待办只有一类：作者信息类字段（姓名、单位、基金、CRediT、ORCID）与 Zenodo 归档 DOI 需本人填写。</b>
@@ -451,7 +451,7 @@ Sincerely,<br>
 <tr><th style="width:34%">脚本</th><th>作用</th></tr>
 <tr><td><span class="mono">_fetch_bmc_refs.py</span></td><td>E-utilities efetch 重取 21 篇完整作者名单，按 BMC Vancouver 格式生成 <span class="mono">_bmc_references.json</span></td></tr>
 <tr><td><span class="mono">build_bmc_manuscript.py</span></td><td>把《全文整合_投稿版》改造为 <span class="mono">Manuscript_BMC_Genomics_投稿版.html</span>（引用迁移 / 摘要重写 / 节序 / 脚手架清理 / 图号重排 / <b>附加文件按首见序自动编号</b> / <b>Availability 可复现链</b>）</td></tr>
-<tr><td><span class="mono">verify_bmc.py</span></td><td><b>19 项</b>合规自检：残留 author-year、汉字、脚手架、编号闭环、图号顺序、摘要与图注字数、节序、Declarations 完整性、<b>附加文件首见序与四要素、Availability 的 10 个 GEO 直链完备性</b></td></tr>
+<tr><td><span class="mono">verify_bmc.py</span></td><td><b>21 项</b>合规自检：残留 author-year、汉字、脚手架、编号闭环、<b>引文按正文首见序编号（Vancouver）</b>、图号顺序、摘要与图注字数、节序、Declarations 完整性、<b>附加文件首见序与四要素、Availability 的 10 个 GEO 直链完备性</b></td></tr>
 <tr><td><span class="mono">REPRODUCIBILITY.md</span></td><td>随代码入库的复现清单：环境 / 10 个公共数据集 / 9 个分析阶段（脚本&rarr;产物逐条对应）/ 单条产物复现示例 / 外部前置依赖 / Zenodo 提交清单</td></tr>
 </table>
 
