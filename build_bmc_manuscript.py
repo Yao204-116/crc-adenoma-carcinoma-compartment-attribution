@@ -142,6 +142,36 @@ ABBREVIATIONS = [
 GEO_BASE = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc="
 GEO_ACCESSED = "16 October 2026"
 
+# ---- Code availability 的单一数据源 -------------------------------------
+# 仓库 URL / Zenodo DOI / 许可 / R 版本只在 `code_availability.json` 里维护一份，
+# 由 `push_github.py` 推送成功并取到 DOI 后自动写入；文件不存在时回退为占位文本。
+# 这样"重建稿件"永远不会把已填好的 DOI 覆盖回占位符。
+CODE_AVAIL_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "code_availability.json")
+_PLACEHOLDER = {
+    "repo_url": "[Author to insert: public repository URL, "
+                "e.g. https://github.com/&lt;user&gt;/&lt;repo&gt;]",
+    "doi": "[Author to insert: DOI of the frozen release archived at Zenodo, "
+           "e.g. https://doi.org/10.5281/zenodo.XXXXXXX]",
+    "license": "[Author to choose, e.g. MIT]",
+    "r_version": "[Author to confirm the R version]",
+}
+
+
+def _code_avail():
+    vals = dict(_PLACEHOLDER)
+    try:
+        with open(CODE_AVAIL_FILE, encoding="utf-8") as fh:
+            for k, v in json.load(fh).items():
+                if v and k in vals:
+                    vals[k] = v
+    except Exception:
+        pass
+    return vals
+
+
+CODE_AVAIL = _code_avail()
+
 _GEO_GROUPS = [
     ("Discovery and whole-tissue validation cohorts",
      ["GSE41258", "GSE37364", "GSE20916", "GSE41657",
@@ -169,17 +199,21 @@ def _availability():
         p.append(f"<b>{title}:</b> {items}.")
     p.append(f"All URLs were last accessed on {GEO_ACCESSED}. No access restrictions or "
              "registration are required for any of these datasets.")
+    ca = CODE_AVAIL
+
+    def _link(v):
+        """真 URL 给出可点击的 https 链接；占位文本原样保留。"""
+        return v if v.lstrip().startswith("[Author") else f'<a href="{v}">{v}</a>'
+
     p.append("<b>Code availability.</b> "
              "Project name: adenoma-carcinoma compartment attribution pipeline. "
-             "<br>Project home page: [Author to insert: public repository URL, e.g. "
-             "https://github.com/&lt;user&gt;/&lt;repo&gt;]. "
-             "<br>Archived version: [Author to insert: DOI of the frozen release archived at "
-             "Zenodo, e.g. https://doi.org/10.5281/zenodo.XXXXXXX]. "
+             f"<br>Project home page: {_link(ca['repo_url'])}. "
+             f"<br>Archived version: {_link(ca['doi'])}. "
              "<br>Operating system(s): platform independent (developed on Windows 11). "
-             "<br>Programming language: Python 3.13 and R (WGCNA and limma packages) "
-             "[Author to confirm the R version]. "
+             "Programming language: Python 3.13 and R (WGCNA and limma packages; "
+             f"{ca['r_version']}). "
              "<br>Other requirements: see the environment file in the repository. "
-             "<br>License: [Author to choose, e.g. MIT]. "
+             f"<br>License: {ca['license']}. "
              "<br>Any restrictions to use by non-academics: none.")
     return "\n".join(p)
 

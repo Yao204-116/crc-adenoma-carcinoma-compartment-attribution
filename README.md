@@ -123,9 +123,27 @@ See `REPRODUCIBILITY.md` for the complete stage-by-stage mapping.
 
 ---
 
-## 7. Citation and license
+## 7. Citation, archiving and license
 
 If you use this code, please cite the manuscript above (citation details will be updated
 once the article is published).
 
-Released under the **MIT License** — see `LICENSE`.
+| | |
+|---|---|
+| Source repository | \<REPO_URL\> |
+| Archived version (DOI) | minted by the Zenodo–GitHub integration for every tagged release |
+| License | **MIT** — see `LICENSE` |
+
+Each tagged release of this repository is automatically archived by Zenodo, which mints a
+citable DOI. The DOI of release `v1.0.0` is the one quoted in the *Code availability*
+statement of the manuscript. Metadata for the DOI record is declared in `.zenodo.json`.
+
+### Reproducing the archived release
+
+```bash
+git clone <REPO_URL>
+cd <repo>
+pip install -r REQUIREMENTS.txt
+python build_suppl_tables.py      # smoke test: rebuilds Supplementary Tables S1-S5
+```
+

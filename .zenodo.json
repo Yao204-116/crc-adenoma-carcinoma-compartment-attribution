@@ -1,0 +1,32 @@
+{
+  "title": "Composition or cell state? A three-resolution decomposition of the adenoma-carcinoma transcriptome - reproducibility package",
+  "upload_type": "software",
+  "version": "v1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "MIT",
+  "description": "<p>Reproducible analysis code and derived intermediate results for a study that re-attributes the transcriptomic shift along the colorectal adenoma-carcinoma sequence to epithelial-intrinsic versus stromal-compositional components.</p><p>The package contains no new primary data. Every script operates on public datasets from NCBI GEO (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE128435, GSE303070) and on derived tables written by earlier stages, so that every number, table and figure in the manuscript can be traced back to a script and an input file.</p><p>Stages: <b>A</b> consensus signature (Stouffer integration across discovery cohorts) - <b>B</b> drift diagnostics - <b>C</b> LCM-based compartment attribution - <b>D</b> three-layer pattern matrix - <b>E</b> sensitivity analysis - <b>F</b> single-cell P x U decomposition - <b>G</b> supplementary-table build - <b>H</b> figure rendering - <b>I</b> manuscript artefact assembly.</p><p>The five CSV products of the upstream R pipeline (limma / WGCNA) are shipped under <code>upstream_r/</code> so that the Python package is self-contained. See <code>REPRODUCIBILITY.md</code> for the full script-to-artefact mapping, and <code>README.md</code> for the environment and quick-start instructions. Released under the MIT License.</p>",
+  "creators": [
+    {
+      "name": "__FILL_ME__",
+      "affiliation": "__FILL_ME__"
+    }
+  ],
+  "keywords": [
+    "colorectal cancer",
+    "adenoma-carcinoma sequence",
+    "tumour microenvironment",
+    "epithelial-stromal attribution",
+    "single-cell RNA sequencing",
+    "WGCNA",
+    "reproducible research"
+  ],
+  "notes": "AUTHOR METADATA MUST BE COMPLETED BEFORE THE FIRST RELEASE IS PUBLISHED. Replace every \"__FILL_ME__\" above (and the placeholder in README.md section 7) with the real author list, affiliations and ORCIDs exactly as they appear on the manuscript title page. Zenodo reads this file from the repository root of the tagged release.",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "manuscript submitted to BMC Genomics",
+      "scheme": "other"
+    }
+  ]
+}

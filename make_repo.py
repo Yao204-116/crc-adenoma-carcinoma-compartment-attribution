@@ -17,7 +17,7 @@ sc161277_scan sc161277_pairs sc303070_compo sc303070_compo2 sc303070_compo3 sc30
 enrichr_dual gse117606_paired build_suppl_tables make_figs make_figs_sc make_figS1 make_figS3
 geo_dl geo_dl2 dl_ebi dl_loop dl_persist sc161277_dl_final gse303070_probe gse303070_tissue
 build_bmc_manuscript _fetch_bmc_refs verify_bmc gen_bmc_readiness make_upload_package
-make_repo""".split()
+make_repo push_github""".split()
 
 # 落盘的中间产物（数字来源，供复算核对）
 MIDDLE = """panels_def.json suppl_table1_313genes.csv manuscript_facts.json r3_facts.json
@@ -46,7 +46,8 @@ DOCS = ["REPRODUCIBILITY.md"]
 # 仓库专属文件（README / LICENSE / 依赖清单 / gitignore），源放在 _repo_assets/ 下，
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
-ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore"]
+ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
+          ".zenodo.json", "RELEASE_NOTES_v1.0.0.md"]
 
 copied, missing = [], []
 
@@ -63,10 +64,16 @@ def put(rel_src, rel_dst):
 
 
 # ---------------------------------------------------------------- 清空重建
+# 只清内容、保留 `.git/`：否则每次重跑都会把本地提交历史（以及已配置的 remote）删掉。
 if os.path.isdir(DST):
     assert os.path.basename(DST) == "repo", "拒绝删除非 repo 目录"
-    shutil.rmtree(DST)
-os.makedirs(DST)
+    for entry in os.listdir(DST):
+        if entry == ".git":
+            continue
+        p = os.path.join(DST, entry)
+        shutil.rmtree(p) if os.path.isdir(p) else os.remove(p)
+else:
+    os.makedirs(DST)
 
 for name in SCRIPTS:
     put(name + ".py", name + ".py")
