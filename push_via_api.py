@@ -146,7 +146,17 @@ def sync_tag(tag, sha):
         print("      tag %s 是 annotated tag（非轻量），本脚本不重建 —— "
               "请在网络恢复后 `git tag -f` 重推。" % tag)
     else:
-        print("      tag %s 不存在于远端，跳过。" % tag)
+        # ★ 发**新版本**时 tag 在远端根本不存在（v1.0.1 此前从未推过）。
+        #   旧实现直接"跳过"，结果 main 推上去了、tag 没推 →
+        #   release 建在裸 commit 上，Zenodo 拿到的 ref 不是 tag，归档对不上。
+        #   正解：不存在就**创建** refs/tags/<tag>。
+        st3, r3 = api("POST", "/repos/%s/git/refs" % SLUG,
+                      {"ref": "refs/tags/%s" % tag, "sha": sha})
+        if st3 in (200, 201):
+            print("      tag %s 已新建 → %s" % (tag, sha[:8]))
+        else:
+            print("      tag %s 新建失败（HTTP %s）：%s"
+                  % (tag, st3, str(r3)[:120]))
 
 
 def main():
