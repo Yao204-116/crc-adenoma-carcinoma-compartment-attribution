@@ -51,6 +51,8 @@ NARRATIVE = {
     "McCorry": 1, "Kreis": 2, "Block": 4, "Becker": 6, "Radeva": 13,
     "Joo": 14, "Pagnini": 15, "López-Arribillaga": 16,
     "Thiruvengadam": 21, "Yan": 5, "Yang": 9,
+    # 2026-10-20：Discussion ¶3/¶5 引用 GSE109308 时加入
+    "Bala": 10,
 }
 
 # ---------------------------------------------------------------- 摘要（BMC 三段式）
@@ -88,13 +90,12 @@ ABSTRACT = {
         "average. The negative-control panel gave a null paired effect (28/56, P = 0.70)."
     ),
     "Conclusions": (
-        "The adenoma-stage differentiation peak is epithelial-intrinsic, carried by per-cell "
-        "state rather than cell abundance, and extinguished at the carcinoma stage, whereas "
-        "the tissue-level progression signal is largely compositional. A progression "
-        "signature containing oppositely directed components must be decomposed before it "
-        "is compared across specimens that differ in epithelial content: the mixed score "
-        "collapsed in epithelium-only samples (AUC 0.111) even though both of its components "
-        "behaved reproducibly."
+        "A progression signature containing oppositely directed components must be "
+        "decomposed before it is compared across specimens differing in epithelial content: "
+        "in epithelium-only samples the mixed score reversed (AUC 0.111) rather than lost "
+        "signal. Decomposed, the adenoma-stage differentiation peak is epithelial-intrinsic "
+        "and carried by per-cell state rather than cell abundance, whereas the tissue-level "
+        "progression signal is largely compositional."
     ),
 }
 
@@ -176,7 +177,7 @@ _GEO_GROUPS = [
     ("Discovery and whole-tissue validation cohorts",
      ["GSE41258", "GSE37364", "GSE20916", "GSE41657",
       "GSE4183", "GSE117606", "GSE15960", "GSE128435"]),
-    ("Single-cell cohort", ["GSE161277"]),
+    ("Single-cell cohorts", ["GSE161277", "GSE109308"]),
     ("Spatial-transcriptomics reference (used only as a descriptive counter-example)",
      ["GSE303070"]),
 ]
@@ -255,11 +256,20 @@ _CREDIT_ORDER = [
 ]
 
 
-def _corr_index(m):
-    for i, a in enumerate(m["authors"]):
-        if a.get("corresponding"):
-            return i
-    return 0
+def _corr_authors(m):
+    """全部通讯作者（保持署名顺序）。BMC 允许 co-corresponding，故返回列表不是单值。"""
+    cs = [a for a in m["authors"] if a.get("corresponding")]
+    return cs or [m["authors"][0]]
+
+
+def _author_email(m, a, n_corr):
+    """作者邮箱：作者自带 email 优先（多通讯写法），否则退回顶层 corresponding.email。"""
+    mail = (a.get("email") or "").strip()
+    if not mail and n_corr == 1:
+        mail = ((m.get("corresponding") or {}).get("email") or "").strip()
+    # ★ 缺失时降级为可见占位 `[e-mail]`（而不是渲染成空、也不是 KeyError）——
+    #   闸门的"任意非数字方括号"扫描会把它抓出来，所以不会带着它发出去。
+    return mail or "[e-mail]"
 
 
 def title_page_html():
@@ -272,26 +282,36 @@ def title_page_html():
             '<p class="authline">*Corresponding author: [name], [e-mail], '
             '[ORCID iD]</p>\n')
     m = META
-    ci = _corr_index(m)
+    corr = _corr_authors(m)
+    n_corr = len(corr)
     names = []
-    for i, a in enumerate(m["authors"]):
+    for a in m["authors"]:
         inner = ",".join(str(n) for n in (a.get("aff") or [1]))
-        if i == ci:
+        if a.get("corresponding"):
             inner += "*"          # ★ 通讯符加在 <sup> 的**内容**里，不能切字符串拼标签
         names.append("%s<sup>%s</sup>" % (a["name"], inner))
     affs = ["<sup>%s</sup>%s" % (k, m["affiliations"][k])
             for k in sorted(m["affiliations"], key=lambda x: int(x))]
-    ca = m["authors"][ci]
-    # ★ 邮箱缺失时降级为可见占位 `[e-mail]`（而不是渲染成空、也不是 KeyError）——
-    #   闸门的"任意非数字方括号"扫描会把它抓出来，所以不会带着它发出去。
-    email = ((m.get("corresponding") or {}).get("email") or "").strip() or "[e-mail]"
-    corr = "*Corresponding author: %s, %s" % (ca["name"], email)
-    if ca.get("orcid"):
-        corr += ", ORCID iD: %s" % ca["orcid"]
+    # 多通讯：联系人**并列在同一段**（`; ` 分隔），而不是一人一行。
+    # 两人都是通讯时，重复 "*Corresponding authors:" 标签会读成语病（"作者们：A。/ 作者们：B。"）。
+    corr_bits = []
+    for ca in corr:
+        s = "%s, %s" % (ca["name"], _author_email(m, ca, n_corr))
+        if ca.get("orcid"):
+            s += ", ORCID iD: %s" % ca["orcid"]
+        corr_bits.append(s)
+    if n_corr == 1:
+        # 单通讯：沿用旧形态 "*Corresponding author: Name, mail"（首字符即通讯符）。
+        # ★ 通讯符**不能**只在 `names` 那行的 `<sup>` 里加 —— 历史上本行是独立渲染的，
+        #   单通讯时它自带头一个 `*`；`_corr_authors()` 在"无一人标 corresponding"时会
+        #   退回第一位作者，那种情况下 `names` 行也拿不到 `*`，只能靠这里兜底。
+        corr_line = "*Corresponding author: " + corr_bits[0]
+    else:
+        corr_line = "*Corresponding authors: " + "; ".join(corr_bits)
     return "\n".join([
         '<p class="authline">%s</p>' % ", ".join(names),
         '<p class="authline">%s</p>' % " &nbsp; ".join(affs),
-        '<p class="authline">%s</p>' % corr]) + "\n"
+        '<p class="authline">%s</p>' % corr_line]) + "\n"
 
 
 TITLE_META_HTML = (
@@ -343,7 +363,8 @@ DECLARATIONS = [
     ("Acknowledgements",
      "The authors gratefully acknowledge the investigators of the public datasets analysed "
      "here (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, "
-     "GSE128435, GSE161277 and GSE303070) for making their data openly available."),
+     "GSE128435, GSE161277, GSE109308 and GSE303070) for making their data openly "
+     "available."),
     ("Authors' information",
      "Not applicable."),
 ]
@@ -461,17 +482,26 @@ def convert_parenthetical(h):
     """
     stats = {"ok": 0, "skip": 0, "fail": [], "skipped_text": []}
     SENT = "\x00AMP\x00"
+    # 括号里可能夹着 <span class="mono">GSE109308</span> 这类行内标签（数据集号 + 文献同括），
+    # 纯文本分词会卡在标签上 → 先按"标签 + 半角分号"切，只丢标签、保留两侧分句。
+    TAG = re.compile(r"</?span[^>]*>")
 
     def sub(m):
         inner = m.group(1)
         if not re.search(r"(?:19|20)\d{2}", inner):
             return m.group(0)
         norm = inner.replace("&amp;", SENT)
+        norm = TAG.sub("", norm)
         parts = [p.strip().replace(SENT, "&amp;") for p in norm.split(";") if p.strip()]
         nums = []
+        keeps = []   # 非引文分句（如数据集号）原样保留，避免被角标替换吞掉
         for p in parts:
             mm = PART_RE.match(p)
             if not mm:
+                # 不含年份的分句（如裸数据集号）不是文献，保留原文
+                if not re.search(r"(?:19|20)\d{2}", p):
+                    keeps.append(p)
+                    continue
                 stats["skip"] += 1
                 stats["skipped_text"].append(p)
                 return m.group(0)
@@ -480,11 +510,45 @@ def convert_parenthetical(h):
                 stats["fail"].append(p)
                 return m.group(0)
             nums.append(CITE_NUM[key])
+        if not nums:
+            return m.group(0)
         stats["ok"] += 1
-        return "[" + ", ".join(str(n) for n in nums) + "]"
+        # ★ 必须排序：编号是按**括号内原来的 author-year 书写顺序**收集的，
+        #   而 author-year 顺序由作者姓氏字母序决定，与 Vancouver 的编号序无关。
+        #   实测例子：正文写 "(Joo et al., 2009; Radeva et al., 2010; Pagnini et al., 2011;
+        #   López-Arribillaga et al., 2021)"，对应编号 14/13/15/16 → 输出 [14, 13, 15, 16]，
+        #   一个括号里的编号不升序，直接违反 Vancouver。
+        #   去重同理：同一文献在同一个括号里出现两次一定是用例错误。
+        cite = "[" + ", ".join(str(n) for n in sorted(set(nums))) + "]"
+        # ★ 2026-10-20 踩坑：括号里常夹数据集号，写成
+        #   (<span class="mono">GSE109308</span>; Bala et al., 2023)
+        #   若整段替换成 [10]，GSE109308 会被**静默删掉**（构建不报错、自检也查不到，
+        #   因为只查了角标而不查数据集号是否还在）。故保留所有非引文分句原文，只把
+        #   引文分句换成角标。
+        if not keeps:
+            return cite
+        return "(" + "; ".join(keeps + [cite]) + ")"
 
     out = re.sub(r"\(([^()]{3,200}?)\)", sub, h)
     return out, stats
+
+
+def normalize_dataset_cites(h):
+    """(<span class="mono">GSE109308</span>)<span class="small"> [10]</span>
+       → <span class="mono">GSE109308</span> [10]
+
+    ★ 2026-10-20 加。分节初稿的习惯写法是
+        (<span class="mono">GSE109308</span>)(Bala et al., 2023)
+      转换后变成 "(GSE109308) [10]" —— 数据集号被包在括号里、角标在括号外，
+      这是 author-year 版式的残留，Vancouver 里读起来像"GSE109308 这个句子"。
+      统一收成 "GSE109308 [10]"，与正文其他 GSE 号的书写方式一致。
+    """
+    pat = re.compile(
+        r'\((<span class="mono">GSE\d+</span>)\)\s*<span class="small">\s*'
+        r'(\[[\d,\s\-]+\])\s*</span>')
+    n = len(pat.findall(h))
+    h = pat.sub(r"\1 \2", h)
+    return h, n
 
 
 def convert_narrative(h):
@@ -505,6 +569,29 @@ def convert_narrative(h):
         return "Tyler and Tirosh [3]"
 
     h = re.sub(r"\bTyler and Tirosh\b(?!\s*\[)", sub2, h)
+
+    # ---- 裸 (Author et al., YYYY) 兜底 ----
+    # ★ 2026-10-20 发现的真 bug：分节初稿把一手文献引用写成
+    #   <span class="small"> (Zheng et al., 2022)</span>
+    #   convert_parenthetical 的正则 \(([^()]{3,200}?)\) 被 <span ...> 里的括号
+    #   挡在标签之外 —— 括号仍能匹配，但 PART_RE 要求整段以姓氏开头，于是命中后
+    #   落到"跳过"分支，结果是 5 处人名引用**静默留在投稿稿里**，而自检只查
+    #   角标闭环（人名不算角标，查不出来）。
+    #   兜底：整稿扫一遍裸形式 (X et al., YYYY) 与 (X & Y, YYYY)，能匹配的直接换角标。
+    def sub3(m):
+        key = (m.group(1), m.group(2))
+        if key not in CITE_NUM:
+            stats.append(("UNMAPPED", "%s %s" % (m.group(1), m.group(2))))
+            return m.group(0)
+        stats.append((m.group(1), CITE_NUM[key]))
+        return "[%d]" % CITE_NUM[key]
+
+    h = re.sub(
+        r"\(([A-Z][A-Za-zÀ-ÿ\u00c0-\u017f\-']+)"
+        r"(?:\s+(?:et\s+al\.|&\s+[A-Z][A-Za-zÀ-ÿ\-']+"
+        r"|and\s+[A-Z][A-Za-zÀ-ÿ\-']+))?"
+        r",\s*((?:19|20)\d{2})[a-z]?\)",
+        sub3, h)
     return h, stats
 
 
@@ -671,6 +758,8 @@ def main():
         report["paren"]["skipped_text"] += st["skipped_text"]
         c["html"], nar = convert_narrative(c["html"])
         report.setdefault("narrative", []).extend(nar)
+        c["html"], n_ds = normalize_dataset_cites(c["html"])
+        report["dataset_cites_unwrapped"] = report.get("dataset_cites_unwrapped", 0) + n_ds
     # 软件引用
     for c in chapters:
         if c["title"] == "Methods":

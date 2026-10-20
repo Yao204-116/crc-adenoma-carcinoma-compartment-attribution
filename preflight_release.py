@@ -60,7 +60,12 @@ RELATION_SCHEMES = {"doi", "handle", "url", "urn", "pmid", "pmcid", "arxiv",
 #   天然被排除；已核 References 区非数字方括号为 **0**，所以通用规则不产生误报。
 # ★ 内容上限**不能太小**：DOI 占位符有 118 字符，限 80 会让它整个匹配不到 →
 #   报告成"已回填"这种**假通过**（实测踩过）。
-BRACKET = re.compile(r"\[([^\]\d][^\]]{0,300})\]")
+# ★ 上限也不能**设死**：{0,300} 意味着"方括号里超过 302 字符就整条漏检"，
+#   而这恰恰是一种**最像占位符**的形态 —— 作者把整句说明写进方括号（如 Funding 的
+#   "[The authors disclosed receipt of ... identify the grant that supported this work
+#   ...]"）。实测 400 字符时命中为 0，闸门会报"已回填"。故放宽到 2000，只留防灾难
+#   回溯的保护；真正的边界是 `]`，不是长度。
+BRACKET = re.compile(r"\[([^\]\d][^\]]{0,2000})\]")
 # DOI 占位符只能等拿到 DOI 之后再填 —— 发布前存在是**预期**的，只提示不阻塞
 DOI_SIG = "DOI of the frozen release"
 

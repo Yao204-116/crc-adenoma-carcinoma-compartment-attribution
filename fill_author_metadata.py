@@ -36,7 +36,8 @@ ORCID_RE = re.compile(r"^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$")
 TEMPLATE = {
     "_howto": [
         "authors 按稿件署名顺序排列。aff 是单位编号，对应 affiliations 的键。",
-        "corresponding 只能有一个为 true；该作者的邮箱写在顶层 corresponding.email。",
+        "corresponding 可以有**多个**为 true（BMC 允许 co-corresponding）；每人的邮箱写在"
+        "他自己的 email 字段。若全部留在顶层 corresponding.email（单通讯旧格式）也可，脚本兼容。",
         "orcid 可以不填；填的话用裸编号（0000-0002-1825-0097），不要带 https://orcid.org/ 前缀。",
         "initials 用于 Authors' contributions（如 Yao Zhang -> YZ）。credit 为空时不会用到。",
         "credit 的键是 initials，值是 CRediT 角色名列表；不确定就留 {}，脚本会退回占位提示。",
@@ -45,9 +46,11 @@ TEMPLATE = {
         "★ 填完先跑 --check，通过后再跑正式模式（会重建稿件并写 .zenodo.json）。",
     ],
     "authors": [
-        {"name": "", "aff": [1], "corresponding": True, "orcid": "", "initials": ""},
+        {"name": "", "aff": [1], "corresponding": True, "orcid": "", "initials": "",
+         "email": ""},
     ],
     "affiliations": {"1": ""},
+    # 单通讯的旧写法。多通讯时把 email 写进各作者的 "email"，本字段可留空。
     "corresponding": {"email": ""},
     "funding": "",
     "credit": {},
@@ -111,12 +114,21 @@ def validate(m):
         if not (a.get("initials") or "").strip():
             soft.append("%s.initials 为空（credit 非空时会用到）" % tag)
 
-    if n_corr != 1:
-        hard.append("corresponding=true 的作者必须恰好 1 个，当前 %d 个" % n_corr)
+    if n_corr < 1:
+        hard.append("没有任何 corresponding=true 的作者（至少要有 1 个通讯作者）")
 
-    corr = m.get("corresponding") or {}
-    if "@" not in (corr.get("email") or ""):
-        soft.append("corresponding.email 缺失或不含 @ → 稿件会渲染成 [e-mail] 占位")
+    # ★ 邮箱两种写法都认：作者自带 email（多通讯）优先，否则退回顶层 corresponding.email
+    #   （单通讯旧格式）。因此「每位通讯作者都得有邮箱」才是要校验的真实约束，
+    #   而不是「顶层必须有一个邮箱」—— 后者在 co-corresponding 时会误报。
+    top_mail = ((m.get("corresponding") or {}).get("email") or "").strip()
+    for i, a in enumerate(authors):
+        if not a.get("corresponding"):
+            continue
+        mail = ((a.get("email") or "").strip()
+                or (top_mail if n_corr == 1 else ""))
+        if "@" not in mail:
+            soft.append("authors[%d]（%s，通讯）缺邮箱 → 稿件会渲染成 [e-mail] 占位"
+                        % (i, (a.get("name") or "").strip() or "?"))
 
     for k, v in affs.items():
         if not (v or "").strip():
@@ -197,6 +209,9 @@ def main():
     print("✓ 校验通过：%d 位作者 —— %s" % (len(m["authors"]), names))
     for a in m["authors"]:
         flag = "（通讯）" if a.get("corresponding") else ""
+        mail = (a.get("email") or "").strip()
+        if flag and mail:
+            flag += " " + mail
         print("    %-28s 单位 %s %s" % (a["name"].strip(), a.get("aff"), flag))
     if soft:
         print("  ⚠ --partial：本次只写入已完成部分，下列仍是占位 → **发不了 release**：")

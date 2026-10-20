@@ -77,6 +77,17 @@ _expect = list(range(1, len(_seq) + 1))
 check("引文按正文首见序编号（Vancouver）", _seq == _expect,
       f"首见序 {_seq}" if _seq == _expect else f"首见序 {_seq} ← 应为 {_expect}，需重排编号")
 
+# 4c 不得残留 author-year 人名引用（BMC 用 Vancouver 数字制）
+#    ★ 2026-10-20 加。此前自检只查角标闭环，而人名引用根本不带方括号，查不出来：
+#      R4 里 5 处 <span class="small"> (Zheng et al., 2022)</span> 一路留到投稿稿。
+#      这里直接扫正文（Background → Figure legends）里所有 (X et al., YYYY) 与 (X & Y, YYYY)。
+_byear = re.findall(
+    r"\([A-Z][A-Za-zÀ-ÿ\u00c0-\u017f\-']+"
+    r"(?:\s+(?:et\s+al\.|&\s+[A-Z][A-Za-zÀ-ÿ\-']+|and\s+[A-Z][A-Za-zÀ-ÿ\-']+))?"
+    r",\s*(?:19|20)\d{2}[a-z]?\)",
+    _b)
+check("无残留 author-year 人名引用", not _byear, str(_byear[:6]))
+
 # 5 图号引用顺序（只看主文 Background → Figure legends 之前）
 i_bg = h.find("Background</h2>")
 i_fl = h.find("Figure legends</h2>")
@@ -91,6 +102,16 @@ for f in figs:
 main = [s for s in seq if not s.startswith("FigS")]
 check("主图首见序递增", main == sorted(main, key=lambda x: int(re.sub(r"\D", "", x))),
       " → ".join(main))
+
+# 5b 数据集号与角标的排版形态
+#    ★ 2026-10-20 加。此前「整段变成 [10]、GSE109308 被静默吞掉」和
+#      「(GSE109308; [10]) 同括号」两种坏形态都靠肉眼发现，没有自检兜底。
+#      合法：GSE109308 [10] ／ (GSE41258, GSE37364 [3])
+#      非法：(GSE109308; [10])、(GSE109308) [10] 这类两层括号
+_ds_same = re.findall(r"\([^()]{0,40}GSE\d+[^()]{0,20}\[\d", _b)
+check("数据集号不与角标同处一对括号", not _ds_same, str(_ds_same[:4]))
+_ds_nest = re.findall(r"<span class=\"mono\">GSE\d+</span>\s*\)\s*<span[^>]*>\s*\[", h)
+check("数据集号未被括号二次包裹", not _ds_nest, str(_ds_nest[:4]))
 
 # 6 摘要
 absblk = re.search(r'<div class="ms-para abstract">(.*?)</div>', h, re.S).group(1)
@@ -189,16 +210,17 @@ check("附加文件清单 8 条且含文件格式", len(items) == 8 and not lack
 hdr = re.findall(r'<span class="fig">Additional file (\d+) \(Figure S(\d)\)\.</span>', h)
 check("附图图注标题已挂附加文件号", len(hdr) == 3, str(hdr))
 
-# 17 Availability 段：须给出 10 个 GEO 直链、访问日期，且不得只写"向作者索取"
+# 17 Availability 段：须给出全部 GEO 直链、访问日期，且不得只写"向作者索取"
 i_av = h.find("<h3>Availability of data and materials</h3>")
 i_av_end = h.find("<h3>Competing interests</h3>")
 av = h[i_av:i_av_end] if i_av >= 0 else ""
 acc = ["GSE41258", "GSE37364", "GSE20916", "GSE41657", "GSE4183",
-       "GSE117606", "GSE15960", "GSE128435", "GSE161277", "GSE303070"]
+       "GSE117606", "GSE15960", "GSE128435", "GSE161277", "GSE109308",
+       "GSE303070"]
 miss_acc = [a for a in acc if a not in av]
 n_url = len(re.findall(r"https://www\.ncbi\.nlm\.nih\.gov/geo/query/acc\.cgi\?acc=GSE\d+", av))
-check("Availability 列全 10 个 GEO 永久标识", not miss_acc and n_url == 10,
-      f"缺 {miss_acc}；直链 {n_url}/10")
+check("Availability 列全 %d 个 GEO 永久标识" % len(acc), not miss_acc and n_url == len(acc),
+      f"缺 {miss_acc}；直链 {n_url}/{len(acc)}")
 check("Availability 不再依赖“向作者索取”",
       "on reasonable request" not in av and "Code availability" in av)
 

@@ -179,9 +179,8 @@ font-size:13.2px;background:#fff}
 
 BODY = f"""
 <h1>BMC Genomics 投稿准备报告</h1>
-<p class="small">稿件：<i>Composition or cell state? A three-resolution decomposition of the
-adenoma&ndash;carcinoma transcriptome identifies an epithelial-intrinsic adenoma-stage
-differentiation peak</i>｜目标期刊 <b>BMC Genomics</b>（Springer Nature，SCIE / 中科院 2 区 TOP）<br>
+<p class="small">稿件：<i>Composition or cell state? Decomposing the adenoma&ndash;carcinoma
+transcriptome across tissue, epithelium and single cells</i>｜目标期刊 <b>BMC Genomics</b>（Springer Nature，SCIE / 中科院 2 区 TOP）<br>
 本报告依据 BMC Genomics 官网 Submission guidelines 逐条核对｜2026-10-16｜小波</p>
 
 <div class="box ok"><span class="tag">结论</span>
@@ -406,8 +405,8 @@ and <b>bibliometric analyses</b> will not be considered."</blockquote>
 <blockquote>
 Dear Editor,<br><br>
 We submit for your consideration our manuscript entitled
-"Composition or cell state? A three-resolution decomposition of the adenoma&ndash;carcinoma
-transcriptome identifies an epithelial-intrinsic adenoma-stage differentiation peak"
+"Composition or cell state? Decomposing the adenoma&ndash;carcinoma transcriptome across
+tissue, epithelium and single cells"
 for publication as a Research article in <i>BMC Genomics</i>.<br><br>
 Colorectal carcinogenesis proceeds through the adenoma&ndash;carcinoma sequence, yet expression
 differences between these stages are almost always measured in whole tissue, where epithelial,
