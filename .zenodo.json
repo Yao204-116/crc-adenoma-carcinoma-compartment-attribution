@@ -1,11 +1,11 @@
 {
-  "title": "Composition or cell state? A three-resolution decomposition of the adenoma-carcinoma transcriptome - reproducibility package",
+  "title": "Composition or cell state? Decomposing the adenoma-carcinoma transcriptome across tissue, epithelium and single cells - reproducibility package",
   "upload_type": "software",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "language": "eng",
   "access_right": "open",
   "license": "MIT",
-  "description": "<p>Reproducible analysis code and derived intermediate results for a study that re-attributes the transcriptomic shift along the colorectal adenoma-carcinoma sequence to epithelial-intrinsic versus stromal-compositional components.</p><p>The package contains no new primary data. Every script operates on public datasets from NCBI GEO (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE128435, GSE303070) and on derived tables written by earlier stages, so that every number, table and figure in the manuscript can be traced back to a script and an input file.</p><p>Stages: <b>A</b> consensus signature (Stouffer integration across discovery cohorts) - <b>B</b> drift diagnostics - <b>C</b> LCM-based compartment attribution - <b>D</b> three-layer pattern matrix - <b>E</b> sensitivity analysis - <b>F</b> single-cell P x U decomposition - <b>G</b> supplementary-table build - <b>H</b> figure rendering - <b>I</b> manuscript artefact assembly.</p><p>The five CSV products of the upstream R pipeline (limma / WGCNA) are shipped under <code>upstream_r/</code> so that the Python package is self-contained. See <code>REPRODUCIBILITY.md</code> for the full script-to-artefact mapping, and <code>README.md</code> for the environment and quick-start instructions. Released under the MIT License.</p>",
+  "description": "<p>Reproducible analysis code and derived intermediate results for a study that re-attributes the transcriptomic shift along the colorectal adenoma-carcinoma sequence to epithelial-intrinsic versus stromal-compositional components.</p><p>The package contains no new primary data. Every script operates on public datasets from NCBI GEO (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE109308, GSE128435, GSE303070) and on derived tables written by earlier stages, so that every number, table and figure in the manuscript can be traced back to a script and an input file.</p><p>Stages: <b>A</b> consensus signature (Stouffer integration across discovery cohorts) - <b>B</b> drift diagnostics - <b>C</b> LCM-based compartment attribution - <b>D</b> three-layer pattern matrix - <b>E</b> sensitivity analysis - <b>F</b> single-cell P x U decomposition - <b>G</b> supplementary-table build - <b>H</b> figure rendering - <b>I</b> manuscript artefact assembly.</p><p>The five CSV products of the upstream R pipeline (limma / WGCNA) are shipped under <code>upstream_r/</code> so that the Python package is self-contained. See <code>REPRODUCIBILITY.md</code> for the full script-to-artefact mapping, and <code>README.md</code> for the environment and quick-start instructions. Released under the MIT License.</p>",
   "creators": [
     {
       "name": "Chengkun Yao",
@@ -29,7 +29,7 @@
     "WGCNA",
     "reproducible research"
   ],
-  "notes": "Software release accompanying the manuscript. The package contains no new primary data: every script operates on public NCBI GEO datasets (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE128435, GSE303070) or on derived tables written by an earlier stage. REPRODUCIBILITY.md gives the complete script-to-artefact mapping; upstream_r/ ships the five tables produced by the upstream R pipeline (limma / WGCNA) so that the Python stage is self-contained.",
+  "notes": "Software release accompanying the manuscript. The package contains no new primary data: every script operates on public NCBI GEO datasets (GSE41258, GSE37364, GSE20916, GSE41657, GSE4183, GSE117606, GSE15960, GSE161277, GSE109308, GSE128435, GSE303070) or on derived tables written by an earlier stage. REPRODUCIBILITY.md gives the complete script-to-artefact mapping; upstream_r/ ships the five tables produced by the upstream R pipeline (limma / WGCNA) so that the Python stage is self-contained.",
   "related_identifiers": [
     {
       "relation": "isSupplementTo",

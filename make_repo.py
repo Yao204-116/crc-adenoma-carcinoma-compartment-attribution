@@ -59,7 +59,7 @@ TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
-          ".zenodo.json", "RELEASE_NOTES_v1.0.0.md"]
+          ".zenodo.json", "RELEASE_NOTES_v1.0.1.md"]
 
 copied, missing, skipped = [], [], []
 
@@ -114,10 +114,10 @@ for a in ASSETS:
 #   占位符在 markdown 里写作反斜杠转义形式（\<REPO_URL\>），故两种写法都替换。
 #
 # ★ 必须覆盖**所有**带占位符的文本资产，不能只管 README：
-#   RELEASE_NOTES_v1.0.0.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
+#   RELEASE_NOTES_v1.0.1.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
 #   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
 #   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
-FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.0.md"]
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.1.md"]
 
 
 def _substitutions():

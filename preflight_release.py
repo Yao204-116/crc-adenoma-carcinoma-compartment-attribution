@@ -287,16 +287,27 @@ else:
     block("至少存在一个 tag", bool(tags), f"tags={tags}")
     head = _git("rev-parse", "HEAD")
     if tags:
-        # 每个 tag 指向的 commit 与 HEAD 的关系
-        info = []
-        good = True
-        for t in tags:
-            tc = _git("rev-list", "-n", "1", t)
-            same = tc == head
-            if not same:
-                good = False
-            info.append(f"{t}->{tc[:7]}{'' if same else '(≠HEAD)'}")
-        block("最新 tag 指向 HEAD", good, " ｜ ".join(info))
+        # ★ 真实的约束是「**最新那个** tag 指向 HEAD」，历史 tag 停在旧提交是**正常**的
+        #   （发过 v1.0.0 后升到 v1.0.1，v1.0.0 当然不等于 HEAD）。
+        #   旧实现逐个要求全部 tag == HEAD，一旦发第二个版本就永远拦不通过。
+        #   "最新"必须是**语义版本序**（1.0.10 > 1.0.9），不能按字典序 ——
+        #   字典序会把 v1.0.1 排在 v1.0.0 **前面**，于是报出「v1.0.0->xxx(≠HEAD)」。
+        def _vkey(t):
+            m = re.match(r"^v?(\d+(?:\.\d+)*)", t)
+            if not m:
+                return ((), -1, t)      # 非版本号形态的 tag 排最后，仅用于稳定输出
+            nums = tuple(int(x) for x in m.group(1).split("."))
+            return (nums, 0, t)
+
+        try:
+            newest = max(tags, key=_vkey)
+        except Exception:
+            newest = tags[-1]
+        tcs = {t: _git("rev-list", "-n", "1", t) for t in tags}
+        info = [f"{t}->{tcs[t][:7]}{'' if tcs[t] == head else '(≠HEAD)'}"
+                for t in sorted(tags, key=_vkey)]
+        block("最新 tag 指向 HEAD", tcs.get(newest, "") == head,
+              "最新=%s ｜ %s" % (newest, " ｜ ".join(info)))
 
 # ---------------------------------------------------------------- 报告
 ap = argparse.ArgumentParser(description="发布前总闸门")

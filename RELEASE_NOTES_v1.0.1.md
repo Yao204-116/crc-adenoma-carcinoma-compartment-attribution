@@ -1,10 +1,19 @@
-# Release notes — v1.0.0
+# Release notes — v1.0.1
 
-First public release of the reproducibility package accompanying the manuscript submitted
-to *BMC Genomics*:
+Reproducibility package accompanying the manuscript submitted to *BMC Genomics*:
 
-> **Composition or cell state? A three-resolution decomposition of the adenoma–carcinoma
-> transcriptome identifies an epithelial-intrinsic adenoma-stage differentiation peak**
+> **Composition or cell state? Decomposing the adenoma–carcinoma transcriptome across
+> tissue, epithelium and single cells**
+
+## Changes in this release
+
+- Manuscript title updated to the version submitted to *BMC Genomics*.
+- `GSE109308` (familial adenomatous polyposis / sporadic carcinoma single-cell series)
+  added to the documented datasets: it is used in the Discussion as an independent
+  boundary-condition check, not as an input to any effect-size estimate.
+- Author metadata and funding statement added.
+
+The analysis code and all derived results are unchanged from v1.0.0.
 
 ## What is in this release
 
@@ -29,6 +38,7 @@ No new primary data were generated. All input data are public (NCBI GEO):
 | GSE4183, GSE117606 | Three-layer validation (whole tissue) |
 | GSE15960 | LCM pure-epithelium cohort |
 | GSE161277 | Single-cell cohort (normal → adenoma → carcinoma) |
+| GSE109308 | Single-cell cohort (FAP / sporadic carcinoma) — Discussion boundary condition only |
 | GSE128435 | Screened and excluded (composition-confounded) — retained for transparency |
 | GSE303070 | CosMx spatial atlas — used only as a descriptive counter-example |
 

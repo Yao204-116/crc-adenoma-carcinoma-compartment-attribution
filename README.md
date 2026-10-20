@@ -26,6 +26,7 @@ All expression data are pre-existing and public. No new specimens were collected
 | GSE117606 | Three-layer validation (whole tissue, Agilent) |
 | GSE15960 | LCM pure-epithelium cohort (Affymetrix) |
 | GSE161277 | Single-cell cohort (normal → adenoma → carcinoma) |
+| GSE109308 | Single-cell cohort (FAP / sporadic carcinoma) — Discussion boundary condition only |
 | GSE128435 | Screened, then **excluded** (composition-confounded); kept for transparency |
 | GSE303070 | CosMx spatial atlas — used only as a descriptive counter-example |
 
@@ -138,7 +139,7 @@ once the article is published).
 | License | **MIT** — see `LICENSE` |
 
 Each tagged release of this repository is automatically archived by Zenodo, which mints a
-citable DOI. The DOI of release `v1.0.0` is the one quoted in the *Code availability*
+citable DOI. The DOI of release `v1.0.1` is the one quoted in the *Code availability*
 statement of the manuscript. Metadata for the DOI record is declared in `.zenodo.json`;
 its `creators` list must carry the real author names, affiliations and ORCIDs (matching the
 manuscript title page) **before** the first release is published, because Zenodo freezes
