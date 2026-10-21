@@ -84,7 +84,7 @@ TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
-          ".zenodo.json", "RELEASE_NOTES_v1.0.2.md"]
+          ".zenodo.json", "RELEASE_NOTES_v1.0.3.md"]
 
 copied, missing, skipped = [], [], []
 
@@ -141,10 +141,25 @@ for a in ASSETS:
 #   占位符在 markdown 里写作反斜杠转义形式（\<REPO_URL\>），故两种写法都替换。
 #
 # ★ 必须覆盖**所有**带占位符的文本资产，不能只管 README：
-#   RELEASE_NOTES_v1.0.2.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
+#   RELEASE_NOTES_v1.0.3.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
 #   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
 #   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
-FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.2.md"]
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.3.md"]
+
+
+def _doi_url(v):
+    """DOI 值可能是裸 DOI，也可能已经带 https://doi.org/ 前缀。
+
+    ★ 旧实现无条件拼前缀，而 code_availability.json 里存的就是完整 URL，于是 README 发布了
+      `https://doi.org/https://doi.org/10.5281/zenodo.23498179` —— 一个点不开的链接，
+      而且出现在"Archived version (DOI)"这一行，正是最该可信的地方。
+    """
+    v = (v or "").strip()
+    if not v:
+        return ""
+    if v.startswith("http://") or v.startswith("https://"):
+        return v
+    return "https://doi.org/" + v
 
 
 def _substitutions():
@@ -155,10 +170,12 @@ def _substitutions():
             vals = json.load(open(ca, encoding="utf-8"))
         except Exception:
             vals = {}
-    doi = vals.get("doi")
+    # ★ README 随每个版本一起打包，写"本版 DOI"必然指向上一版（打包时本版还没 mint）。
+    #   所以归档内的这一行用**概念 DOI**：它跨版本稳定，永远解析到最新版。
+    doi = _doi_url(vals.get("concept_doi") or vals.get("doi"))
     return {
         "REPO_URL": vals.get("repo_url") or "not pushed yet",
-        "ARCHIVED_DOI": ("https://doi.org/" + doi) if doi
+        "ARCHIVED_DOI": doi if doi
                         else "not yet minted (Zenodo assigns one to each tagged release)",
     }
 

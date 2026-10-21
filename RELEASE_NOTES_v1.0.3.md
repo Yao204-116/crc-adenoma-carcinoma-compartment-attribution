@@ -1,11 +1,20 @@
-# Release notes — v1.0.2
+# Release notes — v1.0.3
 
 Reproducibility package accompanying the manuscript submitted to *BMC Genomics*:
 
 > **Composition or cell state? Decomposing the adenoma–carcinoma transcriptome across
 > tissue, epithelium and single cells**
 
-## Changes in this release
+## Changes in v1.0.3 (one line, one link)
+
+The "Archived version (DOI)" row of `README.md` shipped in v1.0.2 as
+`https://doi.org/https://doi.org/10.5281/zenodo.23498179` — the prefix was applied to a value
+that already carried it — and it named the previous version, because a package cannot know
+the DOI that will be minted for it. That row now points at the **concept DOI**
+(10.5281/zenodo.23498178), which always resolves to the newest version and does not go stale
+when a new one is released. Nothing else differs from v1.0.2.
+
+## Changes in v1.0.2
 
 **v1.0.2 is a reproducibility fix. No number reported in the manuscript, no table and no
 figure changed.** It follows an audit in which the release archive was downloaded and re-run

@@ -213,7 +213,7 @@ for GitHub projects).
 - [x] License chosen and stated (`LICENSE`, MIT).
 - [x] Package verified self-contained: rebuilt from `upstream_r/` with identical CSV hashes.
 - [ ] Push the repository and archive a tagged release on **Zenodo** to obtain a DOI.
-      Automated by `push_github.py` (push → tag `v1.0.2` → GitHub release → retrieve the
+      Automated by `push_github.py` (push → tag `v1.0.3` → GitHub release → retrieve the
       Zenodo DOI → write `code_availability.json` → rebuild the manuscript). The
       Zenodo–GitHub switch for this repository must be turned **ON before** the release is
       published, otherwise that release is not archived.

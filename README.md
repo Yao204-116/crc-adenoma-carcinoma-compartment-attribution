@@ -146,11 +146,11 @@ once the article is published).
 | | |
 |---|---|
 | Source repository | https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution |
-| Archived version (DOI) | https://doi.org/https://doi.org/10.5281/zenodo.23498179 |
+| Archived version (DOI) | https://doi.org/10.5281/zenodo.23498178 |
 | License | **MIT** — see `LICENSE` |
 
 Each tagged release of this repository is automatically archived by Zenodo, which mints a
-citable DOI. The DOI of release `v1.0.2` is the one quoted in the *Code availability*
+citable DOI. The DOI of release `v1.0.3` is the one quoted in the *Code availability*
 statement of the manuscript. Metadata for the DOI record is declared in `.zenodo.json`;
 its `creators` list must carry the real author names, affiliations and ORCIDs (matching the
 manuscript title page) **before** the first release is published, because Zenodo freezes

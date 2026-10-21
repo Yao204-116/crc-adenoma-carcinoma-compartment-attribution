@@ -94,10 +94,10 @@ def git(*args, check=True):
 
 
 # 会**公开发布**的文本资产。占位符必须同时填进这两个文件：
-# ★ 只填 README 会漏掉 RELEASE_NOTES_v1.0.2.md —— 而 release notes 的正文正是
+# ★ 只填 README 会漏掉 RELEASE_NOTES_v1.0.3.md —— 而 release notes 的正文正是
 #   贴进 GitHub release 页面、随即被 Zenodo 归档的那段文字。实测漏网过一次，
 #   是 preflight_release.py 扫全仓库占位符时才发现的。
-PUBLISHED_TEXT = ["README.md", "RELEASE_NOTES_v1.0.2.md"]
+PUBLISHED_TEXT = ["README.md", "RELEASE_NOTES_v1.0.3.md"]
 
 
 def fill_placeholders(sub, commit_msg, step):
@@ -160,7 +160,7 @@ def main():
     ap.add_argument("--repo-name", default=DEFAULT_REPO)
     ap.add_argument("--r-version", default=None)
     ap.add_argument("--license", default="MIT")
-    ap.add_argument("--tag", default="v1.0.2")
+    ap.add_argument("--tag", default="v1.0.3")
     ap.add_argument("--no-create", action="store_true")
     ap.add_argument("--allow-placeholder", action="store_true")
     ap.add_argument("--skip-release", action="store_true")
@@ -299,7 +299,7 @@ def main():
             log("6/8", "发布前闸门已通过")
         elif args.allow_placeholder:
             log("6/8", "警告：--allow-placeholder 已跳过发布前闸门")
-        notes = os.path.join(REPO_DIR, "RELEASE_NOTES_v1.0.2.md")
+        notes = os.path.join(REPO_DIR, "RELEASE_NOTES_v1.0.3.md")
         body = open(notes, encoding="utf-8").read() if os.path.exists(notes) else ""
         st, rel = gh("POST", f"/repos/{owner}/{args.repo_name}/releases", {
             "tag_name": args.tag, "name": args.tag, "body": body,
