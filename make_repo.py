@@ -27,11 +27,36 @@ fig_en check_fig_english""".split()
 #   它把「能不能发」写成可执行检查（占位符 / 元数据 / 自检 / tag 指向）。
 
 # 落盘的中间产物（数字来源，供复算核对）
+# ★ collide_results.json 由 collide_all.py 生成、manuscript_facts.py 收拢成 FACTS['collide']，
+#   但一直没打包 —— 于是重跑 manuscript_facts.py 会得到一份缺 collide 块的版本。
 MIDDLE = """panels_def.json suppl_table1_313genes.csv manuscript_facts.json r3_facts.json
 r3_sens_paneth.json three_layer_pattern.json three_layer_results.json sc161277_scan.json
 sc161277_pairs.json drift_diag.json sc303070_niche.json sc303070_composition_final.json
 gse117606_paired_results.json enrichr_results.json consensus_all.csv consensus_core.csv
-consensus_summary.json _bmc_references.json""".split()
+consensus_summary.json _bmc_references.json collide_results.json
+final_panel_matrix.csv""".split()
+
+# ★ 复现链上被遗漏的输入（2026-10-21 第三方复现验证发现）。
+#   consensus_signature_tier.csv       —— sig_validate 的签名输入
+#   manuscript_facts.py                —— r3_sens_paneth 要 exec 它的前 227 行
+#   epithelial_core_genes.json         —— enrichr_dual 模块级读取
+#   stromal_layer_genes.json           —— 同上
+#   cohort_hunt2.py                    —— sig_validate / lcm_diag 的 `from cohort_hunt2
+#                                         import classify`。漏掉它**不会崩**：sig_validate
+#                                         会把 ImportError 吞掉、退回朴素子串分类法，实测
+#                                         后果是 GSE4183 的 15 例癌被并进 other、该队列
+#                                         AUC 整块消失（归档里 other 15 / carcinoma 15，
+#                                         降级后变成 other 30）。崩溃好查，"静默换了
+#                                         分类器"难查，所以这个最该补。
+#   gpl_soft_map.py                    —— GPL25373（GSE117606 的平台）没有官方 .annot.gz，
+#                                         只有 family.soft.gz 里带平台表，而提取工作全靠
+#                                         这个脚本。它没被任何文件 import（纯 CLI），所以
+#                                         更不会被"缺模块"这类检查发现 —— 但 load_annot 的
+#                                         文档字符串把它写成唯一通路，不打包等于断路。
+#   这几个原来都没进仓库，导致对应 Stage 在别人机器上 FileNotFoundError 或结果不同。
+EXTRA = ["consensus_signature_tier.csv", "manuscript_facts.py",
+         "epithelial_core_genes.json", "stromal_layer_genes.json",
+         "cohort_hunt2.py", "gpl_soft_map.py"]
 
 # 三个额外队列的 DEG 结果（Stage A 输入之一）
 DEG3 = ["GSE37364_DEG_Carcinoma_vs_Adenoma.csv",
@@ -59,7 +84,7 @@ TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
-          ".zenodo.json", "RELEASE_NOTES_v1.0.1.md"]
+          ".zenodo.json", "RELEASE_NOTES_v1.0.2.md"]
 
 copied, missing, skipped = [], [], []
 
@@ -91,6 +116,8 @@ for name in SCRIPTS:
     put(name + ".py", name + ".py")
 for name in MIDDLE:
     put(name, name)
+for name in EXTRA:
+    put(name, name)
 for name in DEG3:
     put("02.result/" + name, "02.result/" + name)
 for abs_src, rel_dir in UPSTREAM:
@@ -114,10 +141,10 @@ for a in ASSETS:
 #   占位符在 markdown 里写作反斜杠转义形式（\<REPO_URL\>），故两种写法都替换。
 #
 # ★ 必须覆盖**所有**带占位符的文本资产，不能只管 README：
-#   RELEASE_NOTES_v1.0.1.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
+#   RELEASE_NOTES_v1.0.2.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
 #   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
 #   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
-FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.1.md"]
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.2.md"]
 
 
 def _substitutions():

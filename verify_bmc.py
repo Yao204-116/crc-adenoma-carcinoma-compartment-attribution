@@ -199,7 +199,8 @@ for m in re.finditer(r"Additional file (\d+)", af_body):
 check("附加文件按正文首见序编号", seen == list(range(1, 9)), f"首见序 {seen}")
 
 # 15 附加文件清单：8 条，且每条都带"文件名/格式/标题/描述"四要素
-af_list = h[i_af:h.find("submission version")] if i_af > 0 else ""
+# 清单是全文最后一节，取到文末即可（原先靠页脚 "submission version" 收尾，页脚已删）。
+af_list = h[i_af:] if i_af > 0 else ""
 items = re.findall(r"<li><b>Additional file (\d+)</b>:(.*?)</li>", af_list, re.S)
 lack = [n for n, s in items
         if not re.search(r"\.(xlsx|csv|png|pdf)", s)]

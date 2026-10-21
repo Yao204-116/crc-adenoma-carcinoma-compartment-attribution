@@ -165,7 +165,7 @@ def main():
     ap.add_argument("--token-file", default=os.path.join(HERE, "_push", ".ghtoken"))
     ap.add_argument("--slug", default="Yao204-116/crc-adenoma-carcinoma-compartment-attribution")
     ap.add_argument("--branch", default=None)
-    ap.add_argument("--tag", default="v1.0.1")
+    ap.add_argument("--tag", default="v1.0.2")
     ap.add_argument("--no-tag", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()

@@ -306,8 +306,21 @@ else:
         tcs = {t: _git("rev-list", "-n", "1", t) for t in tags}
         info = [f"{t}->{tcs[t][:7]}{'' if tcs[t] == head else '(≠HEAD)'}"
                 for t in sorted(tags, key=_vkey)]
-        block("最新 tag 指向 HEAD", tcs.get(newest, "") == head,
-              "最新=%s ｜ %s" % (newest, " ｜ ".join(info)))
+        # ★ 发布后的正常状态：DOI 回填必然产生「tag 之后的提交」（README 加 DOI 行、
+        #   .zenodo.json 同步）。此时 tag 是 HEAD 的**祖先**，内容没变，不该拦。
+        #   旧实现只认 tag == HEAD → 每次回填后闸门永久 FAIL；一个总在报警的闸门等于没有闸门。
+        #   判据：HEAD..tag 的提交数为 0 ⟺ tag 已被 HEAD 完整包含。
+        newest_sha = tcs.get(newest, "")
+        behind = _git("rev-list", "--count", "HEAD..%s" % newest) if newest else ""
+        ahead = _git("rev-list", "--count", "%s..HEAD" % newest) if newest else ""
+        is_ancestor = (behind == "0")
+        detail = "最新=%s ｜ %s" % (newest, " ｜ ".join(info))
+        if newest_sha == head:
+            pass
+        elif is_ancestor:
+            detail += " ｜ HEAD 比 tag 多 %s 个提交（发布后回填，正常）" % (ahead or "?")
+        block("最新 tag 已包含在 HEAD 中（== 或为其祖先）",
+              newest_sha == head or is_ancestor, detail)
 
 # ---------------------------------------------------------------- 报告
 ap = argparse.ArgumentParser(description="发布前总闸门")

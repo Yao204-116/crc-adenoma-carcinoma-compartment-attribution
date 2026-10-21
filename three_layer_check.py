@@ -134,6 +134,11 @@ def fmt(a, pos="癌", neg="正常"):
 
 
 RES = {}
+# ★ 记录被跳过的队列。一旦非空，本次产物就是**不完整**的，不能覆盖归档文件。
+#   旧实现无论跳过几个队列都照写同名文件，于是"跑一遍"会把完整结果换成残缺版本
+#   （实测：GSE4183 的 carcinoma 整组消失、GSE117606 整块变 None），而退出码仍是 0。
+#   读者拿它对照论文数字，只会得出"跑不出来"。
+SKIPPED = []
 for gse in COHORTS:
     try:
         c = load_cohort(gse)
@@ -142,6 +147,7 @@ for gse in COHORTS:
         print("  %s 载入失败: %s" % (gse, type(e).__name__))
     if not c:
         print("  %s 跳过（无数据/注释）" % gse)
+        SKIPPED.append(gse)
         continue
     lab = c["d"]["labels"]          # ★ labels 在 d 里，不在顶层
     zmap = c["zmap"]
@@ -183,7 +189,15 @@ for gse in COHORTS:
                  fmt(r["auc_ca_vs_no"]), fmt(r.get("auc_ad_vs_no")), fmt(r.get("auc_ca_vs_ad")),
                  r["median_normal"], r.get("median_adenoma") or 0, r["median_carcinoma"]))
 
-json.dump(RES, open(os.path.join(HERE, "three_layer_results.json"), "w",
+if SKIPPED:
+    print("\n" + "!" * 78)
+    print("!! 因缺数据被跳过：%s" % ", ".join(SKIPPED))
+    print("!! 本次结果**不完整**，故不覆盖归档文件，改写到 *.partial.json")
+    print("!! 完整复现请先准备 cohort_hunt/geo_cache/（见 REPRODUCIBILITY.md 9.1）")
+    print("!" * 78)
+SUF = ".partial" if SKIPPED else ""
+
+json.dump(RES, open(os.path.join(HERE, "three_layer_results%s.json" % SUF), "w",
                     encoding="utf-8"), ensure_ascii=False, indent=1)
 
 # ===========================================================================
@@ -216,6 +230,7 @@ for name in WATCH:
             pat = "O 其他"
         SUMMARY[name][gse] = {"normal": no, "adenoma": ad, "carcinoma": ca, "pattern": pat}
         print("   %-10s 正常 %+7.3f → 腺瘤 %+7.3f → 癌 %+7.3f   %s" % (gse, no, ad, ca, pat))
-json.dump(SUMMARY, open(os.path.join(HERE, "three_layer_pattern.json"), "w",
+json.dump(SUMMARY, open(os.path.join(HERE, "three_layer_pattern%s.json" % SUF), "w",
                         encoding="utf-8"), ensure_ascii=False, indent=1)
-print("\n→ three_layer_results.json + three_layer_pattern.json")
+print("\n→ three_layer_results%s.json + three_layer_pattern%s.json" % (SUF, SUF))
+sys.exit(2 if SKIPPED else 0)

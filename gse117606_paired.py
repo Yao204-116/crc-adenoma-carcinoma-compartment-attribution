@@ -25,7 +25,7 @@ GSE117606 患者配对验证（第三独立队列 / 第二平台）
 import csv, gzip, importlib.util, json, math, os, re, shutil, statistics, sys
 from collections import Counter, defaultdict
 
-BASE = r"C:/Users/14003/WorkBuddy/2026-10-08-09-31-50/geo_crc/validation_search"
+BASE = os.path.dirname(os.path.abspath(__file__))   # 仓库自足：相对脚本位置，不写死本机路径
 CACHE = os.path.join(BASE, "cohort_hunt", "geo_cache")
 RES_JSON = os.path.join(BASE, "cohort_hunt", "sig_validation_results.json")
 BAK_JSON = os.path.join(BASE, "sig_validation_results_4cohort.json")

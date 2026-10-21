@@ -23,7 +23,10 @@ os.chdir(HERE)
 CACHE = os.path.join(HERE, "cohort_hunt", "geo_cache")
 
 _src = open("sig_validate.py", encoding="utf-8").read().split("\n")
-_ns = {"__name__": "_svdefs"}
+# ★ exec 的命名空间必须注入 __file__：sig_validate.py 用它定位自身目录（仓库自足布局）。
+#   漏了它，任何机器都会 NameError —— 而且报错指针在 `<string>`，看不出是被 exec 那段。
+#   另两处同类 exec（manuscript_facts.py / r3_sens_paneth.py）早已注入，只有这里漏了。
+_ns = {"__name__": "_svdefs", "__file__": os.path.join(HERE, "sig_validate.py")}
 exec("\n".join(_src[:266]), _ns)
 parse_series, load_annot, load_entrez_map = _ns["parse_series"], _ns["load_annot"], _ns["load_entrez_map"]
 

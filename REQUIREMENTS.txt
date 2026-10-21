@@ -1,9 +1,13 @@
 # Exact versions used to produce the figures and tables in this deposit
-# (CPython 3.13.9, Windows 11).
+# (CPython 3.13.9, Windows 11). numpy 2.3.5 requires CPython 3.11+.
 #
-# matplotlib is pinned deliberately: the only metadata chunk written into the
-# PNG files is "Software: Matplotlib version <ver>", so figure bytes are only
-# byte-reproducible against the same matplotlib version (see REPRODUCIBILITY.md §8).
+# matplotlib and pillow are pinned to the versions used here, but pinning them is NOT
+# sufficient to make the PNGs byte-reproducible on another machine: figure layout depends
+# on the FreeType build that Matplotlib links against. Measured 2026-10-21 -- matplotlib
+# 3.10.6 gave FreeType 2.13.3 under conda (figures matched this deposit) but 2.6.1 from
+# the PyPI wheel (all ten figures differed, pixel dimensions included). See
+# REPRODUCIBILITY.md §8.1. Compare the CSV/JSON tables for exact agreement; treat figure
+# hashes as environment-specific.
 #
 # If a pinned version will not install on your interpreter, relax it to the
 # nearest available one -- the analysis itself does not depend on these
@@ -14,3 +18,4 @@ scipy==1.16.3
 matplotlib==3.10.6
 openpyxl==3.1.5
 requests==2.32.5
+pillow==12.0.0

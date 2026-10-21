@@ -213,7 +213,7 @@ for GitHub projects).
 - [x] License chosen and stated (`LICENSE`, MIT).
 - [x] Package verified self-contained: rebuilt from `upstream_r/` with identical CSV hashes.
 - [ ] Push the repository and archive a tagged release on **Zenodo** to obtain a DOI.
-      Automated by `push_github.py` (push → tag `v1.0.1` → GitHub release → retrieve the
+      Automated by `push_github.py` (push → tag `v1.0.2` → GitHub release → retrieve the
       Zenodo DOI → write `code_availability.json` → rebuild the manuscript). The
       Zenodo–GitHub switch for this repository must be turned **ON before** the release is
       published, otherwise that release is not archived.
@@ -245,11 +245,131 @@ Checked empirically on the developer's machine:
 | Output | Byte-identical across runs? | Reason |
 |---|---|---|
 | `suppl/*.csv` | **yes** | plain text, deterministic ordering |
-| `figs/*.png` | **yes, if the Matplotlib version matches** | the only text chunk is `Software: Matplotlib version X.Y.Z`; no timestamp is embedded |
+| `figs/*.png` | **only on the same binary stack** | layout depends on the FreeType build Matplotlib links against: the same Matplotlib 3.10.6 gave FreeType 2.13.3 under conda (matching) and 2.6.1 from the PyPI wheel (all ten differed, canvas size included) — see §8.1 |
 | `suppl/Supplementary_Tables_S1-S5.xlsx` | **no** | `openpyxl` writes `docProps/core.xml` with `dcterms:created` / `dcterms:modified`, and the ZIP entry headers carry the run time. Every cell is identical; only the container bytes differ. Two consecutive runs gave different MD5s. |
 
 **Consequence for anyone verifying this deposit:** compare the **`.csv` tables**, not the
 `.xlsx` workbook or a single archive checksum. A differing `.xlsx` hash does **not** indicate
 a different result — the `.csv` files are authoritative and the `.xlsx` is a
 reader-friendly repackaging of exactly those tables.
+
+### 8.1 Correction — the PNG condition is the FreeType build, not a version pin (2026-10-21)
+
+An earlier version of the table above said PNG bytes reproduce "if the Matplotlib version
+matches". That is not sufficient, and a first diagnosis of this discrepancy was itself
+wrong, so both the claim and the diagnosis are corrected here.
+
+Re-running the figure scripts in a clean virtual environment built strictly from
+`REQUIREMENTS.txt` produced ten PNGs that all differed from the deposit, **including their
+pixel dimensions** (`fig2` 3360×1830 → 3366×1832). The Python versions were not the cause:
+`matplotlib` was 3.10.6 in both environments and the bundled `DejaVuSans.ttf` was
+byte-identical (`md5 49c0f03e…`). The difference is the **FreeType library Matplotlib links
+against**:
+
+| Environment | matplotlib | FreeType | Result |
+|---|---|---|---|
+| conda (the environment used for this deposit) | 3.10.6 | **2.13.3** | figures match the deposit byte-for-byte |
+| PyPI wheel, fresh venv | 3.10.6 | **2.6.1** | all ten figures differ, canvas size included |
+
+Layout under `bbox_inches="tight"` is computed from glyph metrics, so a different FreeType
+build shifts the bounding box by a few pixels and the entire image changes. FreeType is
+compiled into the Matplotlib wheel or supplied by the conda package — **no line in
+`REQUIREMENTS.txt` can pin it**, which is why `pillow` turned out to be irrelevant
+(it was pinned anyway, being the version that produced these files).
+
+**Practical consequence:** treat figure hashes as environment-specific. A third party
+should establish agreement on the **`.csv` / `.json` tables** (byte-exact, §8) and judge
+figures by their content rather than their hash. Every number reported in the manuscript
+reproduces exactly; only the rendered canvases are tied to the binary stack.
+
+---
+
+## 9. What a third party can and cannot re-run (measured 2026-10-21)
+
+The deposit was re-run from a clean checkout in a fresh virtual environment, treated as if
+the re-runner had no access to the developer machine.
+
+| Layer | What was re-run | Outcome |
+|---|---|---|
+| Artefact | re-rendered `figs/` from the shipped JSON | **18/18 CSV byte-identical**; PNG bytes are environment-specific (§8.1) |
+| Computation | each Stage re-run from shipped inputs | 15 of 20 scripts run clean once the cache in §9.1 is fetched; the other 5 need data listed in §9.2 |
+| Data | starting from raw GEO downloads | the cohort cache is fetched by the helpers in §9.1; single-cell matrices are not covered |
+
+### 9.1 Fetch the cohort cache before anything else
+
+`cohort_hunt/geo_cache/` holds tens of MB of public GEO data and is **not** shipped. There
+are two kinds of file in it and they are fetched differently.
+
+**Series matrices** — one per cohort, fetched on demand by the parser itself, so a first run
+just takes longer. To fetch the main cohorts ahead of time (the list is fixed inside the
+script; GSE117606 is not in it and is fetched on demand instead):
+
+```bash
+python geo_dl.py
+```
+
+**Platform annotation** — not fetched automatically, and the reason most Stage B/C runs fail
+on a fresh machine:
+
+| Platform | Route | Note |
+|---|---|---|
+| GPL570, GPL4133 | `GPLxxx.annot.gz` | fetched automatically |
+| GPL25373 (GSE117606) | `Homo_sapiens.gene_info.gz` from NCBI Gene | `.annot.gz` returns **HTTP 404** |
+
+For GPL25373 the platform rows are Entrez IDs (`10000_at`), so `load_annot()` falls back to
+`load_entrez_map()`, which needs the 5.2 MB NCBI file:
+
+```bash
+python geo_dl2.py URL:https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz
+```
+
+Without it GSE117606 is dropped silently — `load_annot` returns `{}` and `load_entrez_map`
+returns `{}` because the file is missing, so the cohort looks like it has no annotation. The
+55.8 MB `GPL25373_family.soft.gz` also works (`python geo_dl2.py SOFT:GPL25373` then
+`python gpl_soft_map.py GPL25373`) but is not needed for this cohort.
+
+**Without the cache, most scripts fail loudly — `three_layer_check.py` used to be the
+exception that failed silently.** Skipping a cohort it cannot load is correct, but the
+script then wrote the canonical `three_layer_*.json` names anyway: a first run without the
+cache replaced the complete archived result with a truncated copy (GSE4183 lost its
+carcinoma group, so its AUC disappeared) while still exiting 0. Since v1.0.2 it writes
+`three_layer_*.partial.json` and exits **2** whenever a cohort was skipped, so the archived
+files are never overwritten. A non-zero exit with `.partial.json` output means the cache is
+missing, not that the code is broken.
+
+### 9.2 Stages that depend on data not in the repository
+
+| Stage | Script(s) | Requires |
+|---|---|---|
+| B | `lcm_diag.py` | `cohort_hunt/geo_cache/GSE15960_series_matrix.txt.gz` |
+| C | `three_layer_check.py`, `gse117606_paired.py`, `r3_sens_paneth.py`, `drift_diag.py` | the cache and the GPL25373 mapping from §9.1 |
+| D | `sc161277_scan.py` | `sc161277/` (10x matrices for GSE161277) |
+| E | `sc303070_compo*.py`, `sc303070_niche.py` | `sc303070/GSE303070_All_cells_metadata.csv.gz` |
+
+Stage E cannot run from the repository alone. Its outputs
+(`sc303070_composition_final.json`, `sc303070_niche.json`) are shipped, so every downstream
+stage still runs.
+
+With the §9.1 cache in place, Stage C reproduces the archived tables exactly: all three
+cohorts load, `three_layer_pattern.json` is byte-identical, and `three_layer_results.json`
+matches value for value including the GSE4183 carcinoma group.
+
+### 9.3 Enrichr output is not byte-stable
+
+`enrichr_dual.py` posts to the Enrichr web service, which mints a fresh `uid` per
+submission. Every enrichment term, adjusted p-value and gene list reproduced exactly; only
+`uid` differed. Compare all fields except that one.
+
+### 9.4 Compare values, not bytes, for JSON
+
+Two shipped JSON files can differ byte-for-byte between two correct runs:
+
+| File | Why | What to compare |
+|---|---|---|
+| `enrichr_results.json` | new Enrichr job `uid` per submission | everything except `uid` |
+| `three_layer_results.json` | the per-cohort `n` dict is built by iterating over a set of class labels, so key order varies with string hashing | parsed content |
+
+Neither difference is a numerical one; equal JSON after `sort_keys=True` is the right test.
+`three_layer_pattern.json`, `r3_sens_paneth.json` and `gse117606_paired_results.json` are
+byte-identical across runs.
 

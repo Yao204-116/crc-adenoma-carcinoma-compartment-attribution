@@ -314,12 +314,6 @@ def title_page_html():
         '<p class="authline">%s</p>' % corr_line]) + "\n"
 
 
-TITLE_META_HTML = (
-    '<p class="meta">Research article submitted to <b>BMC Genomics</b> &middot; '
-    'Vancouver reference style &middot; 21 references &middot; 8 main figures &middot; '
-    '8 additional files (3 supplementary figures, 5 supplementary tables)</p>')
-
-
 def funding_text():
     if META and META.get("funding"):
         return META["funding"]
@@ -548,6 +542,14 @@ def normalize_dataset_cites(h):
         r'(\[[\d,\s\-]+\])\s*</span>')
     n = len(pat.findall(h))
     h = pat.sub(r"\1 \2", h)
+
+    # ② 残留的裸引文外壳：<span class="small"> [13-16]</span>
+    #    ★ 2026-10-20 加。分节初稿把 (Yang et al., 2020; ...) 整段包在缩小灰字 span 里，
+    #    convert_narrative 只替换了括号内的文字，<span> 留在原处 —— 于是全文 35 处引文里
+    #    有 4 处单独变小变灰。这不是内容差异，是版式不一致，且会连带影响下游 docx。
+    pat2 = re.compile(r'<span class="small">\s*(\[[\d,\s\u2013\u2014\-]+\])\s*</span>')
+    n += len(pat2.findall(h))
+    h = pat2.sub(r" \1", h)
     return h, n
 
 
@@ -787,15 +789,11 @@ def main():
     title = re.search(r"<h1>(.*?)</h1>", front, re.S).group(1).strip()
     out.append(f"<h1>{title}</h1>")
     out.append(title_page_html())
-    out.append(TITLE_META_HTML)
 
     # (b) Abstract（BMC 三段式）
     total = sum(wc(v) for v in ABSTRACT.values())
     report["abstract_words"] = total
     out.append('<h2 class="chap"><span class="chapno">1</span>Abstract</h2>')
-    out.append(f'<p class="meta">BMC structured abstract &mdash; '
-               f'Background / Results / Conclusions &mdash; {total} words (limit 350) &mdash; '
-               f'no literature citations.</p>')
     out.append('<div class="ms-para abstract">')
     for k in ("Background", "Results", "Conclusions"):
         out.append(f'<p><b class="abslbl">{k}</b> {ABSTRACT[k]}</p>')
@@ -875,10 +873,6 @@ def main():
 <style>{CSS}</style></head>
 <body><div class="wrap">
 {body}
-<p class="small" style="margin-top:40px;border-top:1px solid var(--line);padding-top:14px">
-BMC Genomics submission version &middot; generated 2026-10-16 by
-<code>build_bmc_manuscript.py</code> &middot; English only.
-</p>
 </div></body></html>"""
     open(OUT, "w", encoding="utf-8").write(html)
     return html, report

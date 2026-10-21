@@ -5,6 +5,7 @@
 命名依据 BMC 官网规定：附加文件须命名 "Additional file n"；Figures 须按正文首见序编号上传。
 用 anaconda 的 python 运行（需要 pandas + openpyxl）。
 """
+import datetime
 import os
 import re
 
@@ -31,19 +32,45 @@ MAIN_FIGS = [
 ]
 
 # 附加文件编号 → 上传文件名 + 源（表：[(csv, 工作表名)]；图：png 路径）
-# 编号与 build_bmc_manuscript.py 按正文首见序自动算出的号一致（verify_bmc.py 已核 1..8）。
-AF = {
-    1: ("Additional_file_1.xlsx", [("suppl/S1_313gene_attribution.csv", "Table S1")]),
-    2: ("Additional_file_2.xlsx", [("suppl/S2_panel_gene_membership.csv", "Table S2")]),
-    3: ("Additional_file_3.xlsx", [("suppl/S4a_sc161277_sample_QC.csv", "Table S4a"),
-                                   ("suppl/S4b_sc161277_decomposition.csv", "Table S4b")]),
-    4: ("Additional_file_4.xlsx", [("suppl/S5_four_cohort_performance.csv", "Table S5")]),
-    5: ("Additional_file_5.png",  "figs/figS1_drift_diagnostics.png"),
-    6: ("Additional_file_6.png",  "figs/figS2_double_caliber_screening_matrix.png"),
-    7: ("Additional_file_7.xlsx", [("suppl/S3_panel_pattern_matrix.csv", "Table S3a"),
-                                   ("suppl/S3b_paneth_sensitivity.csv", "Table S3b")]),
-    8: ("Additional_file_8.png",  "figs/figS3_GSE303070_sampling_bias.png"),
+# ★ 编号**绝不写死**。编号由 build_bmc_manuscript.py 按正文首见序算出，这里只是
+#   「读回稿件的 n→标签」再查「标签→源文件」的登记表。
+#   2026-10-20 踩过的坑：旧版把 n→文件 写死成 7=Table S3 / 8=Fig S3，
+#   稿件重排后 Table S3 掉到 Figure S3 之后，结果 7 装表、8 装图，与正文所指**完全相反**。
+#   这类错误构建不报错、自检也只看「1..8 齐全」，只有拿正文逐个核对才发现。
+TABLE_SRC = {
+    "Table S1": [("suppl/S1_313gene_attribution.csv", "Table S1")],
+    "Table S2": [("suppl/S2_panel_gene_membership.csv", "Table S2")],
+    "Table S3": [("suppl/S3_panel_pattern_matrix.csv", "Table S3a"),
+                 ("suppl/S3b_paneth_sensitivity.csv", "Table S3b")],
+    "Table S4": [("suppl/S4a_sc161277_sample_QC.csv", "Table S4a"),
+                 ("suppl/S4b_sc161277_decomposition.csv", "Table S4b")],
+    "Table S5": [("suppl/S5_four_cohort_performance.csv", "Table S5")],
 }
+FIG_SRC = {
+    "Figure S1": "figs/figS1_drift_diagnostics.png",
+    "Figure S2": "figs/figS2_double_caliber_screening_matrix.png",
+    "Figure S3": "figs/figS3_GSE303070_sampling_bias.png",
+}
+
+
+def af_plan():
+    """n → (上传文件名, 源)。标签全部来自稿件，源全部来自登记表，两边必须一一对应。"""
+    plan = {}
+    used = set()
+    for n in range(1, 9):
+        label = titles[n][0].strip()
+        if label in TABLE_SRC:
+            plan[n] = ("Additional_file_%d.xlsx" % n, TABLE_SRC[label])
+        elif label in FIG_SRC:
+            plan[n] = ("Additional_file_%d.png" % n, FIG_SRC[label])
+        else:
+            raise SystemExit("附加文件 %d 的标签 %r 不在登记表里（表=%s；图=%s）"
+                             % (n, label, sorted(TABLE_SRC), sorted(FIG_SRC)))
+        used.add(label)
+    unused = (set(TABLE_SRC) | set(FIG_SRC)) - used
+    assert not unused, "登记表里有稿件没用到的标签：%s" % sorted(unused)
+    return plan
+
 
 # 从稿件读回附加文件标题，写进清单（保证与正文一致）
 titles = {}
@@ -63,7 +90,7 @@ for src, dst in MAIN_FIGS:
     done.append((dst, f"{os.path.getsize(src):,} B", "<- " + src))
 
 # ---- 附加文件 ----
-for n, (dst, src) in sorted(AF.items()):
+for n, (dst, src) in sorted(af_plan().items()):
     out = os.path.join(UP, dst)
     if isinstance(src, str):                       # 图
         if not os.path.exists(src):
@@ -85,7 +112,24 @@ for n, (dst, src) in sorted(AF.items()):
         note = "<- " + " + ".join(c for c, _ in src)
     done.append((dst, f"{os.path.getsize(out):,} B", note))
 
+# ---- 清掉上一轮遗留的错名文件（只移走，不删除）----
+# 改了编号规则后，旧名文件会残留在 upload/ 里，造成「7 有两个版本」这种新问题。
+expected = {dst for dst, _ in af_plan().values()} | {d for _, d in MAIN_FIGS}
+stale_dir = os.path.join(UP, "_stale_%s" % datetime.date.today())
+stale = [f for f in os.listdir(UP)
+         if re.match(r"^(Additional_file_\d+\.(xlsx|png)|Figure_\d+\.png)$", f)
+         and f not in expected]
+if stale:
+    os.makedirs(stale_dir, exist_ok=True)
+    for f in stale:
+        os.replace(os.path.join(UP, f), os.path.join(stale_dir, f))
+    print(f"移走 {len(stale)} 个旧命名文件 → {stale_dir}/：{sorted(stale)}")
+
 # ---- 上传清单 ----
+plan = af_plan()
+mis = [f"Additional file {n} = {titles[n][0]}" for n in sorted(plan)
+       if not titles[n][0].endswith("S%d" % n)]
+eg = "；".join(mis[:2]) if mis else "无"
 lines = ["# BMC Genomics — upload package", "",
          "All files in this folder are **copies**; `figs/` and `suppl/` are untouched.", "",
          "## Main figures (upload in this order)", "",
@@ -103,7 +147,7 @@ lines += ["", "## Notes", "",
           "  file names under `figs/` already carry the final figure number, so the mapping",
           "  above is one-to-one (`figs/figN_*.png` → `Figure_N.png`).",
           "- Additional file numbers also follow first-mention order, so they do **not** match",
-          "  the internal `Sn` labels (e.g. Additional file 3 = Table S4, Additional file 7 = Table S3).",
+          "  the internal `Sn` labels (%s)." % eg,
           "- Figures are 300 dpi PNG; BMC accepts PNG at ≤10 MB per file — no conversion needed.",
           "- Tables are delivered as .xlsx (BMC accepts .xls / .csv for tabular additional files)."]
 open(os.path.join(UP, "UPLOAD_MANIFEST.md"), "w", encoding="utf-8").write("\n".join(lines))
@@ -111,4 +155,7 @@ open(os.path.join(UP, "UPLOAD_MANIFEST.md"), "w", encoding="utf-8").write("\n".j
 print(f"upload/ 生成 {len(done)} 个文件")
 for d, s, n in done:
     print(f"  {d:28} {s:>12}  {n}")
+print("\n附加文件编号 → 稿件里的标签（拿这个核对正文所指）：")
+for n in sorted(plan):
+    print("  %-20s → %s" % ("Additional file %d" % n, titles[n][0]))
 print("missing:", missing if missing else "无")

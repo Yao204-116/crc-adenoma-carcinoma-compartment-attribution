@@ -40,8 +40,8 @@ Download helpers: `geo_dl.py`, `geo_dl2.py`, `dl_ebi.py` / `dl_loop.py` / `dl_pe
 
 | Item | Value |
 |---|---|
-| Python | 3.9+ (developed on 3.13.9) |
-| Python packages | see `REQUIREMENTS.txt` (`numpy`, `pandas`, `scipy`, `matplotlib`, `openpyxl`, `requests` — pinned to the versions used) |
+| Python | **3.11+** (developed on 3.13.9; the pinned numpy requires 3.11) |
+| Python packages | see `REQUIREMENTS.txt` (`numpy`, `pandas`, `scipy`, `matplotlib`, `pillow`, `openpyxl`, `requests` — pinned to the versions used) |
 | R | `limma` and `WGCNA` — used **upstream** for the modules shipped in `upstream_r/` (see §5) |
 | External services | NCBI E-utilities, Enrichr, MSigDB (`MSigDB_Hallmark_2020`) |
 
@@ -49,11 +49,22 @@ Download helpers: `geo_dl.py`, `geo_dl2.py`, `dl_ebi.py` / `dl_loop.py` / `dl_pe
 pip install -r REQUIREMENTS.txt
 ```
 
-`geo_cache/` and platform annotation files (`GPL*.annot.gz`, `Homo_sapiens.gene_info.gz`)
-are **not** shipped: the download scripts fetch them on first run and cache them locally.
+`cohort_hunt/geo_cache/` and the platform annotation files (`GPL*.annot.gz`,
+`Homo_sapiens.gene_info.gz`) are **not** shipped, and they are not fetched transparently
+on demand either — run the acquisition helpers listed in §1 **before** any analysis script:
 
-Byte-for-byte reproducibility of the rendered PNGs requires the pinned `matplotlib`
-version; the CSV tables are deterministic regardless. See `REPRODUCIBILITY.md` §8.
+```bash
+python geo_dl.py        # series matrices
+python geo_dl2.py       # platform annotation
+```
+
+Without the cache, several scripts skip cohorts **silently** rather than failing. See
+`REPRODUCIBILITY.md` §9 for which stage needs which data.
+
+Rendered PNGs are byte-identical only on the same binary stack: figure layout depends on
+the FreeType build Matplotlib links against, and that cannot be pinned in
+`REQUIREMENTS.txt`. The CSV/JSON tables reproduce exactly regardless. See
+`REPRODUCIBILITY.md` §8–§9.
 
 ---
 
@@ -135,14 +146,15 @@ once the article is published).
 | | |
 |---|---|
 | Source repository | https://github.com/Yao204-116/crc-adenoma-carcinoma-compartment-attribution |
-| Archived version (DOI) | [10.5281/zenodo.23498179](https://doi.org/10.5281/zenodo.23498179) |
+| Archived version (DOI) | https://doi.org/https://doi.org/10.5281/zenodo.23498179 |
 | License | **MIT** — see `LICENSE` |
 
-Release `v1.0.1` is archived at Zenodo, which minted the citable DOI shown above; that DOI is
-the one quoted in the *Code availability* statement of the manuscript. Metadata for the DOI
-record is declared in `.zenodo.json`; its `creators` list must carry the real author names and
-affiliations (matching the manuscript title page) **before** a release is deposited, because
-Zenodo freezes that metadata into a permanent, citable record. `preflight_release.py` checks this.
+Each tagged release of this repository is automatically archived by Zenodo, which mints a
+citable DOI. The DOI of release `v1.0.2` is the one quoted in the *Code availability*
+statement of the manuscript. Metadata for the DOI record is declared in `.zenodo.json`;
+its `creators` list must carry the real author names, affiliations and ORCIDs (matching the
+manuscript title page) **before** the first release is published, because Zenodo freezes
+that metadata into a permanent, citable record. `preflight_release.py` checks this.
 
 ### Reproducing the archived release
 

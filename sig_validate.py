@@ -11,7 +11,7 @@ import csv, gzip, io, json, math, os, re, statistics, sys, time, urllib.request,
 from collections import Counter
 
 UA = {"User-Agent": "Mozilla/5.0 (research meta-analysis; contact-local)"}
-BASE = r"C:/Users/14003/WorkBuddy/2026-10-08-09-31-50/geo_crc/validation_search"
+BASE = os.path.dirname(os.path.abspath(__file__))   # 仓库自足：相对脚本位置，不写死本机路径
 SIGFILE = os.path.join(BASE, "consensus_signature_tier.csv")
 CACHE = os.path.join(BASE, "cohort_hunt", "geo_cache")
 os.makedirs(CACHE, exist_ok=True)
@@ -279,7 +279,17 @@ PANELS = {
 PANELS = {k: set(v.split()) for k, v in PANELS.items()}
 
 results = {}
-for gse in sys.argv[1:]:
+# ★ 不带参数时必须**默认跑这四个队列**，不能空转。
+#   旧写法 `for gse in sys.argv[1:]` 在无参数时一次都不循环，末尾却照样 dump ——
+#   于是 `python sig_validate.py` 把 cohort_hunt/sig_validation_results.json 覆盖成 `{}`，
+#   而这个文件正是 gse117606_paired.py 要备份、manuscript_facts.py → build_suppl_tables.py
+#   要读的四队列 AUC 来源（README 的第一个 smoke test 就会踩到）。清空后不报错，
+#   只是四个队列的 AUC 从此消失。
+COHORTS_4 = ["GSE4183", "GSE117606", "GSE128435", "GSE15960"]
+# ★ 主循环只在**直接运行**时执行。three_layer_check / gse117606_paired / lcm_diag 都是用
+#   exec_module 载入本文件「借用函数」，导入即跑会让它们各自重复下载四个队列。
+_TODO = (sys.argv[1:] or COHORTS_4) if __name__ == "__main__" else []
+for gse in _TODO:
     print("\n" + "=" * 108)
     print("验证队列 %s" % gse)
     print("=" * 108)
@@ -478,7 +488,15 @@ for gse in sys.argv[1:]:
                     "panel_median_delta": {k: (statistics.median([x[1] for x in v]) if v else None)
                                            for k, v in panel_fc.items()}}
 
-json.dump(results, open(os.path.join(BASE, "cohort_hunt", "sig_validation_results.json"),
-                        "w", encoding="utf-8"), ensure_ascii=False, indent=2, default=str)
-print("\n[saved] sig_validation_results.json")
+OUT = os.path.join(BASE, "cohort_hunt", "sig_validation_results.json")
+if __name__ != "__main__":
+    pass                      # 被 import：不写盘，留给调用方自己的产物
+elif not results:
+    # 一个队列都没算成（缺数据/注释）：**绝不覆盖**已有结果，否则下游静默丢掉四队列 AUC
+    print("\n[skip] 一个队列都没算成，保留既有 %s 不动" % os.path.basename(OUT))
+else:
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    json.dump(results, open(OUT, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=2, default=str)
+    print("\n[saved] %s（%d 个队列）" % (os.path.basename(OUT), len(results)))
 print("DONE")

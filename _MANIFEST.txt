@@ -5,7 +5,7 @@
 02.result/GSE41657_DEG_Carcinoma_vs_Adenoma.csv
 LICENSE
 README.md
-RELEASE_NOTES_v1.0.1.md
+RELEASE_NOTES_v1.0.2.md
 REPRODUCIBILITY.md
 REQUIREMENTS.txt
 _bmc_references.json
@@ -13,9 +13,12 @@ _fetch_bmc_refs.py
 build_bmc_manuscript.py
 build_suppl_tables.py
 check_fig_english.py
+cohort_hunt2.py
+collide_results.json
 consensus_all.csv
 consensus_core.csv
 consensus_signature.py
+consensus_signature_tier.csv
 consensus_summary.json
 dl_ebi.py
 dl_loop.py
@@ -24,6 +27,7 @@ drift_diag.json
 drift_diag.py
 enrichr_dual.py
 enrichr_results.json
+epithelial_core_genes.json
 fig_en.py
 figs/fig1_study_design.html
 figs/fig1_study_design.png
@@ -38,9 +42,11 @@ figs/figS1_drift_diagnostics.png
 figs/figS2_double_caliber_screening_matrix.png
 figs/figS3_GSE303070_sampling_bias.png
 fill_author_metadata.py
+final_panel_matrix.csv
 gen_bmc_readiness.py
 geo_dl.py
 geo_dl2.py
+gpl_soft_map.py
 gse117606_paired.py
 gse117606_paired_results.json
 gse303070_probe.py
@@ -53,6 +59,7 @@ make_figs_sc.py
 make_repo.py
 make_upload_package.py
 manuscript_facts.json
+manuscript_facts.py
 panels_def.json
 preflight_release.py
 push_github.py
@@ -73,6 +80,7 @@ sc303070_composition_final.json
 sc303070_niche.json
 sc303070_niche.py
 sig_validate.py
+stromal_layer_genes.json
 suppl/S1_313gene_attribution.csv
 suppl/S2_panel_gene_membership.csv
 suppl/S3_panel_pattern_matrix.csv
