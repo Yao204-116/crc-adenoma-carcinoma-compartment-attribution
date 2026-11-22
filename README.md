@@ -1,9 +1,8 @@
-# Composition or cell state? — reproducibility package
+# Cellular composition and epithelial cell state — reproducibility package
 
 Code and derived data supporting the manuscript submitted to *BMC Genomics*:
 
-> **Composition or cell state? A three-resolution decomposition of the adenoma–carcinoma
-> transcriptome identifies an epithelial-intrinsic adenoma-stage differentiation peak**
+> **Cellular composition and epithelial cell state contribute in opposite directions to the colorectal adenoma–carcinoma transcriptome**
 
 This repository contains **no new primary data**. Every script operates on public datasets
 from NCBI GEO and on the derived tables that the earlier stages write to disk. The goal is
@@ -150,7 +149,7 @@ once the article is published).
 | License | **MIT** — see `LICENSE` |
 
 Each tagged release of this repository is automatically archived by Zenodo, which mints a
-citable DOI. The DOI of release `v1.0.3` is the one quoted in the *Code availability*
+citable DOI. The DOI of release `v1.0.4` is the one quoted in the *Code availability*
 statement of the manuscript. Metadata for the DOI record is declared in `.zenodo.json`;
 its `creators` list must carry the real author names, affiliations and ORCIDs (matching the
 manuscript title page) **before** the first release is published, because Zenodo freezes

@@ -35,67 +35,77 @@ OUT = "Manuscript_BMC_Genomics_投稿版.html"
 
 # ---------------------------------------------------------------- 引用编号表
 # 编号 = 正文首次出现顺序（Background → Methods → Results）
-CITE_NUM = {
-    ("McCorry", "2018"): 1, ("Kreis", "2024"): 2, ("Tyler", "2021"): 3,
-    ("Block", "2019"): 4, ("Yan", "2022"): 5, ("Becker", "2022"): 6,
-    ("Zheng", "2022"): 7, ("Guha", "2025"): 8, ("Yang", "2025"): 9,
-    ("Bala", "2023"): 10, ("Porter", "1997"): 11, ("Mallow", "1996"): 12,
-    ("Radeva", "2010"): 13, ("Joo", "2009"): 14, ("Pagnini", "2011"): 15,
-    ("López-Arribillaga", "2021"): 16, ("Langfelder", "2008"): 17,
-    ("Kuleshov", "2016"): 18, ("Chen", "2013"): 19, ("Liberzon", "2015"): 20,
-    ("Thiruvengadam", "2019"): 21,
-}
+# ★ 2026-10-22 改为从 _bmc_references.json 派生：编号只在文献表里存一份。
+#   此前这里手写 21 个数字，与 JSON 各存一套；补引文献必须同步改两处，
+#   漏改不会报错，只会让正文角标与文献表整体错位（本轮补 11 个数据集引用时才暴露）。
+def _cite_key(intext):
+    """'McCorry et al., 2018' -> ('McCorry', '2018')；'Tyler & Tirosh, 2021' -> ('Tyler', '2021')"""
+    m = re.match(r"^\s*([A-Z][A-Za-z\u00c0-\u017f\-']+).*?((?:19|20)\d{2})\s*$", intext)
+    return (m.group(1), m.group(2)) if m else (intext, "")
 
-# 叙事式引用（"X and colleagues" / "Tyler and Tirosh"）→ 编号
-NARRATIVE = {
-    "McCorry": 1, "Kreis": 2, "Block": 4, "Becker": 6, "Radeva": 13,
-    "Joo": 14, "Pagnini": 15, "López-Arribillaga": 16,
-    "Thiruvengadam": 21, "Yan": 5, "Yang": 9,
-    # 2026-10-20：Discussion ¶3/¶5 引用 GSE109308 时加入
-    "Bala": 10,
-}
+with open(os.path.join(BASE, "_bmc_references.json"), encoding="utf-8") as _f:
+    REFS = json.load(_f)
+
+CITE_NUM = {_cite_key(r["intext"]): r["num"] for r in REFS}
+
+# 叙事式引用（"X and colleagues" / "Tyler and Tirosh"）→ 编号，同样从表派生。
+# 姓氏重名（Galamb 2008/2010/2012、Li 2015/2020）在叙事式里无法区分，
+# 故只登记正文实际以「X and colleagues」出现过的姓氏。
+_NARR_SURNAMES = {"McCorry", "Kreis", "Block", "Becker", "Radeva", "Joo",
+                  "Pagnini", "López-Arribillaga", "Thiruvengadam", "Yan",
+                  "Yang", "Bala"}
+NARRATIVE = {s: n for (s, y), n in CITE_NUM.items() if s in _NARR_SURNAMES}
 
 # ---------------------------------------------------------------- 摘要（BMC 三段式）
+# ★ 2026-10-21 主线重写：Background 末句由「问题未解决」改为**明写研究目的**（We asked ...），
+#   Conclusions 首句改为**明写意义**（Attribution, not the raw difference, is what carries
+#   across specimens）。全文只服务一条主线：组织层差异的含义取决于它来自哪个来源，
+#   因此必须先归属、再比较。别再退回「Composition or cell state?」那种只提问不给答案的开法。
 ABSTRACT = {
     "Background": (
-        "Colorectal carcinogenesis proceeds through the adenoma-carcinoma sequence, but "
-        "expression differences between these stages are usually measured in whole tissue, "
-        "where epithelial, stromal and immune contributions are pooled. Whether a "
-        "stage-associated programme reflects altered cellular composition or altered "
-        "epithelial cell state has remained unresolved for the adenoma stage."
+        "Expression differences between colorectal adenomas and carcinomas are measured in "
+        "whole tissue, where epithelial, stromal and immune cells are pooled. Such a difference may "
+        "reflect altered cell abundance, altered "
+        "state of a given cell type, or both, and its direction can depend on how much "
+        "epithelium the specimen contains. We asked which source carries each component of "
+        "that difference, and whether the attribution survives a change of resolution."
+    ),
+    # ★ 2026-11-22：摘要改四段式（BMC Genomics 实文两种格式均可，带 Methods 是常见形态）。
+    #   这两句从 Results 迁出，等词数移动，总数不变。
+    "Methods": (
+        "We derived a 313-gene transition signature from four cohorts and scored it at three "
+        "resolutions, each fixing one term of the composition-state relationship: whole "
+        "tissue; laser-capture-microdissected epithelium (6 adenomas, 6 carcinomas, "
+        "6 normals); and patient-matched single cells (three triads, 13 libraries, 54,782 "
+        "cells). A pattern counted only if it reproduced in all three cohorts under two "
+        "calibers."
     ),
     "Results": (
-        "We derived a 313-gene signature of the adenoma-to-carcinoma transition from four "
-        "independent cohorts and scored it at three resolutions, each fixing one term of the "
-        "composition-state relationship: "
-        "whole tissue; laser-capture-microdissected epithelium (6 adenomas, 6 carcinomas, "
-        "6 normals); and patient-matched single-cell RNA sequencing of three "
-        "normal-adenoma-carcinoma triads (13 libraries, 54,782 cells). Panel trajectories "
-        "had to reproduce in all three cohorts under both uncorrected and drift-corrected "
-        "scoring; two designs that had to yield nothing served as negative controls. The "
-        "two components of the signature behaved oppositely: in purified epithelium the "
-        "up-regulated component retained only 31.6% of its whole-tissue amplitude (gene "
-        "concordance 58.6%, near chance), whereas the down-regulated component was "
-        "amplified 2.04-fold (93.2% concordant), assigning the tissue-level increase to "
-        "stromal and myeloid composition and the decrease to an epithelial-intrinsic loss "
-        "of differentiation. Of thirteen cell-programme panels, only the Paneth-cell "
-        "programme (DEFA5, DEFA6, OLFM4, SPINK1) peaked in adenomas in all three cohorts "
-        "under both conventions (normal &lt; carcinoma &lt; adenoma) and persisted in "
-        "epithelium-only samples. Single-cell decomposition attributed that peak mainly to "
-        "per-cell state (58% of the summed component change in one patient; the composition "
-        "term was negative in the other), with DEFA6 higher in adenoma than in both the "
-        "matched normal and the matched carcinoma in 6/6 paired comparisons. In two patients "
-        "the whole-cell Paneth score rose from adenoma to carcinoma while the "
-        "intra-epithelial score did not, an artefact of myeloid LYZ entering the whole-cell "
-        "average. The negative-control panel gave a null paired effect (28/56, P = 0.70)."
+        "In purified epithelium "
+        "the up-regulated component retained only 31.6% of its whole-tissue amplitude "
+        "(58.6% gene concordance; <i>P</i> = 0.016 against 50%), whereas the down-regulated component was "
+        "amplified 2.04-fold (93.2%). The increase is therefore compositional (stromal and "
+        "myeloid) and the decrease is epithelial-intrinsic. The composite score does not "
+        "transfer: AUC 0.84 and 0.91 in the two whole-tissue cohorts, 0.11 in "
+        "epithelium-only samples, a reversal of ordering rather than a loss of signal. Scored "
+        "directionally, the same genes keep their orientation. Of thirteen "
+        "cell-programme panels, only "
+        "the Paneth-cell programme (DEFA5, DEFA6, OLFM4, SPINK1) peaked at adenoma in all "
+        "three cohorts and persisted in epithelium-only samples. Single-cell decomposition "
+        "attributed that peak to per-cell state rather than abundance: 58% of the summed "
+        "component change in one patient, a negative composition term in the other. DEFA6 "
+        "was higher in adenoma than in both matched normal and carcinoma in 6/6 pairs. Both "
+        "negative controls behaved as designed: a pure-epithelial baseline panel showed no "
+        "paired shift (28/56 matched pairs, 50.0%, <i>P</i> = 0.70), and a peripheral-blood "
+        "library yielded no epithelial cells."
     ),
     "Conclusions": (
-        "A progression signature containing oppositely directed components must be "
-        "decomposed before it is compared across specimens differing in epithelial content: "
-        "in epithelium-only samples the mixed score reversed (AUC 0.111) rather than lost "
-        "signal. Decomposed, the adenoma-stage differentiation peak is epithelial-intrinsic "
-        "and carried by per-cell state rather than cell abundance, whereas the tissue-level "
-        "progression signal is largely compositional."
+        "Attribution, not the raw difference, is what carries across specimens. A signature "
+        "with oppositely directed components must be decomposed before comparison across "
+        "specimens that differ in epithelial content, or a real signal becomes a reversed "
+        "one. Once decomposed, the tissue-level increase is largely compositional, whereas "
+        "the adenoma-stage peak is epithelial-intrinsic and set by per-cell state rather "
+        "than cell number."
     ),
 }
 
@@ -105,28 +115,23 @@ KEYWORDS = [
     "Paneth cell", "defensin", "transcriptional signature",
 ]
 
+# ★ 只列正文/图注里确实用到的缩写：列了却不用的条目会被 copy-editor 删，
+#   而"用了却没列"才是真错误。verify_bmc.py 有双向自检（IX 组）。
 ABBREVIATIONS = [
     ("AUC", "area under the receiver operating characteristic curve"),
-    ("BH", "Benjamini-Hochberg"),
     ("CAF", "cancer-associated fibroblast"),
-    ("CI", "confidence interval"),
     ("DEFA5/DEFA6", "defensin alpha 5 / defensin alpha 6"),
-    ("DIA", "data-independent acquisition"),
     ("EMT", "epithelial-mesenchymal transition"),
     ("FAP", "familial adenomatous polyposis"),
-    ("FDR", "false discovery rate"),
     ("FOV", "field of view"),
     ("GEO", "Gene Expression Omnibus"),
-    ("GO", "Gene Ontology"),
     ("GSE", "GEO Series accession"),
     ("LCM", "laser-capture microdissection"),
     ("MSigDB", "Molecular Signatures Database"),
     ("OLFM4", "olfactomedin 4"),
     ("P", "composition term (cell-abundance component of a mixed signature score)"),
     ("QC", "quality control"),
-    ("scRNA-seq", "single-cell RNA sequencing"),
     ("SPINK1", "serine peptidase inhibitor Kazal type 1"),
-    ("SSA", "sessile serrated adenoma"),
     ("T", "whole-cell (total) score"),
     ("U", "cell-intrinsic state term"),
     ("WGCNA", "weighted gene co-expression network analysis"),
@@ -141,7 +146,7 @@ ABBREVIATIONS = [
 #    （BMC 推荐 GitHub 代码用 Zenodo 归档取得 DOI）
 #  · 不允许只写 "available from the corresponding author on reasonable request"
 GEO_BASE = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc="
-GEO_ACCESSED = "16 October 2026"
+GEO_ACCESSED = "22 October 2026"
 
 # ---- Code availability 的单一数据源 -------------------------------------
 # 仓库 URL / Zenodo DOI / 许可 / R 版本只在 `code_availability.json` 里维护一份，
@@ -289,6 +294,8 @@ def title_page_html():
         inner = ",".join(str(n) for n in (a.get("aff") or [1]))
         if a.get("corresponding"):
             inner += "*"          # ★ 通讯符加在 <sup> 的**内容**里，不能切字符串拼标签
+        if a.get("equal"):
+            inner += "\u2020"     # ★ 共一符同样进 <sup> 内容，与通讯符并列
         names.append("%s<sup>%s</sup>" % (a["name"], inner))
     affs = ["<sup>%s</sup>%s" % (k, m["affiliations"][k])
             for k in sorted(m["affiliations"], key=lambda x: int(x))]
@@ -308,10 +315,14 @@ def title_page_html():
         corr_line = "*Corresponding author: " + corr_bits[0]
     else:
         corr_line = "*Corresponding authors: " + "; ".join(corr_bits)
-    return "\n".join([
+    lines = [
         '<p class="authline">%s</p>' % ", ".join(names),
         '<p class="authline">%s</p>' % " &nbsp; ".join(affs),
-        '<p class="authline">%s</p>' % corr_line]) + "\n"
+        '<p class="authline">%s</p>' % corr_line]
+    # 共一脚注：任何一位作者带 equal 标记即输出一行
+    if any(a.get("equal") for a in m["authors"]):
+        lines.append('<p class="authline">\u2020These authors contributed equally to this work.</p>')
+    return "\n".join(lines) + "\n"
 
 
 def funding_text():
@@ -345,8 +356,9 @@ DECLARATIONS = [
      "Not applicable. This study is a secondary analysis of publicly available, "
      "de-identified human transcriptomic data deposited in the NCBI Gene Expression "
      "Omnibus. No human participants, human material or animals were involved in this "
-     "work, and no new data were generated; ethics approval and informed consent were "
-     "obtained by the investigators of the original studies."),
+     "work, and no new data were generated. Ethical oversight and consent for the original "
+     "sample collection were the responsibility of the investigators who generated these "
+     "datasets, under their own institutional approvals."),
     ("Consent for publication",
      "Not applicable. This manuscript contains no individual person's data."),
     ("Availability of data and materials", AVAILABILITY),
@@ -598,19 +610,27 @@ def convert_narrative(h):
 
 
 def add_software_cites(h):
-    """Methods 中的软件首见处补编号（WGCNA=17, Enrichr=18/19, MSigDB=20）"""
+    """Methods 中的软件首见处补编号（WGCNA / Enrichr 两篇 / MSigDB）
+
+    ★ 2026-10-22：编号不再写死，改为查 CITE_NUM。此前写死 17/18/19/20，
+      补引文献后重排编号时这四处会静默指错文献。
+    """
+    n_wgcna = CITE_NUM[("Langfelder", "2008")]
+    n_enr16 = CITE_NUM[("Kuleshov", "2016")]
+    n_enr13 = CITE_NUM[("Chen", "2013")]
+    n_msig  = CITE_NUM[("Liberzon", "2015")]
     hits = []
     pat = r"(weighted gene co-expression network analysis \(WGCNA\)) in R"
     if re.search(pat, h):
-        h = re.sub(pat, r"\1 [17] in R", h, count=1)
-        hits.append(17)
+        h = re.sub(pat, "\\1 [%d] in R" % n_wgcna, h, count=1)
+        hits.append(n_wgcna)
     s = "Functional enrichment was performed with Enrichr"
     if s in h:
-        h = h.replace(s, s + " [18, 19]", 1)
-        hits += [18, 19]
+        h = h.replace(s, s + " [%d, %d]" % (n_enr16, n_enr13), 1)
+        hits += [n_enr16, n_enr13]
     if "MSigDB_Hallmark_2020" in h:
-        h = h.replace("MSigDB_Hallmark_2020", "MSigDB_Hallmark_2020 [20]", 1)
-        hits.append(20)
+        h = h.replace("MSigDB_Hallmark_2020", "MSigDB_Hallmark_2020 [%d]" % n_msig, 1)
+        hits.append(n_msig)
     return h, hits
 
 
@@ -677,9 +697,11 @@ INTERNAL_FIXES = [
 #       a patient with hereditary polyposis ... regenerative activity ... fetal genes"）
 CITATION_COMPLETION = [
     ("conserved events preceding carcinoma development, and with spatial CODEX",
-     "conserved events preceding carcinoma development [10], and with spatial CODEX"),
+     "conserved events preceding carcinoma development [%d], and with spatial CODEX"
+     % CITE_NUM[("Bala", "2023")]),
     ("alteration already in pre-cancerous polyps.",
-     "alteration already in pre-cancerous polyps [8]."),
+     "alteration already in pre-cancerous polyps [%d]."
+     % CITE_NUM[("Guha", "2025")]),
 ]
 
 
@@ -790,12 +812,12 @@ def main():
     out.append(f"<h1>{title}</h1>")
     out.append(title_page_html())
 
-    # (b) Abstract（BMC 三段式）
+    # (b) Abstract（BMC 四段式：Background / Methods / Results / Conclusions）
     total = sum(wc(v) for v in ABSTRACT.values())
     report["abstract_words"] = total
-    out.append('<h2 class="chap"><span class="chapno">1</span>Abstract</h2>')
+    out.append('<h2 class="chap">Abstract</h2>')
     out.append('<div class="ms-para abstract">')
-    for k in ("Background", "Results", "Conclusions"):
+    for k in ("Background", "Methods", "Results", "Conclusions"):
         out.append(f'<p><b class="abslbl">{k}</b> {ABSTRACT[k]}</p>')
     out.append("</div>")
     # Keywords
@@ -807,19 +829,19 @@ def main():
         if c["title"] == "Abstract":
             continue
         if c["title"] == "Introduction":
-            out.append('<h2 class="chap"><span class="chapno">2</span>Background</h2>')
+            out.append('<h2 class="chap">Background</h2>')
             out.append(c["html"].strip())
         elif c["title"] == "Methods":
-            out.append('<h2 class="chap"><span class="chapno">3</span>Methods</h2>')
+            out.append('<h2 class="chap">Methods</h2>')
             out.append(c["html"].strip())
         elif c["title"] == "Results":
-            out.append('<h2 class="chap"><span class="chapno">4</span>Results</h2>')
+            out.append('<h2 class="chap">Results</h2>')
             out.append(add_results_headings(c["html"]))
         elif c["title"] == "Discussion":
             disc, concl = split_discussion(c["html"])
-            out.append('<h2 class="chap"><span class="chapno">5</span>Discussion</h2>')
+            out.append('<h2 class="chap">Discussion</h2>')
             out.append(disc)
-            out.append('<h2 class="chap"><span class="chapno">6</span>Conclusions</h2>')
+            out.append('<h2 class="chap">Conclusions</h2>')
             out.append(concl)
         elif c["title"] == "Figure Legends":
             pass  # 稍后统一放（在 References 之后）
@@ -827,12 +849,12 @@ def main():
             pass
 
     # (d) List of abbreviations
-    out.append('<h2 class="chap"><span class="chapno">7</span>List of abbreviations</h2>')
+    out.append('<h2 class="chap">List of abbreviations</h2>')
     out.append('<div class="abbr"><ul>' + "".join(
         f"<li><b>{a}</b> &mdash; {b}</li>" for a, b in ABBREVIATIONS) + "</ul></div>")
 
     # (e) Declarations
-    out.append('<h2 class="chap"><span class="chapno">8</span>Declarations</h2>')
+    out.append('<h2 class="chap">Declarations</h2>')
     out.append('<div class="decl">')
     for k, v in DECLARATIONS:
         out.append(f"<h3>{k}</h3>")
@@ -843,7 +865,7 @@ def main():
     # (f) References（编号 Vancouver）
     refs = json.load(open("_bmc_references.json", encoding="utf-8"))
     refs = sorted(refs, key=lambda r: r["num"])
-    out.append('<h2 class="chap"><span class="chapno">9</span>References</h2>')
+    out.append('<h2 class="chap">References</h2>')
     out.append('<div class="sc-ref"><ol class="reflist">')
     for r in refs:
         out.append(f'<li value="{r["num"]}">{r["vancouver"]}</li>')
@@ -852,14 +874,14 @@ def main():
 
     # (g) Figure legends（重编号 + 排序）
     legs, leg_order, leg_words = extract_legends(chap_map["Figure Legends"]["html"])
-    out.append('<h2 class="chap"><span class="chapno">10</span>Figure legends</h2>')
+    out.append('<h2 class="chap">Figure legends</h2>')
     out.append('<div class="sc-leg">' + "\n".join(legs) + "</div>")
     report["legend_order"] = leg_order
     report["legend_words"] = leg_words
 
     # (h) Additional files —— 编号由正文首见序决定，故先占位、组装后再统一改写
     AF_SLOT = "@@ADDITIONAL_FILES_SLOT@@"
-    out.append('<h2 class="chap"><span class="chapno">11</span>'
+    out.append('<h2 class="chap">'
                'Additional files</h2>')
     out.append(AF_SLOT)
 
@@ -965,8 +987,10 @@ padding:0 9px;margin-right:10px;font-size:16px;vertical-align:2px}
 margin:12px 0;font-family:Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.9}
 .ms-para p{margin:12px 0}
 .ms-para .num{color:var(--rose);font-weight:600}
-.ms-para .mono,.mono{font-family:Consolas,monospace;font-size:13px;background:#f1f5f9;
-padding:1px 6px;border-radius:4px}
+/* ★ 投稿版不许出现"代码块"观感：分节初稿用 .mono 标基因名/参数名（内部版的可读性设计，
+   带等宽字体 + 灰底 + 圆角），投稿版若原样带过去，正文里会散落 70 余个灰色小方块。
+   这里只把视觉化平——class 保留，内容零改动，内部版不受影响。 */
+.mono{font-family:inherit;font-size:inherit;background:none;padding:0;border-radius:0}
 .abstract{background:#f0fdf4;border-left:5px solid var(--green)}
 .abslbl{color:var(--green);font-family:"Segoe UI",sans-serif;font-size:13.5px;
 letter-spacing:.3px;margin-right:6px}

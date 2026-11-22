@@ -246,8 +246,14 @@ def fig4():
 
 
 # ===========================================================================
-# Figure 5  面板 × 队列 |AUC| 热图（含阴性对照）
+# Figure 5  面板 × 队列 AUC 热图（有符号，不折叠方向；含阴性对照）
 # ===========================================================================
+def _txt_color(im, v):
+    """按色块亮度选字色，避免浅黄底上写白字。"""
+    r, g, b, _ = im.cmap(im.norm(v))
+    return "white" if (0.299 * r + 0.587 * g + 0.114 * b) < 0.55 else "#0f172a"
+
+
 def fig5():
     ORDER = ["313签名", "上调分量(210)", "下调分量(103)", "上皮·分化/功能", "上皮分化·核心8",
              "纯上皮基线·7", "间质·激活/CAF", "间质·基线", "泛间质·6", "髓系·激活",
@@ -263,10 +269,10 @@ def fig5():
         row = []
         for g, key, _ in cols:
             v = MAT.get(s, {}).get(g, {}).get(key)
-            row.append(max(v, 1 - v) if v is not None else float("nan"))
+            row.append(v if v is not None else float("nan"))   # ★ 不折叠：<0.5 才看得出反向
         data.append(row)
     fig, ax = plt.subplots(figsize=(9.2, 6.6))
-    im = ax.imshow(data, cmap="RdYlBu_r", vmin=0.5, vmax=1.0, aspect="auto")
+    im = ax.imshow(data, cmap="RdYlBu_r", vmin=0.0, vmax=1.0, aspect="auto")
     ax.set_xticks(range(len(cols)))
     ax.set_xticklabels([c[2] for c in cols], fontsize=8.6)
     ax.set_yticks(range(len(ORDER)))
@@ -285,11 +291,11 @@ def fig5():
                 ax.text(j, i, "—", ha="center", va="center", fontsize=9, color="#475569")
             else:
                 ax.text(j, i, "%.2f" % v, ha="center", va="center", fontsize=8.2,
-                        color="white" if (v > 0.88 or v < 0.58) else "#0f172a")
+                        color=_txt_color(im, v))
     # 阴性对照高亮
     ax.axhline(5.5, color="#0f172a", lw=1.6)
     cb = fig.colorbar(im, ax=ax, fraction=0.035, pad=0.02)
-    cb.set_label("|AUC| (0.5 = no discrimination)", fontsize=9.5)
+    cb.set_label("AUC (0.5 = no discrimination)", fontsize=9.5)
     ax.set_title("Figure 5  Panel × cohort discrimination (carcinoma vs adenoma)\n"
                  "For the LCM column, read the raw and drift-corrected calibers side by side\n"
                  "red label = negative control (pure-epithelial-baseline·7)",

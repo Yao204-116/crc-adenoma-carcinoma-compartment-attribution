@@ -12,6 +12,23 @@ refs = json.load(open("_bmc_references.json", encoding="utf-8"))
 refs = sorted(refs, key=lambda r: r["num"])
 ms = open(MS, encoding="utf-8").read()
 
+# ★ 2026-10-22：报告里的「N 条」与软件引用编号一律从数据源取，不写死。
+NUM_BY_SURNAME = {r["intext"].split(" ")[0].rstrip("&").strip(): r["num"] for r in refs}
+N_REFS = len(refs)
+# ★ 项数只能来自实际执行：`^check\\(` 的静态计数会漏掉缩进在条件块里的 check
+#   （2026-11-21 实测 30 vs 实际 31），报告里的「N 项」就会与真实自检项数不符。
+def _verify_check_count():
+    import subprocess, sys
+    out = subprocess.run([sys.executable, "verify_bmc.py"],
+                         cwd=os.path.dirname(os.path.abspath(__file__)),
+                         capture_output=True, text=True, encoding="utf-8").stdout
+    m = re.search(r"^项数：\s*(\d+)", out, re.M)
+    if not m:
+        raise SystemExit("✗ 读不到 verify_bmc.py 的项数，先单独跑它确认输出")
+    return int(m.group(1))
+
+VERIFY_CHECKS = _verify_check_count()
+
 # 每条文献在正文中的落点章节
 CHAP_RE = re.compile(r'<h2 class="chap"><span class="chapno">(\d+)</span>(.*?)</h2>')
 ms_marks = list(CHAP_RE.finditer(ms))
@@ -179,15 +196,15 @@ font-size:13.2px;background:#fff}
 
 BODY = f"""
 <h1>BMC Genomics 投稿准备报告</h1>
-<p class="small">稿件：<i>Composition or cell state? Decomposing the adenoma&ndash;carcinoma
-transcriptome across tissue, epithelium and single cells</i>｜目标期刊 <b>BMC Genomics</b>（Springer Nature，SCIE / 中科院 2 区 TOP）<br>
+<p class="small">稿件：<i>Cellular composition and epithelial cell state contribute in opposite directions
+to the colorectal adenoma&ndash;carcinoma transcriptome</i>｜目标期刊 <b>BMC Genomics</b>（Springer Nature，SCIE / 中科院 2 区 TOP）<br>
 本报告依据 BMC Genomics 官网 Submission guidelines 逐条核对｜2026-10-16｜小波</p>
 
 <div class="box ok"><span class="tag">结论</span>
 <b>稿件已按 BMC Genomics 要求改造完成，可进入投稿准备。</b>
 本轮把一份"内容已达发表标准、但格式仍是内部工作稿"的文件，转成了符合 BioMed Central
 规范的 Research article：摘要改三段式并压到 350 词以内、正文引用从哈佛 author-year
-整体迁移为 Vancouver 数字制（21 条参考文献按首次出现顺序重新编号）、补齐 BMC 必备的
+整体迁移为 Vancouver 数字制（{N_REFS} 条参考文献按首次出现顺序重新编号）、补齐 BMC 必备的
 Conclusions / List of abbreviations / Declarations / Additional files、清掉所有撰写脚手架标签、
 图号按正文首见序重排。<br>
 <b>随后又补完两处此前留空的部分</b>：① Data availability 从"向通讯作者索取"改写为
@@ -213,9 +230,9 @@ Conclusions / List of abbreviations / Declarations / Additional files、清掉�
 <tr><td>主文节序</td><td>Title page, Abstract, Keywords, <b>Background, Methods, Results, Discussion, Conclusions</b>, List of abbreviations, Declarations, References, Figure legends, Tables, Figures</td>
 <td><span class="chk y">合规</span> 11 节顺序全对；新增独立 Conclusions（原 Discussion 末段拆出）</td></tr>
 <tr><td>参考文献制式</td><td>"References should be cited in the text using <b>consecutive numbers in square brackets</b>. Please use <b>Vancouver</b> reference style."</td>
-<td><span class="chk y">合规</span> 21 条，方括号编号，按首次出现顺序；原为哈佛 author-year</td></tr>
+<td><span class="chk y">合规</span> {N_REFS} 条，方括号编号，按首次出现顺序；原为哈佛 author-year</td></tr>
 <tr><td>作者列名规则</td><td>"If there are more than six authors, list the first six authors followed by et al."</td>
-<td><span class="chk y">合规</span> 已用 E-utilities 重取全部 21 篇作者名单，>6 位者列前 6 位 + et al.</td></tr>
+<td><span class="chk y">合规</span> 已用 E-utilities 重取全部 {N_REFS} 篇作者名单，>6 位者列前 6 位 + et al.</td></tr>
 <tr><td>图号顺序</td><td>"Figures should be numbered in the order they are first mentioned in the text, and uploaded in this order."</td>
 <td><span class="chk y">合规</span> 原顺序 1→6→3→4→5→2→7→8；已重排为严格递增</td></tr>
 <tr><td>图题 / 图注字数</td><td>"Figure titles (max 15 words) and legends (max 300 words)"</td>
@@ -236,9 +253,9 @@ Conclusions / List of abbreviations / Declarations / Additional files、清掉�
 <tr><td class="c">1</td><td>摘要重写</td>
 <td>原四段式（Background / Methods / Results / Conclusions）431 词压缩为 BMC 三段式 <b>{ABS_WORDS} 词</b>；删去摘要内的 GSE 编号与全部缩写符号（P/U/T 已在正文 List of abbreviations 中定义）；四个关键数字（31.6% / 2.04× / 6&frasl;6 / AUC 0.111）全部保留</td></tr>
 <tr><td class="c">2</td><td>引用制式迁移</td>
-<td>哈佛 author-year &rarr; Vancouver 数字制：<b>16 处</b>圆括号引用改为 <span class="mono">[n]</span>（连续编号自动压成区间，如 <span class="mono">[1&ndash;4]</span>）；<b>13 处</b>叙事式引用（"X and colleagues"）改为 "X et al. [n]"；Methods 中 WGCNA / Enrichr / MSigDB 三处补软件引用角标（[17][18, 19][20]）</td></tr>
+<td>哈佛 author-year &rarr; Vancouver 数字制：<b>16 处</b>圆括号引用改为 <span class="mono">[n]</span>（连续编号自动压成区间，如 <span class="mono">[1&ndash;4]</span>）；<b>13 处</b>叙事式引用（"X and colleagues"）改为 "X et al. [n]"；Methods 中 WGCNA / Enrichr / MSigDB 三处补软件引用角标（[{NUM_BY_SURNAME['Langfelder']}][{NUM_BY_SURNAME['Kuleshov']}, {NUM_BY_SURNAME['Chen']}][{NUM_BY_SURNAME['Liberzon']}]）</td></tr>
 <tr><td class="c">3</td><td>参考文献重排</td>
-<td>由字母序 17 篇 + 软件 4 篇改为<b>按正文首次出现顺序编号的 21 条</b>；全部经 E-utilities 重取完整作者名单（原先多篇截断为 3 位作者 + et al.，BMC 规则是 6 位）；期刊缩写改用 PubMed 官方缩写（如 <span class="mono">J Pathol</span> / <span class="mono">Nat Commun</span>）；按官方示例去掉期刊文章 DOI</td></tr>
+<td>由字母序 17 篇 + 软件 4 篇改为<b>按正文首次出现顺序编号的 {N_REFS} 条</b>（2026-10-22 补入 10 篇数据集原始论文）；全部经 E-utilities 重取完整作者名单（原先多篇截断为 3 位作者 + et al.，BMC 规则是 6 位）；期刊缩写改用 PubMed 官方缩写（如 <span class="mono">J Pathol</span> / <span class="mono">Nat Commun</span>）；按官方示例去掉期刊文章 DOI</td></tr>
 <tr><td class="c">4</td><td>补独立 Conclusions</td>
 <td>原 Discussion 最后一段（"Paragraph 6 &mdash; Conclusion"）拆为独立 <b>Conclusions</b> 章节 &mdash; BMC 要求 Discussion 与 Conclusions 分开</td></tr>
 <tr><td class="c">5</td><td>补 List of abbreviations</td>
@@ -257,7 +274,7 @@ Conclusions / List of abbreviations / Declarations / Additional files、清掉�
 <td>正文 <span class="mono">Fig. S1&ndash;S3 / Supplementary Table S1&ndash;S5</span> 全部改为 <span class="mono">Additional file 1&ndash;8</span>；编号由脚本按<b>正文首见序自动计算</b>（原为"先图后表"，不合规）；清单补齐 BMC 四要素（File name / format / title / description）；附图图注标题改为 <span class="mono">Additional file n (Figure Sn)</span>；并给原 Table S3 补了一处正文引用（详见第六节）</td></tr>
 </table>
 
-<h2>三、参考文献编号映射表（21 条）</h2>
+<h2>三、参考文献编号映射表（{N_REFS} 条）</h2>
 <p class="small">编号 = 正文首次出现顺序。全部经 PubMed E-utilities efetch 核实，无编造 PMID。</p>
 <table>
 <tr><th style="width:5%">#</th><th style="width:58%">BMC / Vancouver 引文</th><th style="width:9%">PMID</th><th style="width:9%">类型</th><th style="width:19%">正文落点</th></tr>
@@ -394,7 +411,7 @@ and <b>bibliometric analyses</b> will not be considered."</blockquote>
 <tr><td class="c">4</td><td><span class="chk y">已查</span> 投稿前两处文献状态（2026-10-16 实测）</td><td>① <b>GSE303070 关联论文仍是预印本</b>：Pattison AD, …, Abud HE. <i>A spatial atlas of colorectal cancer reveals the influence of stromal niches on tumour differentiation.</i> bioRxiv 2025；DOI <span class="mono">10.64898/2025.12.09.693138</span>（Europe PMC <span class="mono">PPR1231869</span>）——<b>未进入 PubMed，GEO 记录亦无 PMID</b>。文中"nine spatial niches"一说出自该数据集的 GEO summary（原文 "identified 9 spatial niches"），<b>以 GEO accession 归属站得住</b>；若要更规范，可在该句后补一条参考文献（Vancouver 顺序下会成为 <span class="mono">[22]</span>）。<br>② <b>Guha et al. 仍是预印本</b>：PubMed <span class="mono">PMID 39605357</span>，bioRxiv，article type 含 <i>Preprint</i>，Europe PMC 无期刊版 → 现用的 bioRxiv 引用格式（<span class="mono">[8]</span>）<b>正确，无需改动</b>。<br>③ 附带一条：Guha TK 另有 <b>Nature 2026</b> 论文 <i>Polyclonal origins of human premalignant colorectal lesions</i>（<span class="mono">PMID 41291291</span>）——同组不同题，<b>不替代</b>上述预印本，勿误改引用</td></tr>
 <tr><td class="c">5</td><td><span class="chk y">已办</span> Additional files 命名统一</td><td>正文已全改为 <span class="mono">Additional file 1&ndash;8</span> 并按首见序编号（映射见第六节）；上传时用 <span class="mono">Additional_file_n.*</span> 命名即可</td></tr>
 <tr><td class="c">6</td><td><span class="chk y">已办</span> 摘要 &le;350 词</td><td>{ABS_WORDS} 词；若编辑另有要求，优先压缩 Background 第二句</td></tr>
-<tr><td class="c">7</td><td><span class="chk y">已办</span> 引用编号闭环</td><td>21 条全部被正文引用，正文角标全部有对应条目（脚本 <span class="mono">verify_bmc.py</span> 自动核对）</td></tr>
+<tr><td class="c">7</td><td><span class="chk y">已办</span> 引用编号闭环</td><td>{N_REFS} 条全部被正文引用，正文角标全部有对应条目（脚本 <span class="mono">verify_bmc.py</span> 自动核对）</td></tr>
 <tr><td class="c">8</td><td><span class="chk y">已办</span> 零孤儿图</td><td>11 张图全部在正文被引用，且首见序严格递增</td></tr>
 </table>
 
@@ -405,8 +422,8 @@ and <b>bibliometric analyses</b> will not be considered."</blockquote>
 <blockquote>
 Dear Editor,<br><br>
 We submit for your consideration our manuscript entitled
-"Composition or cell state? Decomposing the adenoma&ndash;carcinoma transcriptome across
-tissue, epithelium and single cells"
+"Cellular composition and epithelial cell state contribute in opposite directions
+to the colorectal adenoma&ndash;carcinoma transcriptome"
 for publication as a Research article in <i>BMC Genomics</i>.<br><br>
 Colorectal carcinogenesis proceeds through the adenoma&ndash;carcinoma sequence, yet expression
 differences between these stages are almost always measured in whole tissue, where epithelial,
@@ -448,9 +465,9 @@ Sincerely,<br>
 <h2>十一、可复现脚本</h2>
 <table>
 <tr><th style="width:34%">脚本</th><th>作用</th></tr>
-<tr><td><span class="mono">_fetch_bmc_refs.py</span></td><td>E-utilities efetch 重取 21 篇完整作者名单，按 BMC Vancouver 格式生成 <span class="mono">_bmc_references.json</span></td></tr>
+<tr><td><span class="mono">_fetch_bmc_refs.py</span></td><td>E-utilities efetch 重取 {N_REFS} 篇完整作者名单，按 BMC Vancouver 格式生成 <span class="mono">_bmc_references.json</span></td></tr>
 <tr><td><span class="mono">build_bmc_manuscript.py</span></td><td>把《全文整合_投稿版》改造为 <span class="mono">Manuscript_BMC_Genomics_投稿版.html</span>（引用迁移 / 摘要重写 / 节序 / 脚手架清理 / 图号重排 / <b>附加文件按首见序自动编号</b> / <b>Availability 可复现链</b>）</td></tr>
-<tr><td><span class="mono">verify_bmc.py</span></td><td><b>21 项</b>合规自检：残留 author-year、汉字、脚手架、编号闭环、<b>引文按正文首见序编号（Vancouver）</b>、图号顺序、摘要与图注字数、节序、Declarations 完整性、<b>附加文件首见序与四要素、Availability 的 10 个 GEO 直链完备性</b></td></tr>
+<tr><td><span class="mono">verify_bmc.py</span></td><td><b>{VERIFY_CHECKS} 项</b>合规自检：残留 author-year、汉字、脚手架、编号闭环、<b>引文按正文首见序编号（Vancouver）</b>、图号顺序、摘要与图注字数、节序、Declarations 完整性、<b>附加文件首见序与四要素、Availability 的 11 个 GEO 直链完备性</b></td></tr>
 <tr><td><span class="mono">REPRODUCIBILITY.md</span></td><td>随代码入库的复现清单：环境 / 10 个公共数据集 / 9 个分析阶段（脚本&rarr;产物逐条对应）/ 单条产物复现示例 / 外部前置依赖 / Zenodo 提交清单</td></tr>
 </table>
 

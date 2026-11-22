@@ -12,8 +12,10 @@ for a, b in [("&nbsp;", " "), ("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
 txt = re.sub(r"\s+", " ", txt)
 
 ok = True
+n_checks = 0
 def check(name, cond, detail=""):
-    global ok
+    global ok, n_checks
+    n_checks += 1
     mark = "PASS" if cond else "FAIL"
     if not cond:
         ok = False
@@ -119,16 +121,18 @@ abs_plain = re.sub(r"<[^>]+>", " ", absblk)
 for a, b in [("&lt;", "<"), ("&gt;", ">"), ("&amp;", "&"), ("&nbsp;", " ")]:
     abs_plain = abs_plain.replace(a, b)
 aw = len(re.findall(r"[A-Za-z][A-Za-z\-']*", abs_plain))
-check("摘要 ≤ 350 词（含三段标签）", aw <= 350, f"{aw} 词")
-check("摘要三段式标签", all(k in absblk for k in ["Background", "Results", "Conclusions"]))
+check("摘要 ≤ 350 词（含四段标签）", aw <= 350, f"{aw} 词")
+# ★ 2026-11-22：改四段式（Background/Methods/Results/Conclusions）。BMC Genomics
+#   实文两种格式均可（有带 Methods 的四段式，也有单段式），带 Methods 是常见形态。
+check("摘要四段式标签", all(k in absblk for k in ["Background", "Methods", "Results", "Conclusions"]))
 check("摘要内无文献角标", not re.search(r"\[\d", absblk))
 
 # 7 结构
 need = ["Abstract", "Background", "Methods", "Results", "Discussion", "Conclusions",
         "List of abbreviations", "Declarations", "References", "Figure legends",
         "Additional files"]
-order = [re.sub(r"<[^>]+>", "", m.group(2)).strip()
-         for m in re.finditer(r'<h2 class="chap"><span class="chapno">(\d+)</span>(.*?)</h2>', h)]
+order = [re.sub(r"<[^>]+>", "", m.group(1)).strip()
+         for m in re.finditer(r'<h2 class="chap">(.*?)</h2>', h)]
 check("BMC 节序齐全且顺序正确", order == need, str(order))
 
 # 8 Declarations 8 小节
@@ -225,5 +229,106 @@ check("Availability 列全 %d 个 GEO 永久标识" % len(acc), not miss_acc and
 check("Availability 不再依赖“向作者索取”",
       "on reasonable request" not in av and "Code availability" in av)
 
+# 18 内部编号不得泄漏到正文以外。10-22 实测：M8 藏在 Figure 7 图注里，
+#    旧检查只扫正文 Background→Conclusions，于是构建尾部报"无残留"、稿件里却有 "see Methods M8"。
+leak = []
+for pat in [r"\bM\d{1,2}\b", r"\bR[1-5]\b"]:
+    leak += re.findall(pat, txt)
+# 基金号形如 M202503 / M2024038（6–7 位），不会落入 M\d{1,2}
+check("全文（含图注/声明）无 M/R 内部编号", not leak, str(sorted(set(leak))))
+
+# 19 缩写表正向一致：列了就必须用到。旧版只数"表里有几条"，
+#    于是 BH/CI/DIA/FDR/GO/SSA/scRNA-seq 七条零使用条目长期没人发现（copy-editor 必删）。
+abbr_items = re.findall(r"<li><b>([^<]+)</b> &mdash;", h)
+unused = []
+for a in abbr_items:
+    keys = [x.strip() for x in a.split("/")]
+    # GSE 只作为编号前缀出现（GSE41258），\bGSE\b 永远匹配不到，单列判断
+    if a == "GSE":
+        used = len(re.findall(r"GSE\d", txt)) > 1
+    else:
+        used = any(len(re.findall(r"\b" + re.escape(k) + r"\b", txt)) > 1 for k in keys)
+    if not used:
+        unused.append(a)
+check("缩写表每条都在全文实际用到", not unused, f"零使用: {unused}")
+
+# 20 英式/美式拼写不得混用（本文以 tumour 为主）。
+#    两个必须保留原样的例外，都不该被"统一"掉：
+#    ① GSE41258 的表型字段名 "Tumor vs Polyp"（数据集原始标签）；
+#    ② 参考文献标题（引文须逐字忠实原题，如 ref 9 的 "tumor epithelium versus tumor microenvironment"）。
+#    故本项在**参考文献区以外**统计。
+# 位置必须在 body_html 里取：h 与 body_html 差一个 <style> 块，混用会错位
+_i_refs = body_html.find('class="chap">References')
+_i_fig = body_html.find('class="chap">Figure legends')
+_txt_noref = txt
+if _i_refs > 0 and _i_fig > _i_refs:
+    _bh = body_html[:_i_refs] + body_html[_i_fig:]
+    _txt_noref = re.sub(r"<[^>]+>", " ", _bh)
+    for _a, _b in [("&nbsp;", " "), ("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
+                   ("&mdash;", "—"), ("&middot;", "·"), ("&ndash;", "–")]:
+        _txt_noref = _txt_noref.replace(_a, _b)
+    _txt_noref = re.sub(r"\s+", " ", _txt_noref)
+tumour = len(re.findall(r"\btumour", _txt_noref, re.I))
+tumor = len(re.findall(r"\btumor\b(?!\s*vs\s*Polyp)", _txt_noref, re.I))
+check("tumour/tumor 拼写一致（引文与数据集字段除外）", tumor == 0,
+      f"tumour×{tumour} / tumor×{tumor}")
+
+# 21 p 值斜体一致：10-22 实测 adj. P 曾包在 .mono 等宽块里且未斜体，与正文 <i>P</i> 混排。
+stripped = body_html.replace("<i>P</i>", "")
+bare_p = re.findall(r"(?<![\w>])P\s*=\s*[0-9]", stripped)
+check("p 值统一斜体", not bare_p, f"未斜体 {len(bare_p)} 处")
+
+
+# 22 ★ 摘要 AUC 必须在正文（不含摘要）可复核。
+#    10-22 实例：摘要写 0.918（signature = mean(UP) - mean(DN) 的定向打分），
+#    正文写 0.842（Methods 定义的 mean z 无向平均），两个口径各对，放在一起读者会以为有一个错。
+#    凡数字，下游必须能在上游找到同一口径的来源。
+def _aucs(s):
+    # 取每个 "AUC" 后 45 字符内的所有数值，覆盖 "AUC 0.84 and 0.91"、"(AUC 0.111; raw 0.000)"
+    out = []
+    for _m in re.finditer(r"AUC", s):
+        out += [float(x) for x in re.findall(r"\b([01]\.\d{1,3})\b", s[_m.end():_m.end() + 60])]
+    return out
+
+_body_only = re.sub(r"<[^>]+>", " ", body_html.replace(absblk, ""))
+for _a, _b in [("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"), ("&nbsp;", " ")]:
+    _body_only = _body_only.replace(_a, _b)
+# 正文匹配池取全文所有 0.xx / 1.00 数值：签名 AUC 常以 "(0.842 / raw 0.830)" 形式出现，前面并无 AUC 字样
+_abs_auc = _aucs(abs_plain)
+_body_auc = [float(x) for x in re.findall(r"\b([01]\.\d{2,3})\b", _body_only)]
+_miss = [a for a in _abs_auc if not any(abs(a - b) <= 0.01 for b in _body_auc)]
+check("摘要 AUC 均可在正文复核（同口径）", not _miss,
+      f"摘要 {sorted(set(_abs_auc))} 未匹配 {_miss}")
+
+# 23 ★ 出现「AUC 反转」论断时，必须同时交代打分约定。
+#    0.111 属无向平均；定向打分下同一签名在纯上皮队列为 1.00，不反转。
+#    不写清楚，审稿人自己一算就得出相反结论。
+if "0.111" in txt and re.search(r"reversal|invert", txt, re.I):
+    check("AUC 反转论断已交代打分约定",
+          "undirected" in txt and "directionally" in txt,
+          "需同时出现 undirected / directionally")
+
+
+# 24 ★ 每个 GEO 数据集首次出现处必须带文献角标（= 已引用其原始论文）。
+#    2026-10-22 加。此前 11 个数据集里只有 2 个（GSE161277/GSE109308）引了出处，
+#    其余只在 Methods 写了 accession。审稿人问「这个队列出自哪篇论文」时无从落地，
+#    而 GEO 记录本身并不总是给出 PMID（GSE41657/GSE117606/GSE128435/GSE303070 均为空）。
+#    判据：取该 accession 首次出现到**下一个 accession 出现**之间的文字，
+#    其中必须含一个 [n] 角标；这样不会因为句子后面别的引文而误判通过。
+# GSE4183 只有 4 位，写成 {5,6} 会静默漏掉它
+_pos = [(m.group(0), m.start()) for m in re.finditer(r"GSE\d{4,6}", body_only)]
+_first_acc = {}
+for _acc, _p in _pos:
+    _first_acc.setdefault(_acc, _p)
+_ordered = sorted(_first_acc.items(), key=lambda kv: kv[1])
+_uncited = []
+for _i, (_acc, _p) in enumerate(_ordered):
+    _end = _ordered[_i + 1][1] if _i + 1 < len(_ordered) else min(len(body_only), _p + 320)
+    if not re.search(r"\[\d", body_only[_p:_end]):
+        _uncited.append(_acc)
+check("数据集首见处已引原始论文（%d 个 GSE）" % len(_first_acc), not _uncited,
+      "未引: %s" % _uncited)
+
 print("=" * 72)
+print("项数： %d" % n_checks)
 print("总体：", "全部通过" if ok else "存在未通过项")

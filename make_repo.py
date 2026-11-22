@@ -84,7 +84,7 @@ TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
-          ".zenodo.json", "RELEASE_NOTES_v1.0.3.md"]
+          ".zenodo.json", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
 
 copied, missing, skipped = [], [], []
 
@@ -144,7 +144,7 @@ for a in ASSETS:
 #   RELEASE_NOTES_v1.0.3.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
 #   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
 #   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
-FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.3.md"]
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
 
 
 def _doi_url(v):
