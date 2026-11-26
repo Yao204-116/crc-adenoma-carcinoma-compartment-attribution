@@ -1,0 +1,50 @@
+{
+ "meta": {
+  "method": "① WGCNA-module block sign-flip (B=20000, blocks flip jointly, preserving co-expression); ② CAMERA-style variance inflation 1+(n-1)*mean_r, binomial z adjusted",
+  "note2": "gene_set_mean_test: sample-level label permutation in GSE15960 (preserves inter-gene correlation exactly), one-sided on mean LCM delta"
+ },
+ "results": {
+  "UP": {
+   "obs": 123,
+   "n": 210,
+   "p_block_flip": 0.1191,
+   "n_blocks": 22,
+   "max_block": 156,
+   "rho_bar": {
+    "GSE4183": 0.4716,
+    "GSE117606": 0.338
+   },
+   "vif": 85.6,
+   "z_raw": 2.48,
+   "z_vif_adj": 0.27,
+   "p_vif_binomial": 0.7883
+  },
+  "DN": {
+   "obs": 96,
+   "n": 103,
+   "p_block_flip": 0.0001,
+   "n_blocks": 15,
+   "max_block": 56,
+   "rho_bar": {
+    "GSE4183": 0.2407,
+    "GSE117606": 0.269
+   },
+   "vif": 26.99,
+   "z_raw": 8.77,
+   "z_vif_adj": 1.69,
+   "p_vif_binomial": 0.0914
+  },
+  "gene_set_mean_test": {
+   "UP": {
+    "mean_delta": 0.316,
+    "p_label_perm": 0.0043,
+    "n_genes": 210
+   },
+   "DN": {
+    "mean_delta": -1.151,
+    "p_label_perm": 0.0,
+    "n_genes": 103
+   }
+  }
+ }
+}

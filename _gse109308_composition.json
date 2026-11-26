@@ -1,0 +1,42 @@
+{
+ "Patient 1": {
+  "adenoma": 4,
+  "normal": 2,
+  "carcinoma": 2
+ },
+ "Patient 2": {
+  "adenoma": 5,
+  "normal": 2,
+  "carcinoma": 4
+ },
+ "Patient 3": {
+  "carcinoma": 11,
+  "adenoma": 6,
+  "normal": 2
+ },
+ "Patient 4": {
+  "adenoma": 2,
+  "normal": 1
+ },
+ "FAP Patient 5": {
+  "adenoma": 15,
+  "normal": 3
+ },
+ "FAP Patient 4": {
+  "adenoma": 11,
+  "normal": 4
+ },
+ "FAP Patient 1": {
+  "adenoma": 5,
+  "carcinoma": 4,
+  "normal": 1
+ },
+ "CRC Patient1": {
+  "carcinoma": 4,
+  "normal": 4
+ },
+ "CRC Patient2": {
+  "carcinoma": 3,
+  "normal": 2
+ }
+}

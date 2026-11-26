@@ -1,0 +1,270 @@
+{
+ "meta": {
+  "method": "SVA-lite: per-cohort stage-residual SVD -> top-5 surrogate variables; recompute after regressing out first k SVs (+intercept); downstream caliber identical to manuscript (undirected mean-z, drift-corrected)"
+ },
+ "sv_stage_assoc": {
+  "GSE4183": {
+   "eta2_sv1_sv5": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "GSE117606": {
+   "eta2_sv1_sv5": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "GSE15960": {
+   "eta2_sv1_sv5": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sensitivity": {
+  "GSE4183": {
+   "0": {
+    "auc_313": 0.9111,
+    "d_up_mean": 1.0143333674388402,
+    "d_dn_mean": -0.3111430279810028,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   },
+   "1": {
+    "auc_313": 0.9244,
+    "d_up_mean": 1.0143333674388402,
+    "d_dn_mean": -0.3111430279810028,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   },
+   "2": {
+    "auc_313": 0.9511,
+    "d_up_mean": 1.01433336743884,
+    "d_dn_mean": -0.31114302798100274,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   },
+   "3": {
+    "auc_313": 0.9778,
+    "d_up_mean": 1.01433336743884,
+    "d_dn_mean": -0.31114302798100274,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   },
+   "4": {
+    "auc_313": 1.0,
+    "d_up_mean": 1.01433336743884,
+    "d_dn_mean": -0.31114302798100263,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   },
+   "5": {
+    "auc_313": 1.0,
+    "d_up_mean": 1.01433336743884,
+    "d_dn_mean": -0.31114302798100274,
+    "up_frac_pos": 0.9762,
+    "dn_frac_pos": 0.301
+   }
+  },
+  "GSE117606": {
+   "0": {
+    "auc_313": 0.8417,
+    "d_up_mean": 0.9834875947771382,
+    "d_dn_mean": -0.8455748572376915,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   },
+   "1": {
+    "auc_313": 0.8543,
+    "d_up_mean": 0.9834875947771383,
+    "d_dn_mean": -0.8455748572376915,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   },
+   "2": {
+    "auc_313": 0.9443,
+    "d_up_mean": 0.9834875947771383,
+    "d_dn_mean": -0.8455748572376918,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   },
+   "3": {
+    "auc_313": 0.9814,
+    "d_up_mean": 0.9834875947771384,
+    "d_dn_mean": -0.8455748572376915,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   },
+   "4": {
+    "auc_313": 0.9819,
+    "d_up_mean": 0.9834875947771387,
+    "d_dn_mean": -0.8455748572376915,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   },
+   "5": {
+    "auc_313": 0.978,
+    "d_up_mean": 0.9834875947771387,
+    "d_dn_mean": -0.8455748572376915,
+    "up_frac_pos": 0.9949,
+    "dn_frac_pos": 0.0
+   }
+  },
+  "GSE15960": {
+   "0": {
+    "auc_313": 0.1111,
+    "d_up_mean": 0.3157597161731489,
+    "d_dn_mean": -1.15138888265823,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   },
+   "1": {
+    "auc_313": 0.1389,
+    "d_up_mean": 0.3157597161731489,
+    "d_dn_mean": -1.1513888826582297,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   },
+   "2": {
+    "auc_313": 0.1667,
+    "d_up_mean": 0.3157597161731489,
+    "d_dn_mean": -1.1513888826582297,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   },
+   "3": {
+    "auc_313": 0.1111,
+    "d_up_mean": 0.31575971617314846,
+    "d_dn_mean": -1.1513888826582295,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   },
+   "4": {
+    "auc_313": 0.0833,
+    "d_up_mean": 0.31575971617314863,
+    "d_dn_mean": -1.1513888826582295,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   },
+   "5": {
+    "auc_313": 0.1111,
+    "d_up_mean": 0.31575971617314863,
+    "d_dn_mean": -1.1513888826582295,
+    "up_frac_pos": 0.5857,
+    "dn_frac_pos": 0.0291
+   }
+  }
+ },
+ "aggressive_overcorrection": {
+  "sv_stage_eta2": {
+   "GSE4183": [
+    0.369,
+    0.476,
+    0.306,
+    0.162,
+    0.215
+   ],
+   "GSE117606": [
+    0.128,
+    0.678,
+    0.296,
+    0.028,
+    0.002
+   ],
+   "GSE15960": [
+    0.909,
+    0.929,
+    0.043,
+    0.017,
+    0.013
+   ]
+  },
+  "auc_313": {
+   "GSE4183": {
+    "0": 0.9111,
+    "1": 0.9067,
+    "2": 0.8356,
+    "3": 0.7422,
+    "4": 0.7111,
+    "5": 0.7111
+   },
+   "GSE117606": {
+    "0": 0.8417,
+    "1": 0.7765,
+    "2": 0.8133,
+    "3": 0.5165,
+    "4": 0.4911,
+    "5": 0.4885
+   },
+   "GSE15960": {
+    "0": 0.1111,
+    "1": 0.4167,
+    "2": 0.4167,
+    "3": 0.3889,
+    "4": 0.3333,
+    "5": 0.4444
+   }
+  },
+  "note": "SVs taken from the UNADJUSTED matrix (may carry stage signal). Removing them is an aggressive over-correction upper bound, not a valid null — the leading unsupervised directions largely ARE the biological contrast. Stored for transparency only."
+ },
+ "sensitivity_5b": {
+  "0": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  },
+  "1": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  },
+  "2": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  },
+  "3": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  },
+  "4": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  },
+  "5": {
+   "n_up": 210,
+   "n_dn": 103,
+   "up_retention": 0.3158,
+   "dn_amplification": 2.0375,
+   "up_concordance": 0.5857,
+   "dn_concordance": 0.932
+  }
+ }
+}

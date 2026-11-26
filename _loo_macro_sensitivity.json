@@ -1,0 +1,91 @@
+{
+ "meta": {
+  "design": "leave-GSE20916macro-out; identical thresholds but 3/3 cohorts; harness validated by control run reproducing the official tier file"
+ },
+ "comparison": {
+  "official_n": 313,
+  "loo_n": 219,
+  "overlap": 204,
+  "jaccard": 0.622,
+  "logFC_spearman_pearson_common": 0.9933,
+  "direction_flip_in_common": 0,
+  "key_genes": {
+   "DEFA5": {
+    "official": true,
+    "loo": true
+   },
+   "DEFA6": {
+    "official": true,
+    "loo": true
+   },
+   "OLFM4": {
+    "official": true,
+    "loo": true
+   },
+   "SPINK1": {
+    "official": true,
+    "loo": true
+   },
+   "LYZ": {
+    "official": false,
+    "loo": true
+   },
+   "REG3G": {
+    "official": false,
+    "loo": false
+   },
+   "PLA2G2A": {
+    "official": false,
+    "loo": false
+   },
+   "ITLN1": {
+    "official": false,
+    "loo": false
+   },
+   "MUC2": {
+    "official": true,
+    "loo": true
+   },
+   "TFF3": {
+    "official": false,
+    "loo": false
+   },
+   "FAP": {
+    "official": true,
+    "loo": true
+   },
+   "THBS2": {
+    "official": true,
+    "loo": true
+   },
+   "POSTN": {
+    "official": true,
+    "loo": true
+   },
+   "COL11A1": {
+    "official": true,
+    "loo": true
+   },
+   "INHBA": {
+    "official": true,
+    "loo": true
+   },
+   "ASPN": {
+    "official": true,
+    "loo": true
+   }
+  }
+ },
+ "auc_validation": {
+  "official": {
+   "GSE4183": 0.9111,
+   "GSE117606": 0.8417,
+   "GSE15960": 0.1111
+  },
+  "loo_without_macro": {
+   "GSE4183": 0.9022,
+   "GSE117606": 0.8477,
+   "GSE15960": 0.1667
+  }
+ }
+}

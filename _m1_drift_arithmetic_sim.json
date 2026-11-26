@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "method": "synthetic matrix (6000 genes, 6 vs 6 samples), B=200 noise trials; zmap_adj operator = subtract per-sample genome-wide mean; kappa=1 injects the real whole-tissue component means"
+ },
+ "results": {
+  "B1_null_uniform_offset": {
+   "kappa": 0,
+   "mean_up_delta": 0.0068,
+   "ci95": [
+    -0.0763,
+    0.0874
+   ],
+   "sd": 0.0436
+  },
+  "B2_kappa1_uniform_offset": {
+   "retention": 0.974,
+   "ci95": [
+    0.886,
+    1.043
+   ],
+   "amplification": 1.05
+  },
+  "B3a_stage_uniform_differential": {
+   "retention": 0.976,
+   "ci95": [
+    0.906,
+    1.041
+   ],
+   "amplification": 1.05
+  },
+  "B3b_signature_coupled_offset": {
+   "retention": 0.291,
+   "ci95": [
+    0.215,
+    0.365
+   ],
+   "amplification": 2.09,
+   "note": "the ONLY offset spectrum that reproduces 31.6%/2.04 arithmetically; requires UP/DN genes to be selectively depressed vs 5687 background genes - no technical mechanism targets signature membership, and such a spectrum would itself be the biological signal"
+  },
+  "B4_compositional_same_spectrum": {
+   "retention": 0.967,
+   "ci95": [
+    0.893,
+    1.038
+   ],
+   "amplification": 1.04
+  },
+  "anchor": {
+   "D_UP_W": 1.0,
+   "D_DN_W": -0.565,
+   "D_UP_L": 0.316,
+   "D_DN_L": -1.151,
+   "retention_obs": 0.316,
+   "amplification_obs": 2.04,
+   "residual_measured": 0.171,
+   "e_needed_for_31.6pct": -0.684
+  }
+ }
+}

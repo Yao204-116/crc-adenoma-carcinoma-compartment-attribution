@@ -715,6 +715,42 @@
   "vancouver": "Li J, Wang R, Zhou X, Wang W, Gao S, Mao Y, et al. Genomic and transcriptomic profiling of carcinogenesis in patients with familial adenomatous polyposis. Gut. 2020;69(7):1283-93."
  },
  {
+  "pmid": "18171984",
+  "journal_ta": "Mol Cancer Res",
+  "volume": "5",
+  "issue": "12",
+  "year": "2007",
+  "title": "Transcriptome profile of human colorectal adenomas",
+  "pages": "1263-75",
+  "artnum": "",
+  "doi": "10.1158/1541-7786.MCR-07-0267",
+  "authors": [
+   "Sabates-Bellver J",
+   "Van der Flier LG",
+   "de Palo M",
+   "Cattaneo E",
+   "Maake C",
+   "Rehrauer H",
+   "Laczko E",
+   "Kurowski MA",
+   "Bujnicki JM",
+   "Menigatti M",
+   "Luz J",
+   "Ranalli TV",
+   "Gomes V",
+   "Pastorelli A",
+   "Faggiani R",
+   "Anti M",
+   "Jiricny J",
+   "Clevers H",
+   "Marra G"
+  ],
+  "n_authors": 19,
+  "num": 27,
+  "intext": "Sabates-Bellver et al., 2007",
+  "vancouver": "Sabates-Bellver J, Van der Flier LG, de Palo M, Cattaneo E, Maake C, Rehrauer H, et al. Transcriptome profile of human colorectal adenomas. Mol Cancer Res. 2007;5(12):1263-75."
+ },
+ {
   "pmid": "19114008",
   "journal_ta": "BMC Bioinformatics",
   "volume": "9",
@@ -729,7 +765,7 @@
    "Horvath S"
   ],
   "n_authors": 2,
-  "num": 27,
+  "num": 28,
   "intext": "Langfelder & Horvath, 2008",
   "vancouver": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008;9:559."
  },
@@ -760,7 +796,7 @@
    "Ma'ayan A"
   ],
   "n_authors": 14,
-  "num": 28,
+  "num": 29,
   "intext": "Kuleshov et al., 2016",
   "vancouver": "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, et al. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res. 2016;44(W1):W90-7."
  },
@@ -785,7 +821,7 @@
    "Ma'ayan A"
   ],
   "n_authors": 8,
-  "num": 29,
+  "num": 30,
   "intext": "Chen et al., 2013",
   "vancouver": "Chen EY, Tan CM, Kou Y, Duan Q, Wang Z, Meirelles GV, et al. Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. BMC Bioinformatics. 2013;14:128."
  },
@@ -808,7 +844,7 @@
    "Tamayo P"
   ],
   "n_authors": 6,
-  "num": 30,
+  "num": 31,
   "intext": "Liberzon et al., 2015",
   "vancouver": "Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database (MSigDB) hallmark gene set collection. Cell Syst. 2015;1(6):417-25."
  },
@@ -840,7 +876,7 @@
    "Burke CA"
   ],
   "n_authors": 15,
-  "num": 31,
+  "num": 32,
   "intext": "Thiruvengadam et al., 2019",
   "vancouver": "Thiruvengadam SS, O'Malley M, LaGuardia L, Lopez R, Wang Z, Shadrach BL, et al. Gene Expression Changes Accompanying the Duodenal Adenoma-Carcinoma Sequence in Familial Adenomatous Polyposis. Clin Transl Gastroenterol. 2019;10(6):e00053."
  }

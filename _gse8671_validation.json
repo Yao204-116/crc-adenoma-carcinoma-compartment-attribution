@@ -1,0 +1,73 @@
+{
+ "meta": {
+  "gse": "GSE8671",
+  "gpl": "GPL570",
+  "n_genes": 21753,
+  "labels": {
+   "normal": 32,
+   "adenoma": 32
+  },
+  "design": "32 paired adenoma vs normal mucosa (Sabates-Bellver 2007, PMID 18171984); no carcinoma group",
+  "caliber": "undirected mean-z, drift-corrected (zmap_adj); AUC = P(adenoma > normal)"
+ },
+ "auc_adenoma_vs_normal": {
+  "signature_313": {
+   "n_genes": 313,
+   "auc": 0.1104
+  },
+  "UP_component": {
+   "n_genes": 210,
+   "auc": 0.123
+  },
+  "DN_component": {
+   "n_genes": 103,
+   "auc": 0.4697
+  },
+  "epi_diff_core8": {
+   "n_genes": 8,
+   "auc": 0.2646
+  },
+  "CAF_panel": {
+   "n_genes": 43,
+   "auc": 0.3896
+  },
+  "pure_epi_baseline7": {
+   "n_genes": 7,
+   "auc": 0.2012
+  }
+ },
+ "gene_direction": {
+  "UP_expected_up_frac": 0.2762,
+  "DN_expected_down_frac": 0.5631,
+  "genome_wise_up_frac_p0": 0.4468,
+  "n_up_tested": 210,
+  "n_dn_tested": 103,
+  "UP_vs_baseline_binom_P": 2.67e-07,
+  "DN_vs_baseline_binom_P": 0.46,
+  "spearman_delta_vs_meanlogFC": -0.1129,
+  "n_gene_corr": 313
+ },
+ "inhouse_reference": {
+  "GSE4183": {
+   "n_adenoma": 15,
+   "n_normal": 8,
+   "signature313": 0.517,
+   "UP": 0.55,
+   "DN": 0.483
+  },
+  "GSE117606": {
+   "n_adenoma": 59,
+   "n_normal": 65,
+   "signature313": 0.144,
+   "UP": 0.128,
+   "DN": 0.69
+  },
+  "GSE15960": {
+   "n_adenoma": 6,
+   "n_normal": 6,
+   "signature313": 0.722,
+   "UP": 0.694,
+   "DN": 0.667
+  }
+ }
+}

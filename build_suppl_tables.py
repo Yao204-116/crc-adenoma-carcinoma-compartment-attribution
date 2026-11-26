@@ -142,7 +142,7 @@ for panel, v in pt.items():
                rp['GSE15960'], ap['GSE15960'],
                v['raw_str'], v['adj_str'],
                'YES' if robust else 'no', fm])
-w_csv('S3_panel_pattern_matrix.csv', S3)
+w_csv('S5a_panel_pattern_matrix.csv', S3)
 
 sens = R('r3_sens_paneth.json')
 S3b = [['sub-panel', 'cohort', 'caliber', 'normal', 'adenoma', 'carcinoma',
@@ -172,7 +172,7 @@ for sub, cohorts in sens.items():
                         fig_en.panel_en(m.get('pattern', '')),
                         'yes' if (no is not None and ad is not None and ca is not None
                                   and no < ca and ca < ad) else 'no'])
-w_csv('S3b_paneth_sensitivity.csv', S3b)
+w_csv('S5b_paneth_sensitivity.csv', S3b)
 
 # ---------------------------------------------------------------- S4
 scan = R('sc161277_scan.json')
@@ -196,7 +196,7 @@ for s in scan:
     S4a.append([gsm, s['patient'], s['stage'], s['n_cells_raw'], s['n_cells_qc'],
                 round(100 * s['n_cells_qc'] / s['n_cells_raw'], 1),
                 s['median_umi'], n_epi, pct, inc, note])
-w_csv('S4a_sc161277_sample_QC.csv', S4a)
+w_csv('S3a_sc161277_sample_QC.csv', S4a)
 
 S4b = [['patient', 'transition', 'signature',
         'T_start', 'T_end', 'U_start', 'U_end', 'P_start', 'P_end',
@@ -221,7 +221,7 @@ for x in pairs['decomp']:
                 round(dT - denom, 4),
                 share_p, share_u,
                 dec, dom])
-w_csv('S4b_sc161277_decomposition.csv', S4b)
+w_csv('S3b_sc161277_decomposition.csv', S4b)
 
 # ---------------------------------------------------------------- S5
 # 四队列逐队列性能表（R1 ¶4 引用；口径 = GSE117606 as-annotated 69 例）
@@ -250,7 +250,7 @@ for coh, v in fc.items():
                round(v['gene_dir_concordance'], 3), v['n_tested'],
                round(v['adenoma_vs_normal_auc']['signature'], 3),
                NOTE.get(coh, '')])
-w_csv('S5_four_cohort_performance.csv', S5)
+w_csv('S4_four_cohort_performance.csv', S5)
 
 # ---------------------------------------------------------------- XLSX
 from openpyxl import Workbook
@@ -285,13 +285,13 @@ def add_sheet(title, rows, widths=None, freezes='A2'):
 add_sheet('S1_313gene_attribution', S1,
           [11, 8, 11, 11, 12, 13, 13, 11, 9, 8, 10, 26, 42])
 add_sheet('S2_panel_membership', S2, [26, 9, 14, 12, 22])
-add_sheet('S3_panel_pattern_matrix', S3,
+add_sheet('S5a_panel_pattern_matrix', S3,
           [24, 8, 13, 18, 14, 19, 15, 20, 11, 12, 14, 40])
-add_sheet('S3b_paneth_sensitivity', S3b, [22, 12, 9, 10, 10, 11, 10, 16])
-add_sheet('S4a_sample_QC', S4a, [13, 11, 13, 11, 12, 11, 12, 11, 12, 20, 40])
-add_sheet('S4b_decomposition', S4b,
+add_sheet('S5b_paneth_sensitivity', S3b, [22, 12, 9, 10, 10, 11, 10, 16])
+add_sheet('S3a_sample_QC', S4a, [13, 11, 13, 11, 12, 11, 12, 11, 12, 20, 40])
+add_sheet('S3b_decomposition', S4b,
           [11, 20, 22, 9, 9, 9, 9, 9, 9, 9, 9, 9, 16, 14, 12, 24, 20])
-add_sheet('S5_four_cohort_performance', S5, [12, 10, 34, 9, 10, 11, 13, 15, 16, 15, 12, 15, 70])
+add_sheet('S4_four_cohort_performance', S5, [12, 10, 34, 9, 10, 11, 13, 15, 16, 15, 12, 15, 70])
 xlsx = os.path.join(OUT, 'Supplementary_Tables_S1-S5.xlsx')
 wb.save(xlsx)
 
@@ -307,9 +307,9 @@ print('S3 robust 面板:', [r[0] for r in S3[1:] if r[10] == 'YES'])
 CJK = re.compile(r"[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]")
 bad = []
 for name in ['S1_313gene_attribution.csv', 'S2_panel_gene_membership.csv',
-             'S3_panel_pattern_matrix.csv', 'S3b_paneth_sensitivity.csv',
-             'S4a_sc161277_sample_QC.csv', 'S4b_sc161277_decomposition.csv',
-             'S5_four_cohort_performance.csv']:
+             'S5a_panel_pattern_matrix.csv', 'S5b_paneth_sensitivity.csv',
+             'S3a_sc161277_sample_QC.csv', 'S3b_sc161277_decomposition.csv',
+             'S4_four_cohort_performance.csv']:
     s = open(os.path.join(OUT, name), encoding='utf-8-sig').read()
     hit = sorted(set(CJK.findall(s)))
     if hit:

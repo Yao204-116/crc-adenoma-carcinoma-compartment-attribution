@@ -1,0 +1,23 @@
+{
+ "GSE4183": {
+  "n_adenoma": 15,
+  "n_normal": 8,
+  "signature313": 0.517,
+  "UP": 0.55,
+  "DN": 0.483
+ },
+ "GSE117606": {
+  "n_adenoma": 59,
+  "n_normal": 65,
+  "signature313": 0.144,
+  "UP": 0.128,
+  "DN": 0.69
+ },
+ "GSE15960": {
+  "n_adenoma": 6,
+  "n_normal": 6,
+  "signature313": 0.722,
+  "UP": 0.694,
+  "DN": 0.667
+ }
+}

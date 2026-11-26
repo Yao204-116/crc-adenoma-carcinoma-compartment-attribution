@@ -11,7 +11,9 @@ SRC = os.path.dirname(os.path.abspath(__file__))
 DST = os.path.join(SRC, "repo")
 
 # ---------------------------------------------------------------- 清单
-# 分析脚本（Stage A–I，扁平放置，保持脚本间的相对路径引用有效）
+# 分析脚本（Stage A–J，扁平放置，保持脚本间的相对路径引用有效）
+# ★ v1.0.5 追加 M12 的 9 个脚本（bootstrap/置换/doublet/SVA/LOO/CAMERA/
+#   漂移算术模拟/GSE8671 验证及其下载器）——稿件 M12 引用的每个数字可溯源。
 SCRIPTS = """consensus_signature sig_validate drift_diag lcm_diag three_layer_check r3_sens_paneth r3_facts
 sc161277_scan sc161277_pairs sc303070_compo sc303070_compo2 sc303070_compo3 sc303070_niche
 enrichr_dual gse117606_paired build_suppl_tables make_figs make_figs_sc make_figS1 make_figS3
@@ -19,7 +21,10 @@ geo_dl geo_dl2 dl_ebi dl_loop dl_persist sc161277_dl_final gse303070_probe gse30
 build_bmc_manuscript _fetch_bmc_refs verify_bmc gen_bmc_readiness make_upload_package
 make_repo push_github push_via_api preflight_release
 fill_author_metadata
-fig_en check_fig_english""".split()
+fig_en check_fig_english
+_supp_bootstrap_auc_ci _supp_permutation _supp_doublet _supp_sva_sensitivity
+_loo_macro_sensitivity _cam_gene_correlation_test _m1_drift_arithmetic_sim
+_gse8671_validation _dl_gse8671_v5_soft""".split()
 # ★ fig_en 是**必须**进仓库的：它是显示名的唯一英文映射，
 #   make_figs* / build_suppl_tables 都 import 它；缺了它复现链直接断。
 # ★ push_via_api 是 push_github 的兜底：github.com:443 被阻断而 api.github.com 可达时用。
@@ -29,12 +34,18 @@ fig_en check_fig_english""".split()
 # 落盘的中间产物（数字来源，供复算核对）
 # ★ collide_results.json 由 collide_all.py 生成、manuscript_facts.py 收拢成 FACTS['collide']，
 #   但一直没打包 —— 于是重跑 manuscript_facts.py 会得到一份缺 collide 块的版本。
+# ★ v1.0.5：M12 各分析的落盘结果追加在字符串尾部（+ 患者构成/内部校准两个辅助 json）
+#   注意：MIDDLE 是 .split() 字符串，# 不是注释，不能写在字符串内部。
 MIDDLE = """panels_def.json suppl_table1_313genes.csv manuscript_facts.json r3_facts.json
 r3_sens_paneth.json three_layer_pattern.json three_layer_results.json sc161277_scan.json
 sc161277_pairs.json drift_diag.json sc303070_niche.json sc303070_composition_final.json
 gse117606_paired_results.json enrichr_results.json consensus_all.csv consensus_core.csv
 consensus_summary.json _bmc_references.json collide_results.json
-final_panel_matrix.csv""".split()
+final_panel_matrix.csv
+_cam_gene_correlation_test.json _m1_drift_arithmetic_sim.json _supp_bootstrap_auc_ci.json
+_supp_permutation.json _supp_doublet.json _supp_sva_sensitivity.json
+_loo_macro_sensitivity.json _gse8671_validation.json _gse109308_composition.json
+_adenoma_vs_normal_inhouse.json""".split()
 
 # ★ 复现链上被遗漏的输入（2026-10-21 第三方复现验证发现）。
 #   consensus_signature_tier.csv       —— sig_validate 的签名输入
@@ -56,7 +67,9 @@ final_panel_matrix.csv""".split()
 #   这几个原来都没进仓库，导致对应 Stage 在别人机器上 FileNotFoundError 或结果不同。
 EXTRA = ["consensus_signature_tier.csv", "manuscript_facts.py",
          "epithelial_core_genes.json", "stromal_layer_genes.json",
-         "cohort_hunt2.py", "gpl_soft_map.py"]
+         "cohort_hunt2.py", "gpl_soft_map.py",
+         # ★ v1.0.5：M12 稳健性图（脚本直接输出到源目录根部，make_figs 不产它们）
+         "figS_drift_arithmetic.png", "figS_sva_sensitivity.png"]
 
 # 三个额外队列的 DEG 结果（Stage A 输入之一）
 DEG3 = ["GSE37364_DEG_Carcinoma_vs_Adenoma.csv",
@@ -70,6 +83,8 @@ UPSTREAM = [
     ("D:/2/02.WGCNA/WGCNA_top_module_genes.csv", "upstream_r/02.WGCNA"),
     ("D:/2/03.enrich/gene_Tumor_vs_Polyp.csv", "upstream_r/03.enrich"),
     ("D:/2/03.enrich/Hub_Tumor_vs_Polyp.csv", "upstream_r/03.enrich"),
+    # ★ v1.0.5：_cam_gene_correlation_test.py 的模块归属输入
+    ("D:/2/02.WGCNA/gene_module_assignment.csv", "upstream_r/02.WGCNA"),
 ]
 
 TREES = ["figs", "suppl"]
@@ -84,7 +99,7 @@ TREE_EXCLUDE = {"Supplementary_Tables_S1-S5索引.html"}
 # 这样本脚本可以整体重跑而不会丢掉它们。
 ASSETS_DIR = "_repo_assets"
 ASSETS = ["README.md", "LICENSE", "REQUIREMENTS.txt", ".gitignore",
-          ".zenodo.json", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
+          ".zenodo.json", "RELEASE_NOTES_v1.0.5.md", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
 
 copied, missing, skipped = [], [], []
 
@@ -144,7 +159,7 @@ for a in ASSETS:
 #   RELEASE_NOTES_v1.0.3.md 里有同一句 `git clone <REPO_URL>`，而它正是贴进
 #   GitHub release 正文的那段文字 —— 只填 README 会让 release 页面公开发布
 #   一个裸占位符（实测漏网，由 preflight_release.py 兜住）。
-FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
+FILL_FILES = ["README.md", "RELEASE_NOTES_v1.0.5.md", "RELEASE_NOTES_v1.0.4.md", "RELEASE_NOTES_v1.0.3.md"]
 
 
 def _doi_url(v):

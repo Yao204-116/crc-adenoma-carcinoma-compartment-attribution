@@ -64,53 +64,55 @@ NARRATIVE = {s: n for (s, y), n in CITE_NUM.items() if s in _NARR_SURNAMES}
 ABSTRACT = {
     "Background": (
         "Expression differences between colorectal adenomas and carcinomas are measured in "
-        "whole tissue, where epithelial, stromal and immune cells are pooled. Such a difference may "
-        "reflect altered cell abundance, altered "
-        "state of a given cell type, or both, and its direction can depend on how much "
-        "epithelium the specimen contains. We asked which source carries each component of "
-        "that difference, and whether the attribution survives a change of resolution."
+        "whole tissue, which pools epithelial, stromal and immune cells. Such a difference may "
+        "reflect altered cell abundance, altered cell state, or both, and its direction can "
+        "depend on epithelial content. We asked which source carries each component, and "
+        "whether the attribution survives a change of resolution."
     ),
     # ★ 2026-11-22：摘要改四段式（BMC Genomics 实文两种格式均可，带 Methods 是常见形态）。
     #   这两句从 Results 迁出，等词数移动，总数不变。
     "Methods": (
         "We derived a 313-gene transition signature from four cohorts and scored it at three "
         "resolutions, each fixing one term of the composition-state relationship: whole "
-        "tissue; laser-capture-microdissected epithelium (6 adenomas, 6 carcinomas, "
-        "6 normals); and patient-matched single cells (three triads, 13 libraries, 54,782 "
-        "cells). A pattern counted only if it reproduced in all three cohorts under two "
+        "tissue; laser-capture microdissected epithelium (6 samples "
+        "per stage); and patient-matched single cells (3 triads, 13 libraries, 54,782 "
+        "cells). A pattern was counted only if it reproduced in all three cohorts and both "
         "calibers."
     ),
     "Results": (
         "In purified epithelium "
         "the up-regulated component retained only 31.6% of its whole-tissue amplitude "
-        "(58.6% gene concordance; <i>P</i> = 0.016 against 50%), whereas the down-regulated component was "
-        "amplified 2.04-fold (93.2%). The increase is therefore compositional (stromal and "
+        "(48.7% counting the residual offset in full), whereas the down-regulated component was "
+        "amplified 2.04-fold (93.2%). The increase is compositional (stromal and "
         "myeloid) and the decrease is epithelial-intrinsic. The composite score does not "
         "transfer: AUC 0.84 and 0.91 in the two whole-tissue cohorts, 0.11 in "
-        "epithelium-only samples, a reversal of ordering rather than a loss of signal. Scored "
-        "directionally, the same genes keep their orientation. Of thirteen "
+        "epithelium-only samples, a reversal of ordering, not a loss of signal. Scored "
+        "directionally, the same genes retain their direction. Of 13 "
         "cell-programme panels, only "
-        "the Paneth-cell programme (DEFA5, DEFA6, OLFM4, SPINK1) peaked at adenoma in all "
-        "three cohorts and persisted in epithelium-only samples. Single-cell decomposition "
-        "attributed that peak to per-cell state rather than abundance: 58% of the summed "
-        "component change in one patient, a negative composition term in the other. DEFA6 "
+        "the Paneth-cell programme (DEFA5, DEFA6, OLFM4, SPINK1) peaked at the adenoma stage in all "
+        "three cohorts and persisted in epithelium-only samples. One of four validation "
+        "cohorts did not reproduce the contrast, as detailed in Results. "
+        "Single-cell decomposition "
+        "attributed that peak to per-cell state rather than abundance: the state term "
+        "dominated in both interpretable patients, with the composition term positive in "
+        "one and negative in the other. DEFA6 "
         "was higher in adenoma than in both matched normal and carcinoma in 6/6 pairs. Both "
         "negative controls behaved as designed: a pure-epithelial baseline panel showed no "
-        "paired shift (28/56 matched pairs, 50.0%, <i>P</i> = 0.70), and a peripheral-blood "
+        "paired shift (28/56 pairs, 50.0%, <i>P</i> = 0.70), and a peripheral-blood "
         "library yielded no epithelial cells."
     ),
     "Conclusions": (
-        "Attribution, not the raw difference, is what carries across specimens. A signature "
+        "Attribution, not the uncorrected difference, is what carries across specimens. A signature "
         "with oppositely directed components must be decomposed before comparison across "
         "specimens that differ in epithelial content, or a real signal becomes a reversed "
         "one. Once decomposed, the tissue-level increase is largely compositional, whereas "
-        "the adenoma-stage peak is epithelial-intrinsic and set by per-cell state rather "
-        "than cell number."
+        "the adenoma-stage peak is epithelial-intrinsic and set by per-cell state, "
+        "not cell number."
     ),
 }
 
 KEYWORDS = [
-    "colorectal adenoma-carcinoma sequence", "laser-capture microdissection",
+    "colorectal adenoma–carcinoma sequence", "laser-capture microdissection",
     "single-cell RNA sequencing", "cell composition", "cell state",
     "Paneth cell", "defensin", "transcriptional signature",
 ]
@@ -122,7 +124,7 @@ ABBREVIATIONS = [
     ("CAF", "cancer-associated fibroblast"),
     ("DEFA5/DEFA6", "defensin alpha 5 / defensin alpha 6"),
     ("EMT", "epithelial-mesenchymal transition"),
-    ("FAP", "familial adenomatous polyposis"),
+    ("FAP", "familial adenomatous polyposis; the gene symbol FAP denotes fibroblast activation protein"),
     ("FOV", "field of view"),
     ("GEO", "Gene Expression Omnibus"),
     ("GSE", "GEO Series accession"),
@@ -146,7 +148,7 @@ ABBREVIATIONS = [
 #    （BMC 推荐 GitHub 代码用 Zenodo 归档取得 DOI）
 #  · 不允许只写 "available from the corresponding author on reasonable request"
 GEO_BASE = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc="
-GEO_ACCESSED = "22 October 2026"
+GEO_ACCESSED = "26 November 2026"
 
 # ---- Code availability 的单一数据源 -------------------------------------
 # 仓库 URL / Zenodo DOI / 许可 / R 版本只在 `code_availability.json` 里维护一份，
@@ -389,12 +391,12 @@ ADDITIONAL_ITEMS = [
      "Gene-set membership of the panels and the two consensus components.",
      "Gene lists for the 17 curated panels, the up- and down-regulated consensus components, "
      "and the 545 WGCNA intramodular hub genes."),
-    ("T4", "Supplementary Table S4", "Table S4", ".xlsx, .csv",
+    ("T4", "Supplementary Table S3", "Table S3", ".xlsx, .csv",
      "Single-cell quality control and composition/state decomposition (GSE161277).",
      "Sub-table a: per-sample QC (raw and post-QC cell counts, epithelial fraction). "
      "Sub-table b: delta-log P, delta-log U and delta-log T for the Paneth signature per "
-     "patient, with the decidable flag."),
-    ("T5", "Supplementary Table S5", "Table S5", ".xlsx, .csv",
+     "patient, with a per-patient flag indicating whether the pattern is unambiguous."),
+    ("T5", "Supplementary Table S4", "Table S4", ".xlsx, .csv",
      "Four-cohort performance of the signature.",
      "Per-cohort AUC, same-direction concordance and platform annotation for each panel and "
      "scoring caliber; includes the GSE128435 exclusion record."),
@@ -404,13 +406,13 @@ ADDITIONAL_ITEMS = [
      "sample-level correction."),
     ("F2", "Fig. S2", "Figure S2", ".png, .pdf",
      "Dual-caliber screening matrix (13 panels x 3 cohorts x 2 calibers).",
-     "Pattern label (P / D / A / ?) of each panel in each cohort under the raw and the "
+     "Pattern label (P / D / A / ?) of each panel in each cohort under the uncorrected and the "
      "drift-corrected caliber."),
     ("F3", "Fig. S3", "Figure S3", ".png, .pdf",
      "GSE303070 (CosMx spatial atlas) cannot serve as an unbiased composition baseline.",
      "Field-of-view sampling composition and paired-donor epithelial fractions, showing "
      "selection of epithelium-rich fields."),
-    ("T3", "Supplementary Table S3", "Table S3", ".xlsx, .csv",
+    ("T3", "Supplementary Table S5", "Table S5", ".xlsx, .csv",
      "Three-layer pattern matrix and sensitivity analysis.",
      "Sub-table a: pattern label of each panel across the three cohorts under both calibers. "
      "Sub-table b: DEFA5+DEFA6 and DEFA5/DEFA6/OLFM4/SPINK1 sensitivity results."),
@@ -425,7 +427,7 @@ def unify_additional_refs(body):
     # 三层模式表（原 Table S3）此前只在 Fig. 6 图注里被引用；BMC 要求"cited ... within
     # the main body of text"，故在三层模式句补一处正文引用（图号已在此前完成重排，故用 Fig. 6）。
     body = body.replace("(Fig. 6; Fig. S2):",
-                        "(Fig. 6; Fig. S2; Supplementary Table S3):", 1)
+                        "(Fig. 6; Fig. S2; Supplementary Table S5):", 1)
 
     # 只在正文（Background → 附加文件清单之前）内统计首见序
     lo = body.find("Background</h2>")
@@ -440,10 +442,10 @@ def unify_additional_refs(body):
     num = {k: i + 1 for i, (_, k) in enumerate(order)}
 
     # 先处理带子表后缀的形式，避免 "S4" 误吃 "S4b"
-    body = body.replace("Supplementary Table S4a",
-                        f"Additional file {num['T4']} (sub-table a)")
-    body = body.replace("Supplementary Table S4b",
-                        f"Additional file {num['T4']} (sub-table b)")
+    body = body.replace("Supplementary Table S3a",
+                        f"Additional file {num['T4']}, sub-table a")
+    body = body.replace("Supplementary Table S3b",
+                        f"Additional file {num['T4']}, sub-table b")
     # 通用替换
     for key, marker, *_ in ADDITIONAL_ITEMS:
         body = body.replace(marker, f"Additional file {num[key]}")
@@ -670,19 +672,7 @@ INTERNAL_FIXES = [
     ("see Methods M10", "see Methods"),
     ("listed in M1", "listed in the Methods"),
     ("listed in the Methods (M1)", "listed in the Methods"),
-    # Methods 里原有一份与 Declarations 重复的可用性声明；收口为指向 Declarations 的短句
-    ("All datasets analysed here are publicly available from the NCBI Gene Expression "
-     "Omnibus under the accessions listed in the Methods; no new data were generated. "
-     "Analysis scripts, intermediate summary tables and the per-gene attribution table "
-     "are available as Supplementary Files and, upon publication, from the corresponding "
-     "repository. The signature gene list, the per-gene attribution table (313 genes "
-     "&times; 15 columns), the panel-by-cohort discrimination matrix and the single-cell "
-     "decomposition table are provided as Supplementary Tables S1&ndash;S5.",
-     "All datasets analysed here are publicly available from the NCBI Gene Expression "
-     "Omnibus (GEO) under the accessions listed in the Availability of data and materials "
-     "section; no new data were generated. The derived tables and the analysis code are "
-     "provided as additional files and in the code repository, as detailed in the "
-     "Availability of data and materials section.")
+
 ]
 
 # R5 两处前人工作论断原本无角标；经 PubMed 核实与已引文献逐字对应，补上编号
@@ -904,8 +894,7 @@ def main():
 R2_HEAD = ("Laser-capture microdissection assigns the tissue-level increase to stromal "
            "and myeloid composition")
 R3_HEAD = "A three-layer pattern with a robust adenoma-stage Paneth-cell peak"
-R5_HEAD = ("An independent spatial atlas cannot serve as a composition benchmark, and "
-           "relation to previous work")
+R5_HEAD = "An independent spatial atlas cannot serve as a composition benchmark"
 
 
 def add_results_headings(html):

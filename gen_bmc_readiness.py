@@ -120,10 +120,10 @@ def af_upload(a):
 
 # 原内部编号（人工对照，用于说明"AF 号 ≠ S 号"的原因）
 AF_SRC = {1: "suppl/S1_313gene_attribution.csv", 2: "suppl/S2_panel_gene_membership.csv",
-          3: "suppl/S4a/S4b_sc161277_*.csv", 4: "suppl/S5_four_cohort_performance.csv",
+          3: "suppl/S4a/S4b_sc161277_*.csv", 4: "suppl/S4_four_cohort_performance.csv",
           5: "figs/figS1_drift_diagnostics.png",
           6: "figs/figS2_double_caliber_screening_matrix.png",
-          7: "suppl/S3_panel_pattern_matrix.csv + S3b_paneth_sensitivity.csv",
+          7: "suppl/S5a_panel_pattern_matrix.csv + S5b_paneth_sensitivity.csv",
           8: "figs/figS3_GSE303070_sampling_bias.png"}
 
 AF_ROWS = "".join(

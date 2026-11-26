@@ -177,7 +177,7 @@ def fig3():
               fontsize=9.5, ncol=2, loc="upper left")
     ax.set_title(fig_en.wrap(
         "Figure 3  2×2 decomposition (per-gene retention of the carcinoma−adenoma gap): "
-        "the up-component decays to 0.32× (58.6% concordant), the down-component is amplified "
+        "the up-component decays to 0.316× (58.6% concordant), the down-component is amplified "
         "2.04× (93.2% concordant)", 11.2, 11.5),
         fontsize=11.5, fontweight="bold", pad=12)
     fig.tight_layout()
@@ -340,10 +340,10 @@ def fig6():
     ax.set_yticks(list(ys))
     ax.set_yticklabels([fig_en.panel_en(k) for k, _ in items], fontsize=10)
     ax.set_xlim(0, 100)
-    ax.set_xlabel("Same-direction proportion (%) across 56 matched patient pairs (adenoma → carcinoma)", fontsize=10.5)
+    ax.set_xlabel("Proportion of pairs moving upward (%) across 56 matched patient pairs (adenoma → carcinoma)", fontsize=10.5)
     ax.grid(axis="x", alpha=0.25, lw=0.6)
     ax.set_title("Figure 2  Paired design (age, sex, germline background and sampling batch held fixed):\n"
-                 "stromal activation 94.6% concordant, epithelial differentiation only 14.3% concordant",
+                 "stromal activation and the whole signature rise in 53/56 pairs, epithelial differentiation in only 8/56",
                  fontsize=12, fontweight="bold", pad=12)
     fig.tight_layout()
     save(fig, "fig2_56_pair_concordance.png")

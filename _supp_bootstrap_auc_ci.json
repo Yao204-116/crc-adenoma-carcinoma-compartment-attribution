@@ -1,0 +1,190 @@
+{
+ "meta": {
+  "B": 3000,
+  "seed": 20261123,
+  "caliber": "undirected mean-z, drift-corrected (zmap_adj); AUC = P(carcinoma > adenoma), orientation fixed by the data (no max-flip)",
+  "note": "z / drift-correction computed once on the full cohort (incl. normals); bootstrap resamples adenoma and carcinoma specimens with replacement within group"
+ },
+ "results": [
+  {
+   "cohort": "GSE4183",
+   "kind": "全组织",
+   "gene_set": "signature_313",
+   "n_adenoma": 15,
+   "n_carcinoma": 15,
+   "n_genes": 313,
+   "auc_point": 0.9111,
+   "ci95_low": 0.7911,
+   "ci95_high": 0.9867,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE4183",
+   "kind": "全组织",
+   "gene_set": "UP_component",
+   "n_adenoma": 15,
+   "n_carcinoma": 15,
+   "n_genes": 210,
+   "auc_point": 0.9156,
+   "ci95_low": 0.8044,
+   "ci95_high": 0.9911,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE4183",
+   "kind": "全组织",
+   "gene_set": "DN_component",
+   "n_adenoma": 15,
+   "n_carcinoma": 15,
+   "n_genes": 103,
+   "auc_point": 0.3511,
+   "ci95_low": 0.16,
+   "ci95_high": 0.5511,
+   "ci_contains_0.5": true
+  },
+  {
+   "cohort": "GSE4183",
+   "kind": "全组织",
+   "gene_set": "pure_epi_baseline7",
+   "n_adenoma": 15,
+   "n_carcinoma": 15,
+   "n_genes": 7,
+   "auc_point": 0.5556,
+   "ci95_low": 0.3333,
+   "ci95_high": 0.76,
+   "ci_contains_0.5": true
+  },
+  {
+   "cohort": "GSE4183",
+   "kind": "全组织",
+   "gene_set": "epi_diff_core8",
+   "n_adenoma": 15,
+   "n_carcinoma": 15,
+   "n_genes": 8,
+   "auc_point": 0.5467,
+   "ci95_low": 0.3289,
+   "ci95_high": 0.7644,
+   "ci_contains_0.5": true
+  },
+  {
+   "cohort": "GSE117606",
+   "kind": "全组织",
+   "gene_set": "signature_313",
+   "n_adenoma": 59,
+   "n_carcinoma": 74,
+   "n_genes": 294,
+   "auc_point": 0.8417,
+   "ci95_low": 0.7691,
+   "ci95_high": 0.9118,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE117606",
+   "kind": "全组织",
+   "gene_set": "UP_component",
+   "n_adenoma": 59,
+   "n_carcinoma": 74,
+   "n_genes": 195,
+   "auc_point": 0.9114,
+   "ci95_low": 0.8564,
+   "ci95_high": 0.959,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE117606",
+   "kind": "全组织",
+   "gene_set": "DN_component",
+   "n_adenoma": 59,
+   "n_carcinoma": 74,
+   "n_genes": 99,
+   "auc_point": 0.1042,
+   "ci95_low": 0.0499,
+   "ci95_high": 0.1649,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE117606",
+   "kind": "全组织",
+   "gene_set": "pure_epi_baseline7",
+   "n_adenoma": 59,
+   "n_carcinoma": 74,
+   "n_genes": 5,
+   "auc_point": 0.4734,
+   "ci95_low": 0.3756,
+   "ci95_high": 0.5694,
+   "ci_contains_0.5": true
+  },
+  {
+   "cohort": "GSE117606",
+   "kind": "全组织",
+   "gene_set": "epi_diff_core8",
+   "n_adenoma": 59,
+   "n_carcinoma": 74,
+   "n_genes": 8,
+   "auc_point": 0.1569,
+   "ci95_low": 0.096,
+   "ci95_high": 0.2284,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE15960",
+   "kind": "LCM 纯上皮",
+   "gene_set": "signature_313",
+   "n_adenoma": 6,
+   "n_carcinoma": 6,
+   "n_genes": 313,
+   "auc_point": 0.1111,
+   "ci95_low": 0.0,
+   "ci95_high": 0.3333,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE15960",
+   "kind": "LCM 纯上皮",
+   "gene_set": "UP_component",
+   "n_adenoma": 6,
+   "n_carcinoma": 6,
+   "n_genes": 210,
+   "auc_point": 0.8889,
+   "ci95_low": 0.5833,
+   "ci95_high": 1.0,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE15960",
+   "kind": "LCM 纯上皮",
+   "gene_set": "DN_component",
+   "n_adenoma": 6,
+   "n_carcinoma": 6,
+   "n_genes": 103,
+   "auc_point": 0.0,
+   "ci95_low": 0.0,
+   "ci95_high": 0.0,
+   "ci_contains_0.5": false
+  },
+  {
+   "cohort": "GSE15960",
+   "kind": "LCM 纯上皮",
+   "gene_set": "pure_epi_baseline7",
+   "n_adenoma": 6,
+   "n_carcinoma": 6,
+   "n_genes": 7,
+   "auc_point": 0.7778,
+   "ci95_low": 0.4444,
+   "ci95_high": 1.0,
+   "ci_contains_0.5": true
+  },
+  {
+   "cohort": "GSE15960",
+   "kind": "LCM 纯上皮",
+   "gene_set": "epi_diff_core8",
+   "n_adenoma": 6,
+   "n_carcinoma": 6,
+   "n_genes": 8,
+   "auc_point": 0.0,
+   "ci95_low": 0.0,
+   "ci95_high": 0.0,
+   "ci_contains_0.5": false
+  }
+ ]
+}

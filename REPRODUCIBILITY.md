@@ -44,10 +44,14 @@ All raw data are pre-existing and public. Accessions, with permanent identifier:
 | GSE128435 | Screened then **excluded** (composition-confounded); recorded for completeness | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128435 |
 | GSE161277 | Single-cell cohort (normal → adenoma → carcinoma) | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161277 |
 | GSE303070 | CosMx spatial atlas — used only as a descriptive counter-example | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303070 |
+| GSE109308 | Single-cell cohort (FAP and sporadic, normal/adenoma/carcinoma); used for the patient-composition counts | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109308 |
+| GSE8671 | Independent paired endoscopic biopsies (32 patients, normal vs adenoma); robustness cohort of the Methods section | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE8671 |
 
-All URLs accessed 16 October 2026. Acquisition helpers: `geo_dl.py`, `geo_dl2.py`,
+All URLs accessed 26 November 2026. Acquisition helpers: `geo_dl.py`, `geo_dl2.py`,
 `dl_ebi.py` / `dl_loop.py` / `dl_persist.py` (ArrayExpress mirrors), `sc161277_dl_final.py`
-(single-cell), `gse303070_probe.py` / `gse303070_tissue.py` (spatial).
+(single-cell), `gse303070_probe.py` / `gse303070_tissue.py` (spatial),
+`_dl_gse8671_v5_soft.py` (GSE8671 series-matrix server copy is corrupted upstream;
+the helper reads the SOFT family file instead, 42 MB).
 
 ---
 
@@ -110,12 +114,16 @@ build_suppl_tables.py
             upstream_r/03.enrich/Hub_Tumor_vs_Polyp.csv       (see §5)
     writes: suppl/S1_313gene_attribution.csv
             suppl/S2_panel_gene_membership.csv
-            suppl/S3_panel_pattern_matrix.csv
-            suppl/S3b_paneth_sensitivity.csv
-            suppl/S4a_sc161277_sample_QC.csv
-            suppl/S4b_sc161277_decomposition.csv
-            suppl/S5_four_cohort_performance.csv
+            suppl/S5a_panel_pattern_matrix.csv
+            suppl/S5b_paneth_sensitivity.csv
+            suppl/S3a_sc161277_sample_QC.csv
+            suppl/S3b_sc161277_decomposition.csv
+            suppl/S4_four_cohort_performance.csv
             suppl/Supplementary_Tables_S1-S5.xlsx
+The S-numbers of the shipped file names are the table numbers printed in the
+manuscript (Table S3 = single-cell a/b, S4 = four-cohort performance,
+S5 = three-layer pattern a/b); the previous internal numbering was re-mapped
+when the manuscript re-labelled its supplementary tables.
 ```
 
 ### Stage H — figures
@@ -147,8 +155,46 @@ Figure numbers follow first-mention order in the manuscript.  The file names und
 ```
 build_bmc_manuscript.py   ->  Manuscript_BMC_Genomics_投稿版.html   (BMC Genomics format)
 _fetch_bmc_refs.py        ->  _bmc_references.json                   (Vancouver, re-fetched authors)
-verify_bmc.py             ->  21-point compliance self-check (all pass)
+verify_bmc.py             ->  31-point compliance self-check (all pass)
 gen_bmc_readiness.py      ->  BMC投稿准备报告_BMC_Genomics.html
+```
+
+### Stage J — robustness and sensitivity analyses (Methods, "Robustness and sensitivity")
+```
+_supp_bootstrap_auc_ci.py        bootstrap CIs (B = 3000) for the headline AUCs
+                                 reads: consensus_signature_tier.csv
+                                 writes: _supp_bootstrap_auc_ci.json
+_supp_permutation.py             sample-level label permutation of the component means
+                                 reads: suppl_table1_313genes.csv, gse117606_paired_results.json
+                                 writes: _supp_permutation.json
+_cam_gene_correlation_test.py    module-block sign-flip + VIF inflation ( CAMERA-style );
+                                 the sample-level permutation it defers to is _supp_permutation.py
+                                 reads: suppl_table1_313genes.csv,
+                                        upstream_r/02.WGCNA/gene_module_assignment.csv  (see §5)
+                                 writes: _cam_gene_correlation_test.json
+_supp_doublet.py                 doublet sensitivity of the single-cell decomposition
+                                 reads: sc161277_scan.json + the 10x cache (§9.2)
+                                 writes: _supp_doublet.json
+_supp_sva_sensitivity.py         SVA-lite orthogonalisation sensitivity
+                                 reads: consensus_signature_tier.csv, final_panel_matrix.csv,
+                                        suppl_table1_313genes.csv
+                                 writes: _supp_sva_sensitivity.json, figS_sva_sensitivity.png
+_loo_macro_sensitivity.py        leave-one-cohort-out stability of the consensus signature
+                                 reads: 02.result/*.csv, consensus_signature_tier.csv
+                                 writes: _loo_macro_sensitivity.json
+_m1_drift_arithmetic_sim.py      arithmetic simulation of the drift-correction absorption claim
+                                 reads: suppl_table1_313genes.csv
+                                 writes: _m1_drift_arithmetic_sim.json, figS_drift_arithmetic.png
+_gse8671_validation.py           independent validation on GSE8671 (cohort-level signature AUC,
+                                 paired internal controls, direction-of-change fractions)
+                                 reads: consensus_signature_tier.csv, GSE8671_family.soft.gz (§9.2),
+                                        _adenoma_vs_normal_inhouse.json
+                                 writes: _gse8671_validation.json
+_dl_gse8671_v5_soft.py           fetch GSE8671_family.soft.gz (the series-matrix copy on the
+                                 NCBI server is corrupted at a fixed byte offset)
+_gse109308_composition.json      patient x tissue composition counts read off the GSE109308
+                                 SOFT record (7 donors contribute adenoma; the "FAP Patient N"
+                                 and "Patient N" labels are one donor)
 ```
 
 ---
@@ -163,7 +209,7 @@ python make_figS1.py           # -> figs/figS1_drift_diagnostics.png
 # Additional file 7 (Table S3) — three-layer pattern matrix
 python three_layer_check.py    # -> three_layer_pattern.json, three_layer_results.json
 python r3_sens_paneth.py       # -> r3_sens_paneth.json
-python build_suppl_tables.py   # -> suppl/S3_panel_pattern_matrix.csv, S3b_paneth_sensitivity.csv
+python build_suppl_tables.py   # -> suppl/S5a_panel_pattern_matrix.csv, S3b_paneth_sensitivity.csv
 
 # Main Figures 7-8 — single-cell decomposition
 python sc161277_scan.py        # -> sc161277_scan.json
@@ -353,6 +399,16 @@ stage still runs.
 With the §9.1 cache in place, Stage C reproduces the archived tables exactly: all three
 cohorts load, `three_layer_pattern.json` is byte-identical, and `three_layer_results.json`
 matches value for value including the GSE4183 carcinoma group.
+
+Stage J has two further data needs. `_gse8671_validation.py` reads
+`GSE8671_family.soft.gz` (42 MB), fetched by `_dl_gse8671_v5_soft.py` — the series-matrix
+copy served by NCBI is corrupted at a fixed byte offset, so the SOFT family file is the
+only reliable route; its shipped output `_gse8671_validation.json` is archived, so nothing
+downstream depends on refetching it. `_supp_doublet.py` reads the GSE161277 10x matrices
+(barcodes/features/matrix `.tsv.gz`/`.mtx.gz`), which are fetched alongside the single-cell
+cohort by `sc161277_dl_final.py`; its shipped output is `_supp_doublet.json`. The two
+robustness figures at the repository root (`figS_sva_sensitivity.png`,
+`figS_drift_arithmetic.png`) are script outputs, not manuscript additional files.
 
 ### 9.3 Enrichr output is not byte-stable
 

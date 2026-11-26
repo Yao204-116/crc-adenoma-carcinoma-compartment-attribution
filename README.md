@@ -71,12 +71,13 @@ the FreeType build Matplotlib links against, and that cannot be pinned in
 
 ```
 .
-├── *.py                    analysis scripts (Stages A–I, flat)
+├── *.py                    analysis scripts (Stages A–J, flat)
 ├── *.json / *.csv          derived intermediate results (the numbers behind the figures)
 ├── 02.result/              per-cohort DEG tables for GSE37364 / GSE20916 / GSE41657
 ├── upstream_r/             outputs of the upstream R pipeline required to rebuild tables
 │   ├── 01.limma/           DEG_all_Tumor_vs_Polyp.csv
-│   ├── 02.WGCNA/           WGCNA_module_genes.csv, WGCNA_top_module_genes.csv
+│   ├── 02.WGCNA/           WGCNA_module_genes.csv, WGCNA_top_module_genes.csv,
+│   │                       gene_module_assignment.csv
 │   └── 03.enrich/          gene_Tumor_vs_Polyp.csv, Hub_Tumor_vs_Polyp.csv
 ├── figs/                   rendered main and supplementary figures
 ├── suppl/                  Supplementary Tables S1–S5 (.csv and .xlsx)
@@ -107,6 +108,10 @@ python make_figs_sc.py          # -> figs/fig7_*.png, figs/fig8_*.png
 
 # Supplementary Tables S1–S5
 python build_suppl_tables.py    # -> suppl/*.csv, suppl/Supplementary_Tables_S1-S5.xlsx
+
+# Robustness analyses (Methods, "Robustness and sensitivity") — no external data needed
+python _supp_permutation.py     # -> _supp_permutation.json
+python _m1_drift_arithmetic_sim.py   # -> _m1_drift_arithmetic_sim.json, figS_drift_arithmetic.png
 ```
 
 `build_suppl_tables.py` needs `openpyxl` for the `.xlsx` output.
